@@ -963,8 +963,11 @@ a:hover {
 }
 
 .education-portal-link {
-  display: inline-flex;
+  display: flex;
   align-items: center;
+  width: fit-content;
+  max-width: 100%;
+  margin-inline: auto;
   gap: 12px;
   padding: 12px 18px;
   color: var(--navy-900);
@@ -1689,6 +1692,8 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  width: 100%;
+  margin-inline: auto;
   gap: 20px;
 }
 
