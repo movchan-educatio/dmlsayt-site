@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Дмитрушківський ліцей</title>
+  <meta name="description" content="Офіційний сайт Дмитрушківського ліцею: новини, документи, освітній процес, інформація для учнів і батьків.">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,500;7..72,700&family=Onest:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+  <a class="skip" href="#content">Перейти до вмісту</a>
+
+  <div class="strip">
+    <div class="wrap strip-in">
+      <span class="strip-address" id="stripAddress"></span>
+      <span class="strip-social" id="stripSocial"></span>
+    </div>
+  </div>
+
+  <header class="head">
+    <div class="wrap head-in">
+      <button class="menu-btn" id="menuBtn" type="button" aria-controls="side" aria-expanded="false">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        <span>Меню</span>
+      </button>
+      <a class="brand" href="#/" id="brand">
+        <img id="brandLogo" alt="" width="64" height="50">
+        <span class="brand-text"><strong id="brandTitle">Дмитрушківський ліцей</strong><small id="brandSub"></small></span>
+      </a>
+      <form class="search" id="searchForm" role="search">
+        <label class="sr" for="q">Пошук по сайту</label>
+        <input id="q" type="search" placeholder="Пошук по сайту" autocomplete="off">
+        <button type="submit" aria-label="Шукати">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        </button>
+      </form>
+    </div>
+  </header>
+
+  <div class="wrap layout">
+    <div class="scrim" id="scrim" hidden></div>
+    <aside class="side" id="side" aria-label="Меню сайту">
+      <nav id="nav" aria-label="Розділи сайту"></nav>
+    </aside>
+    <main id="content" tabindex="-1"><p class="loading">Завантаження…</p></main>
+  </div>
+
+  <footer class="foot">
+    <div class="wrap foot-in" id="footer"></div>
+  </footer>
+
+  <noscript><p style="padding:24px">Для роботи сайту потрібен JavaScript.</p></noscript>
+
+  <script src="assets/js/vendor/marked.umd.js"></script>
+  <script src="assets/js/vendor/purify.min.js"></script>
+  <script src="assets/js/render.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

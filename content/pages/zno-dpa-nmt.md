@@ -1,0 +1,1 @@
+> Матеріали цієї сторінки ще переносяться зі старого сайту. Поки що їх можна переглянути в оригіналі: [відкрити на Google Sites](https://sites.google.com/view/dmlsayt/%D1%83%D1%87%D0%BD%D1%8F%D0%BC-%D1%82%D0%B0-%D0%B1%D0%B0%D1%82%D1%8C%D0%BA%D0%B0%D0%BC/%D1%83%D1%87%D0%BD%D1%8F%D0%BC/%D0%B7%D0%BD%D0%BE%D0%B4%D0%BF%D0%B0%D0%BD%D0%BC%D1%82).

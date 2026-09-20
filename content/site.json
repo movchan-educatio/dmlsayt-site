@@ -1,0 +1,394 @@
+{
+  "site": {
+    "title": "Дмитрушківський ліцей",
+    "subtitle": "Дмитрушківська сільська рада, Уманський район, Черкаська область",
+    "lead": "Опорний заклад освіти з 2019 року. Навчання в одну зміну, укриття на 300 осіб, інклюзивні класи.",
+    "address": "20332, Черкаська обл., Уманський р-н., с. Дмитрушки, вул. Петропавлівська, 15",
+    "footer": "© 2024, Дмитрушківський ліцей Дмитрушківської сільської ради Уманського району Черкаської області",
+    "logo": "uploads/site/logo.png",
+    "hero": "uploads/site/school.jpg",
+    "home": "golovna",
+    "heroActions": [
+      {
+        "title": "Новини",
+        "slug": "novyny"
+      },
+      {
+        "title": "Учням та батькам",
+        "slug": "uchniam-ta-batkam"
+      }
+    ],
+    "quick": [
+      "novyny",
+      "prozorist-ta-informatsiina-vidkrytist-zakladu",
+      "uchniam-ta-batkam",
+      "osvitnii-protses",
+      "pro-nas",
+      "zvorotnii-zviazok"
+    ],
+    "social": [
+      {
+        "title": "Telegram",
+        "url": "https://t.me/dmlicej",
+        "icon": "telegram"
+      },
+      {
+        "title": "Facebook",
+        "url": "https://www.facebook.com/dmlicey",
+        "icon": "facebook"
+      }
+    ],
+    "video": {
+      "title": "Відео про ліцей",
+      "youtube": "YDQ_KHQwgTY"
+    },
+    "facebookPage": "https://www.facebook.com/dmlicey",
+    "banners": [
+      {
+        "title": "Електронні щоденники",
+        "url": "https://nz.ua",
+        "image": "uploads/site/nz-shchodennyky.png"
+      },
+      {
+        "title": "Розклад занять",
+        "url": "https://nz.ua/school/wall?id=4624",
+        "image": "uploads/site/nz-rozklad.png"
+      }
+    ],
+    "linkGroups": [
+      {
+        "title": "Корисні посилання",
+        "items": [
+          {
+            "title": "Науково-педагогічний проєкт «Інтелект України»",
+            "url": "https://intellect-ukraine.org/",
+            "image": "uploads/site/intelekt-ukrainy.png"
+          },
+          {
+            "title": "Міністерство освіти і науки України",
+            "url": "https://mon.gov.ua/ua",
+            "image": "uploads/site/mon.jpg"
+          },
+          {
+            "title": "Управління освіти і науки Черкаської ОДА",
+            "url": "https://www.osvita-cherkasy.gov.ua/",
+            "image": "uploads/site/upravlinnia-osvity-cherkasy.png"
+          },
+          {
+            "title": "Київський регіональний центр оцінювання якості освіти",
+            "url": "https://kyivtest.org.ua/",
+            "image": "uploads/site/kyivtest.png"
+          },
+          {
+            "title": "Дмитрушківська громада",
+            "url": "https://dmytrushkivska-gromada.gov.ua/",
+            "image": "uploads/site/dmytrushkivska-hromada.png"
+          },
+          {
+            "title": "Бібліотека Дмитрушківського ліцею",
+            "url": "https://bibl-dm.jimdofree.com/",
+            "image": "uploads/site/biblioteka.png"
+          }
+        ]
+      },
+      {
+        "title": "Міжнародні партнери",
+        "items": [
+          {
+            "title": "Szkoła Podstawowa nr 3 im. św. Wojciecha w Gnieźnie",
+            "url": "http://sp3.gniezno.pl/",
+            "image": "uploads/site/partner-gniezno.jpg"
+          },
+          {
+            "title": "Publiczna Szkoła Podstawowa w Starych Budkowicach",
+            "url": "http://pspbudkowice.murow.pl/1342/134/aktualnosci-20202021.html",
+            "image": "uploads/site/partner-stare-budkowice.jpg"
+          }
+        ]
+      }
+    ]
+  },
+  "nav": [
+    {
+      "title": "Головна",
+      "slug": "golovna"
+    },
+    {
+      "title": "Новини",
+      "slug": "novyny",
+      "children": [
+        {
+          "title": "Майбутнє української молоді не належить окупації.",
+          "slug": "maibutnie-ukrainskoi-molodi-ne-nalezhyt-okupatsii"
+        },
+        {
+          "title": "ВСТУП 2026",
+          "slug": "vstup-2026"
+        },
+        {
+          "title": "5 міфів щодо вступу в Україні",
+          "slug": "5-mifiv-shchodo-vstupu-v-ukraini"
+        },
+        {
+          "title": "3 страхи, які найчастіше заважають дітям і молоді виїхати з окупації",
+          "slug": "3-strakhy-iaki-naichastishe-zavazhaiut-ditiam-i-molodi"
+        },
+        {
+          "title": "Пільгові умови для вступників з ТОТ",
+          "slug": "pilhovi-umovy-dlia-vstupnykiv-z-tot"
+        },
+        {
+          "title": "Україна чекає на вступників з тимчасово окупованих територій",
+          "slug": "ukraina-chekaie-na-vstupnykiv-z-tymchasovo-okupovanykh"
+        }
+      ]
+    },
+    {
+      "title": "Список дітей, зарахованих до 1 класу 2026/2027 н.р.",
+      "slug": "spysok-ditei-zarakhovanykh-do-1-klasu-2026-2027-n-r"
+    },
+    {
+      "title": "План роботи ліцею",
+      "slug": "plan-roboty-litseiu"
+    },
+    {
+      "title": "Про нас",
+      "slug": "pro-nas",
+      "children": [
+        {
+          "title": "Історія закладу",
+          "slug": "istoriia-zakladu"
+        },
+        {
+          "title": "Установчі документи",
+          "slug": "ustanovchi-dokumenty"
+        },
+        {
+          "title": "Символіка ліцею",
+          "slug": "symvolika-litseiu",
+          "todo": true
+        },
+        {
+          "title": "Рада ліцею",
+          "slug": "rada-litseiu"
+        }
+      ]
+    },
+    {
+      "title": "Прозорість та інформаційна відкритість закладу",
+      "slug": "prozorist-ta-informatsiina-vidkrytist-zakladu",
+      "children": [
+        {
+          "title": "Звіт директора ЗСО",
+          "slug": "zvit-dyrektora-zso"
+        },
+        {
+          "title": "Статут",
+          "slug": "statut"
+        },
+        {
+          "title": "Ліцензія на провадження освітньої діяльності",
+          "slug": "litsenziia-na-provadzhennia-osvitnoi-diialnosti"
+        },
+        {
+          "title": "Структура та органи управління",
+          "slug": "struktura-ta-orhany-upravlinnia"
+        },
+        {
+          "title": "Кадровий склад",
+          "slug": "kadrovyi-sklad"
+        },
+        {
+          "title": "Освітні програми",
+          "slug": "osvitni-prohramy"
+        },
+        {
+          "title": "Територія обслуговування, закріплена за закладом освіти",
+          "slug": "terytoriia-obsluhovuvannia-zakriplena-za-zakladom-osvity"
+        },
+        {
+          "title": "Ліцензований обсяг та фактична кількість осіб, які навчаються в ліцеї",
+          "slug": "litsenzovanyi-obsiah-ta-faktychna-kilkist-osib-iaki"
+        },
+        {
+          "title": "Матеріально-технічне забезпечення",
+          "slug": "materialno-tekhnichne-zabezpechennia"
+        },
+        {
+          "title": "Результати моніторингу якості освіти",
+          "slug": "rezultaty-monitorynhu-iakosti-osvity"
+        },
+        {
+          "title": "Умови доступності закладу освіти для навчання осіб з ООП",
+          "slug": "umovy-dostupnosti-zakladu-osvity-dlia-navchannia-osib"
+        },
+        {
+          "title": "Річний звіт про діяльність закладу освіти",
+          "slug": "richnyi-zvit-pro-diialnist-zakladu-osvity"
+        },
+        {
+          "title": "Зарахування першокласників",
+          "slug": "zarakhuvannia-pershoklasnykiv"
+        },
+        {
+          "title": "Правила доступу і перебування учасників освітнього процесу та інших осіб",
+          "slug": "pravyla-dostupu-i-perebuvannia-uchasnykiv-osvitnoho"
+        },
+        {
+          "title": "Самооцінювання закладу освіти",
+          "slug": "samootsiniuvannia-zakladu-osvity"
+        }
+      ]
+    },
+    {
+      "title": "Фінансова діяльність",
+      "slug": "finansova-diialnist"
+    },
+    {
+      "title": "Закупівлі",
+      "slug": "zakupivli"
+    },
+    {
+      "title": "Філії",
+      "slug": "filii"
+    },
+    {
+      "title": "Освітній процес",
+      "slug": "osvitnii-protses",
+      "children": [
+        {
+          "title": "Гурткова робота",
+          "slug": "hurtkova-robota"
+        },
+        {
+          "title": "Група продовженого дня",
+          "slug": "hrupa-prodovzhenoho-dnia"
+        },
+        {
+          "title": "Інклюзивна освіта",
+          "slug": "inkliuzyvna-osvita"
+        }
+      ]
+    },
+    {
+      "title": "Стоп! Булінг!",
+      "slug": "stop-bulinh"
+    },
+    {
+      "title": "Методична робота",
+      "slug": "metodychna-robota",
+      "children": [
+        {
+          "title": "Атестація",
+          "slug": "atestatsiia"
+        },
+        {
+          "title": "Блоги вчителів",
+          "slug": "blohy-vchyteliv"
+        }
+      ]
+    },
+    {
+      "title": "Соціально-психологічна служба",
+      "slug": "sotsialno-psykholohichna-sluzhba",
+      "children": [
+        {
+          "title": "Соціальний педагог",
+          "slug": "sotsialnyi-pedahoh"
+        },
+        {
+          "title": "Логопед",
+          "slug": "lohoped"
+        },
+        {
+          "title": "Психолог",
+          "url": "https://www.facebook.com/groups/169186288739320"
+        },
+        {
+          "title": "Служба освітньої безпеки",
+          "slug": "sluzhba-osvitnoi-bezpeky"
+        }
+      ]
+    },
+    {
+      "title": "Учням та батькам",
+      "slug": "uchniam-ta-batkam",
+      "todo": true,
+      "children": [
+        {
+          "title": "Правила прийому до ЗЗСО",
+          "slug": "pravyla-pryiomu-do-zzso"
+        },
+        {
+          "title": "Правила поведінки здобувачів освіти у закладі",
+          "slug": "pravyla-povedinky-zdobuvachiv-osvity-u-zakladi"
+        },
+        {
+          "title": "Учням",
+          "slug": "uchniam",
+          "children": [
+            {
+              "title": "Кібергігієна",
+              "slug": "kiberhihiiena"
+            },
+            {
+              "title": "ЗНО/ДПА/НМТ",
+              "slug": "zno-dpa-nmt",
+              "todo": true
+            }
+          ]
+        },
+        {
+          "title": "Батьківська рада",
+          "slug": "batkivska-rada"
+        },
+        {
+          "title": "Харчування",
+          "slug": "kharchuvannia"
+        }
+      ]
+    },
+    {
+      "title": "Конкурс \"Superclass - це про нас\"",
+      "slug": "konkurs-superclass-tse-pro-nas"
+    },
+    {
+      "title": "Ліга активних ліцеїстів",
+      "url": "https://www.facebook.com/liga.aktivnih.liceistiv"
+    },
+    {
+      "title": "Бібліотека",
+      "url": "https://bibl-dm-liceum.blogspot.com/"
+    },
+    {
+      "title": "Міжнародна співпраця",
+      "slug": "mizhnarodna-spivpratsia"
+    },
+    {
+      "title": "Мова освітнього процесу",
+      "slug": "mova-osvitnoho-protsesu"
+    },
+    {
+      "title": "Вакансії",
+      "slug": "vakansii",
+      "todo": true
+    },
+    {
+      "title": "Платні послуги",
+      "slug": "platni-posluhy"
+    },
+    {
+      "title": "Пам'ятка \"Дії під час сигналу \"Повітряна тривога\"",
+      "slug": "pamiatka-dii-pid-chas-syhnalu-povitriana-tryvoha",
+      "todo": true
+    },
+    {
+      "title": "Архів",
+      "slug": "arkhiv"
+    },
+    {
+      "title": "Зворотній зв'язок",
+      "slug": "zvorotnii-zviazok"
+    }
+  ]
+}
