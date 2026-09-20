@@ -100,10 +100,10 @@
               logoHtml +
               '<div>' +
                 '<h3 class="footer-brand-title">' + esc(s.title || 'Дмитрушківський ліцей') + '</h3>' +
-                '<p class="footer-brand-sub">Опорний заклад освіти з 2019 року</p>' +
+                '<p class="footer-brand-sub">' + esc(s.subtitle || 'Дмитрушківська сільська рада, Уманський район, Черкаська область') + '</p>' +
               '</div>' +
             '</div>' +
-            '<p class="footer-desc">' + esc(s.lead || 'Опорний заклад освіти Дмитрушківської сільської ради Уманського району Черкаської області. Навчання в одну зміну, укриття на 300 осіб, інклюзивні класи.') + '</p>' +
+            '<p class="footer-desc">' + esc(s.lead || 'Навчання в одну зміну, укриття на 300 осіб, інклюзивні класи.') + '</p>' +
           '</div>' +
           '<div class="footer-col footer-contacts">' +
             '<h4 class="footer-h">Контакти та адреса</h4>' +
@@ -293,8 +293,9 @@
 
   function renderInner(node, md, token) {
     var main = $('#content');
-    var hasBody = R.plainText(md).length > 0 || (md && md.indexOf('feedback-root') !== -1);
-    main.innerHTML = crumbs(node) + '<article class="paper reveal-on-scroll">' +
+    var hasMedia = /!\[[^\]]*\]\([^)]+\)|<(?:img|iframe)\b/i.test(md || '');
+    var hasBody = R.plainText(md).length > 0 || hasMedia || (md && md.indexOf('feedback-root') !== -1);
+    main.innerHTML = crumbs(node) + '<article class="paper" data-page="' + esc(node.slug) + '">' +
       '<header class="paper-header">' +
         '<h1>' + esc(node.title) + '</h1>' +
         '<div class="paper-gold-bar"></div>' +
@@ -304,10 +305,35 @@
       var prose = $('.prose', main);
       prose.innerHTML = R.mdToHtml(md);
       R.enhance(prose);
+      if (node.slug === 'blohy-vchyteliv') {
+        var blogItems = Array.prototype.filter.call(prose.children, function (el) {
+          return el.tagName === 'P' && el.querySelector(':scope > a > img');
+        });
+        if (blogItems.length) {
+          var blogGrid = document.createElement('div');
+          blogGrid.className = 'teacher-blog-links';
+          blogItems[0].parentNode.insertBefore(blogGrid, blogItems[0]);
+          blogItems.forEach(function (item) { blogGrid.appendChild(item); });
+        }
+        var portalLink = prose.querySelector('a[href="https://history-geography-portal.vercel.app/index.html"]');
+        if (portalLink) {
+          portalLink.classList.add('education-portal-link');
+          portalLink.insertAdjacentHTML('afterbegin', '<span class="education-portal-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5.5A2.5 2.5 0 0 1 5.5 3H11a2 2 0 0 1 2 2v15a2.5 2.5 0 0 0-2.5-2.5H3Z"/><path d="M21 5.5A2.5 2.5 0 0 0 18.5 3H13v17a2.5 2.5 0 0 1 2.5-2.5H21Z"/><circle cx="17" cy="8" r="2.25"/><path d="M14.9 8h4.2M17 5.75c.7.65 1.05 1.4 1.05 2.25S17.7 9.6 17 10.25M17 5.75c-.7.65-1.05 1.4-1.05 2.25S16.3 9.6 17 10.25"/></svg></span>');
+        }
+      }
       if (node.slug === 'zvorotnii-zviazok' || prose.querySelector('#feedback-root')) {
         var fbRoot = prose.querySelector('#feedback-root') || prose;
         if (window.FeedbackModule && window.FeedbackModule.mount) {
           window.FeedbackModule.mount(fbRoot);
+        }
+        var socialItems = Array.prototype.filter.call(prose.children, function (el) {
+          return el.tagName === 'P' && el.querySelector(':scope > a > img');
+        });
+        if (socialItems.length) {
+          var socialRow = document.createElement('div');
+          socialRow.className = 'feedback-social-links';
+          socialItems[0].parentNode.insertBefore(socialRow, socialItems[0]);
+          socialItems.forEach(function (item) { socialRow.appendChild(item); });
         }
       }
     }
@@ -324,12 +350,6 @@
 
     var html = '<section class="hero reveal-on-scroll">' +
       '<div class="hero-left">' +
-        '<div class="hero-badge">' +
-          '<span class="hero-badge-icon">' +
-            '<svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>' +
-          '</span>' +
-          '<span>ОПОРНИЙ ЗАКЛАД ОСВІТИ З 2019 РОКУ</span>' +
-        '</div>' +
         '<h1 class="hero-title">' + esc(s.title) + '</h1>' +
         (s.lead ? '<p class="hero-lead">' + esc(s.lead) + '</p>' : '') +
         (actions ? '<div class="hero-actions">' + actions + '</div>' : '') +
@@ -537,10 +557,18 @@
           obs.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
+    // A percentage threshold can never be reached for very tall articles on
+    // small screens (for example, 8% of the news archive is taller than the
+    // viewport). Reveal as soon as the element actually enters the viewport.
+    }, { threshold: 0, rootMargin: '0px 0px -30px 0px' });
 
     document.querySelectorAll('.reveal-on-scroll:not(.is-revealed)').forEach(function (el) {
-      observer.observe(el);
+      var rect = el.getBoundingClientRect();
+      if (rect.top < window.innerHeight && rect.bottom > 0) {
+        el.classList.add('is-revealed');
+      } else {
+        observer.observe(el);
+      }
     });
   }
 

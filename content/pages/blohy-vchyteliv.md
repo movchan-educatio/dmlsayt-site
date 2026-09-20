@@ -9,3 +9,7 @@
 [![Facebook](uploads/pages/blohy-vchyteliv/image-5.png)](https://www.facebook.com/groups/673828378221669/)
 
 [![Facebook](uploads/pages/blohy-vchyteliv/image-6.png)](https://www.facebook.com/groups/661965959706732?locale=uk_UA)
+
+## Освітній портал
+
+[**Освітній портал з історії та географії**](https://history-geography-portal.vercel.app/index.html)

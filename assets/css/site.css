@@ -878,6 +878,135 @@ a:hover {
   transform: scale(1.015);
 }
 
+/* Компактні соціальні посилання під формою зворотного зв'язку */
+.feedback-social-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  width: 100%;
+  margin-top: 18px;
+}
+
+.feedback-social-links > p {
+  display: flex;
+  margin: 0;
+  max-width: none;
+}
+
+.feedback-social-links > p > a {
+  display: inline-grid;
+  width: 48px;
+  height: 48px;
+  padding: 6px;
+  place-items: center;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-xs);
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.feedback-social-links > p > a:hover,
+.feedback-social-links > p > a:focus-visible {
+  transform: translateY(-2px);
+  border-color: var(--gold-500);
+  box-shadow: var(--shadow-sm);
+}
+
+.feedback-social-links > p img {
+  display: block;
+  width: 36px;
+  height: 36px;
+  margin: 0;
+  border-radius: 8px;
+  box-shadow: none;
+  object-fit: contain;
+}
+
+/* Компактна адаптивна галерея посилань на блоги вчителів */
+.teacher-blog-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 96px);
+  justify-content: center;
+  gap: 16px;
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+.teacher-blog-links > p {
+  margin: 0;
+  max-width: none;
+}
+
+.teacher-blog-links a,
+.teacher-blog-links img {
+  display: block;
+  width: 96px;
+  height: 96px;
+}
+
+.teacher-blog-links a {
+  border-radius: var(--radius-sm);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.teacher-blog-links a:hover,
+.teacher-blog-links a:focus-visible {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-sm);
+}
+
+.teacher-blog-links img {
+  margin: 0;
+  object-fit: cover;
+}
+
+.education-portal-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 18px;
+  color: var(--navy-900);
+  background: var(--gold-100);
+  border: 1px solid rgba(197, 160, 89, 0.55);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-xs);
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.education-portal-link:hover,
+.education-portal-link:focus-visible {
+  color: var(--navy-900);
+  border-color: var(--gold-500);
+  box-shadow: var(--shadow-sm);
+  transform: translateY(-2px);
+}
+
+.education-portal-icon {
+  display: inline-grid;
+  flex: none;
+  width: 38px;
+  height: 38px;
+  place-items: center;
+  color: var(--gold-300);
+  background: var(--navy-900);
+  border-radius: 50%;
+}
+
+/* QR-код Telegram-бота на сторінці служби освітньої безпеки */
+.paper[data-page="sluzhba-osvitnoi-bezpeky"] .prose > p:last-child {
+  max-width: none;
+  text-align: center;
+}
+
+.paper[data-page="sluzhba-osvitnoi-bezpeky"] .prose img[src$="/image-2.jpg"] {
+  display: block;
+  width: min(100%, 420px);
+  height: auto;
+  margin: 1.5em auto 0;
+}
+
 .prose code {
   background: var(--surface-alt);
   padding: 0.15em 0.4em;
@@ -2058,6 +2187,10 @@ a:hover {
   }
 
   /* Мобільне меню-шторка (Drawer) */
+  .layout.is-home .side {
+    display: block;
+  }
+
   .side {
     position: fixed;
     z-index: 100;
@@ -2070,15 +2203,19 @@ a:hover {
     padding: 20px 16px 32px;
     box-shadow: 12px 0 40px rgba(7, 13, 30, 0.3);
     transform: translateX(-105%);
+    opacity: 0;
     visibility: hidden;
-    transition: transform 0.25s cubic-bezier(0.2, 0, 0, 1), visibility 0.25s;
+    pointer-events: none;
+    transition: transform 0.25s cubic-bezier(0.2, 0, 0, 1), opacity 0.2s ease, visibility 0.25s;
     border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
     border-left: 0;
   }
 
   .side.open {
     transform: translateX(0);
+    opacity: 1;
     visibility: visible;
+    pointer-events: auto;
   }
 
   .drawer-head {
@@ -2160,20 +2297,50 @@ a:hover {
   }
 
   .strip-in {
-    justify-content: flex-end;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
     min-height: 34px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  .strip-left {
+    display: none;
+  }
+
+  .strip-right {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .strip-social {
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
   .brand-text small {
     display: none;
   }
 
+  .head-in {
+    gap: 10px;
+  }
+
+  .brand {
+    gap: 10px;
+    overflow: visible;
+  }
+
   .brand img {
-    height: 44px;
+    height: 40px;
   }
 
   .brand-text strong {
-    font-size: 1.12rem;
+    font-size: clamp(0.96rem, 4.2vw, 1.08rem);
+    line-height: 1.12;
+    white-space: normal;
   }
 
   .menu-btn span {
@@ -2185,7 +2352,9 @@ a:hover {
   }
 
   .hero-title {
-    font-size: 2.1rem;
+    max-width: 100%;
+    font-size: clamp(1.42rem, 7vw, 2rem);
+    overflow-wrap: normal;
   }
 
   .hero-lead {
