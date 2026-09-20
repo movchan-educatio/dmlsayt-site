@@ -1564,6 +1564,28 @@ a:hover {
   margin-top: 44px;
 }
 
+/* Читабельна текстова колонка у блоці «Про ліцей» на головній */
+.home-body .prose {
+  max-width: 76ch;
+  margin-inline: auto;
+}
+
+.home-body .prose p,
+.home-body .prose ul,
+.home-body .prose ol {
+  max-width: none;
+}
+
+.home-body .prose p {
+  margin-bottom: 1.05em;
+}
+
+.home-body .prose h2,
+.home-body .prose h3,
+.home-body .prose h4 {
+  margin-top: 1.6em;
+}
+
 .block-header {
   display: flex;
   align-items: center;
