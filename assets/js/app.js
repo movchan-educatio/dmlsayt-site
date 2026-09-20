@@ -291,6 +291,40 @@
     });
   }
 
+  function enhanceNews(prose) {
+    var items = Array.prototype.slice.call(prose.children);
+    if (!items.length) return;
+
+    var feed = document.createElement('div');
+    feed.className = 'news-feed';
+    prose.insertBefore(feed, items[0]);
+    var card = null;
+
+    function startCard(extraClass) {
+      card = document.createElement('section');
+      card.className = 'news-card' + (extraClass ? ' ' + extraClass : '');
+      feed.appendChild(card);
+      return card;
+    }
+
+    items.forEach(function (item) {
+      if (item.classList && item.classList.contains('doc-card')) {
+        card = null;
+        item.classList.add('news-document-card');
+        feed.appendChild(item);
+        return;
+      }
+
+      if (item.tagName === 'H2') {
+        var onlyHeadings = card && !card.querySelector(':scope > :not(h2)');
+        if (!onlyHeadings) startCard('news-titled-card');
+      } else if (!card) {
+        startCard('news-article-card');
+      }
+      card.appendChild(item);
+    });
+  }
+
   function renderInner(node, md, token) {
     var main = $('#content');
     var hasMedia = /!\[[^\]]*\]\([^)]+\)|<(?:img|iframe)\b/i.test(md || '');
@@ -305,6 +339,7 @@
       var prose = $('.prose', main);
       prose.innerHTML = R.mdToHtml(md);
       R.enhance(prose);
+      if (node.slug === 'novyny') enhanceNews(prose);
       if (node.slug === 'blohy-vchyteliv') {
         var blogItems = Array.prototype.filter.call(prose.children, function (el) {
           return el.tagName === 'P' && el.querySelector(':scope > a > img');

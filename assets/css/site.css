@@ -758,7 +758,7 @@ a:hover {
 }
 
 .paper-header {
-  margin-bottom: 28px;
+  margin-bottom: 24px;
   position: relative;
 }
 
@@ -817,7 +817,7 @@ a:hover {
 .prose h2, .prose h3, .prose h4 {
   font-family: var(--serif);
   color: var(--navy-900);
-  margin: 2.2em 0 0.7em;
+  margin: 1.8em 0 0.65em;
   letter-spacing: -0.01em;
 }
 
@@ -863,19 +863,66 @@ a:hover {
 }
 
 .prose img {
+  display: block;
+  max-width: 100%;
+  height: auto;
   border-radius: var(--radius-sm);
+  border: 1px solid var(--line);
   box-shadow: var(--shadow-sm);
-  margin: 1.4em 0;
+  margin: 1.25em auto;
   transition: transform 0.25s ease;
 }
 
 .prose a.zoom {
-  display: inline-block;
+  display: block;
+  width: fit-content;
   max-width: 100%;
+  margin-inline: auto;
 }
 
 .prose a.zoom:hover img {
   transform: scale(1.015);
+}
+
+/* Карткова стрічка новин без зміни або вигадування вмісту */
+.news-feed {
+  display: grid;
+  gap: 24px;
+}
+
+.news-card,
+.news-document-card {
+  min-width: 0;
+  margin: 0;
+  padding: 24px;
+  background: var(--surface-alt);
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--gold-500);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-xs);
+}
+
+.news-card > :first-child {
+  margin-top: 0;
+}
+
+.news-card > :last-child {
+  margin-bottom: 0;
+}
+
+.news-card h2 {
+  margin-top: 0;
+}
+
+.news-card img {
+  width: auto;
+  max-height: 620px;
+  object-fit: contain;
+  background: var(--paper);
+}
+
+.news-document-card iframe {
+  width: 100%;
 }
 
 /* Компактні соціальні посилання під формою зворотного зв'язку */
@@ -1514,7 +1561,7 @@ a:hover {
 
 /* Секції на головній */
 .home-block {
-  margin-top: 52px;
+  margin-top: 44px;
 }
 
 .block-header {
@@ -2258,6 +2305,19 @@ a:hover {
 }
 
 @media (max-width: 680px) {
+  .news-feed {
+    gap: 16px;
+  }
+
+  .news-card,
+  .news-document-card {
+    padding: 18px 16px;
+  }
+
+  .news-card img {
+    max-height: 480px;
+  }
+
   .foot {
     margin-top: 48px;
   }
