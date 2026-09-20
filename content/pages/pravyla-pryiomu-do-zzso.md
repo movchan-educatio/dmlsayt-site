@@ -72,12 +72,16 @@
 
 ![](uploads/pages/pravyla-pryiomu-do-zzso/image-1.png)
 
-зарахування учнів.pdf
+<iframe src="https://drive.google.com/file/d/1Lvuix5BehgHZruHqrJs7uI_aCGjW1yfj/preview" title="зарахування учнів.pdf"></iframe>
+
+[Завантажити файл: зарахування учнів.pdf](https://drive.google.com/uc?export=download&id=1Lvuix5BehgHZruHqrJs7uI_aCGjW1yfj)
 
 ## Зарахування учнів
 
 ![](uploads/pages/pravyla-pryiomu-do-zzso/image-2.png)
 
-правила прийому до 1 класу 2026.pdf
+<iframe src="https://drive.google.com/file/d/1NdZPMtNADNqGCf9ayDEX1IStLlpFgwbB/preview" title="правила прийому до 1 класу 2026.pdf"></iframe>
+
+[Завантажити файл: правила прийому до 1 класу 2026.pdf](https://drive.google.com/uc?export=download&id=1NdZPMtNADNqGCf9ayDEX1IStLlpFgwbB)
 
 ## Правила прийому до 1 класу

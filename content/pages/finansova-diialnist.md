@@ -2,19 +2,25 @@
 
 ![](uploads/pages/finansova-diialnist/image-1.png)
 
-Благод. 2025.pdf
+<iframe src="https://drive.google.com/file/d/1ziEuUoVipZSJNN0wSM8lcylf6zD3dUVX/preview" title="Благод. 2025.pdf"></iframe>
+
+[Завантажити файл: Благод. 2025.pdf](https://drive.google.com/uc?export=download&id=1ziEuUoVipZSJNN0wSM8lcylf6zD3dUVX)
 
 ## Благодійна допомога 2025
 
 ![](uploads/pages/finansova-diialnist/image-2.png)
 
-Аналіз витрат 2025 місцевий бюджет.pdf
+<iframe src="https://drive.google.com/file/d/1S0HhYMjBSKR5zdCwnUjFLzG62pnWIvLp/preview" title="Аналіз витрат 2025 місцевий бюджет.pdf"></iframe>
+
+[Завантажити файл: Аналіз витрат 2025 місцевий бюджет.pdf](https://drive.google.com/uc?export=download&id=1S0HhYMjBSKR5zdCwnUjFLzG62pnWIvLp)
 
 ## Аналіз витрат за рахунок коштів місцевого бюджету
 
 ![](uploads/pages/finansova-diialnist/image-3.png)
 
-Аналіз витрат 2025 спеціальний фонд.pdf
+<iframe src="https://drive.google.com/file/d/1_4wUFrpx1CmMGTZ9J55NNf7fC-Q4zTJY/preview" title="Аналіз витрат 2025 спеціальний фонд.pdf"></iframe>
+
+[Завантажити файл: Аналіз витрат 2025 спеціальний фонд.pdf](https://drive.google.com/uc?export=download&id=1_4wUFrpx1CmMGTZ9J55NNf7fC-Q4zTJY)
 
 ## Аналіз витрат за рахунок коштів спеціального фонду
 
@@ -68,22 +74,30 @@
 
 ![](uploads/pages/finansova-diialnist/image-11.png)
 
-Аналіз витрат 2022.xlsx
+<iframe src="https://drive.google.com/file/d/1UjFjt-KwK9_y1B35CK8SinpBYDM3aSjD/preview" title="Аналіз витрат 2022.xlsx"></iframe>
+
+[Завантажити файл: Аналіз витрат 2022.xlsx](https://drive.google.com/uc?export=download&id=1UjFjt-KwK9_y1B35CK8SinpBYDM3aSjD)
 
 ## Аналіз витрат 2022
 
 ![](uploads/pages/finansova-diialnist/image-12.png)
 
-Кошторис на 2022 рік.pdf
+<iframe src="https://drive.google.com/file/d/1EpUdbv3zLAuNGwEGBP2DWqpjMsVqtxBA/preview" title="Кошторис на 2022 рік.pdf"></iframe>
+
+[Завантажити файл: Кошторис на 2022 рік.pdf](https://drive.google.com/uc?export=download&id=1EpUdbv3zLAuNGwEGBP2DWqpjMsVqtxBA)
 
 **Кошторис 202****2**
 
 ![](uploads/pages/finansova-diialnist/image-13.png)
 
-кошторис 2023.pdf
+<iframe src="https://drive.google.com/file/d/1saLB_ORAwiIjmxpNoTZq-GY0Lq7ofJBE/preview" title="кошторис 2023.pdf"></iframe>
+
+[Завантажити файл: кошторис 2023.pdf](https://drive.google.com/uc?export=download&id=1saLB_ORAwiIjmxpNoTZq-GY0Lq7ofJBE)
 
 ## Кошторис 2023
 
 ![](uploads/pages/finansova-diialnist/image-14.png)
 
-кошторис 2023 2.pdf
+<iframe src="https://drive.google.com/file/d/1bNoes1t3geTiyH9-mVIWngAs6Oopi5H5/preview" title="кошторис 2023 2.pdf"></iframe>
+
+[Завантажити файл: кошторис 2023 2.pdf](https://drive.google.com/uc?export=download&id=1bNoes1t3geTiyH9-mVIWngAs6Oopi5H5)

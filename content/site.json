@@ -165,8 +165,7 @@
         },
         {
           "title": "Символіка ліцею",
-          "slug": "symvolika-litseiu",
-          "todo": true
+          "slug": "symvolika-litseiu"
         },
         {
           "title": "Рада ліцею",
@@ -313,7 +312,6 @@
     {
       "title": "Учням та батькам",
       "slug": "uchniam-ta-batkam",
-      "todo": true,
       "children": [
         {
           "title": "Правила прийому до ЗЗСО",
@@ -333,8 +331,7 @@
             },
             {
               "title": "ЗНО/ДПА/НМТ",
-              "slug": "zno-dpa-nmt",
-              "todo": true
+              "slug": "zno-dpa-nmt"
             }
           ]
         },
@@ -370,8 +367,7 @@
     },
     {
       "title": "Вакансії",
-      "slug": "vakansii",
-      "hidden": true
+      "slug": "vakansii"
     },
     {
       "title": "Платні послуги",
@@ -379,8 +375,7 @@
     },
     {
       "title": "Пам'ятка \"Дії під час сигналу \"Повітряна тривога\"",
-      "slug": "pamiatka-dii-pid-chas-syhnalu-povitriana-tryvoha",
-      "todo": true
+      "slug": "pamiatka-dii-pid-chas-syhnalu-povitriana-tryvoha"
     },
     {
       "title": "Архів",

@@ -2,31 +2,41 @@
 
 ![](uploads/pages/stop-bulinh/image-1.png)
 
-План заходів з протидії булінгу 2026-2027.pdf
+<iframe src="https://drive.google.com/file/d/1OU4feT1rAwXHxI7S-GnMhaaQQCnQTM1b/preview" title="План заходів з протидії булінгу 2026-2027.pdf"></iframe>
+
+[Завантажити файл: План заходів з протидії булінгу 2026-2027.pdf](https://drive.google.com/uc?export=download&id=1OU4feT1rAwXHxI7S-GnMhaaQQCnQTM1b)
 
 ## План заходів з протидії булінгу
 
 ![](uploads/pages/stop-bulinh/image-2.png)
 
-Положення про унеможливлення насильства.pdf
+<iframe src="https://drive.google.com/file/d/1pn9kwqmOoYJALxZNqaiqlH4KGxZSid51/preview" title="Положення про унеможливлення насильства.pdf"></iframe>
+
+[Завантажити файл: Положення про унеможливлення насильства.pdf](https://drive.google.com/uc?export=download&id=1pn9kwqmOoYJALxZNqaiqlH4KGxZSid51)
 
 ## ПОЛОЖЕННЯ про унеможливлення насильства
 
 ![](uploads/pages/stop-bulinh/image-3.png)
 
-Порядок подання та розгляду заяв про випадки булінгу.pdf
+<iframe src="https://drive.google.com/file/d/1a0Ql1HlPVnAhjpGiV5h4T1Kwy6B-3kD1/preview" title="Порядок подання та розгляду заяв про випадки булінгу.pdf"></iframe>
+
+[Завантажити файл: Порядок подання та розгляду заяв про випадки булінгу.pdf](https://drive.google.com/uc?export=download&id=1a0Ql1HlPVnAhjpGiV5h4T1Kwy6B-3kD1)
 
 ## Порядок подання та розгляду заяв
 
 ![](uploads/pages/stop-bulinh/image-4.png)
 
-порядок реагування на доведені випадки булінгу.pdf
+<iframe src="https://drive.google.com/file/d/1UKmqjYTq9Z8tDGb4SyZEGYmj0ot5QYxz/preview" title="порядок реагування на доведені випадки булінгу.pdf"></iframe>
+
+[Завантажити файл: порядок реагування на доведені випадки булінгу.pdf](https://drive.google.com/uc?export=download&id=1UKmqjYTq9Z8tDGb4SyZEGYmj0ot5QYxz)
 
 ## Порядок реагування на доведені випадки булінгу
 
 ![](uploads/pages/stop-bulinh/image-5.png)
 
-anketa.pdf
+<iframe src="https://drive.google.com/file/d/1FZyKN76-tdnwXgSfVMkvK1jZDZA8SuMy/preview" title="anketa.pdf"></iframe>
+
+[Завантажити файл: anketa.pdf](https://drive.google.com/uc?export=download&id=1FZyKN76-tdnwXgSfVMkvK1jZDZA8SuMy)
 
 ## Анкета
 

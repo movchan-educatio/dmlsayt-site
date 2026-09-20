@@ -1,14 +1,20 @@
 ![](uploads/pages/maibutnie-ukrainskoi-molodi-ne-nalezhyt-okupatsii/image-1.png)
 
-GEX_8733.pdf
+<iframe src="https://drive.google.com/file/d/1OLbvv2XTHTT8WLTST7mDgGDzNJfj5lkY/preview" title="GEX_8733.pdf"></iframe>
+
+[Завантажити файл: GEX_8733.pdf](https://drive.google.com/uc?export=download&id=1OLbvv2XTHTT8WLTST7mDgGDzNJfj5lkY)
 
 ![](uploads/pages/maibutnie-ukrainskoi-molodi-ne-nalezhyt-okupatsii/image-2.png)
 
-GEX_8929.pdf
+<iframe src="https://drive.google.com/file/d/1IMFodZ835koLG2cscTGPiBiiCESB_pEI/preview" title="GEX_8929.pdf"></iframe>
+
+[Завантажити файл: GEX_8929.pdf](https://drive.google.com/uc?export=download&id=1IMFodZ835koLG2cscTGPiBiiCESB_pEI)
 
 ![](uploads/pages/maibutnie-ukrainskoi-molodi-ne-nalezhyt-okupatsii/image-3.png)
 
-GEX_8035.pdf
+<iframe src="https://drive.google.com/file/d/12ms7VwhSF8HYgDjB5oFHSSiOIHuLYF6N/preview" title="GEX_8035.pdf"></iframe>
+
+[Завантажити файл: GEX_8035.pdf](https://drive.google.com/uc?export=download&id=12ms7VwhSF8HYgDjB5oFHSSiOIHuLYF6N)
 
 Російська окупація створює бар’єри на кожному із цих етапів: обмежує доступ до достовірної інформації та української освіти, ускладнює отримання документів і намагається ізолювати молодь від українського суспільства. Але окупація не повинна визначати, де молода людина навчатиметься, як будуватиме своє життя та яким буде її майбутнє.
 

@@ -14,4 +14,6 @@
 
 ![](uploads/pages/materialno-tekhnichne-zabezpechennia/image-1.png)
 
-materialno-tekhnichne_zabezpechennja.pptx
+<iframe src="https://drive.google.com/file/d/1ggPZCZXBTZoOEyPc9Ns1YFIKl_Xdq_UJ/preview" title="materialno-tekhnichne_zabezpechennja.pptx"></iframe>
+
+[Завантажити файл: materialno-tekhnichne_zabezpechennja.pptx](https://drive.google.com/uc?export=download&id=1ggPZCZXBTZoOEyPc9Ns1YFIKl_Xdq_UJ)

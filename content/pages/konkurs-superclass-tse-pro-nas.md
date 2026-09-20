@@ -2,13 +2,17 @@
 
 ![](uploads/pages/konkurs-superclass-tse-pro-nas/image-1.png)
 
-Положення про суперклас.pdf
+<iframe src="https://drive.google.com/file/d/1GOBsAsZfpdlXl1G2eXsaD5StgFX2Rfmg/preview" title="Положення про суперклас.pdf"></iframe>
+
+[Завантажити файл: Положення про суперклас.pdf](https://drive.google.com/uc?export=download&id=1GOBsAsZfpdlXl1G2eXsaD5StgFX2Rfmg)
 
 ## [#h.43bu6klg8dtk](#h.43bu6klg8dtk)Положення конкурсу
 
 ![](uploads/pages/konkurs-superclass-tse-pro-nas/image-2.png)
 
-Критерії оцінювання.pdf
+<iframe src="https://drive.google.com/file/d/1SJWK12_Il3URkzzGmAdAdPwoFAIxL8Lt/preview" title="Критерії оцінювання.pdf"></iframe>
+
+[Завантажити файл: Критерії оцінювання.pdf](https://drive.google.com/uc?export=download&id=1SJWK12_Il3URkzzGmAdAdPwoFAIxL8Lt)
 
 ## [#h.eeoafh48wgzk](#h.eeoafh48wgzk)Критерії оцінювання
 

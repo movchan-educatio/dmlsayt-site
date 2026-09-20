@@ -46,19 +46,25 @@
 
 ![](uploads/pages/novyny/image-4.png)
 
-продовження канікул.pdf
+<iframe src="https://drive.google.com/file/d/1TnynvEffpxhYCao_nd8D2mcDZSAaDvn4/preview" title="продовження канікул.pdf"></iframe>
+
+[Завантажити файл: продовження канікул.pdf](https://drive.google.com/uc?export=download&id=1TnynvEffpxhYCao_nd8D2mcDZSAaDvn4)
 
 ## Про продовження термінів зимових канікул
 
 ![](uploads/pages/novyny/image-5.png)
 
-додаткові канікули.pdf
+<iframe src="https://drive.google.com/file/d/1ikU28Y60KQWRmomV0zQQH75Cx5fTMNeR/preview" title="додаткові канікули.pdf"></iframe>
+
+[Завантажити файл: додаткові канікули.pdf](https://drive.google.com/uc?export=download&id=1ikU28Y60KQWRmomV0zQQH75Cx5fTMNeR)
 
 ## Запровадження додаткових зимових канікул
 
 ![](uploads/pages/novyny/image-6.png)
 
-дистанційне.pdf
+<iframe src="https://drive.google.com/file/d/1oPGPPrYfX5XSLG7Dv9SN9M9__cOxWGdt/preview" title="дистанційне.pdf"></iframe>
+
+[Завантажити файл: дистанційне.pdf](https://drive.google.com/uc?export=download&id=1oPGPPrYfX5XSLG7Dv9SN9M9__cOxWGdt)
 
 **У зв'язку з суттєвим погіршенням погодних умов та зниженням температури повітря ліцей переходить на тимчасове дистанційне навчання**
 
