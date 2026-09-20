@@ -2258,14 +2258,67 @@ a:hover {
 }
 
 @media (max-width: 680px) {
+  .foot {
+    margin-top: 48px;
+  }
+
+  .foot-in {
+    padding-top: 36px;
+    padding-bottom: 22px;
+  }
+
   .footer-grid {
     grid-template-columns: 1fr;
-    gap: 28px;
+    gap: 0;
+    margin-bottom: 28px;
+    text-align: center;
+  }
+
+  .footer-col {
+    min-width: 0;
+    padding: 22px 0;
+  }
+
+  .footer-col:first-child {
+    padding-top: 0;
+  }
+
+  .footer-col + .footer-col {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .footer-brand-header {
+    justify-content: center;
+  }
+
+  .footer-desc {
+    margin-inline: auto;
+  }
+
+  .footer-h::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .footer-address {
+    justify-content: center;
+    max-width: 34ch;
+    margin-inline: auto;
+  }
+
+  .footer-social {
+    justify-content: center;
+  }
+
+  .footer-nav a,
+  .footer-admin-link {
+    justify-content: center;
   }
 
   .footer-bottom-in {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    text-align: center;
   }
 
   .quick-grid {
