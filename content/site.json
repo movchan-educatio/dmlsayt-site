@@ -370,7 +370,8 @@
     },
     {
       "title": "Вакансії",
-      "slug": "vakansii"
+      "slug": "vakansii",
+      "hidden": true
     },
     {
       "title": "Платні послуги",
