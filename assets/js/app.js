@@ -17,6 +17,16 @@
     youtube: '<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.5 2.5 0 0 0 2.4 7.2C2 8.8 2 12 2 12s0 3.2.4 4.8a2.5 2.5 0 0 0 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8c.4-1.6.4-4.8.4-4.8s0-3.2-.4-4.8ZM10 15V9l5.2 3L10 15Z"/></svg>',
     link: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3A4 4 0 0 0 11 18.7l1-1"/></svg>'
   };
+
+  var QUICK_ICONS = {
+    'novyny': '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/><path d="M18 14h-8"/><path d="M15 18h-5"/><path d="M10 6h8v4h-8V6Z"/></svg>',
+    'prozorist-ta-informatsiina-vidkrytist-zakladu': '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>',
+    'uchniam-ta-batkam': '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>',
+    'osvitnii-protses': '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>',
+    'pro-nas': '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>',
+    'zvorotnii-zviazok': '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>'
+  };
+
   var CHEVRON = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg>';
 
   function safeUrl(u) {
@@ -55,15 +65,150 @@
   /* ---------- шапка, меню, підвал ---------- */
   function renderChrome() {
     var s = S.site;
-    $('#brandTitle').textContent = s.title || '';
-    $('#brandSub').textContent = s.subtitle || '';
-    if (s.logo) { $('#brandLogo').src = s.logo; $('#brandLogo').alt = ''; } else { $('#brandLogo').remove(); }
-    $('#stripAddress').textContent = s.address || '';
-    $('#stripSocial').innerHTML = (s.social || []).map(function (l) {
-      return '<a href="' + esc(safeUrl(l.url)) + '" target="_blank" rel="noopener noreferrer" aria-label="' + esc(l.title) + '">' +
-        (ICONS[l.icon] || ICONS.link) + '<span>' + esc(l.title) + '</span></a>';
+    var bTitle = $('#brandTitle');
+    var bSub = $('#brandSub');
+    var bLogo = $('#brandLogo');
+    var sAddr = $('#stripAddress');
+    var sSoc = $('#stripSocial');
+    var foot = $('#footer');
+
+    if (bTitle) bTitle.textContent = s.title || 'Дмитрушківський ліцей';
+    if (bSub) bSub.textContent = s.subtitle || 'Дмитрушківська сільська рада, Уманський район, Черкаська область';
+    if (bLogo) {
+      if (s.logo) { bLogo.src = s.logo; bLogo.alt = 'Логотип ліцею'; }
+      else { bLogo.remove(); }
+    }
+    if (sAddr) sAddr.textContent = s.address || '20332, Черкаська обл., Уманський р-н., с. Дмитрушки, вул. Петропавлівська, 15';
+    if (sSoc) {
+      sSoc.innerHTML = (s.social || []).map(function (l) {
+        return '<a href="' + esc(safeUrl(l.url)) + '" target="_blank" rel="noopener noreferrer" aria-label="' + esc(l.title) + '">' +
+          (ICONS[l.icon] || ICONS.link) + '<span>' + esc(l.title) + '</span></a>';
+      }).join('');
+    }
+
+    if (foot) {
+      var logoHtml = s.logo ? '<img src="' + esc(s.logo) + '" alt="Логотип" class="footer-logo" width="56" height="46">' : '';
+      var socialHtml = (s.social || []).map(function (l) {
+        return '<a class="footer-social-link" href="' + esc(safeUrl(l.url)) + '" target="_blank" rel="noopener noreferrer" aria-label="' + esc(l.title) + '">' +
+          (ICONS[l.icon] || ICONS.link) + '<span>' + esc(l.title) + '</span></a>';
+      }).join('');
+
+      foot.innerHTML = 
+        '<div class="footer-grid">' +
+          '<div class="footer-col footer-brand">' +
+            '<div class="footer-brand-header">' +
+              logoHtml +
+              '<div>' +
+                '<h3 class="footer-brand-title">' + esc(s.title || 'Дмитрушківський ліцей') + '</h3>' +
+                '<p class="footer-brand-sub">Опорний заклад освіти з 2019 року</p>' +
+              '</div>' +
+            '</div>' +
+            '<p class="footer-desc">' + esc(s.lead || 'Опорний заклад освіти Дмитрушківської сільської ради Уманського району Черкаської області. Навчання в одну зміну, укриття на 300 осіб, інклюзивні класи.') + '</p>' +
+          '</div>' +
+          '<div class="footer-col footer-contacts">' +
+            '<h4 class="footer-h">Контакти та адреса</h4>' +
+            '<p class="footer-address">' +
+              '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"/><circle cx="12" cy="10" r="3"/></svg>' +
+              '<span>' + esc(s.address || '20332, Черкаська обл., Уманський р-н., с. Дмитрушки, вул. Петропавлівська, 15') + '</span>' +
+            '</p>' +
+            '<div class="footer-social">' + socialHtml + '</div>' +
+          '</div>' +
+          '<div class="footer-col footer-nav-col">' +
+            '<h4 class="footer-h">Швидка навігація</h4>' +
+            '<ul class="footer-nav">' +
+              '<li><a href="#/">Головна сторінка</a></li>' +
+              '<li><a href="#/pro-nas">Про ліцей</a></li>' +
+              '<li><a href="#/prozorist-ta-informatsiina-vidkrytist-zakladu">Прозорість та відкритість</a></li>' +
+              '<li><a href="#/novyny">Новини ліцею</a></li>' +
+              '<li><a href="#/zvorotnii-zviazok">Зворотний зв’язок</a></li>' +
+              '<li><a href="admin/" class="footer-admin-link">' +
+                '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>' +
+                '<span>Панель керування</span>' +
+              '</a></li>' +
+            '</ul>' +
+          '</div>' +
+        '</div>' +
+        '<div class="footer-bottom">' +
+          '<div class="footer-bottom-in">' +
+            '<p class="copyright">© 2026 Дмитрушківський ліцей. Всі права захищені.</p>' +
+            '<p class="footer-note">Дмитрушківська сільська рада · Уманський район · Черкаська область</p>' +
+          '</div>' +
+        '</div>';
+    }
+  }
+
+  function renderTopNav(current) {
+    var topNavEl = $('#topNav');
+    if (!topNavEl) return;
+
+    var primarySlugs = [
+      'golovna',
+      'pro-nas',
+      'prozorist-ta-informatsiina-vidkrytist-zakladu',
+      'osvitnii-protses',
+      'uchniam-ta-batkam',
+      'novyny',
+      'zvorotnii-zviazok'
+    ];
+
+    var primaryNodes = [];
+    var otherNodes = [];
+
+    visible(S.nav).forEach(function (n) {
+      if (primarySlugs.indexOf(n.slug) !== -1) {
+        primaryNodes.push(n);
+      } else {
+        otherNodes.push(n);
+      }
+    });
+
+    primaryNodes.sort(function (a, b) {
+      return primarySlugs.indexOf(a.slug) - primarySlugs.indexOf(b.slug);
+    });
+
+    var itemsHtml = primaryNodes.map(function (n) {
+      var kids = visible(n.children);
+      var isCur = n.slug && (n.slug === current || (n.slug === S.home && (!current || current === S.home)));
+      var hasKids = kids.length > 0;
+      var href = n.slug === S.home ? '#/' : '#/' + encodeURIComponent(n.slug);
+
+      var dropHtml = '';
+      if (hasKids) {
+        var isMega = kids.length > 7;
+        dropHtml = '<div class="dropdown-menu' + (isMega ? ' mega-menu' : '') + '"><ul>' +
+          kids.map(function (k) {
+            var kHref = k.url ? safeUrl(k.url) : '#/' + encodeURIComponent(k.slug);
+            var isExt = !!k.url;
+            var isKidCur = k.slug && k.slug === current;
+            return '<li><a href="' + esc(kHref) + '"' + (isExt ? ' target="_blank" rel="noopener noreferrer"' : '') + (isKidCur ? ' class="active"' : '') + '>' +
+              esc(k.title) + (isExt ? ' ↗' : '') + '</a></li>';
+          }).join('') +
+          '</ul></div>';
+      }
+
+      return '<li class="top-nav-item' + (hasKids ? ' has-dropdown' : '') + (isCur ? ' active' : '') + '">' +
+        '<a class="top-nav-link" href="' + esc(href) + '"' + (isCur ? ' aria-current="page"' : '') + '>' +
+          esc(n.title) + (hasKids ? ' <span class="drop-arrow">▾</span>' : '') +
+        '</a>' + dropHtml + '</li>';
     }).join('');
-    $('#footer').innerHTML = (s.footer ? '<div>' + esc(s.footer) + '</div>' : '') + (s.address ? '<div>' + esc(s.address) + '</div>' : '');
+
+    if (otherNodes.length) {
+      var moreDropHtml = '<div class="dropdown-menu mega-menu"><ul>' +
+        otherNodes.map(function (k) {
+          var kHref = k.url ? safeUrl(k.url) : '#/' + encodeURIComponent(k.slug);
+          var isExt = !!k.url;
+          var isOtherCur = k.slug && k.slug === current;
+          return '<li><a href="' + esc(kHref) + '"' + (isExt ? ' target="_blank" rel="noopener noreferrer"' : '') + (isOtherCur ? ' class="active"' : '') + '>' +
+            esc(k.title) + (isExt ? ' ↗' : '') + '</a></li>';
+        }).join('') +
+        '</ul></div>';
+
+      itemsHtml += '<li class="top-nav-item has-dropdown more-item">' +
+        '<button type="button" class="top-nav-link more-btn">Всі розділи <span class="drop-arrow">▾</span></button>' +
+        moreDropHtml + '</li>';
+    }
+
+    topNavEl.innerHTML = '<ul class="top-nav-list">' + itemsHtml + '</ul>';
   }
 
   function navItems(list, activeSet, current) {
@@ -83,14 +228,23 @@
     var set = new Set();
     var node = S.bySlug[current];
     if (node) { set.add(node.slug); ancestors(node).forEach(function (a) { set.add(a.slug); }); }
-    $('#nav').innerHTML = '<ul class="tree">' + navItems(S.nav, set, current) + '</ul>';
+    var navEl = $('#nav');
+    if (navEl) {
+      navEl.innerHTML = '<ul class="tree">' + navItems(S.nav, set, current) + '</ul>';
+    }
   }
 
   function setDrawer(open) {
-    $('#side').classList.toggle('open', open);
-    $('#scrim').classList.toggle('on', open);
-    $('#scrim').hidden = !open;
-    $('#menuBtn').setAttribute('aria-expanded', String(open));
+    var side = $('#side');
+    var scrim = $('#scrim');
+    var btn = $('#menuBtn');
+    if (side) side.classList.toggle('open', open);
+    if (scrim) {
+      scrim.classList.toggle('on', open);
+      scrim.hidden = !open;
+    }
+    if (btn) btn.setAttribute('aria-expanded', String(open));
+    document.body.classList.toggle('drawer-open', open);
   }
 
   /* ---------- сторінки ---------- */
@@ -106,12 +260,14 @@
   function childrenList(node) {
     var kids = visible(node.children);
     if (!kids.length) return '';
-    return '<section class="children" aria-label="Підрозділи"><h2>У цьому розділі</h2><ul>' + kids.map(function (k) {
+    return '<section class="children" aria-label="Підрозділи">' +
+      '<div class="section-head"><h2 class="children-title">У цьому розділі</h2><span class="gold-line"></span></div>' +
+      '<ul class="children-grid">' + kids.map(function (k) {
       if (k.url) {
-        return '<li class="child"><div><a class="t" href="' + esc(safeUrl(k.url)) + '" target="_blank" rel="noopener noreferrer">' + esc(k.title) + ' ↗</a><span class="sub">Зовнішнє посилання</span></div></li>';
+        return '<li class="child child-card"><div><a class="t" href="' + esc(safeUrl(k.url)) + '" target="_blank" rel="noopener noreferrer">' + esc(k.title) + ' ↗</a><span class="sub">Зовнішнє посилання</span></div></li>';
       }
       var more = countPages(k);
-      return '<li class="child" data-slug="' + esc(k.slug) + '"><div><a class="t" href="#/' + encodeURIComponent(k.slug) + '">' + esc(k.title) + '</a>' +
+      return '<li class="child child-card" data-slug="' + esc(k.slug) + '"><div><a class="t" href="#/' + encodeURIComponent(k.slug) + '">' + esc(k.title) + '</a>' +
         '<p hidden></p>' + (more ? '<span class="sub">Підрозділів: ' + more + '</span>' : '') + '</div></li>';
     }).join('') + '</ul></section>';
   }
@@ -138,7 +294,11 @@
   function renderInner(node, md, token) {
     var main = $('#content');
     var hasBody = R.plainText(md).length > 0 || (md && md.indexOf('feedback-root') !== -1);
-    main.innerHTML = crumbs(node) + '<article class="paper"><h1>' + esc(node.title) + '</h1>' +
+    main.innerHTML = crumbs(node) + '<article class="paper reveal-on-scroll">' +
+      '<header class="paper-header">' +
+        '<h1>' + esc(node.title) + '</h1>' +
+        '<div class="paper-gold-bar"></div>' +
+      '</header>' +
       (hasBody ? '<div class="prose"></div>' : '') + childrenList(node) + '</article>';
     if (hasBody) {
       var prose = $('.prose', main);
@@ -158,46 +318,108 @@
     var s = S.site, main = $('#content');
     var actions = (s.heroActions || []).map(function (a, i) {
       var target = a.slug ? '#/' + encodeURIComponent(a.slug) : safeUrl(a.url);
-      return '<a class="btn' + (i === 0 ? ' primary' : '') + '" href="' + esc(target) + '">' + esc(a.title) + '</a>';
+      return '<a class="btn' + (i === 0 ? ' primary' : ' outline') + '" href="' + esc(target) + '">' +
+        '<span>' + esc(a.title) + '</span>' + (i === 0 ? ' <span class="arrow">→</span>' : '') + '</a>';
     }).join('');
-    var html = '<section class="hero"><div><h1>' + esc(s.title) + '</h1>' +
-      (s.lead ? '<p class="lead">' + esc(s.lead) + '</p>' : '') +
-      (actions ? '<div class="actions">' + actions + '</div>' : '') + '</div>' +
-      (s.hero ? '<figure class="hero-photo"><img src="' + esc(s.hero) + '" alt="Будівля ' + esc(s.title) + '"></figure>' : '') + '</section>';
 
-    if (R.plainText(md)) html += '<article class="paper home-body"><div class="prose"></div></article>';
+    var html = '<section class="hero reveal-on-scroll">' +
+      '<div class="hero-left">' +
+        '<div class="hero-badge">' +
+          '<span class="hero-badge-icon">' +
+            '<svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>' +
+          '</span>' +
+          '<span>ОПОРНИЙ ЗАКЛАД ОСВІТИ З 2019 РОКУ</span>' +
+        '</div>' +
+        '<h1 class="hero-title">' + esc(s.title) + '</h1>' +
+        (s.lead ? '<p class="hero-lead">' + esc(s.lead) + '</p>' : '') +
+        (actions ? '<div class="hero-actions">' + actions + '</div>' : '') +
+      '</div>' +
+      (s.hero ? 
+        '<figure class="hero-photo">' +
+          '<div class="hero-photo-frame">' +
+            '<img src="' + esc(s.hero) + '" alt="Будівля ' + esc(s.title) + '" loading="eager">' +
+            '<figcaption class="hero-photo-caption">' +
+              '<span class="caption-dot"></span>' +
+              '<span>Сучасний та безпечний освітній простір</span>' +
+            '</figcaption>' +
+          '</div>' +
+        '</figure>' : '') +
+    '</section>';
 
     var quick = (s.quick || []).map(function (slug) { return S.bySlug[slug]; }).filter(Boolean);
     if (quick.length) {
-      html += '<section class="home-block"><h2>Швидкий доступ</h2><ul class="quick">' + quick.map(function (n) {
-        var c = visible(n.children).length;
-        return '<li><a href="#/' + encodeURIComponent(n.slug) + '">' + esc(n.title) + (c ? '<small>Розділів: ' + c + '</small>' : '') + '</a></li>';
-      }).join('') + '</ul></section>';
+      html += '<section class="home-block quick-block reveal-on-scroll">' +
+        '<div class="block-header">' +
+          '<h2 class="block-title">Швидкий доступ</h2>' +
+          '<span class="block-gold-line"></span>' +
+        '</div>' +
+        '<ul class="quick-grid">' + quick.map(function (n) {
+          var icon = QUICK_ICONS[n.slug] || '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m10 8 4 4-4 4"/></svg>';
+          return '<li class="quick-item">' +
+            '<a href="#/' + encodeURIComponent(n.slug) + '" class="quick-card">' +
+              '<div class="quick-card-top">' +
+                '<div class="quick-icon-wrap">' + icon + '</div>' +
+                '<span class="quick-arrow-circle" aria-hidden="true">' +
+                  '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>' +
+                '</span>' +
+              '</div>' +
+              '<div class="quick-card-body">' +
+                '<h3 class="quick-card-title">' + esc(n.title) + '</h3>' +
+              '</div>' +
+              '<div class="quick-card-bar"></div>' +
+            '</a>' +
+          '</li>';
+        }).join('') + '</ul></section>';
+    }
+
+    if (R.plainText(md)) {
+      html += '<section class="home-block about-block reveal-on-scroll">' +
+        '<div class="block-header">' +
+          '<h2 class="block-title">Про ліцей</h2>' +
+          '<span class="block-gold-line"></span>' +
+        '</div>' +
+        '<article class="paper home-body"><div class="prose"></div></article>' +
+      '</section>';
     }
 
     if ((s.banners || []).length) {
-      html += '<div class="banners">' + s.banners.map(function (b) {
-        return '<a href="' + esc(safeUrl(b.url)) + '" target="_blank" rel="noopener noreferrer" title="' + esc(b.title) + '"><img src="' + esc(b.image) + '" alt="' + esc(b.title) + '"></a>';
-      }).join('') + '</div>';
+      html += '<section class="home-block banners-block reveal-on-scroll">' +
+        '<div class="banners">' + s.banners.map(function (b) {
+          return '<a href="' + esc(safeUrl(b.url)) + '" target="_blank" rel="noopener noreferrer" title="' + esc(b.title) + '" class="banner-card">' +
+            '<img src="' + esc(b.image) + '" alt="' + esc(b.title) + '" loading="lazy">' +
+            '<span class="banner-title">' + esc(b.title) + ' ↗</span>' +
+          '</a>';
+        }).join('') + '</div></section>';
     }
 
     var vid = s.video && R.youtubeId(s.video.youtube);
     var fb = s.facebookPage && safeUrl(s.facebookPage);
     if (vid || (fb && fb !== '#')) {
-      html += '<section class="home-block widgets">';
-      html += vid ? '<div class="widget-card"><h3>' + esc(s.video.title || 'Відео') + '</h3><div class="embed"><iframe src="https://www.youtube-nocookie.com/embed/' + vid + '" title="' + esc(s.video.title || 'Відео') + '" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen loading="lazy"></iframe></div></div>' : '<div></div>';
+      html += '<section class="home-block widgets-block reveal-on-scroll">' +
+        '<div class="block-header">' +
+          '<h2 class="block-title">Медіа та соціальні мережі</h2>' +
+          '<span class="block-gold-line"></span>' +
+        '</div>' +
+        '<div class="widgets">';
+      html += vid ? '<div class="widget-card video-card"><h3 class="widget-title">' + esc(s.video.title || 'Відео про ліцей') + '</h3><div class="embed"><iframe src="https://www.youtube-nocookie.com/embed/' + vid + '" title="' + esc(s.video.title || 'Відео') + '" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen loading="lazy"></iframe></div></div>' : '';
       if (fb && fb !== '#') {
-        html += '<div class="widget-card fb-wrap"><h3>Ліцей у Facebook</h3><iframe class="fb-frame" title="Стрічка Facebook" loading="lazy" src="https://www.facebook.com/plugins/page.php?href=' + encodeURIComponent(fb) + '&tabs=timeline&width=300&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false"></iframe></div>';
+        html += '<div class="widget-card fb-wrap"><h3 class="widget-title">Офіційна сторінка у Facebook</h3><iframe class="fb-frame" title="Стрічка Facebook" loading="lazy" src="https://www.facebook.com/plugins/page.php?href=' + encodeURIComponent(fb) + '&tabs=timeline&width=300&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false"></iframe></div>';
       }
-      html += '</section>';
+      html += '</div></section>';
     }
 
     (s.linkGroups || []).forEach(function (g) {
       if (!(g.items || []).length) return;
-      html += '<section class="home-block"><h2>' + esc(g.title) + '</h2><ul class="linkgrid">' + g.items.map(function (it) {
-        return '<li><a href="' + esc(safeUrl(it.url)) + '" target="_blank" rel="noopener noreferrer" title="' + esc(it.title) + '">' +
-          (it.image ? '<img src="' + esc(it.image) + '" alt="' + esc(it.title) + '" loading="lazy">' : '<span class="noimg">' + esc(it.title) + '</span>') + '</a></li>';
-      }).join('') + '</ul></section>';
+      html += '<section class="home-block links-block reveal-on-scroll">' +
+        '<div class="block-header">' +
+          '<h2 class="block-title">' + esc(g.title) + '</h2>' +
+          '<span class="block-gold-line"></span>' +
+        '</div>' +
+        '<ul class="linkgrid">' + g.items.map(function (it) {
+          return '<li><a href="' + esc(safeUrl(it.url)) + '" target="_blank" rel="noopener noreferrer" title="' + esc(it.title) + '" class="partner-card">' +
+            (it.image ? '<img src="' + esc(it.image) + '" alt="' + esc(it.title) + '" loading="lazy">' : '<span class="noimg">' + esc(it.title) + '</span>') +
+          '</a></li>';
+        }).join('') + '</ul></section>';
     });
 
     main.innerHTML = html;
@@ -294,13 +516,43 @@
     return { type: 'page', slug: slug || S.home, anchor: anchor };
   }
 
+  /* ---------- Scroll Reveal Micro-Animation ---------- */
+  function setupScrollReveal() {
+    if (!('IntersectionObserver' in window)) {
+      document.querySelectorAll('.reveal-on-scroll').forEach(function (el) {
+        el.classList.add('is-revealed');
+      });
+      return;
+    }
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.querySelectorAll('.reveal-on-scroll').forEach(function (el) {
+        el.classList.add('is-revealed');
+      });
+      return;
+    }
+    var observer = new IntersectionObserver(function (entries, obs) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-revealed');
+          obs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
+
+    document.querySelectorAll('.reveal-on-scroll:not(.is-revealed)').forEach(function (el) {
+      observer.observe(el);
+    });
+  }
+
   function route() {
     var r = parseHash();
     var token = ++S.token;
     setDrawer(false);
     if (r.type === 'search') {
       renderNav('');
+      renderTopNav('');
       renderSearch(r.q, token);
+      setupScrollReveal();
       window.scrollTo(0, 0);
       return;
     }
@@ -313,6 +565,13 @@
     }
     var node = S.bySlug[r.slug];
     renderNav(r.slug);
+    renderTopNav(r.slug);
+    var isHome = !r.slug || r.slug === S.home;
+    var layoutEl = $('.layout');
+    if (layoutEl) {
+      layoutEl.classList.toggle('is-home', isHome);
+      layoutEl.classList.toggle('is-inner', !isHome);
+    }
     if (!node) { renderNotFound(r.slug); window.scrollTo(0, 0); return; }
     if (r.slug !== S.home) $('#q').value = '';
     S.currentSlug = node.slug;
@@ -320,6 +579,7 @@
       if (token !== S.token) return;
       if (node.slug === S.home) renderHome(node, md, token); else renderInner(node, md, token);
       document.title = node.slug === S.home ? S.site.title : node.title + ' — ' + S.site.title;
+      setupScrollReveal();
       if (r.anchor) {
         setTimeout(function () {
           var target = document.getElementById(r.anchor) || document.querySelector('[name="' + CSS.escape(r.anchor) + '"]');
@@ -365,12 +625,17 @@
       t.setAttribute('aria-expanded', String(open));
     });
     $('#menuBtn').addEventListener('click', function () { setDrawer(!$('#side').classList.contains('open')); });
+    var closeBtn = $('#drawerClose');
+    if (closeBtn) closeBtn.addEventListener('click', function () { setDrawer(false); });
     $('#scrim').addEventListener('click', function () { setDrawer(false); });
     document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setDrawer(false); });
     var mq = window.matchMedia('(max-width: 960px)');
     function placeSearch() {
       var f = $('#searchForm');
-      if (mq.matches) $('#side').insertBefore(f, $('#nav')); else $('.head-in').appendChild(f);
+      if (mq.matches) $('#side').insertBefore(f, $('#nav')); else {
+        var headSearchWrap = $('.head-search-wrap') || $('.head-in');
+        headSearchWrap.appendChild(f);
+      }
     }
     if (mq.addEventListener) mq.addEventListener('change', placeSearch); else mq.addListener(placeSearch);
     placeSearch();

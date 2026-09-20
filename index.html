@@ -16,34 +16,59 @@
 
   <div class="strip">
     <div class="wrap strip-in">
-      <span class="strip-address" id="stripAddress"></span>
-      <span class="strip-social" id="stripSocial"></span>
+      <div class="strip-left">
+        <span class="strip-badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          Опорний заклад освіти
+        </span>
+        <span class="strip-address" id="stripAddress"></span>
+      </div>
+      <div class="strip-right">
+        <span class="strip-social" id="stripSocial"></span>
+      </div>
     </div>
   </div>
 
   <header class="head">
     <div class="wrap head-in">
       <button class="menu-btn" id="menuBtn" type="button" aria-controls="side" aria-expanded="false">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
         <span>Меню</span>
       </button>
       <a class="brand" href="#/" id="brand">
         <img id="brandLogo" alt="" width="64" height="50">
-        <span class="brand-text"><strong id="brandTitle">Дмитрушківський ліцей</strong><small id="brandSub"></small></span>
+        <span class="brand-text">
+          <strong id="brandTitle">Дмитрушківський ліцей</strong>
+          <small id="brandSub"></small>
+        </span>
       </a>
-      <form class="search" id="searchForm" role="search">
-        <label class="sr" for="q">Пошук по сайту</label>
-        <input id="q" type="search" placeholder="Пошук по сайту" autocomplete="off">
-        <button type="submit" aria-label="Шукати">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
-        </button>
-      </form>
+      <div class="head-search-wrap">
+        <form class="search" id="searchForm" role="search">
+          <label class="sr" for="q">Пошук по сайту</label>
+          <input id="q" type="search" placeholder="Пошук по сайту..." autocomplete="off">
+          <button type="submit" aria-label="Шукати">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+            <span class="search-btn-label">Пошук</span>
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="top-nav-wrap">
+      <div class="wrap">
+        <nav class="top-nav" id="topNav" aria-label="Головне меню"></nav>
+      </div>
     </div>
   </header>
 
   <div class="wrap layout">
     <div class="scrim" id="scrim" hidden></div>
     <aside class="side" id="side" aria-label="Меню сайту">
+      <div class="drawer-head">
+        <div class="drawer-title">Навігація сайту</div>
+        <button type="button" class="drawer-close" id="drawerClose" aria-label="Закрити меню">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+        </button>
+      </div>
       <nav id="nav" aria-label="Розділи сайту"></nav>
     </aside>
     <main id="content" tabindex="-1"><p class="loading">Завантаження…</p></main>

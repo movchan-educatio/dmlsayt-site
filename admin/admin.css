@@ -1,8 +1,8 @@
 /* Адмін-панель: прості, зрозумілі елементи; ті самі кольори, що й на сайті. */
 :root {
-  --ink: #2E2F7F; --ink-deep: #1E2060; --sun: #F2C200; --sun-soft: #FFF3BF;
-  --blue: #0B5FA5; --brick: #A03030; --green: #1E7B4F;
-  --bg: #F3F4FA; --paper: #fff; --mist: #EEF1F9; --line: #D9DDEC; --text: #1C1F2E; --muted: #58607A;
+  --ink: #16264C; --ink-deep: #0D1730; --sun: #C5A059; --sun-soft: #FBF7EE;
+  --blue: #1A5FA0; --brick: #9E2A2B; --green: #186F45;
+  --bg: #F6F8FC; --paper: #fff; --mist: #EFF3F9; --line: #DFE5F0; --text: #0F172A; --muted: #53627A;
   --sans: "Onest", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
   --serif: "Literata", Georgia, serif;
 }
