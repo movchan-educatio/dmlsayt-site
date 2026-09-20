@@ -1,10 +1,8 @@
-![](uploads/pages/sotsialnyi-pedahoh/image-1.png)
-
 річний план соціального педагога 2026-2027.pdf
 
 ## Річний план соціального педагога
 
-## [#h.42e87atqeab7](#h.42e87atqeab7)Перелік урядових і галузевих документів, що забезпечують дотримання законодавства в галузі охорони дитинства
+## <a id="h.42e87atqeab7"></a>Перелік урядових і галузевих документів, що забезпечують дотримання законодавства в галузі охорони дитинства
 
 1. Конституція України
 
@@ -95,6 +93,11 @@
 
 ### річний план  соціального педагога 2026-2027.pdf
 
-<iframe src="https://drive.google.com/file/d/14NmT49puOYP0uS_aLgsN7j6L-9TBcxVX/preview" title="річний план  соціального педагога 2026-2027.pdf"></iframe>
-
-[Завантажити файл: річний план  соціального педагога 2026-2027.pdf](https://drive.google.com/uc?export=download&id=14NmT49puOYP0uS_aLgsN7j6L-9TBcxVX)
+<div class="doc-card">
+  <div class="doc-card-title">річний план  соціального педагога 2026-2027.pdf</div>
+  <iframe src="https://drive.google.com/file/d/14NmT49puOYP0uS_aLgsN7j6L-9TBcxVX/preview" title="річний план  соціального педагога 2026-2027.pdf" loading="lazy"></iframe>
+  <div class="doc-card-actions">
+    <a class="doc-btn preview-btn" href="https://drive.google.com/file/d/14NmT49puOYP0uS_aLgsN7j6L-9TBcxVX/preview" target="_blank" rel="noopener noreferrer">Переглянути документ ↗</a>
+    <a class="doc-btn download-btn" href="https://drive.google.com/uc?export=download&id=14NmT49puOYP0uS_aLgsN7j6L-9TBcxVX" target="_blank" rel="noopener noreferrer">Завантажити файл ↓</a>
+  </div>
+</div>

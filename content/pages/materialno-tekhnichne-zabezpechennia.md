@@ -12,8 +12,11 @@
 
 Наразі всі роботи завершено. Укриття № 1 на 300 осіб здано в експлуатацію. Учні мають можливість навчатися у якіснішому та безпечнішому освітньому просторі.
 
-![](uploads/pages/materialno-tekhnichne-zabezpechennia/image-1.png)
-
-<iframe src="https://drive.google.com/file/d/1ggPZCZXBTZoOEyPc9Ns1YFIKl_Xdq_UJ/preview" title="materialno-tekhnichne_zabezpechennja.pptx"></iframe>
-
-[Завантажити файл: materialno-tekhnichne_zabezpechennja.pptx](https://drive.google.com/uc?export=download&id=1ggPZCZXBTZoOEyPc9Ns1YFIKl_Xdq_UJ)
+<div class="doc-card">
+  <div class="doc-card-title">materialno-tekhnichne_zabezpechennja.pptx</div>
+  <iframe src="https://drive.google.com/file/d/1ggPZCZXBTZoOEyPc9Ns1YFIKl_Xdq_UJ/preview" title="materialno-tekhnichne_zabezpechennja.pptx" loading="lazy"></iframe>
+  <div class="doc-card-actions">
+    <a class="doc-btn preview-btn" href="https://drive.google.com/file/d/1ggPZCZXBTZoOEyPc9Ns1YFIKl_Xdq_UJ/preview" target="_blank" rel="noopener noreferrer">Переглянути документ ↗</a>
+    <a class="doc-btn download-btn" href="https://drive.google.com/uc?export=download&id=1ggPZCZXBTZoOEyPc9Ns1YFIKl_Xdq_UJ" target="_blank" rel="noopener noreferrer">Завантажити файл ↓</a>
+  </div>
+</div>

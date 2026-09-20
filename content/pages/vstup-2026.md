@@ -1,8 +1,11 @@
-![](uploads/pages/vstup-2026/image-1.png)
-
-<iframe src="https://drive.google.com/file/d/19LsneioVckV-yJfxeeE0oVIqpy1X7SZ9/preview" title="ТОТ.pdf"></iframe>
-
-[Завантажити файл: ТОТ.pdf](https://drive.google.com/uc?export=download&id=19LsneioVckV-yJfxeeE0oVIqpy1X7SZ9)
+<div class="doc-card">
+  <div class="doc-card-title">ТОТ.pdf</div>
+  <iframe src="https://drive.google.com/file/d/19LsneioVckV-yJfxeeE0oVIqpy1X7SZ9/preview" title="ТОТ.pdf" loading="lazy"></iframe>
+  <div class="doc-card-actions">
+    <a class="doc-btn preview-btn" href="https://drive.google.com/file/d/19LsneioVckV-yJfxeeE0oVIqpy1X7SZ9/preview" target="_blank" rel="noopener noreferrer">Переглянути документ ↗</a>
+    <a class="doc-btn download-btn" href="https://drive.google.com/uc?export=download&id=19LsneioVckV-yJfxeeE0oVIqpy1X7SZ9" target="_blank" rel="noopener noreferrer">Завантажити файл ↓</a>
+  </div>
+</div>
 
 У 2026 році всі вступники, зареєстровані або задекларовані на ТОТ чи територіях активних бойових дій, мають право на вступ за квотою-2. Це означає, що вони беруть участь в окремому конкурсі на бюджетні місця й не конкурують за них разом з іншими вступниками.
 

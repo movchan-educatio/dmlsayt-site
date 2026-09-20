@@ -1,0 +1,2648 @@
+[
+  {
+    "slug": "golovna",
+    "gs_path": "головна",
+    "url": "https://sites.google.com/view/dmlsayt/%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%BD%D0%B0",
+    "local_file": "C:\\Users\\НР\\Desktop\\dmlsayt-site\\content\\pages\\golovna.md",
+    "status": "PROBLEMS",
+    "problems": [
+      {
+        "type": "LOST_CLICKABLE_IMAGE",
+        "problem": "Клікабельне зображення втратило посилання (стало звичайною картинкою або відсутнє)",
+        "old_value": "Зображення -> https://intellect-ukraine.org/",
+        "current_value": "Зображення відсутнє",
+        "safe_fix": "Огорнути зображення в посилання: [![зображення](uploads/...)(https://intellect-ukraine.org/)]",
+        "confidence": "HIGH"
+      },
+      {
+        "type": "LOST_CLICKABLE_IMAGE",
+        "problem": "Клікабельне зображення втратило посилання (стало звичайною картинкою або відсутнє)",
+        "old_value": "Зображення -> https://mon.gov.ua/ua",
+        "current_value": "Зображення відсутнє",
+        "safe_fix": "Огорнути зображення в посилання: [![зображення](uploads/...)(https://mon.gov.ua/ua)]",
+        "confidence": "HIGH"
+      },
+      {
+        "type": "LOST_CLICKABLE_IMAGE",
+        "problem": "Клікабельне зображення втратило посилання (стало звичайною картинкою або відсутнє)",
+        "old_value": "Зображення -> https://www.osvita-cherkasy.gov.ua/",
+        "current_value": "Зображення відсутнє",
+        "safe_fix": "Огорнути зображення в посилання: [![зображення](uploads/...)(https://www.osvita-cherkasy.gov.ua/)]",
+        "confidence": "HIGH"
+      },
+      {
+        "type": "LOST_CLICKABLE_IMAGE",
+        "problem": "Клікабельне зображення втратило посилання (стало звичайною картинкою або відсутнє)",
+        "old_value": "Зображення -> https://kyivtest.org.ua/",
+        "current_value": "Зображення відсутнє",
+        "safe_fix": "Огорнути зображення в посилання: [![зображення](uploads/...)(https://kyivtest.org.ua/)]",
+        "confidence": "HIGH"
+      },
+      {
+        "type": "LOST_CLICKABLE_IMAGE",
+        "problem": "Клікабельне зображення втратило посилання (стало звичайною картинкою або відсутнє)",
+        "old_value": "Зображення -> https://dmytrushkivska-gromada.gov.ua/",
+        "current_value": "Зображення відсутнє",
+        "safe_fix": "Огорнути зображення в посилання: [![зображення](uploads/...)(https://dmytrushkivska-gromada.gov.ua/)]",
+        "confidence": "HIGH"
+      },
+      {
+        "type": "LOST_CLICKABLE_IMAGE",
+        "problem": "Клікабельне зображення втратило посилання (стало звичайною картинкою або відсутнє)",
+        "old_value": "Зображення -> https://bibl-dm.jimdofree.com/",
+        "current_value": "Зображення відсутнє",
+        "safe_fix": "Огорнути зображення в посилання: [![зображення](uploads/...)(https://bibl-dm.jimdofree.com/)]",
+        "confidence": "HIGH"
+      },
+      {
+        "type": "LOST_CLICKABLE_IMAGE",
+        "problem": "Клікабельне зображення втратило посилання (стало звичайною картинкою або відсутнє)",
+        "old_value": "Зображення -> http://sp3.gniezno.pl/",
+        "current_value": "Зображення відсутнє",
+        "safe_fix": "Огорнути зображення в посилання: [![зображення](uploads/...)(http://sp3.gniezno.pl/)]",
+        "confidence": "HIGH"
+      },
+      {
+        "type": "LOST_CLICKABLE_IMAGE",
+        "problem": "Клікабельне зображення втратило посилання (стало звичайною картинкою або відсутнє)",
+        "old_value": "Зображення -> http://pspbudkowice.murow.pl/1342/134/aktualnosci-20202021.html",
+        "current_value": "Зображення відсутнє",
+        "safe_fix": "Огорнути зображення в посилання: [![зображення](uploads/...)(http://pspbudkowice.murow.pl/1342/134/aktualnosci-20202021.html)]",
+        "confidence": "HIGH"
+      },
+      {
+        "type": "LOST_SOCIAL_LINKS",
+        "problem": "Клікабельне зображення втратило посилання (стало звичайною картинкою або відсутнє)",
+        "old_value": "Зображення -> https://t.me/dmlicej",
+        "current_value": "Зображення відсутнє",
+        "safe_fix": "Огорнути зображення в посилання: [![Link](uploads/...)(https://t.me/dmlicej)]",
+        "confidence": "HIGH"
+      },
+      {
+        "type": "LOST_SOCIAL_LINKS",
+        "problem": "Клікабельне зображення втратило посилання (стало звичайною картинкою або відсутнє)",
+        "old_value": "Зображення -> https://www.facebook.com/dmlicey",
+        "current_value": "Зображення відсутнє",
+        "safe_fix": "Огорнути зображення в посилання: [![Facebook](uploads/...)(https://www.facebook.com/dmlicey)]",
+        "confidence": "HIGH"
+      },
+      {
+        "type": "MISSING_IMAGES",
+        "problem": "На сторінці було 13 зображень, а в новому файлі жодного не перенесено",
+        "old_value": "13 зображень",
+        "current_value": "0 зображень",
+        "safe_fix": "Завантажити та додати зображення у uploads/pages/golovna/",
+        "confidence": "HIGH"
+      }
+    ]
+  },
+  {
+    "slug": "novyny",
+    "gs_path": "новини",
+    "url": "https://sites.google.com/view/dmlsayt/%D0%BD%D0%BE%D0%B2%D0%B8%D0%BD%D0%B8",
+    "local_file": "C:\\Users\\НР\\Desktop\\dmlsayt-site\\content\\pages\\novyny.md",
+    "status": "PROBLEMS",
+    "problems": [
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%BD%D0%BE%D0%B2%D0%B8%D0%BD%D0%B8#h.cvbhhjb80o0i",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%BD%D0%BE%D0%B2%D0%B8%D0%BD%D0%B8#h.cvbhhjb80o0i",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%BD%D0%BE%D0%B2%D0%B8%D0%BD%D0%B8#h.cvbhhjb80o0i)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%BD%D0%BE%D0%B2%D0%B8%D0%BD%D0%B8#h.gt1jh9nxlk2a",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%BD%D0%BE%D0%B2%D0%B8%D0%BD%D0%B8#h.gt1jh9nxlk2a",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%BD%D0%BE%D0%B2%D0%B8%D0%BD%D0%B8#h.gt1jh9nxlk2a)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%BD%D0%BE%D0%B2%D0%B8%D0%BD%D0%B8#h.qq2cilhcvbql",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%BD%D0%BE%D0%B2%D0%B8%D0%BD%D0%B8#h.qq2cilhcvbql",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%BD%D0%BE%D0%B2%D0%B8%D0%BD%D0%B8#h.qq2cilhcvbql)",
+        "confidence": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "slug": "maibutnie-ukrainskoi-molodi-ne-nalezhyt-okupatsii",
+    "gs_path": "новини/майбутнє-української-молоді-не-належить-окупації",
+    "url": "https://sites.google.com/view/dmlsayt/%D0%BD%D0%BE%D0%B2%D0%B8%D0%BD%D0%B8/%D0%BC%D0%B0%D0%B9%D0%B1%D1%83%D1%82%D0%BD%D1%94-%D1%83%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%81%D1%8C%D0%BA%D0%BE%D1%97-%D0%BC%D0%BE%D0%BB%D0%BE%D0%B4%D1%96-%D0%BD%D0%B5-%D0%BD%D0%B0%D0%BB%D0%B5%D0%B6%D0%B8%D1%82%D1%8C-%D0%BE%D0%BA%D1%83%D0%BF%D0%B0%D1%86%D1%96%D1%97",
+    "local_file": "C:\\Users\\НР\\Desktop\\dmlsayt-site\\content\\pages\\maibutnie-ukrainskoi-molodi-ne-nalezhyt-okupatsii.md",
+    "status": "OK",
+    "problems": []
+  },
+  {
+    "slug": "vstup-2026",
+    "gs_path": "новини/вступ-2026",
+    "url": "https://sites.google.com/view/dmlsayt/%D0%BD%D0%BE%D0%B2%D0%B8%D0%BD%D0%B8/%D0%B2%D1%81%D1%82%D1%83%D0%BF-2026",
+    "local_file": "C:\\Users\\НР\\Desktop\\dmlsayt-site\\content\\pages\\vstup-2026.md",
+    "status": "OK",
+    "problems": []
+  },
+  {
+    "slug": "5-mifiv-shchodo-vstupu-v-ukraini",
+    "gs_path": "новини/5-міфів-щодо-вступу-в-україні",
+    "url": "https://sites.google.com/view/dmlsayt/%D0%BD%D0%BE%D0%B2%D0%B8%D0%BD%D0%B8/5-%D0%BC%D1%96%D1%84%D1%96%D0%B2-%D1%89%D0%BE%D0%B4%D0%BE-%D0%B2%D1%81%D1%82%D1%83%D0%BF%D1%83-%D0%B2-%D1%83%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%96",
+    "local_file": "C:\\Users\\НР\\Desktop\\dmlsayt-site\\content\\pages\\5-mifiv-shchodo-vstupu-v-ukraini.md",
+    "status": "OK",
+    "problems": []
+  },
+  {
+    "slug": "3-strakhy-iaki-naichastishe-zavazhaiut-ditiam-i-molodi",
+    "gs_path": "новини/3-страхи-які-найчастіше-заважають-дітям-і-молоді-виїхати-з-окупації",
+    "url": "https://sites.google.com/view/dmlsayt/%D0%BD%D0%BE%D0%B2%D0%B8%D0%BD%D0%B8/3-%D1%81%D1%82%D1%80%D0%B0%D1%85%D0%B8-%D1%8F%D0%BA%D1%96-%D0%BD%D0%B0%D0%B9%D1%87%D0%B0%D1%81%D1%82%D1%96%D1%88%D0%B5-%D0%B7%D0%B0%D0%B2%D0%B0%D0%B6%D0%B0%D1%8E%D1%82%D1%8C-%D0%B4%D1%96%D1%82%D1%8F%D0%BC-%D1%96-%D0%BC%D0%BE%D0%BB%D0%BE%D0%B4%D1%96-%D0%B2%D0%B8%D1%97%D1%85%D0%B0%D1%82%D0%B8-%D0%B7-%D0%BE%D0%BA%D1%83%D0%BF%D0%B0%D1%86%D1%96%D1%97",
+    "local_file": "C:\\Users\\НР\\Desktop\\dmlsayt-site\\content\\pages\\3-strakhy-iaki-naichastishe-zavazhaiut-ditiam-i-molodi.md",
+    "status": "OK",
+    "problems": []
+  },
+  {
+    "slug": "pilhovi-umovy-dlia-vstupnykiv-z-tot",
+    "gs_path": "новини/пільгові-умови-для-вступників-з-тот",
+    "url": "https://sites.google.com/view/dmlsayt/%D0%BD%D0%BE%D0%B2%D0%B8%D0%BD%D0%B8/%D0%BF%D1%96%D0%BB%D1%8C%D0%B3%D0%BE%D0%B2%D1%96-%D1%83%D0%BC%D0%BE%D0%B2%D0%B8-%D0%B4%D0%BB%D1%8F-%D0%B2%D1%81%D1%82%D1%83%D0%BF%D0%BD%D0%B8%D0%BA%D1%96%D0%B2-%D0%B7-%D1%82%D0%BE%D1%82",
+    "local_file": "C:\\Users\\НР\\Desktop\\dmlsayt-site\\content\\pages\\pilhovi-umovy-dlia-vstupnykiv-z-tot.md",
+    "status": "OK",
+    "problems": []
+  },
+  {
+    "slug": "ukraina-chekaie-na-vstupnykiv-z-tymchasovo-okupovanykh",
+    "gs_path": "новини/україна-чекає-на-вступників-з-тимчасово-окупованих-територій",
+    "url": "https://sites.google.com/view/dmlsayt/%D0%BD%D0%BE%D0%B2%D0%B8%D0%BD%D0%B8/%D1%83%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%B0-%D1%87%D0%B5%D0%BA%D0%B0%D1%94-%D0%BD%D0%B0-%D0%B2%D1%81%D1%82%D1%83%D0%BF%D0%BD%D0%B8%D0%BA%D1%96%D0%B2-%D0%B7-%D1%82%D0%B8%D0%BC%D1%87%D0%B0%D1%81%D0%BE%D0%B2%D0%BE-%D0%BE%D0%BA%D1%83%D0%BF%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%85-%D1%82%D0%B5%D1%80%D0%B8%D1%82%D0%BE%D1%80%D1%96%D0%B9",
+    "local_file": "C:\\Users\\НР\\Desktop\\dmlsayt-site\\content\\pages\\ukraina-chekaie-na-vstupnykiv-z-tymchasovo-okupovanykh.md",
+    "status": "OK",
+    "problems": []
+  },
+  {
+    "slug": "spysok-ditei-zarakhovanykh-do-1-klasu-2026-2027-n-r",
+    "gs_path": "список-дітей-зарахованих-до-1-класу-20262027-н-р",
+    "url": "https://sites.google.com/view/dmlsayt/%D1%81%D0%BF%D0%B8%D1%81%D0%BE%D0%BA-%D0%B4%D1%96%D1%82%D0%B5%D0%B9-%D0%B7%D0%B0%D1%80%D0%B0%D1%85%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%85-%D0%B4%D0%BE-1-%D0%BA%D0%BB%D0%B0%D1%81%D1%83-20262027-%D0%BD-%D1%80",
+    "local_file": "C:\\Users\\НР\\Desktop\\dmlsayt-site\\content\\pages\\spysok-ditei-zarakhovanykh-do-1-klasu-2026-2027-n-r.md",
+    "status": "OK",
+    "problems": []
+  },
+  {
+    "slug": "plan-roboty-litseiu",
+    "gs_path": "план-роботи-ліцею",
+    "url": "https://sites.google.com/view/dmlsayt/%D0%BF%D0%BB%D0%B0%D0%BD-%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B8-%D0%BB%D1%96%D1%86%D0%B5%D1%8E",
+    "local_file": "C:\\Users\\НР\\Desktop\\dmlsayt-site\\content\\pages\\plan-roboty-litseiu.md",
+    "status": "OK",
+    "problems": []
+  },
+  {
+    "slug": "pro-nas",
+    "gs_path": "про-нас",
+    "url": "https://sites.google.com/view/dmlsayt/%D0%BF%D1%80%D0%BE-%D0%BD%D0%B0%D1%81",
+    "local_file": "C:\\Users\\НР\\Desktop\\dmlsayt-site\\content\\pages\\pro-nas.md",
+    "status": "OK",
+    "problems": []
+  },
+  {
+    "slug": "istoriia-zakladu",
+    "gs_path": "про-нас/історія-закладу",
+    "url": "https://sites.google.com/view/dmlsayt/%D0%BF%D1%80%D0%BE-%D0%BD%D0%B0%D1%81/%D1%96%D1%81%D1%82%D0%BE%D1%80%D1%96%D1%8F-%D0%B7%D0%B0%D0%BA%D0%BB%D0%B0%D0%B4%D1%83",
+    "local_file": "C:\\Users\\НР\\Desktop\\dmlsayt-site\\content\\pages\\istoriia-zakladu.md",
+    "status": "OK",
+    "problems": []
+  },
+  {
+    "slug": "ustanovchi-dokumenty",
+    "gs_path": "про-нас/установчі-документи",
+    "url": "https://sites.google.com/view/dmlsayt/%D0%BF%D1%80%D0%BE-%D0%BD%D0%B0%D1%81/%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D1%87%D1%96-%D0%B4%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%B8",
+    "local_file": "C:\\Users\\НР\\Desktop\\dmlsayt-site\\content\\pages\\ustanovchi-dokumenty.md",
+    "status": "OK",
+    "problems": []
+  },
+  {
+    "slug": "symvolika-litseiu",
+    "gs_path": "про-нас/символіка-ліцею",
+    "url": "https://sites.google.com/view/dmlsayt/%D0%BF%D1%80%D0%BE-%D0%BD%D0%B0%D1%81/%D1%81%D0%B8%D0%BC%D0%B2%D0%BE%D0%BB%D1%96%D0%BA%D0%B0-%D0%BB%D1%96%D1%86%D0%B5%D1%8E",
+    "local_file": "C:\\Users\\НР\\Desktop\\dmlsayt-site\\content\\pages\\symvolika-litseiu.md",
+    "status": "OK",
+    "problems": []
+  },
+  {
+    "slug": "rada-litseiu",
+    "gs_path": "про-нас/рада-ліцею",
+    "url": "https://sites.google.com/view/dmlsayt/%D0%BF%D1%80%D0%BE-%D0%BD%D0%B0%D1%81/%D1%80%D0%B0%D0%B4%D0%B0-%D0%BB%D1%96%D1%86%D0%B5%D1%8E",
+    "local_file": "C:\\Users\\НР\\Desktop\\dmlsayt-site\\content\\pages\\rada-litseiu.md",
+    "status": "OK",
+    "problems": []
+  },
+  {
+    "slug": "prozorist-ta-informatsiina-vidkrytist-zakladu",
+    "gs_path": "прозорість-та-інформаційна-відкритість-закладу",
+    "url": "https://sites.google.com/view/dmlsayt/%D0%BF%D1%80%D0%BE%D0%B7%D0%BE%D1%80%D1%96%D1%81%D1%82%D1%8C-%D1%82%D0%B0-%D1%96%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D1%96%D0%B9%D0%BD%D0%B0-%D0%B2%D1%96%D0%B4%D0%BA%D1%80%D0%B8%D1%82%D1%96%D1%81%D1%82%D1%8C-%D0%B7%D0%B0%D0%BA%D0%BB%D0%B0%D0%B4%D1%83",
+    "local_file": "C:\\Users\\НР\\Desktop\\dmlsayt-site\\content\\pages\\prozorist-ta-informatsiina-vidkrytist-zakladu.md",
+    "status": "OK",
+    "problems": []
+  },
+  {
+    "slug": "zvit-dyrektora-zso",
+    "gs_path": "прозорість-та-інформаційна-відкритість-закладу/звіт-директора-зсо",
+    "url": "https://sites.google.com/view/dmlsayt/%D0%BF%D1%80%D0%BE%D0%B7%D0%BE%D1%80%D1%96%D1%81%D1%82%D1%8C-%D1%82%D0%B0-%D1%96%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D1%96%D0%B9%D0%BD%D0%B0-%D0%B2%D1%96%D0%B4%D0%BA%D1%80%D0%B8%D1%82%D1%96%D1%81%D1%82%D1%8C-%D0%B7%D0%B0%D0%BA%D0%BB%D0%B0%D0%B4%D1%83/%D0%B7%D0%B2%D1%96%D1%82-%D0%B4%D0%B8%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%B0-%D0%B7%D1%81%D0%BE",
+    "local_file": "C:\\Users\\НР\\Desktop\\dmlsayt-site\\content\\pages\\zvit-dyrektora-zso.md",
+    "status": "OK",
+    "problems": []
+  },
+  {
+    "slug": "statut",
+    "gs_path": "прозорість-та-інформаційна-відкритість-закладу/статут",
+    "url": "https://sites.google.com/view/dmlsayt/%D0%BF%D1%80%D0%BE%D0%B7%D0%BE%D1%80%D1%96%D1%81%D1%82%D1%8C-%D1%82%D0%B0-%D1%96%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D1%96%D0%B9%D0%BD%D0%B0-%D0%B2%D1%96%D0%B4%D0%BA%D1%80%D0%B8%D1%82%D1%96%D1%81%D1%82%D1%8C-%D0%B7%D0%B0%D0%BA%D0%BB%D0%B0%D0%B4%D1%83/%D1%81%D1%82%D0%B0%D1%82%D1%83%D1%82",
+    "local_file": "C:\\Users\\НР\\Desktop\\dmlsayt-site\\content\\pages\\statut.md",
+    "status": "OK",
+    "problems": []
+  },
+  {
+    "slug": "litsenziia-na-provadzhennia-osvitnoi-diialnosti",
+    "gs_path": "прозорість-та-інформаційна-відкритість-закладу/ліцензія-на-провадження-освітньої-діяльності",
+    "url": "https://sites.google.com/view/dmlsayt/%D0%BF%D1%80%D0%BE%D0%B7%D0%BE%D1%80%D1%96%D1%81%D1%82%D1%8C-%D1%82%D0%B0-%D1%96%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D1%96%D0%B9%D0%BD%D0%B0-%D0%B2%D1%96%D0%B4%D0%BA%D1%80%D0%B8%D1%82%D1%96%D1%81%D1%82%D1%8C-%D0%B7%D0%B0%D0%BA%D0%BB%D0%B0%D0%B4%D1%83/%D0%BB%D1%96%D1%86%D0%B5%D0%BD%D0%B7%D1%96%D1%8F-%D0%BD%D0%B0-%D0%BF%D1%80%D0%BE%D0%B2%D0%B0%D0%B4%D0%B6%D0%B5%D0%BD%D0%BD%D1%8F-%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%8C%D0%BE%D1%97-%D0%B4%D1%96%D1%8F%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D1%96",
+    "local_file": "C:\\Users\\НР\\Desktop\\dmlsayt-site\\content\\pages\\litsenziia-na-provadzhennia-osvitnoi-diialnosti.md",
+    "status": "OK",
+    "problems": []
+  },
+  {
+    "slug": "struktura-ta-orhany-upravlinnia",
+    "gs_path": "прозорість-та-інформаційна-відкритість-закладу/структура-та-органи-управління",
+    "url": "https://sites.google.com/view/dmlsayt/%D0%BF%D1%80%D0%BE%D0%B7%D0%BE%D1%80%D1%96%D1%81%D1%82%D1%8C-%D1%82%D0%B0-%D1%96%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D1%96%D0%B9%D0%BD%D0%B0-%D0%B2%D1%96%D0%B4%D0%BA%D1%80%D0%B8%D1%82%D1%96%D1%81%D1%82%D1%8C-%D0%B7%D0%B0%D0%BA%D0%BB%D0%B0%D0%B4%D1%83/%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D0%B0-%D1%82%D0%B0-%D0%BE%D1%80%D0%B3%D0%B0%D0%BD%D0%B8-%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D1%96%D0%BD%D0%BD%D1%8F",
+    "local_file": "C:\\Users\\НР\\Desktop\\dmlsayt-site\\content\\pages\\struktura-ta-orhany-upravlinnia.md",
+    "status": "OK",
+    "problems": []
+  },
+  {
+    "slug": "kadrovyi-sklad",
+    "gs_path": "прозорість-та-інформаційна-відкритість-закладу/кадровий-склад",
+    "url": "https://sites.google.com/view/dmlsayt/%D0%BF%D1%80%D0%BE%D0%B7%D0%BE%D1%80%D1%96%D1%81%D1%82%D1%8C-%D1%82%D0%B0-%D1%96%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D1%96%D0%B9%D0%BD%D0%B0-%D0%B2%D1%96%D0%B4%D0%BA%D1%80%D0%B8%D1%82%D1%96%D1%81%D1%82%D1%8C-%D0%B7%D0%B0%D0%BA%D0%BB%D0%B0%D0%B4%D1%83/%D0%BA%D0%B0%D0%B4%D1%80%D0%BE%D0%B2%D0%B8%D0%B9-%D1%81%D0%BA%D0%BB%D0%B0%D0%B4",
+    "local_file": "C:\\Users\\НР\\Desktop\\dmlsayt-site\\content\\pages\\kadrovyi-sklad.md",
+    "status": "OK",
+    "problems": []
+  },
+  {
+    "slug": "osvitni-prohramy",
+    "gs_path": "прозорість-та-інформаційна-відкритість-закладу/освітні-програми",
+    "url": "https://sites.google.com/view/dmlsayt/%D0%BF%D1%80%D0%BE%D0%B7%D0%BE%D1%80%D1%96%D1%81%D1%82%D1%8C-%D1%82%D0%B0-%D1%96%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D1%96%D0%B9%D0%BD%D0%B0-%D0%B2%D1%96%D0%B4%D0%BA%D1%80%D0%B8%D1%82%D1%96%D1%81%D1%82%D1%8C-%D0%B7%D0%B0%D0%BA%D0%BB%D0%B0%D0%B4%D1%83/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96-%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%B8",
+    "local_file": "C:\\Users\\НР\\Desktop\\dmlsayt-site\\content\\pages\\osvitni-prohramy.md",
+    "status": "OK",
+    "problems": []
+  },
+  {
+    "slug": "terytoriia-obsluhovuvannia-zakriplena-za-zakladom-osvity",
+    "gs_path": "прозорість-та-інформаційна-відкритість-закладу/територія-обслуговування-закріплена-за-закладом-освіти",
+    "url": "https://sites.google.com/view/dmlsayt/%D0%BF%D1%80%D0%BE%D0%B7%D0%BE%D1%80%D1%96%D1%81%D1%82%D1%8C-%D1%82%D0%B0-%D1%96%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D1%96%D0%B9%D0%BD%D0%B0-%D0%B2%D1%96%D0%B4%D0%BA%D1%80%D0%B8%D1%82%D1%96%D1%81%D1%82%D1%8C-%D0%B7%D0%B0%D0%BA%D0%BB%D0%B0%D0%B4%D1%83/%D1%82%D0%B5%D1%80%D0%B8%D1%82%D0%BE%D1%80%D1%96%D1%8F-%D0%BE%D0%B1%D1%81%D0%BB%D1%83%D0%B3%D0%BE%D0%B2%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F-%D0%B7%D0%B0%D0%BA%D1%80%D1%96%D0%BF%D0%BB%D0%B5%D0%BD%D0%B0-%D0%B7%D0%B0-%D0%B7%D0%B0%D0%BA%D0%BB%D0%B0%D0%B4%D0%BE%D0%BC-%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%B8",
+    "local_file": "C:\\Users\\НР\\Desktop\\dmlsayt-site\\content\\pages\\terytoriia-obsluhovuvannia-zakriplena-za-zakladom-osvity.md",
+    "status": "OK",
+    "problems": []
+  },
+  {
+    "slug": "litsenzovanyi-obsiah-ta-faktychna-kilkist-osib-iaki",
+    "gs_path": "прозорість-та-інформаційна-відкритість-закладу/ліцензований-обсяг-та-фактична-кількість-осіб-які-навчаються-в-ліцеї",
+    "url": "https://sites.google.com/view/dmlsayt/%D0%BF%D1%80%D0%BE%D0%B7%D0%BE%D1%80%D1%96%D1%81%D1%82%D1%8C-%D1%82%D0%B0-%D1%96%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D1%96%D0%B9%D0%BD%D0%B0-%D0%B2%D1%96%D0%B4%D0%BA%D1%80%D0%B8%D1%82%D1%96%D1%81%D1%82%D1%8C-%D0%B7%D0%B0%D0%BA%D0%BB%D0%B0%D0%B4%D1%83/%D0%BB%D1%96%D1%86%D0%B5%D0%BD%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B9-%D0%BE%D0%B1%D1%81%D1%8F%D0%B3-%D1%82%D0%B0-%D1%84%D0%B0%D0%BA%D1%82%D0%B8%D1%87%D0%BD%D0%B0-%D0%BA%D1%96%D0%BB%D1%8C%D0%BA%D1%96%D1%81%D1%82%D1%8C-%D0%BE%D1%81%D1%96%D0%B1-%D1%8F%D0%BA%D1%96-%D0%BD%D0%B0%D0%B2%D1%87%D0%B0%D1%8E%D1%82%D1%8C%D1%81%D1%8F-%D0%B2-%D0%BB%D1%96%D1%86%D0%B5%D1%97",
+    "local_file": "C:\\Users\\НР\\Desktop\\dmlsayt-site\\content\\pages\\litsenzovanyi-obsiah-ta-faktychna-kilkist-osib-iaki.md",
+    "status": "OK",
+    "problems": []
+  },
+  {
+    "slug": "materialno-tekhnichne-zabezpechennia",
+    "gs_path": "прозорість-та-інформаційна-відкритість-закладу/матеріально-технічне-забезпечення",
+    "url": "https://sites.google.com/view/dmlsayt/%D0%BF%D1%80%D0%BE%D0%B7%D0%BE%D1%80%D1%96%D1%81%D1%82%D1%8C-%D1%82%D0%B0-%D1%96%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D1%96%D0%B9%D0%BD%D0%B0-%D0%B2%D1%96%D0%B4%D0%BA%D1%80%D0%B8%D1%82%D1%96%D1%81%D1%82%D1%8C-%D0%B7%D0%B0%D0%BA%D0%BB%D0%B0%D0%B4%D1%83/%D0%BC%D0%B0%D1%82%D0%B5%D1%80%D1%96%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE-%D1%82%D0%B5%D1%85%D0%BD%D1%96%D1%87%D0%BD%D0%B5-%D0%B7%D0%B0%D0%B1%D0%B5%D0%B7%D0%BF%D0%B5%D1%87%D0%B5%D0%BD%D0%BD%D1%8F",
+    "local_file": "C:\\Users\\НР\\Desktop\\dmlsayt-site\\content\\pages\\materialno-tekhnichne-zabezpechennia.md",
+    "status": "OK",
+    "problems": []
+  },
+  {
+    "slug": "rezultaty-monitorynhu-iakosti-osvity",
+    "gs_path": "прозорість-та-інформаційна-відкритість-закладу/результати-моніторингу-якості-освіти",
+    "url": "https://sites.google.com/view/dmlsayt/%D0%BF%D1%80%D0%BE%D0%B7%D0%BE%D1%80%D1%96%D1%81%D1%82%D1%8C-%D1%82%D0%B0-%D1%96%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D1%96%D0%B9%D0%BD%D0%B0-%D0%B2%D1%96%D0%B4%D0%BA%D1%80%D0%B8%D1%82%D1%96%D1%81%D1%82%D1%8C-%D0%B7%D0%B0%D0%BA%D0%BB%D0%B0%D0%B4%D1%83/%D1%80%D0%B5%D0%B7%D1%83%D0%BB%D1%8C%D1%82%D0%B0%D1%82%D0%B8-%D0%BC%D0%BE%D0%BD%D1%96%D1%82%D0%BE%D1%80%D0%B8%D0%BD%D0%B3%D1%83-%D1%8F%D0%BA%D0%BE%D1%81%D1%82%D1%96-%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%B8",
+    "local_file": "C:\\Users\\НР\\Desktop\\dmlsayt-site\\content\\pages\\rezultaty-monitorynhu-iakosti-osvity.md",
+    "status": "OK",
+    "problems": []
+  },
+  {
+    "slug": "umovy-dostupnosti-zakladu-osvity-dlia-navchannia-osib",
+    "gs_path": "прозорість-та-інформаційна-відкритість-закладу/умови-доступності-закладу-освіти-для-навчання-осіб-з-ооп",
+    "url": "https://sites.google.com/view/dmlsayt/%D0%BF%D1%80%D0%BE%D0%B7%D0%BE%D1%80%D1%96%D1%81%D1%82%D1%8C-%D1%82%D0%B0-%D1%96%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D1%96%D0%B9%D0%BD%D0%B0-%D0%B2%D1%96%D0%B4%D0%BA%D1%80%D0%B8%D1%82%D1%96%D1%81%D1%82%D1%8C-%D0%B7%D0%B0%D0%BA%D0%BB%D0%B0%D0%B4%D1%83/%D1%83%D0%BC%D0%BE%D0%B2%D0%B8-%D0%B4%D0%BE%D1%81%D1%82%D1%83%D0%BF%D0%BD%D0%BE%D1%81%D1%82%D1%96-%D0%B7%D0%B0%D0%BA%D0%BB%D0%B0%D0%B4%D1%83-%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%B8-%D0%B4%D0%BB%D1%8F-%D0%BD%D0%B0%D0%B2%D1%87%D0%B0%D0%BD%D0%BD%D1%8F-%D0%BE%D1%81%D1%96%D0%B1-%D0%B7-%D0%BE%D0%BE%D0%BF",
+    "local_file": "C:\\Users\\НР\\Desktop\\dmlsayt-site\\content\\pages\\umovy-dostupnosti-zakladu-osvity-dlia-navchannia-osib.md",
+    "status": "OK",
+    "problems": []
+  },
+  {
+    "slug": "richnyi-zvit-pro-diialnist-zakladu-osvity",
+    "gs_path": "прозорість-та-інформаційна-відкритість-закладу/річний-звіт-про-діяльність-закладу-освіти",
+    "url": "https://sites.google.com/view/dmlsayt/%D0%BF%D1%80%D0%BE%D0%B7%D0%BE%D1%80%D1%96%D1%81%D1%82%D1%8C-%D1%82%D0%B0-%D1%96%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D1%96%D0%B9%D0%BD%D0%B0-%D0%B2%D1%96%D0%B4%D0%BA%D1%80%D0%B8%D1%82%D1%96%D1%81%D1%82%D1%8C-%D0%B7%D0%B0%D0%BA%D0%BB%D0%B0%D0%B4%D1%83/%D1%80%D1%96%D1%87%D0%BD%D0%B8%D0%B9-%D0%B7%D0%B2%D1%96%D1%82-%D0%BF%D1%80%D0%BE-%D0%B4%D1%96%D1%8F%D0%BB%D1%8C%D0%BD%D1%96%D1%81%D1%82%D1%8C-%D0%B7%D0%B0%D0%BA%D0%BB%D0%B0%D0%B4%D1%83-%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%B8",
+    "local_file": "C:\\Users\\НР\\Desktop\\dmlsayt-site\\content\\pages\\richnyi-zvit-pro-diialnist-zakladu-osvity.md",
+    "status": "OK",
+    "problems": []
+  },
+  {
+    "slug": "zarakhuvannia-pershoklasnykiv",
+    "gs_path": "прозорість-та-інформаційна-відкритість-закладу/зарахування-першокласників",
+    "url": "https://sites.google.com/view/dmlsayt/%D0%BF%D1%80%D0%BE%D0%B7%D0%BE%D1%80%D1%96%D1%81%D1%82%D1%8C-%D1%82%D0%B0-%D1%96%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D1%96%D0%B9%D0%BD%D0%B0-%D0%B2%D1%96%D0%B4%D0%BA%D1%80%D0%B8%D1%82%D1%96%D1%81%D1%82%D1%8C-%D0%B7%D0%B0%D0%BA%D0%BB%D0%B0%D0%B4%D1%83/%D0%B7%D0%B0%D1%80%D0%B0%D1%85%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F-%D0%BF%D0%B5%D1%80%D1%88%D0%BE%D0%BA%D0%BB%D0%B0%D1%81%D0%BD%D0%B8%D0%BA%D1%96%D0%B2",
+    "local_file": "C:\\Users\\НР\\Desktop\\dmlsayt-site\\content\\pages\\zarakhuvannia-pershoklasnykiv.md",
+    "status": "PROBLEMS",
+    "problems": [
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%BF%D1%80%D0%BE%D0%B7%D0%BE%D1%80%D1%96%D1%81%D1%82%D1%8C-%D1%82%D0%B0-%D1%96%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D1%96%D0%B9%D0%BD%D0%B0-%D0%B2%D1%96%D0%B4%D0%BA%D1%80%D0%B8%D1%82%D1%96%D1%81%D1%82%D1%8C-%D0%B7%D0%B0%D0%BA%D0%BB%D0%B0%D0%B4%D1%83/%D0%B7%D0%B0%D1%80%D0%B0%D1%85%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F-%D0%BF%D0%B5%D1%80%D1%88%D0%BE%D0%BA%D0%BB%D0%B0%D1%81%D0%BD%D0%B8%D0%BA%D1%96%D0%B2#h.b41anybk66aq",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%BF%D1%80%D0%BE%D0%B7%D0%BE%D1%80%D1%96%D1%81%D1%82%D1%8C-%D1%82%D0%B0-%D1%96%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D1%96%D0%B9%D0%BD%D0%B0-%D0%B2%D1%96%D0%B4%D0%BA%D1%80%D0%B8%D1%82%D1%96%D1%81%D1%82%D1%8C-%D0%B7%D0%B0%D0%BA%D0%BB%D0%B0%D0%B4%D1%83/%D0%B7%D0%B0%D1%80%D0%B0%D1%85%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F-%D0%BF%D0%B5%D1%80%D1%88%D0%BE%D0%BA%D0%BB%D0%B0%D1%81%D0%BD%D0%B8%D0%BA%D1%96%D0%B2#h.b41anybk66aq",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%BF%D1%80%D0%BE%D0%B7%D0%BE%D1%80%D1%96%D1%81%D1%82%D1%8C-%D1%82%D0%B0-%D1%96%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D1%96%D0%B9%D0%BD%D0%B0-%D0%B2%D1%96%D0%B4%D0%BA%D1%80%D0%B8%D1%82%D1%96%D1%81%D1%82%D1%8C-%D0%B7%D0%B0%D0%BA%D0%BB%D0%B0%D0%B4%D1%83/%D0%B7%D0%B0%D1%80%D0%B0%D1%85%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F-%D0%BF%D0%B5%D1%80%D1%88%D0%BE%D0%BA%D0%BB%D0%B0%D1%81%D0%BD%D0%B8%D0%BA%D1%96%D0%B2#h.b41anybk66aq)",
+        "confidence": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "slug": "pravyla-dostupu-i-perebuvannia-uchasnykiv-osvitnoho",
+    "gs_path": "прозорість-та-інформаційна-відкритість-закладу/правила-доступу-і-перебування-учасників-освітнього-процесу-та-інших-осіб",
+    "url": "https://sites.google.com/view/dmlsayt/%D0%BF%D1%80%D0%BE%D0%B7%D0%BE%D1%80%D1%96%D1%81%D1%82%D1%8C-%D1%82%D0%B0-%D1%96%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D1%96%D0%B9%D0%BD%D0%B0-%D0%B2%D1%96%D0%B4%D0%BA%D1%80%D0%B8%D1%82%D1%96%D1%81%D1%82%D1%8C-%D0%B7%D0%B0%D0%BA%D0%BB%D0%B0%D0%B4%D1%83/%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D0%B0-%D0%B4%D0%BE%D1%81%D1%82%D1%83%D0%BF%D1%83-%D1%96-%D0%BF%D0%B5%D1%80%D0%B5%D0%B1%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F-%D1%83%D1%87%D0%B0%D1%81%D0%BD%D0%B8%D0%BA%D1%96%D0%B2-%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%8C%D0%BE%D0%B3%D0%BE-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%83-%D1%82%D0%B0-%D1%96%D0%BD%D1%88%D0%B8%D1%85-%D0%BE%D1%81%D1%96%D0%B1",
+    "local_file": "C:\\Users\\НР\\Desktop\\dmlsayt-site\\content\\pages\\pravyla-dostupu-i-perebuvannia-uchasnykiv-osvitnoho.md",
+    "status": "OK",
+    "problems": []
+  },
+  {
+    "slug": "samootsiniuvannia-zakladu-osvity",
+    "gs_path": "прозорість-та-інформаційна-відкритість-закладу/самооцінювання-закладу-освіти",
+    "url": "https://sites.google.com/view/dmlsayt/%D0%BF%D1%80%D0%BE%D0%B7%D0%BE%D1%80%D1%96%D1%81%D1%82%D1%8C-%D1%82%D0%B0-%D1%96%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D1%96%D0%B9%D0%BD%D0%B0-%D0%B2%D1%96%D0%B4%D0%BA%D1%80%D0%B8%D1%82%D1%96%D1%81%D1%82%D1%8C-%D0%B7%D0%B0%D0%BA%D0%BB%D0%B0%D0%B4%D1%83/%D1%81%D0%B0%D0%BC%D0%BE%D0%BE%D1%86%D1%96%D0%BD%D1%8E%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F-%D0%B7%D0%B0%D0%BA%D0%BB%D0%B0%D0%B4%D1%83-%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%B8",
+    "local_file": "C:\\Users\\НР\\Desktop\\dmlsayt-site\\content\\pages\\samootsiniuvannia-zakladu-osvity.md",
+    "status": "OK",
+    "problems": []
+  },
+  {
+    "slug": "finansova-diialnist",
+    "gs_path": "фінансова-діяльність",
+    "url": "https://sites.google.com/view/dmlsayt/%D1%84%D1%96%D0%BD%D0%B0%D0%BD%D1%81%D0%BE%D0%B2%D0%B0-%D0%B4%D1%96%D1%8F%D0%BB%D1%8C%D0%BD%D1%96%D1%81%D1%82%D1%8C",
+    "local_file": "C:\\Users\\НР\\Desktop\\dmlsayt-site\\content\\pages\\finansova-diialnist.md",
+    "status": "OK",
+    "problems": []
+  },
+  {
+    "slug": "zakupivli",
+    "gs_path": "закупівлі",
+    "url": "https://sites.google.com/view/dmlsayt/%D0%B7%D0%B0%D0%BA%D1%83%D0%BF%D1%96%D0%B2%D0%BB%D1%96",
+    "local_file": "C:\\Users\\НР\\Desktop\\dmlsayt-site\\content\\pages\\zakupivli.md",
+    "status": "OK",
+    "problems": []
+  },
+  {
+    "slug": "filii",
+    "gs_path": "філії",
+    "url": "https://sites.google.com/view/dmlsayt/%D1%84%D1%96%D0%BB%D1%96%D1%97",
+    "local_file": "C:\\Users\\НР\\Desktop\\dmlsayt-site\\content\\pages\\filii.md",
+    "status": "PROBLEMS",
+    "problems": [
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D1%84%D1%96%D0%BB%D1%96%D1%97#h.2z880erzx9nv",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D1%84%D1%96%D0%BB%D1%96%D1%97#h.2z880erzx9nv",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D1%84%D1%96%D0%BB%D1%96%D1%97#h.2z880erzx9nv)",
+        "confidence": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "slug": "osvitnii-protses",
+    "gs_path": "освітній-процес",
+    "url": "https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81",
+    "local_file": "C:\\Users\\НР\\Desktop\\dmlsayt-site\\content\\pages\\osvitnii-protses.md",
+    "status": "PROBLEMS",
+    "problems": [
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81#h.7q2gtl9zri0b",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81#h.7q2gtl9zri0b",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81#h.7q2gtl9zri0b)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81#h.sgv3hzgih9qs",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81#h.sgv3hzgih9qs",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81#h.sgv3hzgih9qs)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81#h.g7yxqt4tsev0",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81#h.g7yxqt4tsev0",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81#h.g7yxqt4tsev0)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81#h.mj6fd2gvl22",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81#h.mj6fd2gvl22",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81#h.mj6fd2gvl22)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81#h.is1xpxjcwwoz",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81#h.is1xpxjcwwoz",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81#h.is1xpxjcwwoz)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81#h.l268c2tp2lkp",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81#h.l268c2tp2lkp",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81#h.l268c2tp2lkp)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81#h.rf72qoqoych3",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81#h.rf72qoqoych3",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81#h.rf72qoqoych3)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81#h.f8ny12e784wh",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81#h.f8ny12e784wh",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81#h.f8ny12e784wh)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81#h.tegi64zdrful",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81#h.tegi64zdrful",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81#h.tegi64zdrful)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81#h.i4f7qjwvjgev",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81#h.i4f7qjwvjgev",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81#h.i4f7qjwvjgev)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81#h.b4dbfajwowh9",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81#h.b4dbfajwowh9",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81#h.b4dbfajwowh9)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81#h.7x8q0432c0jr",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81#h.7x8q0432c0jr",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81#h.7x8q0432c0jr)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81#h.4d7tb4jy1hv0",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81#h.4d7tb4jy1hv0",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81#h.4d7tb4jy1hv0)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81#h.zak3iwvcduth",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81#h.zak3iwvcduth",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81#h.zak3iwvcduth)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81#h.w598f02vbwqx",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81#h.w598f02vbwqx",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81#h.w598f02vbwqx)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81#h.7dixl6v3auqx",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81#h.7dixl6v3auqx",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81#h.7dixl6v3auqx)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81#h.bb4d4nwwqk47",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81#h.bb4d4nwwqk47",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81#h.bb4d4nwwqk47)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81#h.jnbpfgmfs2dg",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81#h.jnbpfgmfs2dg",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81#h.jnbpfgmfs2dg)",
+        "confidence": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "slug": "hurtkova-robota",
+    "gs_path": "освітній-процес/гурткова-робота",
+    "url": "https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81/%D0%B3%D1%83%D1%80%D1%82%D0%BA%D0%BE%D0%B2%D0%B0-%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0",
+    "local_file": "C:\\Users\\НР\\Desktop\\dmlsayt-site\\content\\pages\\hurtkova-robota.md",
+    "status": "PROBLEMS",
+    "problems": [
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81/%D0%B3%D1%83%D1%80%D1%82%D0%BA%D0%BE%D0%B2%D0%B0-%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0#h.b6p4vu91cd6q",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81/%D0%B3%D1%83%D1%80%D1%82%D0%BA%D0%BE%D0%B2%D0%B0-%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0#h.b6p4vu91cd6q",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81/%D0%B3%D1%83%D1%80%D1%82%D0%BA%D0%BE%D0%B2%D0%B0-%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0#h.b6p4vu91cd6q)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81/%D0%B3%D1%83%D1%80%D1%82%D0%BA%D0%BE%D0%B2%D0%B0-%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0#h.h559ous178c7",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81/%D0%B3%D1%83%D1%80%D1%82%D0%BA%D0%BE%D0%B2%D0%B0-%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0#h.h559ous178c7",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81/%D0%B3%D1%83%D1%80%D1%82%D0%BA%D0%BE%D0%B2%D0%B0-%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0#h.h559ous178c7)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81/%D0%B3%D1%83%D1%80%D1%82%D0%BA%D0%BE%D0%B2%D0%B0-%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0#h.wyfe1bknyckp",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81/%D0%B3%D1%83%D1%80%D1%82%D0%BA%D0%BE%D0%B2%D0%B0-%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0#h.wyfe1bknyckp",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81/%D0%B3%D1%83%D1%80%D1%82%D0%BA%D0%BE%D0%B2%D0%B0-%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0#h.wyfe1bknyckp)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81/%D0%B3%D1%83%D1%80%D1%82%D0%BA%D0%BE%D0%B2%D0%B0-%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0#h.c97haarcfx3o",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81/%D0%B3%D1%83%D1%80%D1%82%D0%BA%D0%BE%D0%B2%D0%B0-%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0#h.c97haarcfx3o",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81/%D0%B3%D1%83%D1%80%D1%82%D0%BA%D0%BE%D0%B2%D0%B0-%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0#h.c97haarcfx3o)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81/%D0%B3%D1%83%D1%80%D1%82%D0%BA%D0%BE%D0%B2%D0%B0-%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0#h.a7176z9yglim",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81/%D0%B3%D1%83%D1%80%D1%82%D0%BA%D0%BE%D0%B2%D0%B0-%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0#h.a7176z9yglim",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81/%D0%B3%D1%83%D1%80%D1%82%D0%BA%D0%BE%D0%B2%D0%B0-%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0#h.a7176z9yglim)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81/%D0%B3%D1%83%D1%80%D1%82%D0%BA%D0%BE%D0%B2%D0%B0-%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0#h.2c51b7cu3xqx",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81/%D0%B3%D1%83%D1%80%D1%82%D0%BA%D0%BE%D0%B2%D0%B0-%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0#h.2c51b7cu3xqx",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81/%D0%B3%D1%83%D1%80%D1%82%D0%BA%D0%BE%D0%B2%D0%B0-%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0#h.2c51b7cu3xqx)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81/%D0%B3%D1%83%D1%80%D1%82%D0%BA%D0%BE%D0%B2%D0%B0-%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0#h.89hisnpsxgfg",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81/%D0%B3%D1%83%D1%80%D1%82%D0%BA%D0%BE%D0%B2%D0%B0-%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0#h.89hisnpsxgfg",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81/%D0%B3%D1%83%D1%80%D1%82%D0%BA%D0%BE%D0%B2%D0%B0-%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0#h.89hisnpsxgfg)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81/%D0%B3%D1%83%D1%80%D1%82%D0%BA%D0%BE%D0%B2%D0%B0-%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0#h.q9wi0h27wk7i",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81/%D0%B3%D1%83%D1%80%D1%82%D0%BA%D0%BE%D0%B2%D0%B0-%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0#h.q9wi0h27wk7i",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81/%D0%B3%D1%83%D1%80%D1%82%D0%BA%D0%BE%D0%B2%D0%B0-%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0#h.q9wi0h27wk7i)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81/%D0%B3%D1%83%D1%80%D1%82%D0%BA%D0%BE%D0%B2%D0%B0-%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0#h.wpaz0owc4i4q",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81/%D0%B3%D1%83%D1%80%D1%82%D0%BA%D0%BE%D0%B2%D0%B0-%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0#h.wpaz0owc4i4q",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81/%D0%B3%D1%83%D1%80%D1%82%D0%BA%D0%BE%D0%B2%D0%B0-%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0#h.wpaz0owc4i4q)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81/%D0%B3%D1%83%D1%80%D1%82%D0%BA%D0%BE%D0%B2%D0%B0-%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0#h.4pnh2zdmv4xs",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81/%D0%B3%D1%83%D1%80%D1%82%D0%BA%D0%BE%D0%B2%D0%B0-%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0#h.4pnh2zdmv4xs",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81/%D0%B3%D1%83%D1%80%D1%82%D0%BA%D0%BE%D0%B2%D0%B0-%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0#h.4pnh2zdmv4xs)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81/%D0%B3%D1%83%D1%80%D1%82%D0%BA%D0%BE%D0%B2%D0%B0-%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0#h.oxuhaga2ffjq",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81/%D0%B3%D1%83%D1%80%D1%82%D0%BA%D0%BE%D0%B2%D0%B0-%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0#h.oxuhaga2ffjq",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81/%D0%B3%D1%83%D1%80%D1%82%D0%BA%D0%BE%D0%B2%D0%B0-%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0#h.oxuhaga2ffjq)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81/%D0%B3%D1%83%D1%80%D1%82%D0%BA%D0%BE%D0%B2%D0%B0-%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0#h.aqajwep5hfn4",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81/%D0%B3%D1%83%D1%80%D1%82%D0%BA%D0%BE%D0%B2%D0%B0-%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0#h.aqajwep5hfn4",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81/%D0%B3%D1%83%D1%80%D1%82%D0%BA%D0%BE%D0%B2%D0%B0-%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0#h.aqajwep5hfn4)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81/%D0%B3%D1%83%D1%80%D1%82%D0%BA%D0%BE%D0%B2%D0%B0-%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0#h.4makelf472nk",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81/%D0%B3%D1%83%D1%80%D1%82%D0%BA%D0%BE%D0%B2%D0%B0-%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0#h.4makelf472nk",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81/%D0%B3%D1%83%D1%80%D1%82%D0%BA%D0%BE%D0%B2%D0%B0-%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0#h.4makelf472nk)",
+        "confidence": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "slug": "hrupa-prodovzhenoho-dnia",
+    "gs_path": "освітній-процес/група-продовженого-дня",
+    "url": "https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81/%D0%B3%D1%80%D1%83%D0%BF%D0%B0-%D0%BF%D1%80%D0%BE%D0%B4%D0%BE%D0%B2%D0%B6%D0%B5%D0%BD%D0%BE%D0%B3%D0%BE-%D0%B4%D0%BD%D1%8F",
+    "local_file": "C:\\Users\\НР\\Desktop\\dmlsayt-site\\content\\pages\\hrupa-prodovzhenoho-dnia.md",
+    "status": "OK",
+    "problems": []
+  },
+  {
+    "slug": "inkliuzyvna-osvita",
+    "gs_path": "освітній-процес/інклюзивна-освіта",
+    "url": "https://sites.google.com/view/dmlsayt/%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%96%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81/%D1%96%D0%BD%D0%BA%D0%BB%D1%8E%D0%B7%D0%B8%D0%B2%D0%BD%D0%B0-%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%B0",
+    "local_file": "C:\\Users\\НР\\Desktop\\dmlsayt-site\\content\\pages\\inkliuzyvna-osvita.md",
+    "status": "OK",
+    "problems": []
+  },
+  {
+    "slug": "stop-bulinh",
+    "gs_path": "стоп-булінг",
+    "url": "https://sites.google.com/view/dmlsayt/%D1%81%D1%82%D0%BE%D0%BF-%D0%B1%D1%83%D0%BB%D1%96%D0%BD%D0%B3",
+    "local_file": "C:\\Users\\НР\\Desktop\\dmlsayt-site\\content\\pages\\stop-bulinh.md",
+    "status": "OK",
+    "problems": []
+  },
+  {
+    "slug": "metodychna-robota",
+    "gs_path": "методична-робота",
+    "url": "https://sites.google.com/view/dmlsayt/%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D0%B8%D1%87%D0%BD%D0%B0-%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0",
+    "local_file": "C:\\Users\\НР\\Desktop\\dmlsayt-site\\content\\pages\\metodychna-robota.md",
+    "status": "PROBLEMS",
+    "problems": [
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D0%B8%D1%87%D0%BD%D0%B0-%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0#h.dkiv4lz09ng3",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D0%B8%D1%87%D0%BD%D0%B0-%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0#h.dkiv4lz09ng3",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D0%B8%D1%87%D0%BD%D0%B0-%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0#h.dkiv4lz09ng3)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D0%B8%D1%87%D0%BD%D0%B0-%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0#h.qzsy9n5n1xis",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D0%B8%D1%87%D0%BD%D0%B0-%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0#h.qzsy9n5n1xis",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D0%B8%D1%87%D0%BD%D0%B0-%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0#h.qzsy9n5n1xis)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D0%B8%D1%87%D0%BD%D0%B0-%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0#h.fvmj6el04ww6",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D0%B8%D1%87%D0%BD%D0%B0-%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0#h.fvmj6el04ww6",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D0%B8%D1%87%D0%BD%D0%B0-%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0#h.fvmj6el04ww6)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D0%B8%D1%87%D0%BD%D0%B0-%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0#h.bjr6ykneo7ll",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D0%B8%D1%87%D0%BD%D0%B0-%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0#h.bjr6ykneo7ll",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D0%B8%D1%87%D0%BD%D0%B0-%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0#h.bjr6ykneo7ll)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D0%B8%D1%87%D0%BD%D0%B0-%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0#h.vcn4mnpp4fbu",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D0%B8%D1%87%D0%BD%D0%B0-%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0#h.vcn4mnpp4fbu",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D0%B8%D1%87%D0%BD%D0%B0-%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0#h.vcn4mnpp4fbu)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D0%B8%D1%87%D0%BD%D0%B0-%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0#h.xsab4dbc6mk7",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D0%B8%D1%87%D0%BD%D0%B0-%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0#h.xsab4dbc6mk7",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D0%B8%D1%87%D0%BD%D0%B0-%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0#h.xsab4dbc6mk7)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D0%B8%D1%87%D0%BD%D0%B0-%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0#h.aaoo5cpkq811",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D0%B8%D1%87%D0%BD%D0%B0-%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0#h.aaoo5cpkq811",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D0%B8%D1%87%D0%BD%D0%B0-%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0#h.aaoo5cpkq811)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D0%B8%D1%87%D0%BD%D0%B0-%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0#h.4x3qh68f3jst",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D0%B8%D1%87%D0%BD%D0%B0-%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0#h.4x3qh68f3jst",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D0%B8%D1%87%D0%BD%D0%B0-%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0#h.4x3qh68f3jst)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D0%B8%D1%87%D0%BD%D0%B0-%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0#h.eu5mpp416y7o",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D0%B8%D1%87%D0%BD%D0%B0-%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0#h.eu5mpp416y7o",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D0%B8%D1%87%D0%BD%D0%B0-%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0#h.eu5mpp416y7o)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D0%B8%D1%87%D0%BD%D0%B0-%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0#h.azzin0pg91tc",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D0%B8%D1%87%D0%BD%D0%B0-%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0#h.azzin0pg91tc",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D0%B8%D1%87%D0%BD%D0%B0-%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0#h.azzin0pg91tc)",
+        "confidence": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "slug": "atestatsiia",
+    "gs_path": "методична-робота/атестація",
+    "url": "https://sites.google.com/view/dmlsayt/%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D0%B8%D1%87%D0%BD%D0%B0-%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0/%D0%B0%D1%82%D0%B5%D1%81%D1%82%D0%B0%D1%86%D1%96%D1%8F",
+    "local_file": "C:\\Users\\НР\\Desktop\\dmlsayt-site\\content\\pages\\atestatsiia.md",
+    "status": "OK",
+    "problems": []
+  },
+  {
+    "slug": "blohy-vchyteliv",
+    "gs_path": "методична-робота/блоги-вчителів",
+    "url": "https://sites.google.com/view/dmlsayt/%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D0%B8%D1%87%D0%BD%D0%B0-%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0/%D0%B1%D0%BB%D0%BE%D0%B3%D0%B8-%D0%B2%D1%87%D0%B8%D1%82%D0%B5%D0%BB%D1%96%D0%B2",
+    "local_file": "C:\\Users\\НР\\Desktop\\dmlsayt-site\\content\\pages\\blohy-vchyteliv.md",
+    "status": "OK",
+    "problems": []
+  },
+  {
+    "slug": "sotsialno-psykholohichna-sluzhba",
+    "gs_path": "соціально-психологічна-служба",
+    "url": "https://sites.google.com/view/dmlsayt/%D1%81%D0%BE%D1%86%D1%96%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE-%D0%BF%D1%81%D0%B8%D1%85%D0%BE%D0%BB%D0%BE%D0%B3%D1%96%D1%87%D0%BD%D0%B0-%D1%81%D0%BB%D1%83%D0%B6%D0%B1%D0%B0",
+    "local_file": "C:\\Users\\НР\\Desktop\\dmlsayt-site\\content\\pages\\sotsialno-psykholohichna-sluzhba.md",
+    "status": "PROBLEMS",
+    "problems": [
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D1%81%D0%BE%D1%86%D1%96%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE-%D0%BF%D1%81%D0%B8%D1%85%D0%BE%D0%BB%D0%BE%D0%B3%D1%96%D1%87%D0%BD%D0%B0-%D1%81%D0%BB%D1%83%D0%B6%D0%B1%D0%B0#h.brtprkuq648p",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D1%81%D0%BE%D1%86%D1%96%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE-%D0%BF%D1%81%D0%B8%D1%85%D0%BE%D0%BB%D0%BE%D0%B3%D1%96%D1%87%D0%BD%D0%B0-%D1%81%D0%BB%D1%83%D0%B6%D0%B1%D0%B0#h.brtprkuq648p",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D1%81%D0%BE%D1%86%D1%96%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE-%D0%BF%D1%81%D0%B8%D1%85%D0%BE%D0%BB%D0%BE%D0%B3%D1%96%D1%87%D0%BD%D0%B0-%D1%81%D0%BB%D1%83%D0%B6%D0%B1%D0%B0#h.brtprkuq648p)",
+        "confidence": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "slug": "sotsialnyi-pedahoh",
+    "gs_path": "соціально-психологічна-служба/соціальний-педагог",
+    "url": "https://sites.google.com/view/dmlsayt/%D1%81%D0%BE%D1%86%D1%96%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE-%D0%BF%D1%81%D0%B8%D1%85%D0%BE%D0%BB%D0%BE%D0%B3%D1%96%D1%87%D0%BD%D0%B0-%D1%81%D0%BB%D1%83%D0%B6%D0%B1%D0%B0/%D1%81%D0%BE%D1%86%D1%96%D0%B0%D0%BB%D1%8C%D0%BD%D0%B8%D0%B9-%D0%BF%D0%B5%D0%B4%D0%B0%D0%B3%D0%BE%D0%B3",
+    "local_file": "C:\\Users\\НР\\Desktop\\dmlsayt-site\\content\\pages\\sotsialnyi-pedahoh.md",
+    "status": "PROBLEMS",
+    "problems": [
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D1%81%D0%BE%D1%86%D1%96%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE-%D0%BF%D1%81%D0%B8%D1%85%D0%BE%D0%BB%D0%BE%D0%B3%D1%96%D1%87%D0%BD%D0%B0-%D1%81%D0%BB%D1%83%D0%B6%D0%B1%D0%B0/%D1%81%D0%BE%D1%86%D1%96%D0%B0%D0%BB%D1%8C%D0%BD%D0%B8%D0%B9-%D0%BF%D0%B5%D0%B4%D0%B0%D0%B3%D0%BE%D0%B3#h.42e87atqeab7",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D1%81%D0%BE%D1%86%D1%96%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE-%D0%BF%D1%81%D0%B8%D1%85%D0%BE%D0%BB%D0%BE%D0%B3%D1%96%D1%87%D0%BD%D0%B0-%D1%81%D0%BB%D1%83%D0%B6%D0%B1%D0%B0/%D1%81%D0%BE%D1%86%D1%96%D0%B0%D0%BB%D1%8C%D0%BD%D0%B8%D0%B9-%D0%BF%D0%B5%D0%B4%D0%B0%D0%B3%D0%BE%D0%B3#h.42e87atqeab7",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D1%81%D0%BE%D1%86%D1%96%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE-%D0%BF%D1%81%D0%B8%D1%85%D0%BE%D0%BB%D0%BE%D0%B3%D1%96%D1%87%D0%BD%D0%B0-%D1%81%D0%BB%D1%83%D0%B6%D0%B1%D0%B0/%D1%81%D0%BE%D1%86%D1%96%D0%B0%D0%BB%D1%8C%D0%BD%D0%B8%D0%B9-%D0%BF%D0%B5%D0%B4%D0%B0%D0%B3%D0%BE%D0%B3#h.42e87atqeab7)",
+        "confidence": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "slug": "lohoped",
+    "gs_path": "соціально-психологічна-служба/логопед",
+    "url": "https://sites.google.com/view/dmlsayt/%D1%81%D0%BE%D1%86%D1%96%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE-%D0%BF%D1%81%D0%B8%D1%85%D0%BE%D0%BB%D0%BE%D0%B3%D1%96%D1%87%D0%BD%D0%B0-%D1%81%D0%BB%D1%83%D0%B6%D0%B1%D0%B0/%D0%BB%D0%BE%D0%B3%D0%BE%D0%BF%D0%B5%D0%B4",
+    "local_file": "C:\\Users\\НР\\Desktop\\dmlsayt-site\\content\\pages\\lohoped.md",
+    "status": "PROBLEMS",
+    "problems": [
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D1%81%D0%BE%D1%86%D1%96%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE-%D0%BF%D1%81%D0%B8%D1%85%D0%BE%D0%BB%D0%BE%D0%B3%D1%96%D1%87%D0%BD%D0%B0-%D1%81%D0%BB%D1%83%D0%B6%D0%B1%D0%B0/%D0%BB%D0%BE%D0%B3%D0%BE%D0%BF%D0%B5%D0%B4#h.7ri5i48popqu",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D1%81%D0%BE%D1%86%D1%96%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE-%D0%BF%D1%81%D0%B8%D1%85%D0%BE%D0%BB%D0%BE%D0%B3%D1%96%D1%87%D0%BD%D0%B0-%D1%81%D0%BB%D1%83%D0%B6%D0%B1%D0%B0/%D0%BB%D0%BE%D0%B3%D0%BE%D0%BF%D0%B5%D0%B4#h.7ri5i48popqu",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D1%81%D0%BE%D1%86%D1%96%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE-%D0%BF%D1%81%D0%B8%D1%85%D0%BE%D0%BB%D0%BE%D0%B3%D1%96%D1%87%D0%BD%D0%B0-%D1%81%D0%BB%D1%83%D0%B6%D0%B1%D0%B0/%D0%BB%D0%BE%D0%B3%D0%BE%D0%BF%D0%B5%D0%B4#h.7ri5i48popqu)",
+        "confidence": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "slug": "sluzhba-osvitnoi-bezpeky",
+    "gs_path": "соціально-психологічна-служба/служба-освітньої-безпеки",
+    "url": "https://sites.google.com/view/dmlsayt/%D1%81%D0%BE%D1%86%D1%96%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE-%D0%BF%D1%81%D0%B8%D1%85%D0%BE%D0%BB%D0%BE%D0%B3%D1%96%D1%87%D0%BD%D0%B0-%D1%81%D0%BB%D1%83%D0%B6%D0%B1%D0%B0/%D1%81%D0%BB%D1%83%D0%B6%D0%B1%D0%B0-%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%8C%D0%BE%D1%97-%D0%B1%D0%B5%D0%B7%D0%BF%D0%B5%D0%BA%D0%B8",
+    "local_file": "C:\\Users\\НР\\Desktop\\dmlsayt-site\\content\\pages\\sluzhba-osvitnoi-bezpeky.md",
+    "status": "OK",
+    "problems": []
+  },
+  {
+    "slug": "uchniam-ta-batkam",
+    "gs_path": "учням-та-батькам",
+    "url": "https://sites.google.com/view/dmlsayt/%D1%83%D1%87%D0%BD%D1%8F%D0%BC-%D1%82%D0%B0-%D0%B1%D0%B0%D1%82%D1%8C%D0%BA%D0%B0%D0%BC",
+    "local_file": "C:\\Users\\НР\\Desktop\\dmlsayt-site\\content\\pages\\uchniam-ta-batkam.md",
+    "status": "OK",
+    "problems": []
+  },
+  {
+    "slug": "pravyla-pryiomu-do-zzso",
+    "gs_path": "учням-та-батькам/правила-прийому-до-ззсо",
+    "url": "https://sites.google.com/view/dmlsayt/%D1%83%D1%87%D0%BD%D1%8F%D0%BC-%D1%82%D0%B0-%D0%B1%D0%B0%D1%82%D1%8C%D0%BA%D0%B0%D0%BC/%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D0%B0-%D0%BF%D1%80%D0%B8%D0%B9%D0%BE%D0%BC%D1%83-%D0%B4%D0%BE-%D0%B7%D0%B7%D1%81%D0%BE",
+    "local_file": "C:\\Users\\НР\\Desktop\\dmlsayt-site\\content\\pages\\pravyla-pryiomu-do-zzso.md",
+    "status": "PROBLEMS",
+    "problems": [
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D1%83%D1%87%D0%BD%D1%8F%D0%BC-%D1%82%D0%B0-%D0%B1%D0%B0%D1%82%D1%8C%D0%BA%D0%B0%D0%BC/%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D0%B0-%D0%BF%D1%80%D0%B8%D0%B9%D0%BE%D0%BC%D1%83-%D0%B4%D0%BE-%D0%B7%D0%B7%D1%81%D0%BE#h.e476nxanrxa",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D1%83%D1%87%D0%BD%D1%8F%D0%BC-%D1%82%D0%B0-%D0%B1%D0%B0%D1%82%D1%8C%D0%BA%D0%B0%D0%BC/%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D0%B0-%D0%BF%D1%80%D0%B8%D0%B9%D0%BE%D0%BC%D1%83-%D0%B4%D0%BE-%D0%B7%D0%B7%D1%81%D0%BE#h.e476nxanrxa",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D1%83%D1%87%D0%BD%D1%8F%D0%BC-%D1%82%D0%B0-%D0%B1%D0%B0%D1%82%D1%8C%D0%BA%D0%B0%D0%BC/%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D0%B0-%D0%BF%D1%80%D0%B8%D0%B9%D0%BE%D0%BC%D1%83-%D0%B4%D0%BE-%D0%B7%D0%B7%D1%81%D0%BE#h.e476nxanrxa)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D1%83%D1%87%D0%BD%D1%8F%D0%BC-%D1%82%D0%B0-%D0%B1%D0%B0%D1%82%D1%8C%D0%BA%D0%B0%D0%BC/%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D0%B0-%D0%BF%D1%80%D0%B8%D0%B9%D0%BE%D0%BC%D1%83-%D0%B4%D0%BE-%D0%B7%D0%B7%D1%81%D0%BE#h.g8rbj92dukrl",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D1%83%D1%87%D0%BD%D1%8F%D0%BC-%D1%82%D0%B0-%D0%B1%D0%B0%D1%82%D1%8C%D0%BA%D0%B0%D0%BC/%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D0%B0-%D0%BF%D1%80%D0%B8%D0%B9%D0%BE%D0%BC%D1%83-%D0%B4%D0%BE-%D0%B7%D0%B7%D1%81%D0%BE#h.g8rbj92dukrl",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D1%83%D1%87%D0%BD%D1%8F%D0%BC-%D1%82%D0%B0-%D0%B1%D0%B0%D1%82%D1%8C%D0%BA%D0%B0%D0%BC/%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D0%B0-%D0%BF%D1%80%D0%B8%D0%B9%D0%BE%D0%BC%D1%83-%D0%B4%D0%BE-%D0%B7%D0%B7%D1%81%D0%BE#h.g8rbj92dukrl)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D1%83%D1%87%D0%BD%D1%8F%D0%BC-%D1%82%D0%B0-%D0%B1%D0%B0%D1%82%D1%8C%D0%BA%D0%B0%D0%BC/%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D0%B0-%D0%BF%D1%80%D0%B8%D0%B9%D0%BE%D0%BC%D1%83-%D0%B4%D0%BE-%D0%B7%D0%B7%D1%81%D0%BE#h.dthvgja0p9qj",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D1%83%D1%87%D0%BD%D1%8F%D0%BC-%D1%82%D0%B0-%D0%B1%D0%B0%D1%82%D1%8C%D0%BA%D0%B0%D0%BC/%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D0%B0-%D0%BF%D1%80%D0%B8%D0%B9%D0%BE%D0%BC%D1%83-%D0%B4%D0%BE-%D0%B7%D0%B7%D1%81%D0%BE#h.dthvgja0p9qj",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D1%83%D1%87%D0%BD%D1%8F%D0%BC-%D1%82%D0%B0-%D0%B1%D0%B0%D1%82%D1%8C%D0%BA%D0%B0%D0%BC/%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D0%B0-%D0%BF%D1%80%D0%B8%D0%B9%D0%BE%D0%BC%D1%83-%D0%B4%D0%BE-%D0%B7%D0%B7%D1%81%D0%BE#h.dthvgja0p9qj)",
+        "confidence": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "slug": "pravyla-povedinky-zdobuvachiv-osvity-u-zakladi",
+    "gs_path": "учням-та-батькам/правила-поведінки-здобувачів-освіти-у-закладі",
+    "url": "https://sites.google.com/view/dmlsayt/%D1%83%D1%87%D0%BD%D1%8F%D0%BC-%D1%82%D0%B0-%D0%B1%D0%B0%D1%82%D1%8C%D0%BA%D0%B0%D0%BC/%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D0%B0-%D0%BF%D0%BE%D0%B2%D0%B5%D0%B4%D1%96%D0%BD%D0%BA%D0%B8-%D0%B7%D0%B4%D0%BE%D0%B1%D1%83%D0%B2%D0%B0%D1%87%D1%96%D0%B2-%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%B8-%D1%83-%D0%B7%D0%B0%D0%BA%D0%BB%D0%B0%D0%B4%D1%96",
+    "local_file": "C:\\Users\\НР\\Desktop\\dmlsayt-site\\content\\pages\\pravyla-povedinky-zdobuvachiv-osvity-u-zakladi.md",
+    "status": "OK",
+    "problems": []
+  },
+  {
+    "slug": "uchniam",
+    "gs_path": "учням-та-батькам/учням",
+    "url": "https://sites.google.com/view/dmlsayt/%D1%83%D1%87%D0%BD%D1%8F%D0%BC-%D1%82%D0%B0-%D0%B1%D0%B0%D1%82%D1%8C%D0%BA%D0%B0%D0%BC/%D1%83%D1%87%D0%BD%D1%8F%D0%BC",
+    "local_file": "C:\\Users\\НР\\Desktop\\dmlsayt-site\\content\\pages\\uchniam.md",
+    "status": "OK",
+    "problems": []
+  },
+  {
+    "slug": "kiberhihiiena",
+    "gs_path": "учням-та-батькам/учням/кібергігієна",
+    "url": "https://sites.google.com/view/dmlsayt/%D1%83%D1%87%D0%BD%D1%8F%D0%BC-%D1%82%D0%B0-%D0%B1%D0%B0%D1%82%D1%8C%D0%BA%D0%B0%D0%BC/%D1%83%D1%87%D0%BD%D1%8F%D0%BC/%D0%BA%D1%96%D0%B1%D0%B5%D1%80%D0%B3%D1%96%D0%B3%D1%96%D1%94%D0%BD%D0%B0",
+    "local_file": "C:\\Users\\НР\\Desktop\\dmlsayt-site\\content\\pages\\kiberhihiiena.md",
+    "status": "OK",
+    "problems": []
+  },
+  {
+    "slug": "zno-dpa-nmt",
+    "gs_path": "учням-та-батькам/учням/знодпанмт",
+    "url": "https://sites.google.com/view/dmlsayt/%D1%83%D1%87%D0%BD%D1%8F%D0%BC-%D1%82%D0%B0-%D0%B1%D0%B0%D1%82%D1%8C%D0%BA%D0%B0%D0%BC/%D1%83%D1%87%D0%BD%D1%8F%D0%BC/%D0%B7%D0%BD%D0%BE%D0%B4%D0%BF%D0%B0%D0%BD%D0%BC%D1%82",
+    "local_file": "C:\\Users\\НР\\Desktop\\dmlsayt-site\\content\\pages\\zno-dpa-nmt.md",
+    "status": "OK",
+    "problems": []
+  },
+  {
+    "slug": "batkivska-rada",
+    "gs_path": "учням-та-батькам/батьківська-рада",
+    "url": "https://sites.google.com/view/dmlsayt/%D1%83%D1%87%D0%BD%D1%8F%D0%BC-%D1%82%D0%B0-%D0%B1%D0%B0%D1%82%D1%8C%D0%BA%D0%B0%D0%BC/%D0%B1%D0%B0%D1%82%D1%8C%D0%BA%D1%96%D0%B2%D1%81%D1%8C%D0%BA%D0%B0-%D1%80%D0%B0%D0%B4%D0%B0",
+    "local_file": "C:\\Users\\НР\\Desktop\\dmlsayt-site\\content\\pages\\batkivska-rada.md",
+    "status": "OK",
+    "problems": []
+  },
+  {
+    "slug": "kharchuvannia",
+    "gs_path": "учням-та-батькам/харчування",
+    "url": "https://sites.google.com/view/dmlsayt/%D1%83%D1%87%D0%BD%D1%8F%D0%BC-%D1%82%D0%B0-%D0%B1%D0%B0%D1%82%D1%8C%D0%BA%D0%B0%D0%BC/%D1%85%D0%B0%D1%80%D1%87%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F",
+    "local_file": "C:\\Users\\НР\\Desktop\\dmlsayt-site\\content\\pages\\kharchuvannia.md",
+    "status": "OK",
+    "problems": []
+  },
+  {
+    "slug": "konkurs-superclass-tse-pro-nas",
+    "gs_path": "конкурс-superclass-це-про-нас",
+    "url": "https://sites.google.com/view/dmlsayt/%D0%BA%D0%BE%D0%BD%D0%BA%D1%83%D1%80%D1%81-superclass-%D1%86%D0%B5-%D0%BF%D1%80%D0%BE-%D0%BD%D0%B0%D1%81",
+    "local_file": "C:\\Users\\НР\\Desktop\\dmlsayt-site\\content\\pages\\konkurs-superclass-tse-pro-nas.md",
+    "status": "PROBLEMS",
+    "problems": [
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%BA%D0%BE%D0%BD%D0%BA%D1%83%D1%80%D1%81-superclass-%D1%86%D0%B5-%D0%BF%D1%80%D0%BE-%D0%BD%D0%B0%D1%81#h.43bu6klg8dtk",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%BA%D0%BE%D0%BD%D0%BA%D1%83%D1%80%D1%81-superclass-%D1%86%D0%B5-%D0%BF%D1%80%D0%BE-%D0%BD%D0%B0%D1%81#h.43bu6klg8dtk",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%BA%D0%BE%D0%BD%D0%BA%D1%83%D1%80%D1%81-superclass-%D1%86%D0%B5-%D0%BF%D1%80%D0%BE-%D0%BD%D0%B0%D1%81#h.43bu6klg8dtk)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%BA%D0%BE%D0%BD%D0%BA%D1%83%D1%80%D1%81-superclass-%D1%86%D0%B5-%D0%BF%D1%80%D0%BE-%D0%BD%D0%B0%D1%81#h.eeoafh48wgzk",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%BA%D0%BE%D0%BD%D0%BA%D1%83%D1%80%D1%81-superclass-%D1%86%D0%B5-%D0%BF%D1%80%D0%BE-%D0%BD%D0%B0%D1%81#h.eeoafh48wgzk",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%BA%D0%BE%D0%BD%D0%BA%D1%83%D1%80%D1%81-superclass-%D1%86%D0%B5-%D0%BF%D1%80%D0%BE-%D0%BD%D0%B0%D1%81#h.eeoafh48wgzk)",
+        "confidence": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "slug": "mizhnarodna-spivpratsia",
+    "gs_path": "міжнародна-співпраця",
+    "url": "https://sites.google.com/view/dmlsayt/%D0%BC%D1%96%D0%B6%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%B0-%D1%81%D0%BF%D1%96%D0%B2%D0%BF%D1%80%D0%B0%D1%86%D1%8F",
+    "local_file": "C:\\Users\\НР\\Desktop\\dmlsayt-site\\content\\pages\\mizhnarodna-spivpratsia.md",
+    "status": "OK",
+    "problems": []
+  },
+  {
+    "slug": "mova-osvitnoho-protsesu",
+    "gs_path": "мова-освітнього-процесу",
+    "url": "https://sites.google.com/view/dmlsayt/%D0%BC%D0%BE%D0%B2%D0%B0-%D0%BE%D1%81%D0%B2%D1%96%D1%82%D0%BD%D1%8C%D0%BE%D0%B3%D0%BE-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%83",
+    "local_file": "C:\\Users\\НР\\Desktop\\dmlsayt-site\\content\\pages\\mova-osvitnoho-protsesu.md",
+    "status": "OK",
+    "problems": []
+  },
+  {
+    "slug": "vakansii",
+    "gs_path": "вакансії",
+    "url": "https://sites.google.com/view/dmlsayt/%D0%B2%D0%B0%D0%BA%D0%B0%D0%BD%D1%81%D1%96%D1%97",
+    "local_file": "C:\\Users\\НР\\Desktop\\dmlsayt-site\\content\\pages\\vakansii.md",
+    "status": "OK",
+    "problems": []
+  },
+  {
+    "slug": "platni-posluhy",
+    "gs_path": "платні-послуги",
+    "url": "https://sites.google.com/view/dmlsayt/%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D1%96-%D0%BF%D0%BE%D1%81%D0%BB%D1%83%D0%B3%D0%B8",
+    "local_file": "C:\\Users\\НР\\Desktop\\dmlsayt-site\\content\\pages\\platni-posluhy.md",
+    "status": "PROBLEMS",
+    "problems": [
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D1%96-%D0%BF%D0%BE%D1%81%D0%BB%D1%83%D0%B3%D0%B8#h.joms9pvtie66",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D1%96-%D0%BF%D0%BE%D1%81%D0%BB%D1%83%D0%B3%D0%B8#h.joms9pvtie66",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D1%96-%D0%BF%D0%BE%D1%81%D0%BB%D1%83%D0%B3%D0%B8#h.joms9pvtie66)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D1%96-%D0%BF%D0%BE%D1%81%D0%BB%D1%83%D0%B3%D0%B8#h.7q5ds3tmc8hv",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D1%96-%D0%BF%D0%BE%D1%81%D0%BB%D1%83%D0%B3%D0%B8#h.7q5ds3tmc8hv",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D1%96-%D0%BF%D0%BE%D1%81%D0%BB%D1%83%D0%B3%D0%B8#h.7q5ds3tmc8hv)",
+        "confidence": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "slug": "pamiatka-dii-pid-chas-syhnalu-povitriana-tryvoha",
+    "gs_path": "памятка-дії-під-час-сигналу-повітряна-тривога",
+    "url": "https://sites.google.com/view/dmlsayt/%D0%BF%D0%B0%D0%BC%D1%8F%D1%82%D0%BA%D0%B0-%D0%B4%D1%96%D1%97-%D0%BF%D1%96%D0%B4-%D1%87%D0%B0%D1%81-%D1%81%D0%B8%D0%B3%D0%BD%D0%B0%D0%BB%D1%83-%D0%BF%D0%BE%D0%B2%D1%96%D1%82%D1%80%D1%8F%D0%BD%D0%B0-%D1%82%D1%80%D0%B8%D0%B2%D0%BE%D0%B3%D0%B0",
+    "local_file": "C:\\Users\\НР\\Desktop\\dmlsayt-site\\content\\pages\\pamiatka-dii-pid-chas-syhnalu-povitriana-tryvoha.md",
+    "status": "OK",
+    "problems": []
+  },
+  {
+    "slug": "arkhiv",
+    "gs_path": "архів",
+    "url": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2",
+    "local_file": "C:\\Users\\НР\\Desktop\\dmlsayt-site\\content\\pages\\arkhiv.md",
+    "status": "PROBLEMS",
+    "problems": [
+      {
+        "type": "LOST_CLICKABLE_IMAGE",
+        "problem": "Клікабельне зображення втратило посилання (стало звичайною картинкою або відсутнє)",
+        "old_value": "Зображення -> https://fb.watch/wLNW2Q2dD_/",
+        "current_value": "Зображення без посилання",
+        "safe_fix": "Огорнути зображення в посилання: [![зображення](uploads/...)(https://fb.watch/wLNW2Q2dD_/)]",
+        "confidence": "HIGH"
+      },
+      {
+        "type": "LOST_SOCIAL_LINKS",
+        "problem": "Клікабельне зображення втратило посилання (стало звичайною картинкою або відсутнє)",
+        "old_value": "Зображення -> https://www.facebook.com/100028136894908/videos/547320111455068/?locale=uk_UA",
+        "current_value": "Зображення без посилання",
+        "safe_fix": "Огорнути зображення в посилання: [![зображення](uploads/...)(https://www.facebook.com/100028136894908/videos/547320111455068/?locale=uk_UA)]",
+        "confidence": "HIGH"
+      },
+      {
+        "type": "LOST_CLICKABLE_IMAGE",
+        "problem": "Клікабельне зображення втратило посилання (стало звичайною картинкою або відсутнє)",
+        "old_value": "Зображення -> https://fb.watch/wLMg-apmuT/",
+        "current_value": "Зображення без посилання",
+        "safe_fix": "Огорнути зображення в посилання: [![зображення](uploads/...)(https://fb.watch/wLMg-apmuT/)]",
+        "confidence": "HIGH"
+      },
+      {
+        "type": "LOST_CLICKABLE_IMAGE",
+        "problem": "Клікабельне зображення втратило посилання (стало звичайною картинкою або відсутнє)",
+        "old_value": "Зображення -> https://fb.watch/wLLOqqI8-C/",
+        "current_value": "Зображення без посилання",
+        "safe_fix": "Огорнути зображення в посилання: [![зображення](uploads/...)(https://fb.watch/wLLOqqI8-C/)]",
+        "confidence": "HIGH"
+      },
+      {
+        "type": "LOST_CLICKABLE_IMAGE",
+        "problem": "Клікабельне зображення втратило посилання (стало звичайною картинкою або відсутнє)",
+        "old_value": "Зображення -> https://fb.watch/wLKmkWRpfs/",
+        "current_value": "Зображення без посилання",
+        "safe_fix": "Огорнути зображення в посилання: [![зображення](uploads/...)(https://fb.watch/wLKmkWRpfs/)]",
+        "confidence": "HIGH"
+      },
+      {
+        "type": "LOST_SOCIAL_LINKS",
+        "problem": "Клікабельне зображення втратило посилання (стало звичайною картинкою або відсутнє)",
+        "old_value": "Зображення -> https://www.facebook.com/100028136894908/videos/1058163145680316/",
+        "current_value": "Зображення без посилання",
+        "safe_fix": "Огорнути зображення в посилання: [![зображення](uploads/...)(https://www.facebook.com/100028136894908/videos/1058163145680316/)]",
+        "confidence": "HIGH"
+      },
+      {
+        "type": "LOST_SOCIAL_LINKS",
+        "problem": "Клікабельне зображення втратило посилання (стало звичайною картинкою або відсутнє)",
+        "old_value": "Зображення -> https://www.facebook.com/100008158270131/videos/352974321224872/",
+        "current_value": "Зображення без посилання",
+        "safe_fix": "Огорнути зображення в посилання: [![зображення](uploads/...)(https://www.facebook.com/100008158270131/videos/352974321224872/)]",
+        "confidence": "HIGH"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: Вітаємо з початком канікул!",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.vnlaleksf2b1",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Вітаємо з початком канікул!](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.vnlaleksf2b1)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: Різдво у Дмитрушківському ліцеї",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.g98j6t3qxq74",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Різдво у Дмитрушківському ліцеї](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.g98j6t3qxq74)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: 100 днів у школі",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.rsd2dtjis816",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[100 днів у школі](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.rsd2dtjis816)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: Зимова казка від \"Радості\"",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.fkdayvwxougu",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Зимова казка від \"Радості\"](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.fkdayvwxougu)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: 🫖 День чаю☕️",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.sj4rcurzmadc",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[🫖 День чаю☕️](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.sj4rcurzmadc)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: Уманська галактика",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.exf93dpk23u2",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Уманська галактика](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.exf93dpk23u2)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: Конкурс малюнків",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.cq3g6i2wi2il",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Конкурс малюнків](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.cq3g6i2wi2il)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: Права свої знай – та про правила й обов'язки не забувай",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.y6b4vjfvoz2c",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Права свої знай – та про правила й обов'язки не забувай](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.y6b4vjfvoz2c)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: АКТИВУЙ СВОЮ ШКОЛУ",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.k5kezmut4k5y",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[АКТИВУЙ СВОЮ ШКОЛУ](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.k5kezmut4k5y)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: Подарунки та розваги від Святого Миколая",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.982zh98u9ti0",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Подарунки та розваги від Святого Миколая](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.982zh98u9ti0)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: День волонтера у Дмитрушківському ліцеї",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.bu6psigtpu63",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[День волонтера у Дмитрушківському ліцеї](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.bu6psigtpu63)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: акція \"Подарунок для захисника!\"",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.lzq94f1qau5y",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[акція \"Подарунок для захисника!\"](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.lzq94f1qau5y)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: Зимовий адвент календар",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.f7nyn29x1izi",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Зимовий адвент календар](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.f7nyn29x1izi)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: #16 днів проти насилля",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.l2p01fw9cfx8",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[#16 днів проти насилля](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.l2p01fw9cfx8)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: #Всесвітній день боротьби зі СНІДом",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.nz0ofkmt6y0d",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[#Всесвітній день боротьби зі СНІДом](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.nz0ofkmt6y0d)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: Безпечні соціальні мережі",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.6tr717vzlmk8",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Безпечні соціальні мережі](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.6tr717vzlmk8)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: Змагання з волейболу дівчата 9 – 11 класи",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.vwnn9nxkqo9x",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Змагання з волейболу дівчата 9 – 11 класи](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.vwnn9nxkqo9x)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: Всеукраїнський флешмоб",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.fvwk30ri24mu",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Всеукраїнський флешмоб](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.fvwk30ri24mu)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: \"Лапка підтримки\"",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.2qmim5ls78lx",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[\"Лапка підтримки\"](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.2qmim5ls78lx)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: зібрання учасників літературного клубу \"Фізаліс\"",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.iqkqvb598sh1",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[зібрання учасників літературного клубу \"Фізаліс\"](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.iqkqvb598sh1)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: Калита хай ясно сяє, Україну прославляє!",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.i32uxwq1utoo",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Калита хай ясно сяє, Україну прославляє!](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.i32uxwq1utoo)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: Підсумки Всеукраїнської учнівської олімпіади з географії",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.hr077gn1orw8",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Підсумки Всеукраїнської учнівської олімпіади з географії](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.hr077gn1orw8)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: Запали свічку пам'яті",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.8b75dlgp6nx9",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Запали свічку пам'яті](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.8b75dlgp6nx9)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: Найкращий знавець\" законів , закономірностей географічного середовища",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.hw575izdx54d",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Найкращий знавець\" законів , закономірностей географічного середовища](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.hw575izdx54d)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: День гідності та свободи",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.yjqpbjeqpxl3",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[День гідності та свободи](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.yjqpbjeqpxl3)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: 1000 днів незламності України",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.dbew7xnsi2g1",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[1000 днів незламності України](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.dbew7xnsi2g1)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: 16 днів проти насильства",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.ft1nfpgtnuit",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[16 днів проти насильства](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.ft1nfpgtnuit)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: Тренінг-гра для першачків",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.ccmliinh3f5k",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Тренінг-гра для першачків](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.ccmliinh3f5k)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: Міжнародний день толерантності",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.8xyxqjc8971s",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Міжнародний день толерантності](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.8xyxqjc8971s)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: Всеукраїнська учнівська олімпіада з англійської мови",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.pb49abxmbmbp",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Всеукраїнська учнівська олімпіада з англійської мови](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.pb49abxmbmbp)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: Вітаємо нового президента ліцею",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.lm5mtid2w7uo",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Вітаємо нового президента ліцею](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.lm5mtid2w7uo)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: Інтелектуальний марафон",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.j9iuefq7ysxz",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Інтелектуальний марафон](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.j9iuefq7ysxz)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: Інтелектуальний марафон",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.of7cszue3ocq",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Інтелектуальний марафон](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.of7cszue3ocq)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: Долучайтесь до голосування!",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.yus2wchs122f",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Долучайтесь до голосування!](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.yus2wchs122f)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: День ментального здоров'я",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.cppgpqdkllzp",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[День ментального здоров'я](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.cppgpqdkllzp)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: Вдячність захисникам",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.1xauq6m03wyb",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Вдячність захисникам](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.1xauq6m03wyb)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: День учителя",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.ffp34cdutxko",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[День учителя](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.ffp34cdutxko)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: День захисники України",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.mzj07jn811x",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[День захисники України](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.mzj07jn811x)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: Фізаліс - книжковий клуб",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.mtsdhw20my5i",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Фізаліс - книжковий клуб](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.mtsdhw20my5i)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: Міжнародний день миру",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.q7yil1k8r0o7",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Міжнародний день миру](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.q7yil1k8r0o7)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: Психологічна адаптація",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.pms94e64khek",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Психологічна адаптація](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.pms94e64khek)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: Юні рятувальники-пожежники",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.mfibfz5x7fn8",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Юні рятувальники-пожежники](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.mfibfz5x7fn8)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: Тут формується нове покоління!",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.xp1u4heav4iq",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Тут формується нове покоління!](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.xp1u4heav4iq)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: Особливий подарунок",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.o15jphuvco5i",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Особливий подарунок](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.o15jphuvco5i)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: З Днем знань!",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.gnfargqzt035",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[З Днем знань!](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.gnfargqzt035)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: Вітаємо Ніну Іванівну з перемогою у конкурсі",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.5zv5jdus0dml",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Вітаємо Ніну Іванівну з перемогою у конкурсі](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.5zv5jdus0dml)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: Відкриття Алеї Пам'яті",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.uakej23dt9e6",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Відкриття Алеї Пам'яті](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.uakej23dt9e6)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: День вшанування пам'яті дітей",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.otcn2htmnhkp",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[День вшанування пам'яті дітей](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.otcn2htmnhkp)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: Перша допомога від Червоного Хреста",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.noo06ponk7wz",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Перша допомога від Червоного Хреста](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.noo06ponk7wz)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: Останній дзвінок 2024",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.64sdpt4mk9jp",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Останній дзвінок 2024](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.64sdpt4mk9jp)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: \"New festival of arts-2024\"",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.28m711g4iykm",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[\"New festival of arts-2024\"](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.28m711g4iykm)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: Як Дмитрушківський ліцей весну зустрічав",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.z0atkhhiyo2e",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Як Дмитрушківський ліцей весну зустрічав](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.z0atkhhiyo2e)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: День Космонавтики",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.thuz3uewwdov",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[День Космонавтики](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.thuz3uewwdov)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: Фестиваль дитячої та юнацької творчості TORONTO 2024",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.qej81ayleebo",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Фестиваль дитячої та юнацької творчості TORONTO 2024](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.qej81ayleebo)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: Навчання навичкам першої допомоги",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.4ff8o9qhd6we",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Навчання навичкам першої допомоги](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.4ff8o9qhd6we)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: Літературний хаб у дмитрушківському ліцеї",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.wflnucye6513",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Літературний хаб у дмитрушківському ліцеї](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.wflnucye6513)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: Міжнародний день щастя",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.6cqfuopq4rm",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Міжнародний день щастя](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.6cqfuopq4rm)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: Базові навички турботи про себе та інших",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.udtvh19kq0n",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Базові навички турботи про себе та інших](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.udtvh19kq0n)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: Меморандум про співпрацю з Ірпінським податковим університетом",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.lfgi8kdb6kr2",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Меморандум про співпрацю з Ірпінським податковим університетом](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.lfgi8kdb6kr2)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: «Змінотворці»",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.6inncnhg9j8l",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[«Змінотворці»](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.6inncnhg9j8l)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: Допомога від членів організації Vsi Razom - All together",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.vvuqeevfqgzx",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Допомога від членів організації Vsi Razom - All together](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.vvuqeevfqgzx)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: Шевченківські дні",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.v6yqr3ke92ny",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Шевченківські дні](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.v6yqr3ke92ny)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: Весняна толока",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.34n4gwjkzw1i",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Весняна толока](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.34n4gwjkzw1i)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: Збір Марка Стронга завершений!",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.mgg23a6somgc",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Збір Марка Стронга завершений!](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.mgg23a6somgc)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: Міс україночка Дмитрушківського ліцею 2024",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.ty6u6o6w6zfj",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Міс україночка Дмитрушківського ліцею 2024](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.ty6u6o6w6zfj)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: Буккросинг",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.ewnwexxerjfs",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Буккросинг](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.ewnwexxerjfs)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: Незламна українська жінка",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.nklyx5odmmo2",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Незламна українська жінка](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.nklyx5odmmo2)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: ІІ етап змагань з футзалу \"Пліч-о-пліч Всеукраїнські шкільні ліги\"",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.tnuoi31e3qeo",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[ІІ етап змагань з футзалу \"Пліч-о-пліч Всеукраїнські шкільні ліги\"](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.tnuoi31e3qeo)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: Працюємо. Навчаємо. Переможемо!",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.rd607kyzboem",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Працюємо. Навчаємо. Переможемо!](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.rd607kyzboem)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: День народження ліцею",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.xaxcjeea6rpd",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[День народження ліцею](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.xaxcjeea6rpd)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: Виставка гуртків «Народні ремесла України» та «Моделювання іграшок-сувенірів»",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.iuuakrrk9d1i",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Виставка гуртків «Народні ремесла України» та «Моделювання іграшок-сувенірів»](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.iuuakrrk9d1i)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: Шкільний урок волонтерства",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.cwil2i4r9ygo",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Шкільний урок волонтерства](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.cwil2i4r9ygo)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: Міжнародний день рідної мови",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.b2b7mtjqmw4s",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Міжнародний день рідної мови](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.b2b7mtjqmw4s)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: Памʼять Героїв Небесної Сотні",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.lnc5rlgtsbcb",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Памʼять Героїв Небесної Сотні](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.lnc5rlgtsbcb)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: Шлях до Перемоги",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.5gh3z0mwitz5",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Шлях до Перемоги](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.5gh3z0mwitz5)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: Міжнародний конкурс з інформатики \"Бебрас\"",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.bztro8ismy",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Міжнародний конкурс з інформатики \"Бебрас\"](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.bztro8ismy)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: День Державного герба України",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.utey4ka22ayp",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[День Державного герба України](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.utey4ka22ayp)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: День єднання",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.tw7l5sisjtvl",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[День єднання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.tw7l5sisjtvl)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: День Святого Валентина",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.r2swfqqsz841",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[День Святого Валентина](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.r2swfqqsz841)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: Яка ти козачка? Який ти козак?",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.vuuhqw34wj61",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Яка ти козачка? Який ти козак?](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.vuuhqw34wj61)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: Ризики мін та вибухонебезпечних предметів",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.lx27l31wdbh9",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Ризики мін та вибухонебезпечних предметів](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.lx27l31wdbh9)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: Тиждень безпечного інтернету",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.q4l8gt3dqwdz",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Тиждень безпечного інтернету](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.q4l8gt3dqwdz)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: Всесвітній день читання вголос",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.p46es2hqkol7",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Всесвітній день читання вголос](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.p46es2hqkol7)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: Сітка для наших захисників",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.8yenuge0dpcu",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Сітка для наших захисників](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.8yenuge0dpcu)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: 9 лютого - Всесвітній день піци",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.8ueeat5onurg",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[9 лютого - Всесвітній день піци](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.8ueeat5onurg)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: кібервійська поліції «BRAMA»",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.pdrixuc73kjt",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[кібервійська поліції «BRAMA»](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.pdrixuc73kjt)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: День пам'яті героїв крут",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.g9lrwoi8dmtu",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[День пам'яті героїв крут](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.g9lrwoi8dmtu)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: День пам'яті жертв голокосту",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.cbrjw2ee1dq1",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[День пам'яті жертв голокосту](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.cbrjw2ee1dq1)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: Пиріжки з теплом дому",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.7anhsiskqc2f",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Пиріжки з теплом дому](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.7anhsiskqc2f)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: Вправні \"павучки\"",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.lbncvddocnhl",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Вправні \"павучки\"](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.lbncvddocnhl)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: ІІІ місце у ІІІ етапі Всеукраїнської учнівської олімпіади з історії",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.jta209kxky2h",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[ІІІ місце у ІІІ етапі Всеукраїнської учнівської олімпіади з історії](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.jta209kxky2h)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: Проєкт \"Пліч-о-пліч\"",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.kgkkfl4v7fcr",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Проєкт \"Пліч-о-пліч\"](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.kgkkfl4v7fcr)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: Єднаймося! Наша єдність - наша зброя",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.o31sx6m1yyd",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Єднаймося! Наша єдність - наша зброя](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.o31sx6m1yyd)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: Канікули з користю",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.uyj0mw8a8jxr",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Канікули з користю](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.uyj0mw8a8jxr)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: ІІІ етап Всеукраїнської учнівської олімпіади з історії",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.2wf675mjez0c",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[ІІІ етап Всеукраїнської учнівської олімпіади з історії](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.2wf675mjez0c)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: Для учнів Дмитрушківського ліцею було придбано 10 ноутбуків",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.ukc011wzhfjq",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Для учнів Дмитрушківського ліцею було придбано 10 ноутбуків](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.ukc011wzhfjq)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.vnlaleksf2b1",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.vnlaleksf2b1",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.vnlaleksf2b1)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.g98j6t3qxq74",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.g98j6t3qxq74",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.g98j6t3qxq74)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.rsd2dtjis816",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.rsd2dtjis816",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.rsd2dtjis816)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.fkdayvwxougu",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.fkdayvwxougu",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.fkdayvwxougu)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.sj4rcurzmadc",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.sj4rcurzmadc",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.sj4rcurzmadc)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.exf93dpk23u2",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.exf93dpk23u2",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.exf93dpk23u2)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.cq3g6i2wi2il",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.cq3g6i2wi2il",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.cq3g6i2wi2il)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.y6b4vjfvoz2c",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.y6b4vjfvoz2c",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.y6b4vjfvoz2c)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.k5kezmut4k5y",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.k5kezmut4k5y",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.k5kezmut4k5y)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.982zh98u9ti0",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.982zh98u9ti0",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.982zh98u9ti0)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.bu6psigtpu63",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.bu6psigtpu63",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.bu6psigtpu63)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.lzq94f1qau5y",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.lzq94f1qau5y",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.lzq94f1qau5y)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.f7nyn29x1izi",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.f7nyn29x1izi",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.f7nyn29x1izi)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.l2p01fw9cfx8",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.l2p01fw9cfx8",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.l2p01fw9cfx8)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.nz0ofkmt6y0d",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.nz0ofkmt6y0d",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.nz0ofkmt6y0d)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.6tr717vzlmk8",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.6tr717vzlmk8",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.6tr717vzlmk8)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.vwnn9nxkqo9x",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.vwnn9nxkqo9x",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.vwnn9nxkqo9x)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.fvwk30ri24mu",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.fvwk30ri24mu",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.fvwk30ri24mu)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.2qmim5ls78lx",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.2qmim5ls78lx",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.2qmim5ls78lx)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.iqkqvb598sh1",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.iqkqvb598sh1",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.iqkqvb598sh1)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.i32uxwq1utoo",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.i32uxwq1utoo",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.i32uxwq1utoo)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.hr077gn1orw8",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.hr077gn1orw8",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.hr077gn1orw8)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.8b75dlgp6nx9",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.8b75dlgp6nx9",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.8b75dlgp6nx9)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.hw575izdx54d",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.hw575izdx54d",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.hw575izdx54d)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.yjqpbjeqpxl3",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.yjqpbjeqpxl3",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.yjqpbjeqpxl3)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.dbew7xnsi2g1",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.dbew7xnsi2g1",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.dbew7xnsi2g1)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.ft1nfpgtnuit",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.ft1nfpgtnuit",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.ft1nfpgtnuit)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.ccmliinh3f5k",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.ccmliinh3f5k",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.ccmliinh3f5k)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.8xyxqjc8971s",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.8xyxqjc8971s",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.8xyxqjc8971s)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.pb49abxmbmbp",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.pb49abxmbmbp",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.pb49abxmbmbp)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.lm5mtid2w7uo",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.lm5mtid2w7uo",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.lm5mtid2w7uo)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.j9iuefq7ysxz",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.j9iuefq7ysxz",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.j9iuefq7ysxz)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.of7cszue3ocq",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.of7cszue3ocq",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.of7cszue3ocq)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.yus2wchs122f",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.yus2wchs122f",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.yus2wchs122f)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.cppgpqdkllzp",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.cppgpqdkllzp",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.cppgpqdkllzp)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.1xauq6m03wyb",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.1xauq6m03wyb",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.1xauq6m03wyb)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.ffp34cdutxko",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.ffp34cdutxko",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.ffp34cdutxko)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.mzj07jn811x",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.mzj07jn811x",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.mzj07jn811x)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.mtsdhw20my5i",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.mtsdhw20my5i",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.mtsdhw20my5i)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.q7yil1k8r0o7",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.q7yil1k8r0o7",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.q7yil1k8r0o7)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.pms94e64khek",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.pms94e64khek",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.pms94e64khek)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.mfibfz5x7fn8",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.mfibfz5x7fn8",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.mfibfz5x7fn8)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.xp1u4heav4iq",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.xp1u4heav4iq",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.xp1u4heav4iq)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.o15jphuvco5i",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.o15jphuvco5i",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.o15jphuvco5i)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.gnfargqzt035",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.gnfargqzt035",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.gnfargqzt035)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.5zv5jdus0dml",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.5zv5jdus0dml",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.5zv5jdus0dml)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.uakej23dt9e6",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.uakej23dt9e6",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.uakej23dt9e6)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.otcn2htmnhkp",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.otcn2htmnhkp",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.otcn2htmnhkp)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.noo06ponk7wz",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.noo06ponk7wz",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.noo06ponk7wz)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.64sdpt4mk9jp",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.64sdpt4mk9jp",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.64sdpt4mk9jp)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.28m711g4iykm",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.28m711g4iykm",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.28m711g4iykm)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.z0atkhhiyo2e",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.z0atkhhiyo2e",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.z0atkhhiyo2e)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.thuz3uewwdov",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.thuz3uewwdov",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.thuz3uewwdov)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.qej81ayleebo",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.qej81ayleebo",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.qej81ayleebo)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.4ff8o9qhd6we",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.4ff8o9qhd6we",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.4ff8o9qhd6we)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.wflnucye6513",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.wflnucye6513",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.wflnucye6513)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.6cqfuopq4rm",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.6cqfuopq4rm",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.6cqfuopq4rm)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.udtvh19kq0n",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.udtvh19kq0n",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.udtvh19kq0n)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.lfgi8kdb6kr2",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.lfgi8kdb6kr2",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.lfgi8kdb6kr2)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.6inncnhg9j8l",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.6inncnhg9j8l",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.6inncnhg9j8l)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.vvuqeevfqgzx",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.vvuqeevfqgzx",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.vvuqeevfqgzx)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.v6yqr3ke92ny",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.v6yqr3ke92ny",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.v6yqr3ke92ny)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.34n4gwjkzw1i",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.34n4gwjkzw1i",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.34n4gwjkzw1i)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.mgg23a6somgc",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.mgg23a6somgc",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.mgg23a6somgc)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.ty6u6o6w6zfj",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.ty6u6o6w6zfj",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.ty6u6o6w6zfj)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.ewnwexxerjfs",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.ewnwexxerjfs",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.ewnwexxerjfs)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.nklyx5odmmo2",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.nklyx5odmmo2",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.nklyx5odmmo2)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.tnuoi31e3qeo",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.tnuoi31e3qeo",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.tnuoi31e3qeo)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.rd607kyzboem",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.rd607kyzboem",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.rd607kyzboem)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.xaxcjeea6rpd",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.xaxcjeea6rpd",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.xaxcjeea6rpd)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.iuuakrrk9d1i",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.iuuakrrk9d1i",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.iuuakrrk9d1i)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.cwil2i4r9ygo",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.cwil2i4r9ygo",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.cwil2i4r9ygo)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.b2b7mtjqmw4s",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.b2b7mtjqmw4s",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.b2b7mtjqmw4s)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.lnc5rlgtsbcb",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.lnc5rlgtsbcb",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.lnc5rlgtsbcb)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.5gh3z0mwitz5",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.5gh3z0mwitz5",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.5gh3z0mwitz5)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.bztro8ismy",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.bztro8ismy",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.bztro8ismy)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.utey4ka22ayp",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.utey4ka22ayp",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.utey4ka22ayp)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.tw7l5sisjtvl",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.tw7l5sisjtvl",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.tw7l5sisjtvl)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.r2swfqqsz841",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.r2swfqqsz841",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.r2swfqqsz841)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.vuuhqw34wj61",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.vuuhqw34wj61",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.vuuhqw34wj61)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.lx27l31wdbh9",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.lx27l31wdbh9",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.lx27l31wdbh9)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.q4l8gt3dqwdz",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.q4l8gt3dqwdz",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.q4l8gt3dqwdz)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.p46es2hqkol7",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.p46es2hqkol7",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.p46es2hqkol7)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.8yenuge0dpcu",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.8yenuge0dpcu",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.8yenuge0dpcu)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.8ueeat5onurg",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.8ueeat5onurg",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.8ueeat5onurg)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.pdrixuc73kjt",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.pdrixuc73kjt",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.pdrixuc73kjt)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.g9lrwoi8dmtu",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.g9lrwoi8dmtu",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.g9lrwoi8dmtu)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.cbrjw2ee1dq1",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.cbrjw2ee1dq1",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.cbrjw2ee1dq1)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.7anhsiskqc2f",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.7anhsiskqc2f",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.7anhsiskqc2f)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.lbncvddocnhl",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.lbncvddocnhl",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.lbncvddocnhl)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.jta209kxky2h",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.jta209kxky2h",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.jta209kxky2h)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.kgkkfl4v7fcr",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.kgkkfl4v7fcr",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.kgkkfl4v7fcr)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.o31sx6m1yyd",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.o31sx6m1yyd",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.o31sx6m1yyd)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.uyj0mw8a8jxr",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.uyj0mw8a8jxr",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.uyj0mw8a8jxr)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.2wf675mjez0c",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.2wf675mjez0c",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.2wf675mjez0c)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "LOST_INTERNAL_LINKS",
+        "problem": "Втрачено текстове посилання: https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.ukc011wzhfjq",
+        "old_value": "https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.ukc011wzhfjq",
+        "current_value": "Відсутнє у тексті",
+        "safe_fix": "[Посилання](https://sites.google.com/view/dmlsayt/%D0%B0%D1%80%D1%85%D1%96%D0%B2#h.ukc011wzhfjq)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "type": "MISSING_IMAGES",
+        "problem": "Неповна кількість зображень: на старому 22, на новому 15",
+        "old_value": "22 зображень",
+        "current_value": "15 зображень",
+        "safe_fix": "Перевірити пропущені зображення (різниця: 7)",
+        "confidence": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "slug": "zvorotnii-zviazok",
+    "gs_path": "зворотній-звязок",
+    "url": "https://sites.google.com/view/dmlsayt/%D0%B7%D0%B2%D0%BE%D1%80%D0%BE%D1%82%D0%BD%D1%96%D0%B9-%D0%B7%D0%B2%D1%8F%D0%B7%D0%BE%D0%BA",
+    "local_file": "C:\\Users\\НР\\Desktop\\dmlsayt-site\\content\\pages\\zvorotnii-zviazok.md",
+    "status": "OK",
+    "problems": []
+  }
+]

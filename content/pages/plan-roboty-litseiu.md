@@ -1,115 +1,104 @@
-**Навчальний** **план на 2026 - 2027 н. р.**
+**Навчальний план на 2026 - 2027 н. р.**
 
-![](uploads/pages/plan-roboty-litseiu/image-1.png)
-
-<iframe src="https://drive.google.com/file/d/1u5oDbp_P0gtmoSyrZbpguEHOIxG_OIaW/preview" title="навчальний план (1).pdf"></iframe>
-
-[Завантажити файл: навчальний план (1).pdf](https://drive.google.com/uc?export=download&id=1u5oDbp_P0gtmoSyrZbpguEHOIxG_OIaW)
-
-Річний навчальний план
+<div class="doc-card single-doc">
+  <div class="doc-card-title">Річний навчальний план (навчальний план (1).pdf)</div>
+  <iframe src="https://drive.google.com/file/d/1u5oDbp_P0gtmoSyrZbpguEHOIxG_OIaW/preview" title="навчальний план (1).pdf" loading="lazy"></iframe>
+  <div class="doc-card-actions">
+    <a class="doc-btn preview-btn" href="https://drive.google.com/file/d/1u5oDbp_P0gtmoSyrZbpguEHOIxG_OIaW/preview" target="_blank" rel="noopener noreferrer">Переглянути документ ↗</a>
+    <a class="doc-btn download-btn" href="https://drive.google.com/uc?export=download&id=1u5oDbp_P0gtmoSyrZbpguEHOIxG_OIaW" target="_blank" rel="noopener noreferrer">Завантажити файл ↓</a>
+  </div>
+</div>
 
 **Виховний план на 2025 - 2026 н.р.**
 
-![](uploads/pages/plan-roboty-litseiu/image-2.png)
+<div class="doc-grid">
+  <div class="doc-card">
+    <div class="doc-card-title">Квітень 2026</div>
+    <iframe src="https://drive.google.com/file/d/1lxDK1SY1ZKwKd6dXW5-cGWiU2z08J57G/preview" title="План роботи квітень 2026.pdf" loading="lazy"></iframe>
+    <div class="doc-card-actions">
+      <a class="doc-btn preview-btn" href="https://drive.google.com/file/d/1lxDK1SY1ZKwKd6dXW5-cGWiU2z08J57G/preview" target="_blank" rel="noopener noreferrer">Переглянути документ ↗</a>
+      <a class="doc-btn download-btn" href="https://drive.google.com/uc?export=download&id=1lxDK1SY1ZKwKd6dXW5-cGWiU2z08J57G" target="_blank" rel="noopener noreferrer">Завантажити файл ↓</a>
+    </div>
+  </div>
 
-План роботи квітень 2026.pdf
+  <div class="doc-card">
+    <div class="doc-card-title">Травень 2026</div>
+    <iframe src="https://drive.google.com/file/d/1CI3z3CxtW3Fr6I5CCCG_0JEtnOg3qbdw/preview" title="Gallery_1777965709086.pdf" loading="lazy"></iframe>
+    <div class="doc-card-actions">
+      <a class="doc-btn preview-btn" href="https://drive.google.com/file/d/1CI3z3CxtW3Fr6I5CCCG_0JEtnOg3qbdw/preview" target="_blank" rel="noopener noreferrer">Переглянути документ ↗</a>
+      <a class="doc-btn download-btn" href="https://drive.google.com/uc?export=download&id=1CI3z3CxtW3Fr6I5CCCG_0JEtnOg3qbdw" target="_blank" rel="noopener noreferrer">Завантажити файл ↓</a>
+    </div>
+  </div>
 
-## Квітень 2026
+  <div class="doc-card">
+    <div class="doc-card-title">Грудень 2025</div>
+    <iframe src="https://drive.google.com/file/d/1xziFrqK2z2nioyrwrxVuMnbqtgwayaEs/preview" title="План роботи грудень 2025.pdf" loading="lazy"></iframe>
+    <div class="doc-card-actions">
+      <a class="doc-btn preview-btn" href="https://drive.google.com/file/d/1xziFrqK2z2nioyrwrxVuMnbqtgwayaEs/preview" target="_blank" rel="noopener noreferrer">Переглянути документ ↗</a>
+      <a class="doc-btn download-btn" href="https://drive.google.com/uc?export=download&id=1xziFrqK2z2nioyrwrxVuMnbqtgwayaEs" target="_blank" rel="noopener noreferrer">Завантажити файл ↓</a>
+    </div>
+  </div>
 
-![](uploads/pages/plan-roboty-litseiu/image-3.png)
+  <div class="doc-card">
+    <div class="doc-card-title">Січень 2026</div>
+    <iframe src="https://drive.google.com/file/d/19WWpPlaLlsFU0EvoTY4JD-cpVzZvaMaD/preview" title="План роботи січень 2026.pdf" loading="lazy"></iframe>
+    <div class="doc-card-actions">
+      <a class="doc-btn preview-btn" href="https://drive.google.com/file/d/19WWpPlaLlsFU0EvoTY4JD-cpVzZvaMaD/preview" target="_blank" rel="noopener noreferrer">Переглянути документ ↗</a>
+      <a class="doc-btn download-btn" href="https://drive.google.com/uc?export=download&id=19WWpPlaLlsFU0EvoTY4JD-cpVzZvaMaD" target="_blank" rel="noopener noreferrer">Завантажити файл ↓</a>
+    </div>
+  </div>
 
-<iframe src="https://drive.google.com/file/d/1CI3z3CxtW3Fr6I5CCCG_0JEtnOg3qbdw/preview" title="Gallery_1777965709086.pdf"></iframe>
+  <div class="doc-card">
+    <div class="doc-card-title">Лютий 2026</div>
+    <iframe src="https://drive.google.com/file/d/1YSDeZt-uFbtnD_0GOE6Jm3v19GceucV8/preview" title="План роботи лютий 2026.pdf" loading="lazy"></iframe>
+    <div class="doc-card-actions">
+      <a class="doc-btn preview-btn" href="https://drive.google.com/file/d/1YSDeZt-uFbtnD_0GOE6Jm3v19GceucV8/preview" target="_blank" rel="noopener noreferrer">Переглянути документ ↗</a>
+      <a class="doc-btn download-btn" href="https://drive.google.com/uc?export=download&id=1YSDeZt-uFbtnD_0GOE6Jm3v19GceucV8" target="_blank" rel="noopener noreferrer">Завантажити файл ↓</a>
+    </div>
+  </div>
 
-[Завантажити файл: Gallery_1777965709086.pdf](https://drive.google.com/uc?export=download&id=1CI3z3CxtW3Fr6I5CCCG_0JEtnOg3qbdw)
+  <div class="doc-card">
+    <div class="doc-card-title">Березень 2026</div>
+    <iframe src="https://drive.google.com/file/d/1crTrXPORrQFi86D8BL36-OcOzUt58A27/preview" title="План роботи березень 2026.pdf" loading="lazy"></iframe>
+    <div class="doc-card-actions">
+      <a class="doc-btn preview-btn" href="https://drive.google.com/file/d/1crTrXPORrQFi86D8BL36-OcOzUt58A27/preview" target="_blank" rel="noopener noreferrer">Переглянути документ ↗</a>
+      <a class="doc-btn download-btn" href="https://drive.google.com/uc?export=download&id=1crTrXPORrQFi86D8BL36-OcOzUt58A27" target="_blank" rel="noopener noreferrer">Завантажити файл ↓</a>
+    </div>
+  </div>
 
-## Травень 2026
+  <div class="doc-card">
+    <div class="doc-card-title">Вересень 2025</div>
+    <iframe src="https://drive.google.com/file/d/1dNJTjGzEW1HMFJRi9jswz7QyLKXac5De/preview" title="План роботи вересень 2025 р..docx" loading="lazy"></iframe>
+    <div class="doc-card-actions">
+      <a class="doc-btn preview-btn" href="https://drive.google.com/file/d/1dNJTjGzEW1HMFJRi9jswz7QyLKXac5De/preview" target="_blank" rel="noopener noreferrer">Переглянути документ ↗</a>
+      <a class="doc-btn download-btn" href="https://drive.google.com/uc?export=download&id=1dNJTjGzEW1HMFJRi9jswz7QyLKXac5De" target="_blank" rel="noopener noreferrer">Завантажити файл ↓</a>
+    </div>
+  </div>
 
-![](uploads/pages/plan-roboty-litseiu/image-4.png)
+  <div class="doc-card">
+    <div class="doc-card-title">Жовтень 2025</div>
+    <iframe src="https://drive.google.com/file/d/12kB3gDtR69aGJbIokj71plBJuM6-sMce/preview" title="План роботи жовтень 2025 р.docx" loading="lazy"></iframe>
+    <div class="doc-card-actions">
+      <a class="doc-btn preview-btn" href="https://drive.google.com/file/d/12kB3gDtR69aGJbIokj71plBJuM6-sMce/preview" target="_blank" rel="noopener noreferrer">Переглянути документ ↗</a>
+      <a class="doc-btn download-btn" href="https://drive.google.com/uc?export=download&id=12kB3gDtR69aGJbIokj71plBJuM6-sMce" target="_blank" rel="noopener noreferrer">Завантажити файл ↓</a>
+    </div>
+  </div>
 
-План роботи грудень 2025.pdf
+  <div class="doc-card">
+    <div class="doc-card-title">Листопад 2025</div>
+    <iframe src="https://drive.google.com/file/d/1TZ-eImsUglNzeVChwjuDCwAn9PY1Sg3g/preview" title="Виховний листопад 2024 (Автосохраненный).docx" loading="lazy"></iframe>
+    <div class="doc-card-actions">
+      <a class="doc-btn preview-btn" href="https://drive.google.com/file/d/1TZ-eImsUglNzeVChwjuDCwAn9PY1Sg3g/preview" target="_blank" rel="noopener noreferrer">Переглянути документ ↗</a>
+      <a class="doc-btn download-btn" href="https://drive.google.com/uc?export=download&id=1TZ-eImsUglNzeVChwjuDCwAn9PY1Sg3g" target="_blank" rel="noopener noreferrer">Завантажити файл ↓</a>
+    </div>
+  </div>
 
-## Грудень 2025
-
-![](uploads/pages/plan-roboty-litseiu/image-5.png)
-
-План роботи січень 2026.pdf
-
-## Січень 2026
-
-![](uploads/pages/plan-roboty-litseiu/image-6.png)
-
-План роботи лютий 2026.pdf
-
-## Лютий 2026
-
-![](uploads/pages/plan-roboty-litseiu/image-7.png)
-
-План роботи березень 2026.pdf
-
-## Березень 2026
-
-![](uploads/pages/plan-roboty-litseiu/image-8.png)
-
-<iframe src="https://drive.google.com/file/d/1dNJTjGzEW1HMFJRi9jswz7QyLKXac5De/preview" title="План роботи вересень 2025 р..docx"></iframe>
-
-[Завантажити файл: План роботи вересень 2025 р..docx](https://drive.google.com/uc?export=download&id=1dNJTjGzEW1HMFJRi9jswz7QyLKXac5De)
-
-## Вересень 2025
-
-![](uploads/pages/plan-roboty-litseiu/image-9.png)
-
-План роботи жовтень 2025 р.docx
-
-## Жовтень 2025
-
-![](uploads/pages/plan-roboty-litseiu/image-10.png)
-
-<iframe src="https://drive.google.com/file/d/1TZ-eImsUglNzeVChwjuDCwAn9PY1Sg3g/preview" title="Виховний листопад 20024 (Автосохраненный).docx"></iframe>
-
-[Завантажити файл: Виховний листопад 20024 (Автосохраненный).docx](https://drive.google.com/uc?export=download&id=1TZ-eImsUglNzeVChwjuDCwAn9PY1Sg3g)
-
-## Листопад 2025
-
-![](uploads/pages/plan-roboty-litseiu/image-11.png)
-
-<iframe src="https://drive.google.com/file/d/182JJu4PftK-2E-MVl62oHDnjrgij44ZJ/preview" title="План заходів 16 днів проти насильства 2025 р..pdf"></iframe>
-
-[Завантажити файл: План заходів 16 днів проти насильства 2025 р..pdf](https://drive.google.com/uc?export=download&id=182JJu4PftK-2E-MVl62oHDnjrgij44ZJ)
-
-## План заходів акції "16 днів проти насильства"
-
-### План роботи  квітень 2026.pdf
-
-<iframe src="https://drive.google.com/file/d/1lxDK1SY1ZKwKd6dXW5-cGWiU2z08J57G/preview" title="План роботи  квітень 2026.pdf"></iframe>
-
-[Завантажити файл: План роботи  квітень 2026.pdf](https://drive.google.com/uc?export=download&id=1lxDK1SY1ZKwKd6dXW5-cGWiU2z08J57G)
-
-### План роботи  грудень 2025.pdf
-
-<iframe src="https://drive.google.com/file/d/1xziFrqK2z2nioyrwrxVuMnbqtgwayaEs/preview" title="План роботи  грудень 2025.pdf"></iframe>
-
-[Завантажити файл: План роботи  грудень 2025.pdf](https://drive.google.com/uc?export=download&id=1xziFrqK2z2nioyrwrxVuMnbqtgwayaEs)
-
-### План роботи  січень 2026.pdf
-
-<iframe src="https://drive.google.com/file/d/19WWpPlaLlsFU0EvoTY4JD-cpVzZvaMaD/preview" title="План роботи  січень 2026.pdf"></iframe>
-
-[Завантажити файл: План роботи  січень 2026.pdf](https://drive.google.com/uc?export=download&id=19WWpPlaLlsFU0EvoTY4JD-cpVzZvaMaD)
-
-### План роботи лютий  2026.pdf
-
-<iframe src="https://drive.google.com/file/d/1YSDeZt-uFbtnD_0GOE6Jm3v19GceucV8/preview" title="План роботи лютий  2026.pdf"></iframe>
-
-[Завантажити файл: План роботи лютий  2026.pdf](https://drive.google.com/uc?export=download&id=1YSDeZt-uFbtnD_0GOE6Jm3v19GceucV8)
-
-### План роботи  березень 2026.pdf
-
-<iframe src="https://drive.google.com/file/d/1crTrXPORrQFi86D8BL36-OcOzUt58A27/preview" title="План роботи  березень 2026.pdf"></iframe>
-
-[Завантажити файл: План роботи  березень 2026.pdf](https://drive.google.com/uc?export=download&id=1crTrXPORrQFi86D8BL36-OcOzUt58A27)
-
-### План роботи  жовтень 2025 р.docx
-
-<iframe src="https://drive.google.com/file/d/12kB3gDtR69aGJbIokj71plBJuM6-sMce/preview" title="План роботи  жовтень 2025 р.docx"></iframe>
-
-[Завантажити файл: План роботи  жовтень 2025 р.docx](https://drive.google.com/uc?export=download&id=12kB3gDtR69aGJbIokj71plBJuM6-sMce)
+  <div class="doc-card">
+    <div class="doc-card-title">План заходів акції "16 днів проти насильства"</div>
+    <iframe src="https://drive.google.com/file/d/182JJu4PftK-2E-MVl62oHDnjrgij44ZJ/preview" title="План заходів 16 днів проти насильства 2025 р..pdf" loading="lazy"></iframe>
+    <div class="doc-card-actions">
+      <a class="doc-btn preview-btn" href="https://drive.google.com/file/d/182JJu4PftK-2E-MVl62oHDnjrgij44ZJ/preview" target="_blank" rel="noopener noreferrer">Переглянути документ ↗</a>
+      <a class="doc-btn download-btn" href="https://drive.google.com/uc?export=download&id=182JJu4PftK-2E-MVl62oHDnjrgij44ZJ" target="_blank" rel="noopener noreferrer">Завантажити файл ↓</a>
+    </div>
+  </div>
+</div>

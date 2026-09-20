@@ -27,10 +27,14 @@
     var repoIn = h('input', { type: 'text', id: 'repo', value: saved, placeholder: 'ваш-логін/назва-репозиторію', autocomplete: 'off' });
     var branchIn = h('input', { type: 'text', id: 'branch', value: sGet(localStorage, 'dm_branch') || '', placeholder: 'авто' });
     var tokenIn = h('input', { type: 'password', id: 'token', autocomplete: 'off', placeholder: 'github_pat_…' });
-    var remember = h('input', { type: 'checkbox', id: 'remember' });
+    var savedFbEmail = sGet(localStorage, 'dm_fb_email') || '';
+    var fbEmailIn = h('input', { type: 'email', id: 'fb_email', value: savedFbEmail, placeholder: 'admin@example.com', autocomplete: 'username' });
+    var fbPassIn = h('input', { type: 'password', id: 'fb_pass', placeholder: '••••••••', autocomplete: 'current-password' });
+    var remember = h('input', { type: 'checkbox', id: 'remember', checked: Boolean(sGet(localStorage, 'dm_token') || savedFbEmail) });
     var msg = h('div');
     if (errorMsg) msg.appendChild(h('div', { class: 'notice error', role: 'alert' }, errorMsg));
-    var btn = h('button', { class: 'btn primary', type: 'submit' }, 'Увійти');
+    var btn = h('button', { class: 'btn primary', type: 'submit' }, 'Увійти в адмін-панель');
+
     var form = h('form', { class: 'login', onsubmit: function (e) {
       e.preventDefault();
       var repo = repoIn.value.trim().replace(/^https?:\/\/github\.com\//i, '').replace(/\.git$/, '').replace(/\/$/, '');
@@ -39,24 +43,59 @@
       if (!tokenIn.value.trim()) { tokenIn.focus(); return; }
       btn.disabled = true; btn.textContent = 'Перевірка…';
       A.cfg = { owner: m[1], repo: m[2], branch: branchIn.value.trim(), token: tokenIn.value.trim() };
+
+      var fbEmail = fbEmailIn.value.trim();
+      var fbPass = fbPassIn.value;
+
       loadAll().then(function () {
         sSet(localStorage, 'dm_repo', m[1] + '/' + m[2]); sSet(localStorage, 'dm_branch', branchIn.value.trim());
         sDel(sessionStorage, 'dm_token'); sDel(localStorage, 'dm_token');
         sSet(remember.checked ? localStorage : sessionStorage, 'dm_token', A.cfg.token);
+
+        if (remember.checked && fbEmail) {
+          sSet(localStorage, 'dm_fb_email', fbEmail);
+        } else if (!remember.checked) {
+          sDel(localStorage, 'dm_fb_email');
+        }
+
+        // Єдиний вхід до Firebase Auth (якщо налаштовано конфіг і введено логін/пароль)
+        var cfg = window.FIREBASE_CONFIG;
+        var hasValidCfg = cfg && cfg.apiKey && cfg.apiKey.indexOf('apiKey') === -1;
+        if (hasValidCfg && window.firebase && fbEmail && fbPass) {
+          if (!firebase.apps.length) firebase.initializeApp(cfg);
+          var auth = firebase.auth();
+          var persistence = remember.checked ? firebase.auth.Auth.Persistence.LOCAL : firebase.auth.Auth.Persistence.SESSION;
+          return auth.setPersistence(persistence).then(function () {
+            return auth.signInWithEmailAndPassword(fbEmail, fbPass);
+          }).catch(function (fbErr) {
+            console.warn('Firebase login warning:', fbErr.message);
+          }).then(function () {
+            showShell();
+          });
+        }
+
         showShell();
       }).catch(function (err) {
-        A.cfg = null; btn.disabled = false; btn.textContent = 'Увійти';
+        A.cfg = null; btn.disabled = false; btn.textContent = 'Увійти в адмін-панель';
         msg.innerHTML = ''; msg.appendChild(h('div', { class: 'notice error', role: 'alert' }, X.ghError(err)));
       });
     } },
       h('h1', null, 'Керування сайтом'),
-      h('p', { class: 'lead' }, 'Увійдіть за допомогою ключа доступу GitHub, щоб змінювати сторінки, меню та файли.'),
+      h('p', { class: 'lead' }, 'Єдиний вхід для редагування сайту та перегляду звернень громадян.'),
       msg,
       h('div', { class: 'row2' },
         h('label', { class: 'f' }, h('span', null, 'Репозиторій'), repoIn),
         h('label', { class: 'f' }, h('span', null, 'Гілка'), branchIn)),
-      h('label', { class: 'f' }, h('span', null, 'Ключ доступу (токен)'), tokenIn,
+      h('label', { class: 'f' }, h('span', null, 'Ключ доступу GitHub (токен)'), tokenIn,
         h('small', null, 'Токен зберігається лише в цьому браузері й ніде не публікується.')),
+      h('div', { class: 'fb-login-block', style: 'border-top: 1px solid var(--line); margin-top: 16px; padding-top: 14px;' },
+        h('h3', { style: 'margin: 0 0 6px; font-size: 1rem; color: var(--ink);' }, 'База звернень (Firebase)'),
+        h('small', { style: 'display:block; margin-bottom: 10px; color: var(--muted);' }, 'Заповніть для доступу до вкладки «📨 Звернення».'),
+        h('div', { class: 'row2' },
+          h('label', { class: 'f' }, h('span', null, 'E-mail адміністратора'), fbEmailIn),
+          h('label', { class: 'f' }, h('span', null, 'Пароль до звернень'), fbPassIn)
+        )
+      ),
       h('label', { class: 'check' }, remember, h('span', null, 'Запам’ятати на цьому пристрої (не вмикайте на чужих комп’ютерах)')),
       btn,
       h('p', { class: 'help' }, 'Ще немає токена? Інструкція — у розділі «Допомога» після входу або в файлі README.md.',
@@ -94,7 +133,13 @@
     pubBtn = h('button', { class: 'btn sun', type: 'button', disabled: true, onclick: openPublish }, 'Опублікувати зміни ', pubCount);
     pendingBar = h('div', { class: 'pending', hidden: true }, h('span', null, 'Є зміни, які ще не опубліковані. Натисніть «Опублікувати зміни», щоб вони з’явилися на сайті.'));
     mainEl = h('div', { class: 'main' });
-    var tabs = [['pages', 'Сторінки та меню'], ['files', 'Файли'], ['settings', 'Налаштування сайту'], ['help', 'Допомога']];
+    var tabs = [
+      ['pages', 'Сторінки та меню'],
+      ['files', 'Файли'],
+      ['settings', 'Налаштування сайту'],
+      ['feedback', '📨 Звернення'],
+      ['help', 'Допомога']
+    ];
     var tabBar = h('div', { class: 'tabs', role: 'tablist' }, tabs.map(function (t) {
       return h('button', { role: 'tab', type: 'button', 'data-tab': t[0], 'aria-selected': String(A.view === t[0]), onclick: function () { A.view = t[0]; renderView(); } }, t[1]);
     }));
@@ -114,7 +159,15 @@
   }
 
   function logout() {
-    var go = function () { sDel(sessionStorage, 'dm_token'); sDel(localStorage, 'dm_token'); A.cfg = null; showLogin(); };
+    var go = function () {
+      sDel(sessionStorage, 'dm_token');
+      sDel(localStorage, 'dm_token');
+      if (window.firebase && firebase.apps && firebase.apps.length && firebase.auth) {
+        try { firebase.auth().signOut(); } catch (e) {}
+      }
+      A.cfg = null;
+      showLogin();
+    };
     if (X.collectChanges().count) confirmBox({ title: 'Вийти без публікації?', text: 'Неопубліковані зміни буде втрачено.', okLabel: 'Вийти', danger: true }).then(function (ok) { if (ok) go(); });
     else go();
   }
@@ -125,6 +178,7 @@
     if (A.view === 'pages') renderPages();
     else if (A.view === 'files') renderFiles();
     else if (A.view === 'settings') renderSettings();
+    else if (A.view === 'feedback') renderFeedback();
     else mainEl.appendChild(helpContent());
     refreshBadge();
   }
@@ -665,6 +719,210 @@
 
     mainEl.appendChild(cards);
   }
+
+  /* ---------- модуль «Звернення» (Firebase Feedback) ---------- */
+  function renderFeedback() {
+    var wrap = h('div', { class: 'panel' });
+    var pHead = h('div', { class: 'panel-h' },
+      h('h2', null, '📨 Звернення з форми сайту'),
+      h('div', { class: 'spacer' })
+    );
+    var pBody = h('div', { class: 'panel-b' });
+    wrap.appendChild(pHead);
+    wrap.appendChild(pBody);
+    mainEl.appendChild(wrap);
+
+    var cfg = window.FIREBASE_CONFIG;
+    if (!cfg || !cfg.apiKey || cfg.apiKey.indexOf('apiKey') !== -1) {
+      pBody.appendChild(h('div', { class: 'notice warn' },
+        h('strong', null, 'Firebase ще не налаштовано.'),
+        h('p', { style: 'margin: 6px 0 0;' },
+          'Щоб переглядати звернення громадян, додайте конфігурацію Firebase у файл ',
+          h('code', null, 'assets/js/firebase-config.js'),
+          ' та налаштуйте Cloud Firestore у Firebase Console.'
+        )
+      ));
+      return;
+    }
+
+    if (!window.firebase) {
+      pBody.appendChild(h('p', { class: 'boot' }, 'Завантаження Firebase SDK…'));
+      return;
+    }
+
+    if (!firebase.apps.length) {
+      firebase.initializeApp(cfg);
+    }
+
+    // Чекаємо асинхронного відновлення сесії Firebase Auth з IndexedDB.
+    // auth.currentUser синхронно == null до завершення hydration — це нормально.
+    // onAuthStateChanged гарантовано викликається після відновлення сесії.
+    var auth = firebase.auth();
+    pBody.appendChild(h('p', { class: 'boot' }, 'Перевірка авторизації…'));
+
+    auth.onAuthStateChanged(function (user) {
+      pBody.innerHTML = '';
+
+      if (!user) {
+        // Сесії немає. Пропонуємо перейти до форми входу (де є поля fb_email + fb_pass).
+        pBody.appendChild(h('div', { class: 'notice', style: 'max-width: 560px; margin: 24px auto; padding: 24px;' },
+          h('h3', { style: 'margin-top: 0;' }, '🔐 Доступ до звернень'),
+          h('p', { style: 'color: var(--muted); font-size: .92rem; line-height: 1.5;' },
+            'Вкладку «Звернення» захищено Firebase Auth. Вийдіть з адмін-панелі та увійдіть знову, заповнивши поля «E-mail адміністратора» та «Пароль до звернень» у формі входу.',
+            h('br'), h('br'),
+            'Якщо ви вже входили з позначкою «Запам\u2019ятати» — сесія відновиться автоматично при наступному відкритті цієї сторінки.'
+          ),
+          h('button', {
+            class: 'btn primary small',
+            type: 'button',
+            style: 'margin-top: 10px;',
+            onclick: function () { logout(); }
+          }, 'Перейти до форми входу')
+        ));
+        return;
+      }
+
+      pBody.appendChild(h('p', { class: 'boot' }, 'Завантаження звернень…'));
+
+      var db = firebase.firestore();
+      db.collection('feedback').orderBy('createdAt', 'desc').get()
+        .then(function (snapshot) {
+          pBody.innerHTML = '';
+          var docs = [];
+          snapshot.forEach(function (doc) {
+            docs.push({ id: doc.id, data: doc.data() });
+          });
+
+          var newCount = docs.filter(function (d) { return d.data.status === 'new'; }).length;
+
+          var summaryBar = h('div', {
+            style: 'display:flex;justify-content:space-between;align-items:center;margin-bottom:18px;flex-wrap:wrap;gap:10px;'
+          },
+            h('div', { style: 'font-weight:600;font-size:1.05rem;' },
+              'Всього звернень: ', h('strong', null, String(docs.length)),
+              ' · Нових звернень: ', h('span', { class: 'tag ' + (newCount > 0 ? 'todo' : 'new') }, String(newCount))
+            )
+          );
+          pBody.appendChild(summaryBar);
+
+          if (!docs.length) {
+            pBody.appendChild(h('p', { class: 'empty-note' }, 'Звернень поки немає.'));
+            return;
+          }
+
+          var tableWrap = h('div', { class: 'feedback-list', style: 'display:grid;gap:14px;' });
+          docs.forEach(function (item) {
+            var d = item.data;
+            var isNew = d.status === 'new';
+
+            var dateStr = 'Невідомо';
+            if (d.createdAt && d.createdAt.toDate) {
+              var dt = d.createdAt.toDate();
+              dateStr = dt.toLocaleString('uk-UA', { day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit' });
+            }
+
+            var card = h('div', {
+              style: 'border:1px solid var(--line);border-radius:10px;padding:16px 20px;background:' + (isNew ? '#FCFDFE' : '#FAFAFA') + ';box-shadow:0 2px 6px rgba(0,0,0,.03);'
+            });
+
+            var cardTop = h('div', { style: 'display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;flex-wrap:wrap;gap:8px;' },
+              h('div', null,
+                h('span', { style: 'font-weight:700;font-size:1.05rem;color:var(--ink);' }, d.name || 'Без імені'),
+                h('span', { style: 'color:var(--muted);font-size:.85rem;margin-left:12px;' }, dateStr)
+              ),
+              h('span', { class: 'tag ' + (isNew ? 'todo' : 'new') }, isNew ? 'Нове' : 'Опрацьовано')
+            );
+
+            var contactRow = h('div', { style: 'display:flex;gap:16px;font-size:.9rem;margin-bottom:10px;flex-wrap:wrap;' },
+              h('div', null,
+                h('strong', null, 'E-mail: '),
+                h('span', null, d.email || '—'),
+                d.email ? h('button', {
+                  class: 'btn small ghost',
+                  style: 'padding:2px 6px;margin-left:6px;',
+                  title: 'Скопіювати e-mail',
+                  onclick: function () {
+                    navigator.clipboard.writeText(d.email);
+                    toast('E-mail скопійовано: ' + d.email);
+                  }
+                }, '📋') : null
+              ),
+              d.phone ? h('div', null,
+                h('strong', null, 'Телефон: '),
+                h('span', null, d.phone),
+                h('button', {
+                  class: 'btn small ghost',
+                  style: 'padding:2px 6px;margin-left:6px;',
+                  title: 'Скопіювати телефон',
+                  onclick: function () {
+                    navigator.clipboard.writeText(d.phone);
+                    toast('Телефон скопійовано: ' + d.phone);
+                  }
+                }, '📋')
+              ) : null
+            );
+
+            // Безпечне виведення тексту повідомлення без innerHTML для захисту від XSS
+            var msgBox = h('div', {
+              style: 'background:var(--bg);border-radius:6px;padding:10px 14px;margin-bottom:12px;white-space:pre-wrap;font-size:.95rem;line-height:1.5;overflow-wrap:anywhere;'
+            }, d.message || '');
+
+            var actions = h('div', { style: 'display:flex;gap:8px;justify-content:flex-end;flex-wrap:wrap;' },
+              h('button', {
+                class: 'btn small ' + (isNew ? 'primary' : ''),
+                type: 'button',
+                onclick: function () {
+                  var nextStatus = isNew ? 'processed' : 'new';
+                  db.collection('feedback').doc(item.id).update({ status: nextStatus })
+                    .then(function () {
+                      toast(isNew ? 'Позначено як опрацьовано' : 'Повернуто статус «Нове»');
+                      renderView();
+                    })
+                    .catch(function (err) {
+                    toast('Помилка: ' + err.message, true);
+                  });
+              }
+            }, isNew ? 'Позначити «Опрацьовано»' : 'Повернути «Нове»'),
+
+            h('button', {
+              class: 'btn small danger',
+              type: 'button',
+              onclick: function () {
+                confirmBox({
+                  title: 'Видалити звернення?',
+                  text: 'Звернення від ' + (d.name || 'користувача') + ' буде безповоротно видалено з бази.',
+                  okLabel: 'Видалити',
+                  danger: true
+                }).then(function (ok) {
+                  if (!ok) return;
+                  db.collection('feedback').doc(item.id).delete()
+                    .then(function () {
+                      toast('Звернення видалено');
+                      renderView();
+                    })
+                    .catch(function (err) {
+                      toast('Помилка видалення: ' + err.message, true);
+                    });
+                });
+              }
+            }, 'Видалити')
+          );
+
+          card.appendChild(cardTop);
+          card.appendChild(contactRow);
+          card.appendChild(msgBox);
+          card.appendChild(actions);
+          tableWrap.appendChild(card);
+        });
+
+        pBody.appendChild(tableWrap);
+      })
+        .catch(function (err) {
+          pBody.innerHTML = '';
+          pBody.appendChild(h('div', { class: 'notice error' }, 'Не вдалося завантажити звернення: ' + err.message));
+        });
+    }); // кінець onAuthStateChanged
+  } // кінець renderFeedback
 
   /* ---------- допомога ---------- */
   function helpContent() {

@@ -1,20 +1,29 @@
-![](uploads/pages/maibutnie-ukrainskoi-molodi-ne-nalezhyt-okupatsii/image-1.png)
+<div class="doc-card">
+  <div class="doc-card-title">GEX_8733.pdf</div>
+  <iframe src="https://drive.google.com/file/d/1OLbvv2XTHTT8WLTST7mDgGDzNJfj5lkY/preview" title="GEX_8733.pdf" loading="lazy"></iframe>
+  <div class="doc-card-actions">
+    <a class="doc-btn preview-btn" href="https://drive.google.com/file/d/1OLbvv2XTHTT8WLTST7mDgGDzNJfj5lkY/preview" target="_blank" rel="noopener noreferrer">Переглянути документ ↗</a>
+    <a class="doc-btn download-btn" href="https://drive.google.com/uc?export=download&id=1OLbvv2XTHTT8WLTST7mDgGDzNJfj5lkY" target="_blank" rel="noopener noreferrer">Завантажити файл ↓</a>
+  </div>
+</div>
 
-<iframe src="https://drive.google.com/file/d/1OLbvv2XTHTT8WLTST7mDgGDzNJfj5lkY/preview" title="GEX_8733.pdf"></iframe>
+<div class="doc-card">
+  <div class="doc-card-title">GEX_8929.pdf</div>
+  <iframe src="https://drive.google.com/file/d/1IMFodZ835koLG2cscTGPiBiiCESB_pEI/preview" title="GEX_8929.pdf" loading="lazy"></iframe>
+  <div class="doc-card-actions">
+    <a class="doc-btn preview-btn" href="https://drive.google.com/file/d/1IMFodZ835koLG2cscTGPiBiiCESB_pEI/preview" target="_blank" rel="noopener noreferrer">Переглянути документ ↗</a>
+    <a class="doc-btn download-btn" href="https://drive.google.com/uc?export=download&id=1IMFodZ835koLG2cscTGPiBiiCESB_pEI" target="_blank" rel="noopener noreferrer">Завантажити файл ↓</a>
+  </div>
+</div>
 
-[Завантажити файл: GEX_8733.pdf](https://drive.google.com/uc?export=download&id=1OLbvv2XTHTT8WLTST7mDgGDzNJfj5lkY)
-
-![](uploads/pages/maibutnie-ukrainskoi-molodi-ne-nalezhyt-okupatsii/image-2.png)
-
-<iframe src="https://drive.google.com/file/d/1IMFodZ835koLG2cscTGPiBiiCESB_pEI/preview" title="GEX_8929.pdf"></iframe>
-
-[Завантажити файл: GEX_8929.pdf](https://drive.google.com/uc?export=download&id=1IMFodZ835koLG2cscTGPiBiiCESB_pEI)
-
-![](uploads/pages/maibutnie-ukrainskoi-molodi-ne-nalezhyt-okupatsii/image-3.png)
-
-<iframe src="https://drive.google.com/file/d/12ms7VwhSF8HYgDjB5oFHSSiOIHuLYF6N/preview" title="GEX_8035.pdf"></iframe>
-
-[Завантажити файл: GEX_8035.pdf](https://drive.google.com/uc?export=download&id=12ms7VwhSF8HYgDjB5oFHSSiOIHuLYF6N)
+<div class="doc-card">
+  <div class="doc-card-title">GEX_8035.pdf</div>
+  <iframe src="https://drive.google.com/file/d/12ms7VwhSF8HYgDjB5oFHSSiOIHuLYF6N/preview" title="GEX_8035.pdf" loading="lazy"></iframe>
+  <div class="doc-card-actions">
+    <a class="doc-btn preview-btn" href="https://drive.google.com/file/d/12ms7VwhSF8HYgDjB5oFHSSiOIHuLYF6N/preview" target="_blank" rel="noopener noreferrer">Переглянути документ ↗</a>
+    <a class="doc-btn download-btn" href="https://drive.google.com/uc?export=download&id=12ms7VwhSF8HYgDjB5oFHSSiOIHuLYF6N" target="_blank" rel="noopener noreferrer">Завантажити файл ↓</a>
+  </div>
+</div>
 
 Російська окупація створює бар’єри на кожному із цих етапів: обмежує доступ до достовірної інформації та української освіти, ускладнює отримання документів і намагається ізолювати молодь від українського суспільства. Але окупація не повинна визначати, де молода людина навчатиметься, як будуватиме своє життя та яким буде її майбутнє.
 

@@ -44,29 +44,32 @@
 
 **Щира подяка тренеру Анатолію Вікторовичу за професіоналізм, підтримку, віру в кожного гравця та підготовку наших команд до перемог. Саме завдяки Вашій наполегливій праці маємо такі високі результати!**
 
-![](uploads/pages/novyny/image-4.png)
+<div class="doc-card">
+  <div class="doc-card-title">Про продовження термінів зимових канікул</div>
+  <iframe src="https://drive.google.com/file/d/1TnynvEffpxhYCao_nd8D2mcDZSAaDvn4/preview" title="продовження канікул.pdf" loading="lazy"></iframe>
+  <div class="doc-card-actions">
+    <a class="doc-btn preview-btn" href="https://drive.google.com/file/d/1TnynvEffpxhYCao_nd8D2mcDZSAaDvn4/preview" target="_blank" rel="noopener noreferrer">Переглянути документ ↗</a>
+    <a class="doc-btn download-btn" href="https://drive.google.com/uc?export=download&id=1TnynvEffpxhYCao_nd8D2mcDZSAaDvn4" target="_blank" rel="noopener noreferrer">Завантажити файл ↓</a>
+  </div>
+</div>
 
-<iframe src="https://drive.google.com/file/d/1TnynvEffpxhYCao_nd8D2mcDZSAaDvn4/preview" title="продовження канікул.pdf"></iframe>
+<div class="doc-card">
+  <div class="doc-card-title">Запровадження додаткових зимових канікул</div>
+  <iframe src="https://drive.google.com/file/d/1ikU28Y60KQWRmomV0zQQH75Cx5fTMNeR/preview" title="додаткові канікули.pdf" loading="lazy"></iframe>
+  <div class="doc-card-actions">
+    <a class="doc-btn preview-btn" href="https://drive.google.com/file/d/1ikU28Y60KQWRmomV0zQQH75Cx5fTMNeR/preview" target="_blank" rel="noopener noreferrer">Переглянути документ ↗</a>
+    <a class="doc-btn download-btn" href="https://drive.google.com/uc?export=download&id=1ikU28Y60KQWRmomV0zQQH75Cx5fTMNeR" target="_blank" rel="noopener noreferrer">Завантажити файл ↓</a>
+  </div>
+</div>
 
-[Завантажити файл: продовження канікул.pdf](https://drive.google.com/uc?export=download&id=1TnynvEffpxhYCao_nd8D2mcDZSAaDvn4)
-
-## Про продовження термінів зимових канікул
-
-![](uploads/pages/novyny/image-5.png)
-
-<iframe src="https://drive.google.com/file/d/1ikU28Y60KQWRmomV0zQQH75Cx5fTMNeR/preview" title="додаткові канікули.pdf"></iframe>
-
-[Завантажити файл: додаткові канікули.pdf](https://drive.google.com/uc?export=download&id=1ikU28Y60KQWRmomV0zQQH75Cx5fTMNeR)
-
-## Запровадження додаткових зимових канікул
-
-![](uploads/pages/novyny/image-6.png)
-
-<iframe src="https://drive.google.com/file/d/1oPGPPrYfX5XSLG7Dv9SN9M9__cOxWGdt/preview" title="дистанційне.pdf"></iframe>
-
-[Завантажити файл: дистанційне.pdf](https://drive.google.com/uc?export=download&id=1oPGPPrYfX5XSLG7Dv9SN9M9__cOxWGdt)
-
-**У зв'язку з суттєвим погіршенням погодних умов та зниженням температури повітря ліцей переходить на тимчасове дистанційне навчання**
+<div class="doc-card">
+  <div class="doc-card-title">У зв'язку з суттєвим погіршенням погодних умов та зниженням температури повітря ліцей переходить на тимчасове дистанційне навчання</div>
+  <iframe src="https://drive.google.com/file/d/1oPGPPrYfX5XSLG7Dv9SN9M9__cOxWGdt/preview" title="дистанційне.pdf" loading="lazy"></iframe>
+  <div class="doc-card-actions">
+    <a class="doc-btn preview-btn" href="https://drive.google.com/file/d/1oPGPPrYfX5XSLG7Dv9SN9M9__cOxWGdt/preview" target="_blank" rel="noopener noreferrer">Переглянути документ ↗</a>
+    <a class="doc-btn download-btn" href="https://drive.google.com/uc?export=download&id=1oPGPPrYfX5XSLG7Dv9SN9M9__cOxWGdt" target="_blank" rel="noopener noreferrer">Завантажити файл ↓</a>
+  </div>
+</div>
 
 **з** **12 по 19 січня 2026.**
 
@@ -79,13 +82,13 @@
 
 [https://osvita.diia.gov.ua/courses/disinfaketion](https://osvita.diia.gov.ua/courses/disinfaketion)
 
-## [#h.cvbhhjb80o0i](#h.cvbhhjb80o0i)Вітання випускникам 2025 та
+## <a id="h.cvbhhjb80o0i"></a>Вітання випускникам 2025 та
 
-## [#h.gt1jh9nxlk2a](#h.gt1jh9nxlk2a)учителям Дмитрушківського ліцею!
+## <a id="h.gt1jh9nxlk2a"></a>учителям Дмитрушківського ліцею!
 
 **Відповідно до висновку рейтингу, сформованого за результатами національного мультипредметного тесту 2025 року, взятими з офіційної статистики** [**Українського центру оцінювання якості освіти**](https://zno.testportal.com.ua/opendata)**, Дмитрушківський ліцей Дмитрушківської сільської ради Уманського району Черкаської області посів** **29-те місце** **серед 269 ЗЗСО Черкаської області та** **3-тє місце** **серед шкіл Уманського району, поступившись приватному закладу «Український аграрний ліцей» та Уманському ліцею № 2 Уманської міської ради Черкаської області першим та другим місцем. Найкращі результати наших ліцеїстів – з англійської мови, математики, української мови та історії.**
 
-## [#h.qq2cilhcvbql](#h.qq2cilhcvbql)Інформація за посиланням: [https://www.education.ua/schools/best-by-tests/ck/](https://www.education.ua/schools/best-by-tests/ck/)
+## <a id="h.qq2cilhcvbql"></a>Інформація за посиланням: [https://www.education.ua/schools/best-by-tests/ck/](https://www.education.ua/schools/best-by-tests/ck/)
 
 ![](uploads/pages/novyny/image-8.jpg)
 

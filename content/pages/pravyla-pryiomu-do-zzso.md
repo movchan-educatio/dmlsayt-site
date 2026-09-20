@@ -44,9 +44,9 @@
 
 Діти з особливими освітніми потребами, які проживають на території обслуговування комунального закладу освіти, мають право на першочергове зарахування до нього у порядку, визначеному законодавством, для здобуття початкової та базової середньої освіти.
 
-## [#h.e476nxanrxa](#h.e476nxanrxa)Для зарахування учня до 10 (11) класу подаються наступні документи
+## <a id="h.e476nxanrxa"></a>Для зарахування учня до 10 (11) класу подаються наступні документи
 
-## [#h.g8rbj92dukrl](#h.g8rbj92dukrl)- заява батьків;
+## <a id="h.g8rbj92dukrl"></a>- заява батьків;
 
 \- копія свідоцтва про народження дитини;
 
@@ -54,7 +54,7 @@
 
 \- документ про відповідний рівень освіти.
 
-## [#h.dthvgja0p9qj](#h.dthvgja0p9qj)Документи, які необхідні для переводу з іншої школи:
+## <a id="h.dthvgja0p9qj"></a>Документи, які необхідні для переводу з іншої школи:
 
 \- заява батьків;
 
@@ -70,18 +70,20 @@
 
 За недотримання працівниками закладу освіти положень Порядку відповідає керівник цього закладу освіти.
 
-![](uploads/pages/pravyla-pryiomu-do-zzso/image-1.png)
+<div class="doc-card">
+  <div class="doc-card-title">Зарахування учнів</div>
+  <iframe src="https://drive.google.com/file/d/1Lvuix5BehgHZruHqrJs7uI_aCGjW1yfj/preview" title="зарахування учнів.pdf" loading="lazy"></iframe>
+  <div class="doc-card-actions">
+    <a class="doc-btn preview-btn" href="https://drive.google.com/file/d/1Lvuix5BehgHZruHqrJs7uI_aCGjW1yfj/preview" target="_blank" rel="noopener noreferrer">Переглянути документ ↗</a>
+    <a class="doc-btn download-btn" href="https://drive.google.com/uc?export=download&id=1Lvuix5BehgHZruHqrJs7uI_aCGjW1yfj" target="_blank" rel="noopener noreferrer">Завантажити файл ↓</a>
+  </div>
+</div>
 
-<iframe src="https://drive.google.com/file/d/1Lvuix5BehgHZruHqrJs7uI_aCGjW1yfj/preview" title="зарахування учнів.pdf"></iframe>
-
-[Завантажити файл: зарахування учнів.pdf](https://drive.google.com/uc?export=download&id=1Lvuix5BehgHZruHqrJs7uI_aCGjW1yfj)
-
-## Зарахування учнів
-
-![](uploads/pages/pravyla-pryiomu-do-zzso/image-2.png)
-
-<iframe src="https://drive.google.com/file/d/1NdZPMtNADNqGCf9ayDEX1IStLlpFgwbB/preview" title="правила прийому до 1 класу 2026.pdf"></iframe>
-
-[Завантажити файл: правила прийому до 1 класу 2026.pdf](https://drive.google.com/uc?export=download&id=1NdZPMtNADNqGCf9ayDEX1IStLlpFgwbB)
-
-## Правила прийому до 1 класу
+<div class="doc-card">
+  <div class="doc-card-title">Правила прийому до 1 класу</div>
+  <iframe src="https://drive.google.com/file/d/1NdZPMtNADNqGCf9ayDEX1IStLlpFgwbB/preview" title="правила прийому до 1 класу 2026.pdf" loading="lazy"></iframe>
+  <div class="doc-card-actions">
+    <a class="doc-btn preview-btn" href="https://drive.google.com/file/d/1NdZPMtNADNqGCf9ayDEX1IStLlpFgwbB/preview" target="_blank" rel="noopener noreferrer">Переглянути документ ↗</a>
+    <a class="doc-btn download-btn" href="https://drive.google.com/uc?export=download&id=1NdZPMtNADNqGCf9ayDEX1IStLlpFgwbB" target="_blank" rel="noopener noreferrer">Завантажити файл ↓</a>
+  </div>
+</div>

@@ -137,13 +137,19 @@
 
   function renderInner(node, md, token) {
     var main = $('#content');
-    var hasBody = R.plainText(md).length > 0;
+    var hasBody = R.plainText(md).length > 0 || (md && md.indexOf('feedback-root') !== -1);
     main.innerHTML = crumbs(node) + '<article class="paper"><h1>' + esc(node.title) + '</h1>' +
       (hasBody ? '<div class="prose"></div>' : '') + childrenList(node) + '</article>';
     if (hasBody) {
       var prose = $('.prose', main);
       prose.innerHTML = R.mdToHtml(md);
       R.enhance(prose);
+      if (node.slug === 'zvorotnii-zviazok' || prose.querySelector('#feedback-root')) {
+        var fbRoot = prose.querySelector('#feedback-root') || prose;
+        if (window.FeedbackModule && window.FeedbackModule.mount) {
+          window.FeedbackModule.mount(fbRoot);
+        }
+      }
     }
     fillChildren(main, token);
   }
@@ -265,11 +271,27 @@
 
   /* ---------- маршрутизація ---------- */
   function parseHash() {
-    var h = location.hash.replace(/^#\/?/, '');
+    var raw = location.hash;
+    var h = raw.replace(/^#\/?/, '');
     var m = h.match(/^search\/(.*)$/);
     if (m) return { type: 'search', q: decodeURIComponent(m[1]) };
+
+    var anchor = '';
+    var hashParts = h.split('#');
+    if (hashParts.length > 1) {
+      h = hashParts[0];
+      anchor = hashParts[1];
+    }
     var slug = decodeURIComponent(h.split('?')[0]).replace(/\/+$/, '');
-    return { type: 'page', slug: slug || S.home };
+
+    // Якщо хеш без префіксу #/ веде на внутрішній якір (наприклад #h.vnlaleksf2b1)
+    if (raw.indexOf('#/') !== 0 && slug.indexOf('h.') === 0) {
+      if (!S.bySlug[slug]) {
+        return { type: 'anchor', anchor: slug, slug: S.currentSlug || S.home };
+      }
+    }
+
+    return { type: 'page', slug: slug || S.home, anchor: anchor };
   }
 
   function route() {
@@ -282,15 +304,30 @@
       window.scrollTo(0, 0);
       return;
     }
+    if (r.type === 'anchor') {
+      var aTarget = document.getElementById(r.anchor) || document.querySelector('[name="' + CSS.escape(r.anchor) + '"]');
+      if (aTarget) {
+        aTarget.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        return;
+      }
+    }
     var node = S.bySlug[r.slug];
     renderNav(r.slug);
     if (!node) { renderNotFound(r.slug); window.scrollTo(0, 0); return; }
     if (r.slug !== S.home) $('#q').value = '';
+    S.currentSlug = node.slug;
     getMd(node.slug).then(function (md) {
       if (token !== S.token) return;
       if (node.slug === S.home) renderHome(node, md, token); else renderInner(node, md, token);
       document.title = node.slug === S.home ? S.site.title : node.title + ' — ' + S.site.title;
-      window.scrollTo(0, 0);
+      if (r.anchor) {
+        setTimeout(function () {
+          var target = document.getElementById(r.anchor) || document.querySelector('[name="' + CSS.escape(r.anchor) + '"]');
+          if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 150);
+      } else {
+        window.scrollTo(0, 0);
+      }
     }).catch(function () { if (token === S.token) renderError(); });
   }
 
@@ -307,6 +344,19 @@
     }).catch(function () { renderError(); });
 
     window.addEventListener('hashchange', route);
+    document.addEventListener('click', function (e) {
+      var a = e.target.closest('a[href^="#"]');
+      if (!a) return;
+      var href = a.getAttribute('href') || '';
+      if (href && !href.startsWith('#/')) {
+        var targetId = href.replace(/^#/, '');
+        var targetEl = document.getElementById(targetId) || document.querySelector('[name="' + CSS.escape(targetId) + '"]');
+        if (targetEl) {
+          e.preventDefault();
+          targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }
+    });
     $('#nav').addEventListener('click', function (e) {
       var t = e.target.closest('.toggle');
       if (!t) return;

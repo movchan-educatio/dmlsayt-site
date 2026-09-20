@@ -1,0 +1,1710 @@
+{
+  "total_pages": 62,
+  "pages_with_docs": {
+    "arkhiv": {
+      "count": 1,
+      "ids": [
+        "1uJgP1nyaiigprxlAF3BcbpgAxPxHSnXERGTLP8pNiG0"
+      ]
+    },
+    "atestatsiia": {
+      "count": 3,
+      "ids": [
+        "1KJI_ggNCm5J9QUWtd285Zt8IAsgBJgLC",
+        "1sph9vpJ4YhPL8pgX6TEqUkV39ywE5WZD",
+        "1fRcsLbTjH0FS-YUEURjmnya5UpFIvfKq"
+      ]
+    },
+    "finansova-diialnist": {
+      "count": 7,
+      "ids": [
+        "1saLB_ORAwiIjmxpNoTZq-GY0Lq7ofJBE",
+        "1EpUdbv3zLAuNGwEGBP2DWqpjMsVqtxBA",
+        "1bNoes1t3geTiyH9-mVIWngAs6Oopi5H5",
+        "1S0HhYMjBSKR5zdCwnUjFLzG62pnWIvLp",
+        "1UjFjt-KwK9_y1B35CK8SinpBYDM3aSjD",
+        "1_4wUFrpx1CmMGTZ9J55NNf7fC-Q4zTJY",
+        "1ziEuUoVipZSJNN0wSM8lcylf6zD3dUVX"
+      ]
+    },
+    "konkurs-superclass-tse-pro-nas": {
+      "count": 2,
+      "ids": [
+        "1SJWK12_Il3URkzzGmAdAdPwoFAIxL8Lt",
+        "1GOBsAsZfpdlXl1G2eXsaD5StgFX2Rfmg"
+      ]
+    },
+    "litsenziia-na-provadzhennia-osvitnoi-diialnosti": {
+      "count": 1,
+      "ids": [
+        "1D60P-LUegvgzCp4GYNMa50QrV5XyfYtB"
+      ]
+    },
+    "maibutnie-ukrainskoi-molodi-ne-nalezhyt-okupatsii": {
+      "count": 3,
+      "ids": [
+        "1IMFodZ835koLG2cscTGPiBiiCESB_pEI",
+        "1OLbvv2XTHTT8WLTST7mDgGDzNJfj5lkY",
+        "12ms7VwhSF8HYgDjB5oFHSSiOIHuLYF6N"
+      ]
+    },
+    "materialno-tekhnichne-zabezpechennia": {
+      "count": 1,
+      "ids": [
+        "1ggPZCZXBTZoOEyPc9Ns1YFIKl_Xdq_UJ"
+      ]
+    },
+    "novyny": {
+      "count": 3,
+      "ids": [
+        "1TnynvEffpxhYCao_nd8D2mcDZSAaDvn4",
+        "1ikU28Y60KQWRmomV0zQQH75Cx5fTMNeR",
+        "1oPGPPrYfX5XSLG7Dv9SN9M9__cOxWGdt"
+      ]
+    },
+    "osvitni-prohramy": {
+      "count": 3,
+      "ids": [
+        "1Fnr3qmzYXHCR5SMNFMxRczQJfgFY1Hg_",
+        "1tG608XCttXxf0X4SugApLK93C_W-7uQx",
+        "1eG0AVsAQ9mz5KnCyiWc3r0-drSkPOSNh"
+      ]
+    },
+    "plan-roboty-litseiu": {
+      "count": 11,
+      "ids": [
+        "182JJu4PftK-2E-MVl62oHDnjrgij44ZJ",
+        "19WWpPlaLlsFU0EvoTY4JD-cpVzZvaMaD",
+        "1TZ-eImsUglNzeVChwjuDCwAn9PY1Sg3g",
+        "1YSDeZt-uFbtnD_0GOE6Jm3v19GceucV8",
+        "1dNJTjGzEW1HMFJRi9jswz7QyLKXac5De",
+        "1crTrXPORrQFi86D8BL36-OcOzUt58A27",
+        "12kB3gDtR69aGJbIokj71plBJuM6-sMce",
+        "1lxDK1SY1ZKwKd6dXW5-cGWiU2z08J57G",
+        "1CI3z3CxtW3Fr6I5CCCG_0JEtnOg3qbdw",
+        "1xziFrqK2z2nioyrwrxVuMnbqtgwayaEs",
+        "1u5oDbp_P0gtmoSyrZbpguEHOIxG_OIaW"
+      ]
+    },
+    "pravyla-pryiomu-do-zzso": {
+      "count": 2,
+      "ids": [
+        "1NdZPMtNADNqGCf9ayDEX1IStLlpFgwbB",
+        "1Lvuix5BehgHZruHqrJs7uI_aCGjW1yfj"
+      ]
+    },
+    "prozorist-ta-informatsiina-vidkrytist-zakladu": {
+      "count": 10,
+      "ids": [
+        "1BELnBdAL1yDWA0tio3WWZTmnbTsECxDj",
+        "1sw3jqrty1bPCfGPwq0AocTdTH_9bSk6j",
+        "1RBcuT1PL8Dvhfq4HZqMNNssp2ewmBE7h",
+        "1iqhbyWoruIPKZpogkC9hiVPdFk1JbWEv",
+        "1ITY707VeuXHjMHms_977AL5yWEKOPbxV",
+        "1whibJwOm_0RnEUBYca9WtaoHeaY8wZTM",
+        "1I94EZzU_CfYg24VEjTnBXOtZ9NQjM0F8",
+        "1v6fQ-tFxXaWxqrTUk93EmSXG9VJS42_d",
+        "1EuEmx29C1E7UGs_r2s_b5UR4I-C_f3Ym",
+        "1Z5nmlyGA_ull3dHGXhtrzulqAiw0DgBj"
+      ]
+    },
+    "rada-litseiu": {
+      "count": 1,
+      "ids": [
+        "1evor3xc6JZYKJOmkZdoaw4ccOn7e2dyL"
+      ]
+    },
+    "rezultaty-monitorynhu-iakosti-osvity": {
+      "count": 4,
+      "ids": [
+        "1cyzXvB5CrsXTktZu5HW6uYkpezT8lIwH",
+        "1RjsT9iAJen6FxIQvsgDHJwv-Qy7H_0p-",
+        "170C_LnxnBAaIBuPKkNPLk-RguAlRzWmV",
+        "1iDKb5UDv16RTkgKTYR_dRj0CiRXIOvn4"
+      ]
+    },
+    "richnyi-zvit-pro-diialnist-zakladu-osvity": {
+      "count": 1,
+      "ids": [
+        "1qzAwjFrtqhGkPM8qyNpECccT5GRb-Vnn"
+      ]
+    },
+    "samootsiniuvannia-zakladu-osvity": {
+      "count": 2,
+      "ids": [
+        "1ufaQDZQpCS2bsendhewAKhvCNM1_d9ez",
+        "1gYFNgQo2DW8CvSThbA6EMElO_ukbZ-JF"
+      ]
+    },
+    "sotsialnyi-pedahoh": {
+      "count": 1,
+      "ids": [
+        "14NmT49puOYP0uS_aLgsN7j6L-9TBcxVX"
+      ]
+    },
+    "spysok-ditei-zarakhovanykh-do-1-klasu-2026-2027-n-r": {
+      "count": 1,
+      "ids": [
+        "11ZQurvHAdofeWfQ-7AWOLRW94GXWcxlk"
+      ]
+    },
+    "statut": {
+      "count": 1,
+      "ids": [
+        "1100-aYWg4Pl1pTKpz0SrK9xVQqB2i9H4"
+      ]
+    },
+    "stop-bulinh": {
+      "count": 5,
+      "ids": [
+        "1UKmqjYTq9Z8tDGb4SyZEGYmj0ot5QYxz",
+        "1pn9kwqmOoYJALxZNqaiqlH4KGxZSid51",
+        "1a0Ql1HlPVnAhjpGiV5h4T1Kwy6B-3kD1",
+        "1FZyKN76-tdnwXgSfVMkvK1jZDZA8SuMy",
+        "1OU4feT1rAwXHxI7S-GnMhaaQQCnQTM1b"
+      ]
+    },
+    "terytoriia-obsluhovuvannia-zakriplena-za-zakladom-osvity": {
+      "count": 1,
+      "ids": [
+        "19FnHy9xK0TVJrv4tbuaY2YwRCInsQ32I"
+      ]
+    },
+    "uchniam": {
+      "count": 1,
+      "ids": [
+        "1KaWJaJkKz5bHcw7iQ4whnL5EKBSdm4Rm"
+      ]
+    },
+    "umovy-dostupnosti-zakladu-osvity-dlia-navchannia-osib": {
+      "count": 1,
+      "ids": [
+        "1CmP2Ev45JOl1Mfzn2DvRds8Ja0RTufZa"
+      ]
+    },
+    "ustanovchi-dokumenty": {
+      "count": 2,
+      "ids": [
+        "1T_z75QOIfR1MWpPIcetNU97hT2KyJW80",
+        "18BQ8FdDaOI-6BFdJbNlExdwK1tYF0XVn"
+      ]
+    },
+    "vstup-2026": {
+      "count": 1,
+      "ids": [
+        "19LsneioVckV-yJfxeeE0oVIqpy1X7SZ9"
+      ]
+    },
+    "zakupivli": {
+      "count": 10,
+      "ids": [
+        "16P_i_gA-dKCn4RjkAZPQ2DiX98Ec4baa",
+        "19caTAkrMrOAnwB2C7dt3Nx30pG3cI3oU",
+        "1DuWLojZLqHgwBUwJG-bGnbyTHwkjsND4",
+        "1QJBi4Od17yK9f9_u35fFQIs4JeB5e-AJ",
+        "1JfrZknwvrGMrEou91vImKTDauB-Oy3Uz",
+        "1ExakH67cnlJ5BtpH52hRsCw7y4sQeyM3",
+        "1rhjKx1_VkDW8y4kL4k5uYRsbShCI0oMv",
+        "1swnR7L36lnFIZhWtXmxDb9W-WPpQXKRK",
+        "1rwtbCTqB0udLng--m2sCwrfgQErpN_bh",
+        "1i1yusMgZ1v85KllUqHUK2_h1tRgiQS-C"
+      ]
+    },
+    "zarakhuvannia-pershoklasnykiv": {
+      "count": 1,
+      "ids": [
+        "17YcofVeNprsTw7k9poYOktDi0r3-eKVI"
+      ]
+    },
+    "zvit-dyrektora-zso": {
+      "count": 1,
+      "ids": [
+        "13uPRVGP627TPiro6s4AoqYsWfnCOaWi-"
+      ]
+    }
+  },
+  "duplicate_doc_elements": {
+    "arkhiv": [
+      {
+        "drive_id": "1uJgP1nyaiigprxlAF3BcbpgAxPxHSnXERGTLP8pNiG0",
+        "mentions": 2
+      }
+    ],
+    "atestatsiia": [
+      {
+        "drive_id": "1KJI_ggNCm5J9QUWtd285Zt8IAsgBJgLC",
+        "mentions": 2
+      },
+      {
+        "drive_id": "1sph9vpJ4YhPL8pgX6TEqUkV39ywE5WZD",
+        "mentions": 2
+      },
+      {
+        "drive_id": "1fRcsLbTjH0FS-YUEURjmnya5UpFIvfKq",
+        "mentions": 2
+      }
+    ],
+    "finansova-diialnist": [
+      {
+        "drive_id": "1saLB_ORAwiIjmxpNoTZq-GY0Lq7ofJBE",
+        "mentions": 2
+      },
+      {
+        "drive_id": "1EpUdbv3zLAuNGwEGBP2DWqpjMsVqtxBA",
+        "mentions": 2
+      },
+      {
+        "drive_id": "1bNoes1t3geTiyH9-mVIWngAs6Oopi5H5",
+        "mentions": 2
+      },
+      {
+        "drive_id": "1S0HhYMjBSKR5zdCwnUjFLzG62pnWIvLp",
+        "mentions": 2
+      },
+      {
+        "drive_id": "1UjFjt-KwK9_y1B35CK8SinpBYDM3aSjD",
+        "mentions": 2
+      },
+      {
+        "drive_id": "1_4wUFrpx1CmMGTZ9J55NNf7fC-Q4zTJY",
+        "mentions": 2
+      },
+      {
+        "drive_id": "1ziEuUoVipZSJNN0wSM8lcylf6zD3dUVX",
+        "mentions": 2
+      }
+    ],
+    "konkurs-superclass-tse-pro-nas": [
+      {
+        "drive_id": "1SJWK12_Il3URkzzGmAdAdPwoFAIxL8Lt",
+        "mentions": 2
+      },
+      {
+        "drive_id": "1GOBsAsZfpdlXl1G2eXsaD5StgFX2Rfmg",
+        "mentions": 2
+      }
+    ],
+    "litsenziia-na-provadzhennia-osvitnoi-diialnosti": [
+      {
+        "drive_id": "1D60P-LUegvgzCp4GYNMa50QrV5XyfYtB",
+        "mentions": 2
+      }
+    ],
+    "maibutnie-ukrainskoi-molodi-ne-nalezhyt-okupatsii": [
+      {
+        "drive_id": "1IMFodZ835koLG2cscTGPiBiiCESB_pEI",
+        "mentions": 2
+      },
+      {
+        "drive_id": "1OLbvv2XTHTT8WLTST7mDgGDzNJfj5lkY",
+        "mentions": 2
+      },
+      {
+        "drive_id": "12ms7VwhSF8HYgDjB5oFHSSiOIHuLYF6N",
+        "mentions": 2
+      }
+    ],
+    "materialno-tekhnichne-zabezpechennia": [
+      {
+        "drive_id": "1ggPZCZXBTZoOEyPc9Ns1YFIKl_Xdq_UJ",
+        "mentions": 2
+      }
+    ],
+    "novyny": [
+      {
+        "drive_id": "1TnynvEffpxhYCao_nd8D2mcDZSAaDvn4",
+        "mentions": 2
+      },
+      {
+        "drive_id": "1ikU28Y60KQWRmomV0zQQH75Cx5fTMNeR",
+        "mentions": 2
+      },
+      {
+        "drive_id": "1oPGPPrYfX5XSLG7Dv9SN9M9__cOxWGdt",
+        "mentions": 2
+      }
+    ],
+    "osvitni-prohramy": [
+      {
+        "drive_id": "1Fnr3qmzYXHCR5SMNFMxRczQJfgFY1Hg_",
+        "mentions": 2
+      },
+      {
+        "drive_id": "1tG608XCttXxf0X4SugApLK93C_W-7uQx",
+        "mentions": 2
+      },
+      {
+        "drive_id": "1eG0AVsAQ9mz5KnCyiWc3r0-drSkPOSNh",
+        "mentions": 2
+      }
+    ],
+    "plan-roboty-litseiu": [
+      {
+        "drive_id": "182JJu4PftK-2E-MVl62oHDnjrgij44ZJ",
+        "mentions": 2
+      },
+      {
+        "drive_id": "19WWpPlaLlsFU0EvoTY4JD-cpVzZvaMaD",
+        "mentions": 2
+      },
+      {
+        "drive_id": "1TZ-eImsUglNzeVChwjuDCwAn9PY1Sg3g",
+        "mentions": 2
+      },
+      {
+        "drive_id": "1YSDeZt-uFbtnD_0GOE6Jm3v19GceucV8",
+        "mentions": 2
+      },
+      {
+        "drive_id": "1dNJTjGzEW1HMFJRi9jswz7QyLKXac5De",
+        "mentions": 2
+      },
+      {
+        "drive_id": "1crTrXPORrQFi86D8BL36-OcOzUt58A27",
+        "mentions": 2
+      },
+      {
+        "drive_id": "12kB3gDtR69aGJbIokj71plBJuM6-sMce",
+        "mentions": 2
+      },
+      {
+        "drive_id": "1lxDK1SY1ZKwKd6dXW5-cGWiU2z08J57G",
+        "mentions": 2
+      },
+      {
+        "drive_id": "1CI3z3CxtW3Fr6I5CCCG_0JEtnOg3qbdw",
+        "mentions": 2
+      },
+      {
+        "drive_id": "1xziFrqK2z2nioyrwrxVuMnbqtgwayaEs",
+        "mentions": 2
+      },
+      {
+        "drive_id": "1u5oDbp_P0gtmoSyrZbpguEHOIxG_OIaW",
+        "mentions": 2
+      }
+    ],
+    "pravyla-pryiomu-do-zzso": [
+      {
+        "drive_id": "1NdZPMtNADNqGCf9ayDEX1IStLlpFgwbB",
+        "mentions": 2
+      },
+      {
+        "drive_id": "1Lvuix5BehgHZruHqrJs7uI_aCGjW1yfj",
+        "mentions": 2
+      }
+    ],
+    "prozorist-ta-informatsiina-vidkrytist-zakladu": [
+      {
+        "drive_id": "1sw3jqrty1bPCfGPwq0AocTdTH_9bSk6j",
+        "mentions": 2
+      },
+      {
+        "drive_id": "1RBcuT1PL8Dvhfq4HZqMNNssp2ewmBE7h",
+        "mentions": 2
+      },
+      {
+        "drive_id": "1whibJwOm_0RnEUBYca9WtaoHeaY8wZTM",
+        "mentions": 2
+      },
+      {
+        "drive_id": "1v6fQ-tFxXaWxqrTUk93EmSXG9VJS42_d",
+        "mentions": 2
+      },
+      {
+        "drive_id": "1EuEmx29C1E7UGs_r2s_b5UR4I-C_f3Ym",
+        "mentions": 2
+      },
+      {
+        "drive_id": "1Z5nmlyGA_ull3dHGXhtrzulqAiw0DgBj",
+        "mentions": 2
+      }
+    ],
+    "rezultaty-monitorynhu-iakosti-osvity": [
+      {
+        "drive_id": "1cyzXvB5CrsXTktZu5HW6uYkpezT8lIwH",
+        "mentions": 2
+      },
+      {
+        "drive_id": "1RjsT9iAJen6FxIQvsgDHJwv-Qy7H_0p-",
+        "mentions": 2
+      },
+      {
+        "drive_id": "170C_LnxnBAaIBuPKkNPLk-RguAlRzWmV",
+        "mentions": 2
+      },
+      {
+        "drive_id": "1iDKb5UDv16RTkgKTYR_dRj0CiRXIOvn4",
+        "mentions": 2
+      }
+    ],
+    "richnyi-zvit-pro-diialnist-zakladu-osvity": [
+      {
+        "drive_id": "1qzAwjFrtqhGkPM8qyNpECccT5GRb-Vnn",
+        "mentions": 2
+      }
+    ],
+    "samootsiniuvannia-zakladu-osvity": [
+      {
+        "drive_id": "1ufaQDZQpCS2bsendhewAKhvCNM1_d9ez",
+        "mentions": 2
+      },
+      {
+        "drive_id": "1gYFNgQo2DW8CvSThbA6EMElO_ukbZ-JF",
+        "mentions": 2
+      }
+    ],
+    "sotsialnyi-pedahoh": [
+      {
+        "drive_id": "14NmT49puOYP0uS_aLgsN7j6L-9TBcxVX",
+        "mentions": 2
+      }
+    ],
+    "spysok-ditei-zarakhovanykh-do-1-klasu-2026-2027-n-r": [
+      {
+        "drive_id": "11ZQurvHAdofeWfQ-7AWOLRW94GXWcxlk",
+        "mentions": 2
+      }
+    ],
+    "statut": [
+      {
+        "drive_id": "1100-aYWg4Pl1pTKpz0SrK9xVQqB2i9H4",
+        "mentions": 2
+      }
+    ],
+    "stop-bulinh": [
+      {
+        "drive_id": "1UKmqjYTq9Z8tDGb4SyZEGYmj0ot5QYxz",
+        "mentions": 2
+      },
+      {
+        "drive_id": "1pn9kwqmOoYJALxZNqaiqlH4KGxZSid51",
+        "mentions": 2
+      },
+      {
+        "drive_id": "1a0Ql1HlPVnAhjpGiV5h4T1Kwy6B-3kD1",
+        "mentions": 2
+      },
+      {
+        "drive_id": "1FZyKN76-tdnwXgSfVMkvK1jZDZA8SuMy",
+        "mentions": 2
+      },
+      {
+        "drive_id": "1OU4feT1rAwXHxI7S-GnMhaaQQCnQTM1b",
+        "mentions": 2
+      }
+    ],
+    "terytoriia-obsluhovuvannia-zakriplena-za-zakladom-osvity": [
+      {
+        "drive_id": "19FnHy9xK0TVJrv4tbuaY2YwRCInsQ32I",
+        "mentions": 2
+      }
+    ],
+    "umovy-dostupnosti-zakladu-osvity-dlia-navchannia-osib": [
+      {
+        "drive_id": "1CmP2Ev45JOl1Mfzn2DvRds8Ja0RTufZa",
+        "mentions": 2
+      }
+    ],
+    "vstup-2026": [
+      {
+        "drive_id": "19LsneioVckV-yJfxeeE0oVIqpy1X7SZ9",
+        "mentions": 2
+      }
+    ],
+    "zakupivli": [
+      {
+        "drive_id": "16P_i_gA-dKCn4RjkAZPQ2DiX98Ec4baa",
+        "mentions": 2
+      },
+      {
+        "drive_id": "19caTAkrMrOAnwB2C7dt3Nx30pG3cI3oU",
+        "mentions": 2
+      },
+      {
+        "drive_id": "1DuWLojZLqHgwBUwJG-bGnbyTHwkjsND4",
+        "mentions": 2
+      },
+      {
+        "drive_id": "1QJBi4Od17yK9f9_u35fFQIs4JeB5e-AJ",
+        "mentions": 2
+      },
+      {
+        "drive_id": "1JfrZknwvrGMrEou91vImKTDauB-Oy3Uz",
+        "mentions": 2
+      },
+      {
+        "drive_id": "1ExakH67cnlJ5BtpH52hRsCw7y4sQeyM3",
+        "mentions": 2
+      },
+      {
+        "drive_id": "1rhjKx1_VkDW8y4kL4k5uYRsbShCI0oMv",
+        "mentions": 2
+      },
+      {
+        "drive_id": "1swnR7L36lnFIZhWtXmxDb9W-WPpQXKRK",
+        "mentions": 2
+      },
+      {
+        "drive_id": "1rwtbCTqB0udLng--m2sCwrfgQErpN_bh",
+        "mentions": 2
+      },
+      {
+        "drive_id": "1i1yusMgZ1v85KllUqHUK2_h1tRgiQS-C",
+        "mentions": 2
+      }
+    ],
+    "zarakhuvannia-pershoklasnykiv": [
+      {
+        "drive_id": "17YcofVeNprsTw7k9poYOktDi0r3-eKVI",
+        "mentions": 2
+      }
+    ],
+    "zvit-dyrektora-zso": [
+      {
+        "drive_id": "13uPRVGP627TPiro6s4AoqYsWfnCOaWi-",
+        "mentions": 2
+      }
+    ]
+  },
+  "drive_icon_images": {
+    "arkhiv": [
+      {
+        "path": "uploads/pages/arkhiv/image-8.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      }
+    ],
+    "atestatsiia": [
+      {
+        "path": "uploads/pages/atestatsiia/image-1.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      },
+      {
+        "path": "uploads/pages/atestatsiia/image-2.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      },
+      {
+        "path": "uploads/pages/atestatsiia/image-3.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      }
+    ],
+    "finansova-diialnist": [
+      {
+        "path": "uploads/pages/finansova-diialnist/image-1.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      },
+      {
+        "path": "uploads/pages/finansova-diialnist/image-2.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      },
+      {
+        "path": "uploads/pages/finansova-diialnist/image-3.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      },
+      {
+        "path": "uploads/pages/finansova-diialnist/image-4.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      },
+      {
+        "path": "uploads/pages/finansova-diialnist/image-5.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      },
+      {
+        "path": "uploads/pages/finansova-diialnist/image-6.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      },
+      {
+        "path": "uploads/pages/finansova-diialnist/image-7.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      },
+      {
+        "path": "uploads/pages/finansova-diialnist/image-8.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      },
+      {
+        "path": "uploads/pages/finansova-diialnist/image-9.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      },
+      {
+        "path": "uploads/pages/finansova-diialnist/image-10.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      },
+      {
+        "path": "uploads/pages/finansova-diialnist/image-11.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      },
+      {
+        "path": "uploads/pages/finansova-diialnist/image-12.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      },
+      {
+        "path": "uploads/pages/finansova-diialnist/image-13.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      },
+      {
+        "path": "uploads/pages/finansova-diialnist/image-14.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      }
+    ],
+    "konkurs-superclass-tse-pro-nas": [
+      {
+        "path": "uploads/pages/konkurs-superclass-tse-pro-nas/image-1.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      },
+      {
+        "path": "uploads/pages/konkurs-superclass-tse-pro-nas/image-2.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      }
+    ],
+    "litsenziia-na-provadzhennia-osvitnoi-diialnosti": [
+      {
+        "path": "uploads/pages/litsenziia-na-provadzhennia-osvitnoi-diialnosti/image-1.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      }
+    ],
+    "maibutnie-ukrainskoi-molodi-ne-nalezhyt-okupatsii": [
+      {
+        "path": "uploads/pages/maibutnie-ukrainskoi-molodi-ne-nalezhyt-okupatsii/image-1.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      },
+      {
+        "path": "uploads/pages/maibutnie-ukrainskoi-molodi-ne-nalezhyt-okupatsii/image-2.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      },
+      {
+        "path": "uploads/pages/maibutnie-ukrainskoi-molodi-ne-nalezhyt-okupatsii/image-3.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      }
+    ],
+    "materialno-tekhnichne-zabezpechennia": [
+      {
+        "path": "uploads/pages/materialno-tekhnichne-zabezpechennia/image-1.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      }
+    ],
+    "novyny": [
+      {
+        "path": "uploads/pages/novyny/image-4.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      },
+      {
+        "path": "uploads/pages/novyny/image-5.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      },
+      {
+        "path": "uploads/pages/novyny/image-6.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      }
+    ],
+    "osvitni-prohramy": [
+      {
+        "path": "uploads/pages/osvitni-prohramy/image-1.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      },
+      {
+        "path": "uploads/pages/osvitni-prohramy/image-2.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      },
+      {
+        "path": "uploads/pages/osvitni-prohramy/image-3.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      }
+    ],
+    "plan-roboty-litseiu": [
+      {
+        "path": "uploads/pages/plan-roboty-litseiu/image-1.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      },
+      {
+        "path": "uploads/pages/plan-roboty-litseiu/image-2.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      },
+      {
+        "path": "uploads/pages/plan-roboty-litseiu/image-3.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      },
+      {
+        "path": "uploads/pages/plan-roboty-litseiu/image-4.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      },
+      {
+        "path": "uploads/pages/plan-roboty-litseiu/image-5.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      },
+      {
+        "path": "uploads/pages/plan-roboty-litseiu/image-6.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      },
+      {
+        "path": "uploads/pages/plan-roboty-litseiu/image-7.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      },
+      {
+        "path": "uploads/pages/plan-roboty-litseiu/image-8.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      },
+      {
+        "path": "uploads/pages/plan-roboty-litseiu/image-9.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      },
+      {
+        "path": "uploads/pages/plan-roboty-litseiu/image-10.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      },
+      {
+        "path": "uploads/pages/plan-roboty-litseiu/image-11.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      }
+    ],
+    "pravyla-pryiomu-do-zzso": [
+      {
+        "path": "uploads/pages/pravyla-pryiomu-do-zzso/image-1.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      },
+      {
+        "path": "uploads/pages/pravyla-pryiomu-do-zzso/image-2.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      }
+    ],
+    "prozorist-ta-informatsiina-vidkrytist-zakladu": [
+      {
+        "path": "uploads/pages/prozorist-ta-informatsiina-vidkrytist-zakladu/image-1.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      },
+      {
+        "path": "uploads/pages/prozorist-ta-informatsiina-vidkrytist-zakladu/image-2.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      },
+      {
+        "path": "uploads/pages/prozorist-ta-informatsiina-vidkrytist-zakladu/image-3.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      },
+      {
+        "path": "uploads/pages/prozorist-ta-informatsiina-vidkrytist-zakladu/image-4.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      },
+      {
+        "path": "uploads/pages/prozorist-ta-informatsiina-vidkrytist-zakladu/image-6.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      },
+      {
+        "path": "uploads/pages/prozorist-ta-informatsiina-vidkrytist-zakladu/image-7.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      },
+      {
+        "path": "uploads/pages/prozorist-ta-informatsiina-vidkrytist-zakladu/image-8.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      },
+      {
+        "path": "uploads/pages/prozorist-ta-informatsiina-vidkrytist-zakladu/image-9.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      },
+      {
+        "path": "uploads/pages/prozorist-ta-informatsiina-vidkrytist-zakladu/image-10.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      }
+    ],
+    "rezultaty-monitorynhu-iakosti-osvity": [
+      {
+        "path": "uploads/pages/rezultaty-monitorynhu-iakosti-osvity/image-1.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      },
+      {
+        "path": "uploads/pages/rezultaty-monitorynhu-iakosti-osvity/image-2.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      },
+      {
+        "path": "uploads/pages/rezultaty-monitorynhu-iakosti-osvity/image-3.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      },
+      {
+        "path": "uploads/pages/rezultaty-monitorynhu-iakosti-osvity/image-4.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      }
+    ],
+    "richnyi-zvit-pro-diialnist-zakladu-osvity": [
+      {
+        "path": "uploads/pages/richnyi-zvit-pro-diialnist-zakladu-osvity/image-1.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      }
+    ],
+    "samootsiniuvannia-zakladu-osvity": [
+      {
+        "path": "uploads/pages/samootsiniuvannia-zakladu-osvity/image-1.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      },
+      {
+        "path": "uploads/pages/samootsiniuvannia-zakladu-osvity/image-2.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      }
+    ],
+    "sotsialnyi-pedahoh": [
+      {
+        "path": "uploads/pages/sotsialnyi-pedahoh/image-1.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      }
+    ],
+    "spysok-ditei-zarakhovanykh-do-1-klasu-2026-2027-n-r": [
+      {
+        "path": "uploads/pages/spysok-ditei-zarakhovanykh-do-1-klasu-2026-2027-n-r/image-1.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      }
+    ],
+    "statut": [
+      {
+        "path": "uploads/pages/statut/image-1.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      }
+    ],
+    "stop-bulinh": [
+      {
+        "path": "uploads/pages/stop-bulinh/image-1.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      },
+      {
+        "path": "uploads/pages/stop-bulinh/image-2.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      },
+      {
+        "path": "uploads/pages/stop-bulinh/image-3.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      },
+      {
+        "path": "uploads/pages/stop-bulinh/image-4.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      },
+      {
+        "path": "uploads/pages/stop-bulinh/image-5.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      }
+    ],
+    "terytoriia-obsluhovuvannia-zakriplena-za-zakladom-osvity": [
+      {
+        "path": "uploads/pages/terytoriia-obsluhovuvannia-zakriplena-za-zakladom-osvity/image-1.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      }
+    ],
+    "umovy-dostupnosti-zakladu-osvity-dlia-navchannia-osib": [
+      {
+        "path": "uploads/pages/umovy-dostupnosti-zakladu-osvity-dlia-navchannia-osib/image-1.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      }
+    ],
+    "vstup-2026": [
+      {
+        "path": "uploads/pages/vstup-2026/image-1.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      }
+    ],
+    "zakupivli": [
+      {
+        "path": "uploads/pages/zakupivli/image-1.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      },
+      {
+        "path": "uploads/pages/zakupivli/image-2.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      },
+      {
+        "path": "uploads/pages/zakupivli/image-3.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      },
+      {
+        "path": "uploads/pages/zakupivli/image-4.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      },
+      {
+        "path": "uploads/pages/zakupivli/image-5.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      },
+      {
+        "path": "uploads/pages/zakupivli/image-6.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      },
+      {
+        "path": "uploads/pages/zakupivli/image-7.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      },
+      {
+        "path": "uploads/pages/zakupivli/image-8.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      },
+      {
+        "path": "uploads/pages/zakupivli/image-9.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      },
+      {
+        "path": "uploads/pages/zakupivli/image-10.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      }
+    ],
+    "zarakhuvannia-pershoklasnykiv": [
+      {
+        "path": "uploads/pages/zarakhuvannia-pershoklasnykiv/image-1.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      }
+    ],
+    "zvit-dyrektora-zso": [
+      {
+        "path": "uploads/pages/zvit-dyrektora-zso/image-1.png",
+        "dims": [
+          32,
+          32
+        ],
+        "alt": ""
+      }
+    ]
+  },
+  "h_artifacts": {
+    "arkhiv": [
+      {
+        "line": 1,
+        "text": "[Вітаємо з початком канікул!](#h.vnlaleksf2b1)"
+      },
+      {
+        "line": 3,
+        "text": "[Різдво у Дмитрушківському ліцеї](#h.g98j6t3qxq74)"
+      },
+      {
+        "line": 5,
+        "text": "[100 днів у школі](#h.rsd2dtjis816)"
+      },
+      {
+        "line": 7,
+        "text": "[Зимова казка від \"Радості\"](#h.fkdayvwxougu)"
+      },
+      {
+        "line": 9,
+        "text": "[🫖 День чаю☕️](#h.sj4rcurzmadc)"
+      },
+      {
+        "line": 11,
+        "text": "[Уманська галактика](#h.exf93dpk23u2)"
+      },
+      {
+        "line": 13,
+        "text": "[Конкурс малюнків](#h.cq3g6i2wi2il)"
+      },
+      {
+        "line": 15,
+        "text": "[Права свої знай – та про правила й обов'язки не забувай](#h.y6b4vjfvoz2c)"
+      },
+      {
+        "line": 17,
+        "text": "[АКТИВУЙ СВОЮ ШКОЛУ](#h.k5kezmut4k5y)"
+      },
+      {
+        "line": 19,
+        "text": "[Подарунки та розваги від Святого Миколая](#h.982zh98u9ti0)"
+      },
+      {
+        "line": 21,
+        "text": "[День волонтера у Дмитрушківському ліцеї](#h.bu6psigtpu63)"
+      },
+      {
+        "line": 23,
+        "text": "[акція \"Подарунок для захисника!\"](#h.lzq94f1qau5y)"
+      },
+      {
+        "line": 25,
+        "text": "[Зимовий адвент календар](#h.f7nyn29x1izi)"
+      },
+      {
+        "line": 27,
+        "text": "[#16 днів проти насилля](#h.l2p01fw9cfx8)"
+      },
+      {
+        "line": 29,
+        "text": "[#Всесвітній день боротьби зі СНІДом](#h.nz0ofkmt6y0d)"
+      },
+      {
+        "line": 31,
+        "text": "[Безпечні соціальні мережі](#h.6tr717vzlmk8)"
+      },
+      {
+        "line": 33,
+        "text": "[Змагання з волейболу дівчата 9 – 11 класи](#h.vwnn9nxkqo9x)"
+      },
+      {
+        "line": 35,
+        "text": "[Всеукраїнський флешмоб](#h.fvwk30ri24mu)"
+      },
+      {
+        "line": 37,
+        "text": "[\"Лапка підтримки\"](#h.2qmim5ls78lx)"
+      },
+      {
+        "line": 39,
+        "text": "[зібрання учасників літературного клубу \"Фізаліс\"](#h.iqkqvb598sh1)"
+      },
+      {
+        "line": 41,
+        "text": "[Калита хай ясно сяє, Україну прославляє!](#h.i32uxwq1utoo)"
+      },
+      {
+        "line": 43,
+        "text": "[Підсумки Всеукраїнської учнівської олімпіади з географії](#h.hr077gn1orw8)"
+      },
+      {
+        "line": 45,
+        "text": "[Запали свічку пам'яті](#h.8b75dlgp6nx9)"
+      },
+      {
+        "line": 47,
+        "text": "[Найкращий знавець\" законів , закономірностей географічного середовища](#h.hw575izdx54d)"
+      },
+      {
+        "line": 49,
+        "text": "[День гідності та свободи](#h.yjqpbjeqpxl3)"
+      },
+      {
+        "line": 51,
+        "text": "[1000 днів незламності України](#h.dbew7xnsi2g1)"
+      },
+      {
+        "line": 53,
+        "text": "[16 днів проти насильства](#h.ft1nfpgtnuit)"
+      },
+      {
+        "line": 55,
+        "text": "[Тренінг-гра для першачків](#h.ccmliinh3f5k)"
+      },
+      {
+        "line": 57,
+        "text": "[Міжнародний день толерантності](#h.8xyxqjc8971s)"
+      },
+      {
+        "line": 59,
+        "text": "[Всеукраїнська учнівська олімпіада з англійської мови](#h.pb49abxmbmbp)"
+      },
+      {
+        "line": 61,
+        "text": "[Вітаємо нового президента ліцею](#h.lm5mtid2w7uo)"
+      },
+      {
+        "line": 63,
+        "text": "[Інтелектуальний марафон](#h.j9iuefq7ysxz)"
+      },
+      {
+        "line": 65,
+        "text": "[Інтелектуальний марафон](#h.of7cszue3ocq)"
+      },
+      {
+        "line": 67,
+        "text": "[Долучайтесь до голосування!](#h.yus2wchs122f)"
+      },
+      {
+        "line": 69,
+        "text": "[День ментального здоров'я](#h.cppgpqdkllzp)"
+      },
+      {
+        "line": 71,
+        "text": "[Вдячність захисникам](#h.1xauq6m03wyb)"
+      },
+      {
+        "line": 73,
+        "text": "[День учителя](#h.ffp34cdutxko)"
+      },
+      {
+        "line": 75,
+        "text": "[День захисники України](#h.mzj07jn811x)"
+      },
+      {
+        "line": 77,
+        "text": "[Фізаліс - книжковий клуб](#h.mtsdhw20my5i)"
+      },
+      {
+        "line": 79,
+        "text": "[Міжнародний день миру](#h.q7yil1k8r0o7)"
+      },
+      {
+        "line": 81,
+        "text": "[Психологічна адаптація](#h.pms94e64khek)"
+      },
+      {
+        "line": 83,
+        "text": "[Юні рятувальники-пожежники](#h.mfibfz5x7fn8)"
+      },
+      {
+        "line": 85,
+        "text": "[Тут формується нове покоління!](#h.xp1u4heav4iq)"
+      },
+      {
+        "line": 87,
+        "text": "[Особливий подарунок](#h.o15jphuvco5i)"
+      },
+      {
+        "line": 89,
+        "text": "[З Днем знань!](#h.gnfargqzt035)"
+      },
+      {
+        "line": 91,
+        "text": "[Вітаємо Ніну Іванівну з перемогою у конкурсі](#h.5zv5jdus0dml)"
+      },
+      {
+        "line": 93,
+        "text": "[Відкриття Алеї Пам'яті](#h.uakej23dt9e6)"
+      },
+      {
+        "line": 95,
+        "text": "[День вшанування пам'яті дітей](#h.otcn2htmnhkp)"
+      },
+      {
+        "line": 97,
+        "text": "[Перша допомога від Червоного Хреста](#h.noo06ponk7wz)"
+      },
+      {
+        "line": 99,
+        "text": "[Останній дзвінок 2024](#h.64sdpt4mk9jp)"
+      },
+      {
+        "line": 101,
+        "text": "[\"New festival of arts-2024\"](#h.28m711g4iykm)"
+      },
+      {
+        "line": 103,
+        "text": "[Як Дмитрушківський ліцей весну зустрічав](#h.z0atkhhiyo2e)"
+      },
+      {
+        "line": 105,
+        "text": "[День Космонавтики](#h.thuz3uewwdov)"
+      },
+      {
+        "line": 107,
+        "text": "[Фестиваль дитячої та юнацької творчості TORONTO 2024](#h.qej81ayleebo)"
+      },
+      {
+        "line": 109,
+        "text": "[Навчання навичкам першої допомоги](#h.4ff8o9qhd6we)"
+      },
+      {
+        "line": 111,
+        "text": "[Літературний хаб у дмитрушківському ліцеї](#h.wflnucye6513)"
+      },
+      {
+        "line": 113,
+        "text": "[Міжнародний день щастя](#h.6cqfuopq4rm)"
+      },
+      {
+        "line": 115,
+        "text": "[Базові навички турботи про себе та інших](#h.udtvh19kq0n)"
+      },
+      {
+        "line": 117,
+        "text": "[Меморандум про співпрацю з Ірпінським податковим університетом](#h.lfgi8kdb6kr2)"
+      },
+      {
+        "line": 119,
+        "text": "[«Змінотворці»](#h.6inncnhg9j8l)"
+      },
+      {
+        "line": 121,
+        "text": "[Допомога від членів організації Vsi Razom - All together](#h.vvuqeevfqgzx)"
+      },
+      {
+        "line": 123,
+        "text": "[Шевченківські дні](#h.v6yqr3ke92ny)"
+      },
+      {
+        "line": 125,
+        "text": "[Весняна толока](#h.34n4gwjkzw1i)"
+      },
+      {
+        "line": 127,
+        "text": "[Збір Марка Стронга завершений!](#h.mgg23a6somgc)"
+      },
+      {
+        "line": 129,
+        "text": "[Міс україночка Дмитрушківського ліцею 2024](#h.ty6u6o6w6zfj)"
+      },
+      {
+        "line": 131,
+        "text": "[Буккросинг](#h.ewnwexxerjfs)"
+      },
+      {
+        "line": 133,
+        "text": "[Незламна українська жінка](#h.nklyx5odmmo2)"
+      },
+      {
+        "line": 135,
+        "text": "[ІІ етап змагань з футзалу \"Пліч-о-пліч Всеукраїнські шкільні ліги\"](#h.tnuoi31e3qeo)"
+      },
+      {
+        "line": 137,
+        "text": "[Працюємо. Навчаємо. Переможемо!](#h.rd607kyzboem)"
+      },
+      {
+        "line": 139,
+        "text": "[День народження ліцею](#h.xaxcjeea6rpd)"
+      },
+      {
+        "line": 141,
+        "text": "[Виставка гуртків «Народні ремесла України» та «Моделювання іграшок-сувенірів»](#h.iuuakrrk9d1i)"
+      },
+      {
+        "line": 143,
+        "text": "[Шкільний урок волонтерства](#h.cwil2i4r9ygo)"
+      },
+      {
+        "line": 145,
+        "text": "[Міжнародний день рідної мови](#h.b2b7mtjqmw4s)"
+      },
+      {
+        "line": 147,
+        "text": "[Памʼять Героїв Небесної Сотні](#h.lnc5rlgtsbcb)"
+      },
+      {
+        "line": 149,
+        "text": "[Шлях до Перемоги](#h.5gh3z0mwitz5)"
+      },
+      {
+        "line": 151,
+        "text": "[Міжнародний конкурс з інформатики \"Бебрас\"](#h.bztro8ismy)"
+      },
+      {
+        "line": 153,
+        "text": "[День Державного герба України](#h.utey4ka22ayp)"
+      },
+      {
+        "line": 155,
+        "text": "[День єднання](#h.tw7l5sisjtvl)"
+      },
+      {
+        "line": 157,
+        "text": "[День Святого Валентина](#h.r2swfqqsz841)"
+      },
+      {
+        "line": 159,
+        "text": "[Яка ти козачка? Який ти козак?](#h.vuuhqw34wj61)"
+      },
+      {
+        "line": 161,
+        "text": "[Ризики мін та вибухонебезпечних предметів](#h.lx27l31wdbh9)"
+      },
+      {
+        "line": 163,
+        "text": "[Тиждень безпечного інтернету](#h.q4l8gt3dqwdz)"
+      },
+      {
+        "line": 165,
+        "text": "[Всесвітній день читання вголос](#h.p46es2hqkol7)"
+      },
+      {
+        "line": 167,
+        "text": "[Сітка для наших захисників](#h.8yenuge0dpcu)"
+      },
+      {
+        "line": 169,
+        "text": "[9 лютого - Всесвітній день піци](#h.8ueeat5onurg)"
+      },
+      {
+        "line": 171,
+        "text": "[кібервійська поліції «BRAMA»](#h.pdrixuc73kjt)"
+      },
+      {
+        "line": 173,
+        "text": "[День пам'яті героїв крут](#h.g9lrwoi8dmtu)"
+      },
+      {
+        "line": 175,
+        "text": "[День пам'яті жертв голокосту](#h.cbrjw2ee1dq1)"
+      },
+      {
+        "line": 177,
+        "text": "[Пиріжки з теплом дому](#h.7anhsiskqc2f)"
+      },
+      {
+        "line": 179,
+        "text": "[Вправні \"павучки\"](#h.lbncvddocnhl)"
+      },
+      {
+        "line": 181,
+        "text": "[ІІІ місце у ІІІ етапі Всеукраїнської учнівської олімпіади з історії](#h.jta209kxky2h)"
+      },
+      {
+        "line": 183,
+        "text": "[Проєкт \"Пліч-о-пліч\"](#h.kgkkfl4v7fcr)"
+      },
+      {
+        "line": 185,
+        "text": "[Єднаймося! Наша єдність - наша зброя](#h.o31sx6m1yyd)"
+      },
+      {
+        "line": 187,
+        "text": "[Канікули з користю](#h.uyj0mw8a8jxr)"
+      },
+      {
+        "line": 189,
+        "text": "[ІІІ етап Всеукраїнської учнівської олімпіади з історії](#h.2wf675mjez0c)"
+      },
+      {
+        "line": 191,
+        "text": "[Для учнів Дмитрушківського ліцею було придбано 10 ноутбуків](#h.ukc011wzhfjq)"
+      }
+    ]
+  },
+  "broken_internal_links": {},
+  "broken_anchors": {},
+  "empty_pages": {
+    "pamiatka-dii-pid-chas-syhnalu-povitriana-tryvoha": {
+      "chars": 0,
+      "has_iframe": false,
+      "old_text_len": 49
+    },
+    "symvolika-litseiu": {
+      "chars": 0,
+      "has_iframe": false,
+      "old_text_len": 15
+    },
+    "uchniam-ta-batkam": {
+      "chars": 0,
+      "has_iframe": false,
+      "old_text_len": 16
+    },
+    "ustanovchi-dokumenty": {
+      "chars": 0,
+      "has_iframe": false,
+      "old_text_len": 66
+    },
+    "vakansii": {
+      "chars": 0,
+      "has_iframe": false,
+      "old_text_len": 8
+    },
+    "zno-dpa-nmt": {
+      "chars": 0,
+      "has_iframe": false,
+      "old_text_len": 11
+    }
+  },
+  "missing_drive_ids": {},
+  "summary": {}
+}
