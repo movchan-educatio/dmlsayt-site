@@ -5,10 +5,11 @@
  * Firebase Console -> Project Settings -> General -> Your apps -> Web app (конфігурація SDK).
  */
 window.FIREBASE_CONFIG = {
-  apiKey: "",             // Вставте apiKey з Firebase Console
-  authDomain: "",         // наприклад: dmlsayt-site.firebaseapp.com
-  projectId: "",          // наприклад: dmlsayt-site
-  storageBucket: "",      // наприклад: dmlsayt-site.appspot.com
-  messagingSenderId: "",  // наприклад: 123456789012
-  appId: ""               // наприклад: 1:123456789012:web:abcdef123456
+  apiKey: "AIzaSyC9TfZJcFP06uCPYGvBEogvlveG3DLzpFA",
+  authDomain: "dmytrushky-lyceum.firebaseapp.com",
+  projectId: "dmytrushky-lyceum",
+  storageBucket: "dmytrushky-lyceum.firebasestorage.app",
+  messagingSenderId: "873698102410",
+  appId: "1:873698102410:web:f06705432cfb1433f7b173",
+  measurementId: "G-RCTQ3Y96GP"
 };
