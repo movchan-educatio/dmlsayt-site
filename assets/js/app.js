@@ -370,27 +370,6 @@
     else setTimeout(work, 250);
   }
 
-  function calendarHtml() {
-    var now = new Date();
-    var year = now.getFullYear();
-    var month = now.getMonth();
-    var monthNames = ['Січень', 'Лютий', 'Березень', 'Квітень', 'Травень', 'Червень', 'Липень', 'Серпень', 'Вересень', 'Жовтень', 'Листопад', 'Грудень'];
-    var weekdays = ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Нд'];
-    var first = new Date(year, month, 1);
-    var offset = (first.getDay() + 6) % 7;
-    var days = new Date(year, month + 1, 0).getDate();
-    var cells = weekdays.map(function (day) { return '<span class="calendar-weekday">' + day + '</span>'; });
-    for (var blank = 0; blank < offset; blank += 1) cells.push('<span class="calendar-day is-empty" aria-hidden="true"></span>');
-    for (var day = 1; day <= days; day += 1) {
-      var today = day === now.getDate();
-      cells.push('<span class="calendar-day' + (today ? ' is-today' : '') + '"' + (today ? ' aria-current="date"' : '') + '>' + day + '</span>');
-    }
-    return '<section class="campus-calendar" aria-label="Календар на ' + monthNames[month].toLowerCase() + ' ' + year + ' року">' +
-      '<div class="calendar-title"><span>Календар</span><strong>' + monthNames[month] + ' ' + year + '</strong></div>' +
-      '<div class="calendar-grid">' + cells.join('') + '</div>' +
-    '</section>';
-  }
-
   function enhanceNews(prose) {
     var items = Array.prototype.slice.call(prose.children);
     if (!items.length) return;
@@ -512,7 +491,6 @@
       html += '<div class="home-dashboard"><section class="home-block quick-block reveal-on-scroll">' +
         '<div class="block-header">' +
           '<h2 class="block-title">Швидкий доступ</h2>' +
-          '<span class="block-index">01</span>' +
         '</div>' +
         '<ul class="quick-grid">' + quick.map(function (n) {
           var icon = QUICK_ICONS[n.slug] || '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m10 8 4 4-4 4"/></svg>';
@@ -536,10 +514,10 @@
       var latestNews = newsNode ? visible(newsNode.children).slice(0, 4) : [];
       if (latestNews.length) {
         html += '<section class="home-block news-digest reveal-on-scroll" aria-labelledby="newsDigestTitle">' +
-          '<div class="block-header"><h2 class="block-title" id="newsDigestTitle">Актуальне</h2><span class="block-index">02</span></div>' +
+          '<div class="block-header"><h2 class="block-title" id="newsDigestTitle">Актуальне</h2></div>' +
           '<div class="news-digest-list">' + latestNews.map(function (n, i) {
             return '<a class="news-digest-item" href="' + esc(pageHref(n.slug)) + '">' +
-              '<span class="news-digest-number">0' + (i + 1) + '</span><span>' + esc(n.title) + '</span><span class="news-digest-arrow" aria-hidden="true">↗</span>' +
+              '<span>' + esc(n.title) + '</span><span class="news-digest-arrow" aria-hidden="true">↗</span>' +
             '</a>';
           }).join('') + '</div>' +
           '<a class="text-link" href="' + esc(pageHref('novyny')) + '">Усі новини <span aria-hidden="true">→</span></a>' +
@@ -561,7 +539,6 @@
         '<aside class="about-aside">' +
           '<div class="block-header">' +
             '<h2 class="block-title">Про ліцей</h2>' +
-            '<span class="block-index">03</span>' +
           '</div>' +
           '<div class="campus-life-head"><span>Життя ліцею</span><span aria-hidden="true">↕</span></div>' +
           '<div class="campus-life" role="region" aria-label="Фотографії з життя ліцею" aria-live="polite" tabindex="0">' +
@@ -572,7 +549,6 @@
               '</a>';
             }).join('') +
           '</div>' +
-          calendarHtml() +
         '</aside>' +
         '<article class="paper home-body"><div class="prose"></div></article>' +
       '</section>';
@@ -594,12 +570,11 @@
       html += '<section class="home-block widgets-block reveal-on-scroll">' +
         '<div class="block-header">' +
           '<h2 class="block-title">Медіа та соціальні мережі</h2>' +
-          '<span class="block-index">04</span>' +
         '</div>' +
         '<div class="widgets">';
       html += vid ? '<div class="widget-card video-card"><h3 class="widget-title">' + esc(s.video.title || 'Відео про ліцей') + '</h3><div class="embed"><iframe src="https://www.youtube-nocookie.com/embed/' + vid + '" title="' + esc(s.video.title || 'Відео') + '" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen loading="lazy"></iframe></div></div>' : '';
       if (fb && fb !== '#') {
-        html += '<div class="widget-card fb-wrap"><h3 class="widget-title">Офіційна сторінка у Facebook</h3><iframe class="fb-frame" title="Стрічка Facebook" loading="lazy" src="https://www.facebook.com/plugins/page.php?href=' + encodeURIComponent(fb) + '&tabs=timeline&width=300&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false"></iframe></div>';
+        html += '<div class="widget-card fb-wrap"><h3 class="widget-title">Офіційна сторінка у Facebook</h3><iframe class="fb-frame" title="Стрічка Facebook" loading="lazy" src="https://www.facebook.com/plugins/page.php?href=' + encodeURIComponent(fb) + '&tabs=timeline&width=500&height=420&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false"></iframe></div>';
       }
       html += '</div></section>';
     }
@@ -609,7 +584,6 @@
       html += '<section class="home-block links-block reveal-on-scroll">' +
         '<div class="block-header">' +
           '<h2 class="block-title">' + esc(g.title) + '</h2>' +
-          '<span class="block-index">05</span>' +
         '</div>' +
         '<ul class="linkgrid">' + g.items.map(function (it) {
           return '<li><a href="' + esc(safeUrl(it.url)) + '" target="_blank" rel="noopener noreferrer" title="' + esc(it.title) + '" class="partner-card">' +

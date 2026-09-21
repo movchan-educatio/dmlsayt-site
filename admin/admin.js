@@ -314,18 +314,25 @@
   var editorBox;
   function renderPages() {
     treeBtns = {};
+    var splitEl, treePanel;
+    function setTree(open) {
+      if (!splitEl) return;
+      splitEl.classList.toggle('tree-collapsed', !open);
+      splitEl.classList.toggle('tree-open', open);
+    }
     function tb(key, label, title, fn, cls) {
       treeBtns[key] = h('button', { class: 'btn small ' + (cls || ''), type: 'button', title: title, 'aria-label': title, onclick: fn }, label);
       return treeBtns[key];
     }
     treeScroll = h('div', { class: 'tree-scroll' });
     editorBox = h('div', { class: 'panel-b', id: 'editor' });
-    mainEl.appendChild(h('div', { class: 'split' },
-      h('section', { class: 'panel treebox', 'aria-label': 'Структура сайту' },
+    var reopenTree = h('button', { class: 'btn small pages-reopen', type: 'button', title: 'Показати список сторінок', onclick: function () { setTree(true); } }, '☰ Сторінки');
+    treePanel = h('section', { class: 'panel treebox', 'aria-label': 'Структура сайту' },
         h('div', { class: 'panel-h' }, h('h2', null, 'Меню сайту'),
           h('div', { style: 'display:flex;gap:6px' },
             h('button', { class: 'btn small primary', type: 'button', onclick: addPage }, '+ Сторінка'),
-            h('button', { class: 'btn small', type: 'button', onclick: addLink }, '+ Посилання'))),
+            h('button', { class: 'btn small', type: 'button', onclick: addLink }, '+ Посилання'),
+            h('button', { class: 'btn small ghost tree-hide', type: 'button', title: 'Сховати список сторінок', onclick: function () { setTree(false); } }, '×'))),
         h('div', { class: 'tree-actions' },
           tb('up', '↑', 'Пересунути вище', function () { moveNode('up'); }),
           tb('down', '↓', 'Пересунути нижче', function () { moveNode('down'); }),
@@ -333,8 +340,10 @@
           tb('inn', '→', 'Вкласти в попередній пункт', function () { moveNode('inn'); }),
           h('span', { class: 'sep' }),
           tb('del', 'Видалити', 'Видалити вибраний пункт', deleteNode, 'danger')),
-        treeScroll),
-      h('section', { class: 'panel', 'aria-label': 'Редактор' }, editorBox)));
+        treeScroll);
+    splitEl = h('div', { class: 'split' }, treePanel,
+      h('section', { class: 'panel editor-panel', 'aria-label': 'Редактор' }, reopenTree, editorBox));
+    mainEl.appendChild(splitEl);
     renderTree(); renderEditor();
   }
 
@@ -395,6 +404,27 @@
           (navigator.clipboard ? navigator.clipboard.writeText(link) : Promise.reject()).then(function () { toast('Посилання скопійовано'); }, function () { askText({ title: 'Посилання на сторінку', label: 'Скопіюйте вручну', value: link }); });
         } }, 'Копіювати посилання')));
       editorBox.appendChild(h('label', { class: 'check' }, hidden, h('span', null, 'Приховати з меню (сторінка відкриватиметься лише за прямим посиланням)')));
+
+      if (window.VisualPageEditor) {
+        var visualHost = h('div');
+        editorBox.appendChild(visualHost);
+        window.VisualPageEditor.mount(visualHost, {
+          slug: slug,
+          body: body,
+          node: n,
+          modal: modal,
+          confirmBox: confirmBox,
+          toast: toast,
+          pickMedia: pickMedia,
+          resolvePath: resolvePath,
+          onChange: function (text) {
+            body.text = text;
+            if (n.todo && !/ще переносяться зі старого сайту/.test(text)) { delete n.todo; renderTree(); }
+            refreshBadge();
+          }
+        });
+        return;
+      }
 
       var ta = h('textarea', { id: 'body', rows: '20', spellcheck: 'true', lang: 'uk' });
       ta.value = body.text;
