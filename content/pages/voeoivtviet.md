@@ -17,3 +17,11 @@ https://docs.google.com/document/d/17x3m0hIJSrKmjQBHv_0ug2r6Vp858Juutfp_yrVHivc/
 https://docs.google.com/document/d/17x3m0hIJSrKmjQBHv_0ug2r6Vp858Juutfp_yrVHivc/edit?usp=sharing
 
 https://drive.google.com/file/d/1H96FS4PfrzRQ8erBX-esizmK8sn-tKg7/view?usp=sharing
+
+<iframe
+  src="https://drive.google.com/file/d/https://drive.google.com/file/d/1H96FS4PfrzRQ8erBX-esizmK8sn-tKg7/view?usp=sharing/preview"
+  width="100%"
+  height="700"
+  style="border:0;"
+  loading="lazy">
+</iframe>
