@@ -4,4 +4,4 @@
 
 ![](uploads/pages/arkhiv/image-1.jpg)
 
-[googlebeb97820fcba48bf.html](uploads/2026/09/googlebeb97820fcba48bf.html)
+[aptechky-sob-movchan-a-v.xlsx](uploads/2026/09/aptechky-sob-movchan-a-v.xlsx)
