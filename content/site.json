@@ -96,7 +96,7 @@
         "items": [
           {
             "title": "Szkoła Podstawowa nr 3 im. św. Wojciecha w Gnieźnie",
-            "url": "http://sp3.gniezno.pl/",
+            "url": "https://sp3.gniezno.pl/",
             "image": "uploads/site/partner-gniezno.jpg"
           },
           {
@@ -346,7 +346,7 @@
       ]
     },
     {
-      "title": "Конкурс \"Superclass - це про нас\"",
+      "title": "Конкурс «Superclass — це про нас»",
       "slug": "konkurs-superclass-tse-pro-nas"
     },
     {
@@ -374,7 +374,7 @@
       "slug": "platni-posluhy"
     },
     {
-      "title": "Пам'ятка \"Дії під час сигналу \"Повітряна тривога\"",
+      "title": "Пам’ятка «Дії під час сигналу “Повітряна тривога”»",
       "slug": "pamiatka-dii-pid-chas-syhnalu-povitriana-tryvoha"
     },
     {

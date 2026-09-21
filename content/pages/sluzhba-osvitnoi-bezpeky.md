@@ -1,4 +1,4 @@
-![](uploads/pages/sluzhba-osvitnoi-bezpeky/image-1.jpg)
+![Фото: Служба освітньої безпеки](uploads/pages/sluzhba-osvitnoi-bezpeky/image-1.jpg)
 
 ## Посада: інспектор сектору «Служба освітньої безпеки» Уманського РУП ГУНП в Черкаській області
 

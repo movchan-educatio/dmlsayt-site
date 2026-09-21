@@ -1,6 +1,6 @@
-![](uploads/pages/hrupa-prodovzhenoho-dnia/image-1.jpg)
+![Фото: Група продовженого дня](uploads/pages/hrupa-prodovzhenoho-dnia/image-1.jpg)
 
-![](uploads/pages/hrupa-prodovzhenoho-dnia/image-2.jpg)
+![Фото: Група продовженого дня — 2](uploads/pages/hrupa-prodovzhenoho-dnia/image-2.jpg)
 
 У закладі освіти функціонує група продовженого дня, метою діяльності якої є забезпечення належних умов для організації відпочинку, дозвілля та самопідготовки учнів після завершення уроків.
 

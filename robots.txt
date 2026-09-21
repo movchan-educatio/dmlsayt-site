@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /dmlsayt-site/
+Disallow: /dmlsayt-site/admin/
+
+Sitemap: https://movchan-educatio.github.io/dmlsayt-site/sitemap.xml

@@ -8,4 +8,4 @@
 
 Шкільними автобусами підвозиться 97 учнів із сіл Гереженівка, Гродзево, Піківець, Пугачівка, Собківка, Старі Бабани, Косенівка, Танське,Доброводи, міста Умань.
 
-![](uploads/pages/litsenzovanyi-obsiah-ta-faktychna-kilkist-osib-iaki/image-1.jpg)
+![Фото: Ліцензований обсяг та фактична кількість осіб, які навчаються в ліцеї](uploads/pages/litsenzovanyi-obsiah-ta-faktychna-kilkist-osib-iaki/image-1.jpg)

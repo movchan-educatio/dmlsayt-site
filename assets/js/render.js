@@ -59,6 +59,7 @@
       var src = img.getAttribute('src');
       if (isRelative(src)) img.setAttribute('src', resolve(src));
       img.setAttribute('loading', 'lazy');
+      img.setAttribute('decoding', 'async');
       if (!img.closest('a')) {
         var a = document.createElement('a');
         a.href = img.getAttribute('src');

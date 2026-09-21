@@ -1,4 +1,4 @@
-![](uploads/pages/3-strakhy-iaki-naichastishe-zavazhaiut-ditiam-i-molodi/image-1.jpg)
+![Фото: 3 страхи, які найчастіше заважають дітям і молоді виїхати з окупації](uploads/pages/3-strakhy-iaki-naichastishe-zavazhaiut-ditiam-i-molodi/image-1.jpg)
 
 3 страхи, які найчастіше заважають дітям і молоді виїхати з окупації — це страх мобілізації, страх залишитися без документів і страх втратити дім.
 

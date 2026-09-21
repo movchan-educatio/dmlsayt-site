@@ -18,9 +18,9 @@
   </div>
 </div>
 
-![](uploads/pages/konkurs-superclass-tse-pro-nas/image-3.jpg)
+![Фото: Конкурс «Superclass - це про нас»](uploads/pages/konkurs-superclass-tse-pro-nas/image-3.jpg)
 
-## Вітаємо переможців І номінації - "Кращий класний кабінет"
+## Вітаємо переможців І номінації - «Кращий класний кабінет»
 
 ## 1 місце - 2-Б клас, 6-А клас, 9-А клас
 

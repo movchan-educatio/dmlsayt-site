@@ -38,7 +38,7 @@
 
 [**Стратегія діяльності та розвитку**](https://drive.google.com/file/d/1ITY707VeuXHjMHms_977AL5yWEKOPbxV/view?usp=drive_link)
 
-![](uploads/pages/prozorist-ta-informatsiina-vidkrytist-zakladu/image-5.jpg)
+![Фото: Прозорість та інформаційна відкритість закладу](uploads/pages/prozorist-ta-informatsiina-vidkrytist-zakladu/image-5.jpg)
 
 [**Штатний розпис**](https://drive.google.com/file/d/1BELnBdAL1yDWA0tio3WWZTmnbTsECxDj/view?usp=drive_link)
 
@@ -52,7 +52,7 @@
 
 рішення перелік найпростіших укриттів.pdf
 
-[**Рішення "Про затвердження переліку найпростіших укриттів"**](https://drive.google.com/file/d/1iqhbyWoruIPKZpogkC9hiVPdFk1JbWEv/view?usp=drive_link)
+[**Рішення «Про затвердження переліку найпростіших укриттів»**](https://drive.google.com/file/d/1iqhbyWoruIPKZpogkC9hiVPdFk1JbWEv/view?usp=drive_link)
 
 <div class="doc-card">
   <div class="doc-card-title">Положення про академічну доброчесність.docx</div>

@@ -57,7 +57,8 @@
   function visible(list) { return (list || []).filter(function (n) { return !n.hidden; }); }
   function ancestors(node) { var a = []; while (node && node._parent) { a.unshift(node._parent); node = node._parent; } return a; }
   function isStub(md) { return /ще переносяться зі старого сайту/.test(md || ''); }
-  function hrefFor(n) { return n.url ? safeUrl(n.url) : '#/' + encodeURIComponent(n.slug); }
+  function pageHref(slug) { return slug === S.home ? './' : '?page=' + encodeURIComponent(slug); }
+  function hrefFor(n) { return n.url ? safeUrl(n.url) : pageHref(n.slug); }
   function countPages(n) {
     var c = 0; (n.children || []).forEach(function (k) { c += 1 + countPages(k); }); return c;
   }
@@ -170,14 +171,14 @@
       var kids = visible(n.children);
       var isCur = n.slug && (n.slug === current || (n.slug === S.home && (!current || current === S.home)));
       var hasKids = kids.length > 0;
-      var href = n.slug === S.home ? '#/' : '#/' + encodeURIComponent(n.slug);
+      var href = pageHref(n.slug);
 
       var dropHtml = '';
       if (hasKids) {
         var isMega = kids.length > 7;
         dropHtml = '<div class="dropdown-menu' + (isMega ? ' mega-menu' : '') + '"><ul>' +
           kids.map(function (k) {
-            var kHref = k.url ? safeUrl(k.url) : '#/' + encodeURIComponent(k.slug);
+            var kHref = hrefFor(k);
             var isExt = !!k.url;
             var isKidCur = k.slug && k.slug === current;
             return '<li><a href="' + esc(kHref) + '"' + (isExt ? ' target="_blank" rel="noopener noreferrer"' : '') + (isKidCur ? ' class="active"' : '') + '>' +
@@ -195,7 +196,7 @@
     if (otherNodes.length) {
       var moreDropHtml = '<div class="dropdown-menu mega-menu"><ul>' +
         otherNodes.map(function (k) {
-          var kHref = k.url ? safeUrl(k.url) : '#/' + encodeURIComponent(k.slug);
+          var kHref = hrefFor(k);
           var isExt = !!k.url;
           var isOtherCur = k.slug && k.slug === current;
           return '<li><a href="' + esc(kHref) + '"' + (isExt ? ' target="_blank" rel="noopener noreferrer"' : '') + (isOtherCur ? ' class="active"' : '') + '>' +
@@ -218,7 +219,7 @@
       var isCur = n.slug && n.slug === current;
       var a;
       if (n.url) a = '<a class="item ext" href="' + esc(safeUrl(n.url)) + '" target="_blank" rel="noopener noreferrer">' + esc(n.title) + '</a>';
-      else a = '<a class="item" href="' + (n.slug === S.home ? '#/' : '#/' + encodeURIComponent(n.slug)) + '"' + (isCur ? ' aria-current="page"' : '') + '>' + esc(n.title) + '</a>';
+      else a = '<a class="item" href="' + esc(pageHref(n.slug)) + '"' + (isCur ? ' aria-current="page"' : '') + '>' + esc(n.title) + '</a>';
       var toggle = kids.length ? '<button type="button" class="toggle" aria-expanded="' + open + '" aria-label="Розгорнути розділ «' + esc(n.title) + '»">' + CHEVRON + '</button>' : '';
       var sub = kids.length ? '<ul>' + navItems(kids, activeSet, current) + '</ul>' : '';
       return '<li class="' + (kids.length && !open ? 'collapsed' : '') + '"><div class="row">' + a + toggle + '</div>' + sub + '</li>';
@@ -238,6 +239,7 @@
     var side = $('#side');
     var scrim = $('#scrim');
     var btn = $('#menuBtn');
+    var wasOpen = side && side.classList.contains('open');
     if (side) side.classList.toggle('open', open);
     if (scrim) {
       scrim.classList.toggle('on', open);
@@ -245,6 +247,35 @@
     }
     if (btn) btn.setAttribute('aria-expanded', String(open));
     document.body.classList.toggle('drawer-open', open);
+    if (open && side) {
+      side.setAttribute('aria-modal', 'true');
+      setTimeout(function () {
+        var first = $('#drawerClose') || side.querySelector('a, button, input, [tabindex]:not([tabindex="-1"])');
+        if (first) first.focus();
+      }, 120);
+    } else if (side) {
+      side.removeAttribute('aria-modal');
+      if (wasOpen && btn && window.matchMedia('(max-width: 960px)').matches) btn.focus();
+    }
+  }
+
+  function trapDrawerFocus(e) {
+    var side = $('#side');
+    if (e.key !== 'Tab' || !side || !side.classList.contains('open')) return;
+    var focusable = Array.prototype.filter.call(
+      side.querySelectorAll('a[href], button:not([disabled]), input:not([disabled]), [tabindex]:not([tabindex="-1"])'),
+      function (el) { return el.offsetParent !== null; }
+    );
+    if (!focusable.length) return;
+    var first = focusable[0];
+    var last = focusable[focusable.length - 1];
+    if (e.shiftKey && document.activeElement === first) {
+      e.preventDefault();
+      last.focus();
+    } else if (!e.shiftKey && document.activeElement === last) {
+      e.preventDefault();
+      first.focus();
+    }
   }
 
   /* ---------- сторінки ---------- */
@@ -267,7 +298,7 @@
         return '<li class="child child-card"><div><a class="t" href="' + esc(safeUrl(k.url)) + '" target="_blank" rel="noopener noreferrer">' + esc(k.title) + ' ↗</a><span class="sub">Зовнішнє посилання</span></div></li>';
       }
       var more = countPages(k);
-      return '<li class="child child-card" data-slug="' + esc(k.slug) + '"><div><a class="t" href="#/' + encodeURIComponent(k.slug) + '">' + esc(k.title) + '</a>' +
+      return '<li class="child child-card" data-slug="' + esc(k.slug) + '"><div><a class="t" href="' + esc(pageHref(k.slug)) + '">' + esc(k.title) + '</a>' +
         '<p hidden></p>' + (more ? '<span class="sub">Підрозділів: ' + more + '</span>' : '') + '</div></li>';
     }).join('') + '</ul></section>';
   }
@@ -378,7 +409,7 @@
   function renderHome(node, md, token) {
     var s = S.site, main = $('#content');
     var actions = (s.heroActions || []).map(function (a, i) {
-      var target = a.slug ? '#/' + encodeURIComponent(a.slug) : safeUrl(a.url);
+      var target = a.slug ? pageHref(a.slug) : safeUrl(a.url);
       return '<a class="btn' + (i === 0 ? ' primary' : ' outline') + '" href="' + esc(target) + '">' +
         '<span>' + esc(a.title) + '</span>' + (i === 0 ? ' <span class="arrow">→</span>' : '') + '</a>';
     }).join('');
@@ -392,7 +423,7 @@
       (s.hero ? 
         '<figure class="hero-photo">' +
           '<div class="hero-photo-frame">' +
-            '<img src="' + esc(s.hero) + '" alt="Будівля ' + esc(s.title) + '" loading="eager">' +
+            '<img src="' + esc(s.hero) + '" alt="Будівля ' + esc(s.title) + '" loading="eager" fetchpriority="high" decoding="async">' +
             '<figcaption class="hero-photo-caption">' +
               '<span class="caption-dot"></span>' +
               '<span>Сучасний та безпечний освітній простір</span>' +
@@ -411,7 +442,7 @@
         '<ul class="quick-grid">' + quick.map(function (n) {
           var icon = QUICK_ICONS[n.slug] || '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m10 8 4 4-4 4"/></svg>';
           return '<li class="quick-item">' +
-            '<a href="#/' + encodeURIComponent(n.slug) + '" class="quick-card">' +
+            '<a href="' + esc(pageHref(n.slug)) + '" class="quick-card">' +
               '<div class="quick-card-top">' +
                 '<div class="quick-icon-wrap">' + icon + '</div>' +
                 '<span class="quick-arrow-circle" aria-hidden="true">' +
@@ -441,7 +472,7 @@
       html += '<section class="home-block banners-block reveal-on-scroll">' +
         '<div class="banners">' + s.banners.map(function (b) {
           return '<a href="' + esc(safeUrl(b.url)) + '" target="_blank" rel="noopener noreferrer" title="' + esc(b.title) + '" class="banner-card">' +
-            '<img src="' + esc(b.image) + '" alt="' + esc(b.title) + '" loading="lazy">' +
+            '<img src="' + esc(b.image) + '" alt="' + esc(b.title) + '" loading="lazy" decoding="async">' +
             '<span class="banner-title">' + esc(b.title) + ' ↗</span>' +
           '</a>';
         }).join('') + '</div></section>';
@@ -472,7 +503,7 @@
         '</div>' +
         '<ul class="linkgrid">' + g.items.map(function (it) {
           return '<li><a href="' + esc(safeUrl(it.url)) + '" target="_blank" rel="noopener noreferrer" title="' + esc(it.title) + '" class="partner-card">' +
-            (it.image ? '<img src="' + esc(it.image) + '" alt="' + esc(it.title) + '" loading="lazy">' : '<span class="noimg">' + esc(it.title) + '</span>') +
+            (it.image ? '<img src="' + esc(it.image) + '" alt="' + esc(it.title) + '" loading="lazy" decoding="async">' : '<span class="noimg">' + esc(it.title) + '</span>') +
           '</a></li>';
         }).join('') + '</ul></section>';
     });
@@ -483,7 +514,7 @@
   }
 
   function renderNotFound(slug) {
-    $('#content').innerHTML = '<article class="paper"><h1>Сторінку не знайдено</h1><div class="prose"><p>Такої сторінки немає або її було видалено. Скористайтеся меню або пошуком.</p><p><a href="#/">Перейти на головну</a></p></div></article>';
+    $('#content').innerHTML = '<article class="paper"><h1>Сторінку не знайдено</h1><div class="prose"><p>Такої сторінки немає або її було видалено. Скористайтеся меню або пошуком.</p><p><a href="./">Перейти на головну</a></p></div></article>';
     document.title = 'Сторінку не знайдено — ' + S.site.title;
   }
   function renderError() {
@@ -537,7 +568,7 @@
       res.sort(function (a, b) { return b.score - a.score; });
       var list = res.slice(0, 40).map(function (r) {
         var path = ancestors(r.it.node).map(function (a) { return a.title; });
-        return '<li><span class="path">' + esc(path.join(' / ')) + '</span><a href="#/' + encodeURIComponent(r.it.node.slug) + '">' + highlight(r.it.title, terms) + '</a>' +
+        return '<li><span class="path">' + esc(path.join(' / ')) + '</span><a href="' + esc(pageHref(r.it.node.slug)) + '">' + highlight(r.it.title, terms) + '</a>' +
           (r.snippet ? '<p>' + highlight(r.snippet, terms) + '</p>' : '') + '</li>';
       }).join('');
       main.innerHTML = '<article class="paper"><h1>Пошук</h1>' +
@@ -547,8 +578,14 @@
   }
 
   /* ---------- маршрутизація ---------- */
-  function parseHash() {
+  function parseRoute() {
     var raw = location.hash;
+    if (!raw) {
+      var params = new URLSearchParams(location.search);
+      var query = params.get('search');
+      if (query) return { type: 'search', q: query };
+      return { type: 'page', slug: params.get('page') || S.home, anchor: params.get('anchor') || '' };
+    }
     var h = raw.replace(/^#\/?/, '');
     var m = h.match(/^search\/(.*)$/);
     if (m) return { type: 'search', q: decodeURIComponent(m[1]) };
@@ -569,6 +606,29 @@
     }
 
     return { type: 'page', slug: slug || S.home, anchor: anchor };
+  }
+
+  function setMeta(selector, attr, value) {
+    var el = document.head.querySelector(selector);
+    if (el) el.setAttribute(attr, value);
+  }
+
+  function updatePageMeta(node, md) {
+    var isHome = node.slug === S.home;
+    var title = isHome ? S.site.title : node.title + ' — ' + S.site.title;
+    var description = R.excerpt(md, 158) || S.site.lead || 'Офіційний сайт Дмитрушківського ліцею.';
+    var root = new URL('./', location.href);
+    root.hash = '';
+    root.search = '';
+    var canonical = isHome ? root.href : root.href + '?page=' + encodeURIComponent(node.slug);
+    document.title = title;
+    setMeta('meta[name="description"]', 'content', description);
+    setMeta('meta[property="og:title"]', 'content', title);
+    setMeta('meta[property="og:description"]', 'content', description);
+    setMeta('meta[property="og:url"]', 'content', canonical);
+    setMeta('meta[name="twitter:title"]', 'content', title);
+    setMeta('meta[name="twitter:description"]', 'content', description);
+    setMeta('link[rel="canonical"]', 'href', canonical);
   }
 
   /* ---------- Scroll Reveal Micro-Animation ---------- */
@@ -608,7 +668,7 @@
   }
 
   function route() {
-    var r = parseHash();
+    var r = parseRoute();
     var token = ++S.token;
     setDrawer(false);
     if (r.type === 'search') {
@@ -641,7 +701,7 @@
     getMd(node.slug).then(function (md) {
       if (token !== S.token) return;
       if (node.slug === S.home) renderHome(node, md, token); else renderInner(node, md, token);
-      document.title = node.slug === S.home ? S.site.title : node.title + ' — ' + S.site.title;
+      updatePageMeta(node, md);
       setupScrollReveal();
       if (r.anchor) {
         setTimeout(function () {
@@ -691,7 +751,10 @@
     var closeBtn = $('#drawerClose');
     if (closeBtn) closeBtn.addEventListener('click', function () { setDrawer(false); });
     $('#scrim').addEventListener('click', function () { setDrawer(false); });
-    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setDrawer(false); });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') setDrawer(false);
+      else trapDrawerFocus(e);
+    });
     var mq = window.matchMedia('(max-width: 960px)');
     function placeSearch() {
       var f = $('#searchForm');
@@ -705,7 +768,7 @@
     $('#searchForm').addEventListener('submit', function (e) {
       e.preventDefault();
       var q = $('#q').value.trim();
-      location.hash = q ? '#/search/' + encodeURIComponent(q) : '#/';
+      location.href = q ? '?search=' + encodeURIComponent(q) : './';
     });
   }
   boot();

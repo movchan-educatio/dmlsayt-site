@@ -94,7 +94,7 @@
   </div>
 
   <div class="doc-card">
-    <div class="doc-card-title">План заходів акції "16 днів проти насильства"</div>
+    <div class="doc-card-title">План заходів акції «16 днів проти насильства»</div>
     <iframe src="https://drive.google.com/file/d/182JJu4PftK-2E-MVl62oHDnjrgij44ZJ/preview" title="План заходів 16 днів проти насильства 2025 р..pdf" loading="lazy"></iframe>
     <div class="doc-card-actions">
       <a class="doc-btn preview-btn" href="https://drive.google.com/file/d/182JJu4PftK-2E-MVl62oHDnjrgij44ZJ/preview" target="_blank" rel="noopener noreferrer">Переглянути документ ↗</a>

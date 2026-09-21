@@ -1,6 +1,6 @@
-<iframe src="https://www.youtube-nocookie.com/embed/I4PyeI1nGPk" title="YouTube Video, Карантин із користю для батьків і дітей — 10 ідей (частина 1)" allowfullscreen></iframe>
+<iframe src="https://www.youtube-nocookie.com/embed/I4PyeI1nGPk" title="YouTube Video, Карантин із користю для батьків і дітей — 10 ідей (частина 1)" loading="lazy" allowfullscreen></iframe>
 
-<iframe src="https://www.youtube-nocookie.com/embed/7aHU3-3S194" title="YouTube Video, Про дошкільний розвиток, підготовку дітей до школи обговорюємо із сімейним психологом Світланою Ройз" allowfullscreen></iframe>
+<iframe src="https://www.youtube-nocookie.com/embed/7aHU3-3S194" title="YouTube Video, Про дошкільний розвиток, підготовку дітей до школи обговорюємо із сімейним психологом Світланою Ройз" loading="lazy" allowfullscreen></iframe>
 
 Батьківська рада Дмитрушківського ліцею - дієва структурна ланка в управлінні навчальним закладом. Систематично відбуваються засідання батьківської ради ліцею, на яких розглядаються актуальні питання та приймаються важливі рішення.
 

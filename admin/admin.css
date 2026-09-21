@@ -167,8 +167,12 @@ textarea { resize: vertical; }
 
 .steps { padding-left: 20px; }
 .steps li { margin: 10px 0; }
-.help-body { max-width: 780px; }
+.help-body { max-width: 980px; }
 .help-body h3 { font-family: var(--serif); color: var(--ink); margin: 26px 0 8px; }
+.help-body p, .help-body li { line-height: 1.58; }
+.help-intro { max-width: 74ch; color: var(--muted); font-size: 1.02rem; }
+.help-list { margin: 8px 0 0; padding-left: 22px; }
+.help-list li { margin: 8px 0; }
 .help-body code { background: var(--mist); padding: 1px 6px; border-radius: 4px; }
 
 #toasts { position: fixed; left: 50%; bottom: 20px; transform: translateX(-50%); display: grid; gap: 8px; z-index: 200; width: min(520px, calc(100% - 24px)); }

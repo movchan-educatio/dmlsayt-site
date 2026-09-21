@@ -47,9 +47,9 @@
 
 [ЗАКОН УКРАЇНИ Про внесення змін до деяких законодавчих актів України щодо протидії булінгу](https://zakon.rada.gov.ua/laws/show/2657-19#Text)
 
-<iframe src="https://www.youtube-nocookie.com/embed/pNCvFAOAQco" title="YouTube Video, Як зупинити булінг: поради для батьків" allowfullscreen></iframe>
+<iframe src="https://www.youtube-nocookie.com/embed/pNCvFAOAQco" title="YouTube Video, Як зупинити булінг: поради для батьків" loading="lazy" allowfullscreen></iframe>
 
-<iframe src="https://www.youtube-nocookie.com/embed/espwzDTLVkE" title="YouTube Video, Як боротися з булінгом: поради для дітей" allowfullscreen></iframe>
+<iframe src="https://www.youtube-nocookie.com/embed/espwzDTLVkE" title="YouTube Video, Як боротися з булінгом: поради для дітей" loading="lazy" allowfullscreen></iframe>
 
 ## Корисні посилання на тему булінгу
 
