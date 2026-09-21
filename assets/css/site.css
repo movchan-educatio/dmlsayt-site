@@ -2980,8 +2980,16 @@ a:hover {
   .home-body .prose { max-width: 82ch; }
 
   .banners-block { margin-top: 30px; }
-  .banners { justify-content: center; }
-  .banner-card { flex: 1 1 320px; max-width: 520px; border: 0; border-radius: 20px; padding: 18px 22px; }
+  .banners { justify-content: center; gap: 14px; }
+  .banner-card {
+    flex: 0 1 360px;
+    width: min(100%, 360px);
+    min-height: 164px;
+    justify-content: center;
+    border: 0;
+    border-radius: 22px;
+    padding: 18px;
+  }
   .widgets { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; align-items: stretch; max-width: 1120px; margin-inline: auto; }
   .widget-card { display: flex; flex-direction: column; min-width: 0; border: 0; border-radius: 24px; padding: 20px; box-shadow: var(--shadow-sm); }
   .video-card { background: var(--navy-950); }
@@ -3113,7 +3121,11 @@ a:hover {
   .prose table { min-width: 580px; }
   .children-grid { grid-template-columns: 1fr; }
   .about-block .home-body { padding: 24px 20px; }
-  .banner-card { width: 100%; }
+  .banner-card {
+    width: 100%;
+    min-height: 100px;
+    padding: 12px 14px;
+  }
   .block-title { font-size: 1.7rem; }
   .footer-grid { text-align: center; }
   .footer-brand-header, .footer-address, .footer-social { justify-content: center; }
