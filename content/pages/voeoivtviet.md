@@ -15,3 +15,5 @@ https://docs.google.com/document/d/17x3m0hIJSrKmjQBHv_0ug2r6Vp858Juutfp_yrVHivc/
 [googlebeb97820fcba48bf.html](uploads/2026/09/googlebeb97820fcba48bf.html)
 
 https://docs.google.com/document/d/17x3m0hIJSrKmjQBHv_0ug2r6Vp858Juutfp_yrVHivc/edit?usp=sharing
+
+https://drive.google.com/file/d/1H96FS4PfrzRQ8erBX-esizmK8sn-tKg7/view?usp=sharing
