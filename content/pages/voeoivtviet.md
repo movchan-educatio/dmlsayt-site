@@ -9,3 +9,9 @@
 ![](uploads/2026/09/f4efb1e33620adaf1378054a74e03633.jpg)
 
 https://docs.google.com/document/d/17x3m0hIJSrKmjQBHv_0ug2r6Vp858Juutfp_yrVHivc/edit?usp=sharing
+
+<div>HTML</div>
+
+[googlebeb97820fcba48bf.html](uploads/2026/09/googlebeb97820fcba48bf.html)
+
+https://docs.google.com/document/d/17x3m0hIJSrKmjQBHv_0ug2r6Vp858Juutfp_yrVHivc/edit?usp=sharing
