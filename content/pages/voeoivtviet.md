@@ -5,3 +5,5 @@
 ![](uploads/pages/arkhiv/image-1.jpg)
 
 [aptechky-sob-movchan-a-v.xlsx](uploads/2026/09/aptechky-sob-movchan-a-v.xlsx)
+
+![](uploads/2026/09/f4efb1e33620adaf1378054a74e03633.jpg)
