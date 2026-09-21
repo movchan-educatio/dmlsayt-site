@@ -117,11 +117,11 @@
           '<div class="footer-col footer-nav-col">' +
             '<h4 class="footer-h">Швидка навігація</h4>' +
             '<ul class="footer-nav">' +
-              '<li><a href="#/">Головна сторінка</a></li>' +
-              '<li><a href="#/pro-nas">Про ліцей</a></li>' +
-              '<li><a href="#/prozorist-ta-informatsiina-vidkrytist-zakladu">Прозорість та відкритість</a></li>' +
-              '<li><a href="#/novyny">Новини ліцею</a></li>' +
-              '<li><a href="#/zvorotnii-zviazok">Зворотний зв’язок</a></li>' +
+              '<li><a href="' + esc(pageHref(S.home)) + '">Головна сторінка</a></li>' +
+              '<li><a href="' + esc(pageHref('pro-nas')) + '">Про ліцей</a></li>' +
+              '<li><a href="' + esc(pageHref('prozorist-ta-informatsiina-vidkrytist-zakladu')) + '">Прозорість та відкритість</a></li>' +
+              '<li><a href="' + esc(pageHref('novyny')) + '">Новини ліцею</a></li>' +
+              '<li><a href="' + esc(pageHref('zvorotnii-zviazok')) + '">Зворотний зв’язок</a></li>' +
               '<li><a href="admin/" class="footer-admin-link">' +
                 '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>' +
                 '<span>Панель керування</span>' +
@@ -280,7 +280,7 @@
 
   /* ---------- сторінки ---------- */
   function crumbs(node) {
-    var items = ['<li><a href="#/">Головна</a></li>'];
+    var items = ['<li><a href="' + esc(pageHref(S.home)) + '">Головна</a></li>'];
     ancestors(node).forEach(function (a) {
       items.push('<li><a href="' + hrefFor(a) + '">' + esc(a.title) + '</a></li>');
     });
@@ -322,6 +322,75 @@
     });
   }
 
+  function imagesFromMarkdown(md) {
+    var found = [];
+    var seen = new Set();
+    function add(src) {
+      src = String(src || '').trim().replace(/^<|>$/g, '');
+      if (!/^uploads\/pages\//i.test(src) || !/\.(?:jpe?g|png|webp)(?:[?#].*)?$/i.test(src) || seen.has(src)) return;
+      seen.add(src);
+      found.push(src);
+    }
+    String(md || '').replace(/!\[[^\]]*\]\((?:<)?([^)>\s]+)(?:>)?(?:\s+["'][^"']*["'])?\)/g, function (_, src) { add(src); return _; });
+    String(md || '').replace(/<img\b[^>]*\bsrc=["']([^"']+)["'][^>]*>/gi, function (_, src) { add(src); return _; });
+    return found;
+  }
+
+  function populateCampusLife(root, token, seedPhotos) {
+    if (!root) return;
+    var seen = new Set((seedPhotos || []).map(function (photo) { return photo.src; }));
+    var nodes = Object.keys(S.bySlug).map(function (slug) { return S.bySlug[slug]; });
+    var work = function () {
+      Promise.all(nodes.map(function (node) {
+        return getMd(node.slug).then(function (pageMd) {
+          return imagesFromMarkdown(pageMd).map(function (src) {
+            return { src: src, slug: node.slug, title: node.title };
+          });
+        }).catch(function () { return []; });
+      })).then(function (groups) {
+        if (token !== S.token || !root.isConnected) return;
+        var fragment = document.createDocumentFragment();
+        groups.forEach(function (photos) {
+          photos.forEach(function (photo) {
+            if (seen.has(photo.src)) return;
+            seen.add(photo.src);
+            var link = document.createElement('a');
+            link.className = 'campus-photo';
+            link.href = pageHref(photo.slug);
+            link.innerHTML = '<img src="' + esc(photo.src) + '" alt="' + esc(photo.title) + '" loading="lazy" decoding="async">' +
+              '<span>' + esc(photo.title) + '</span>';
+            fragment.appendChild(link);
+          });
+        });
+        root.appendChild(fragment);
+        root.setAttribute('aria-label', 'Фотографії з життя ліцею: ' + seen.size);
+      });
+    };
+    if ('requestIdleCallback' in window) window.requestIdleCallback(work, { timeout: 1200 });
+    else setTimeout(work, 250);
+  }
+
+  function calendarHtml() {
+    var now = new Date();
+    var year = now.getFullYear();
+    var month = now.getMonth();
+    var monthNames = ['Січень', 'Лютий', 'Березень', 'Квітень', 'Травень', 'Червень', 'Липень', 'Серпень', 'Вересень', 'Жовтень', 'Листопад', 'Грудень'];
+    var weekdays = ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Нд'];
+    var first = new Date(year, month, 1);
+    var offset = (first.getDay() + 6) % 7;
+    var days = new Date(year, month + 1, 0).getDate();
+    var cells = weekdays.map(function (day) { return '<span class="calendar-weekday">' + day + '</span>'; });
+    for (var blank = 0; blank < offset; blank += 1) cells.push('<span class="calendar-day is-empty" aria-hidden="true"></span>');
+    for (var day = 1; day <= days; day += 1) {
+      var today = day === now.getDate();
+      cells.push('<span class="calendar-day' + (today ? ' is-today' : '') + '"' + (today ? ' aria-current="date"' : '') + '>' + day + '</span>');
+    }
+    return '<section class="campus-calendar" aria-label="Календар на ' + monthNames[month].toLowerCase() + ' ' + year + ' року">' +
+      '<div class="calendar-title"><span>Календар</span><strong>' + monthNames[month] + ' ' + year + '</strong></div>' +
+      '<div class="calendar-grid">' + cells.join('') + '</div>' +
+    '</section>';
+  }
+
   function enhanceNews(prose) {
     var items = Array.prototype.slice.call(prose.children);
     if (!items.length) return;
@@ -360,7 +429,12 @@
     var main = $('#content');
     var hasMedia = /!\[[^\]]*\]\([^)]+\)|<(?:img|iframe)\b/i.test(md || '');
     var hasBody = R.plainText(md).length > 0 || hasMedia || (md && md.indexOf('feedback-root') !== -1);
-    main.innerHTML = crumbs(node) + '<article class="paper" data-page="' + esc(node.slug) + '">' +
+    var imageCount = ((md || '').match(/!\[[^\]]*\]\([^)]+\)|<img\b/gi) || []).length;
+    var iframeCount = ((md || '').match(/<iframe\b/gi) || []).length;
+    var fileCount = ((md || '').match(/\.(?:pdf|docx?|xlsx?|pptx?|odt|ods|rtf)(?:[)#?\s"']|$)/gi) || []).length;
+    var layoutType = node.slug === 'novyny' || node.slug === 'arkhiv' ? 'layout-news' :
+      iframeCount ? 'layout-embed' : fileCount > 1 ? 'layout-documents' : imageCount > 2 ? 'layout-gallery' : 'layout-editorial';
+    main.innerHTML = crumbs(node) + '<article class="paper ' + layoutType + '" data-page="' + esc(node.slug) + '">' +
       '<header class="paper-header">' +
         '<h1>' + esc(node.title) + '</h1>' +
         '<div class="paper-gold-bar"></div>' +
@@ -414,8 +488,9 @@
         '<span>' + esc(a.title) + '</span>' + (i === 0 ? ' <span class="arrow">→</span>' : '') + '</a>';
     }).join('');
 
-    var html = '<section class="hero reveal-on-scroll">' +
+    var html = '<section class="hero editorial-hero reveal-on-scroll">' +
       '<div class="hero-left">' +
+        '<span class="hero-kicker">Освіта · розвиток · безпека</span>' +
         '<h1 class="hero-title">' + esc(s.title) + '</h1>' +
         (s.lead ? '<p class="hero-lead">' + esc(s.lead) + '</p>' : '') +
         (actions ? '<div class="hero-actions">' + actions + '</div>' : '') +
@@ -434,10 +509,10 @@
 
     var quick = (s.quick || []).map(function (slug) { return S.bySlug[slug]; }).filter(Boolean);
     if (quick.length) {
-      html += '<section class="home-block quick-block reveal-on-scroll">' +
+      html += '<div class="home-dashboard"><section class="home-block quick-block reveal-on-scroll">' +
         '<div class="block-header">' +
           '<h2 class="block-title">Швидкий доступ</h2>' +
-          '<span class="block-gold-line"></span>' +
+          '<span class="block-index">01</span>' +
         '</div>' +
         '<ul class="quick-grid">' + quick.map(function (n) {
           var icon = QUICK_ICONS[n.slug] || '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m10 8 4 4-4 4"/></svg>';
@@ -456,14 +531,49 @@
             '</a>' +
           '</li>';
         }).join('') + '</ul></section>';
+
+      var newsNode = S.bySlug.novyny;
+      var latestNews = newsNode ? visible(newsNode.children).slice(0, 4) : [];
+      if (latestNews.length) {
+        html += '<section class="home-block news-digest reveal-on-scroll" aria-labelledby="newsDigestTitle">' +
+          '<div class="block-header"><h2 class="block-title" id="newsDigestTitle">Актуальне</h2><span class="block-index">02</span></div>' +
+          '<div class="news-digest-list">' + latestNews.map(function (n, i) {
+            return '<a class="news-digest-item" href="' + esc(pageHref(n.slug)) + '">' +
+              '<span class="news-digest-number">0' + (i + 1) + '</span><span>' + esc(n.title) + '</span><span class="news-digest-arrow" aria-hidden="true">↗</span>' +
+            '</a>';
+          }).join('') + '</div>' +
+          '<a class="text-link" href="' + esc(pageHref('novyny')) + '">Усі новини <span aria-hidden="true">→</span></a>' +
+        '</section>';
+      }
+      html += '</div>';
     }
 
     if (R.plainText(md)) {
+      var lifePhotos = [
+        { src: 'uploads/pages/osvitnii-protses/image-1.jpg', slug: 'osvitnii-protses', title: 'Освітній процес' },
+        { src: 'uploads/pages/osvitnii-protses/image-7.jpg', slug: 'osvitnii-protses', title: 'Освітній процес' },
+        { src: 'uploads/pages/hurtkova-robota/image-2.jpg', slug: 'hurtkova-robota', title: 'Гурткова робота' },
+        { src: 'uploads/pages/novyny/image-1.jpg', slug: 'novyny', title: 'Новини ліцею' },
+        { src: 'uploads/pages/osvitnii-protses/image-12.jpg', slug: 'osvitnii-protses', title: 'Освітній процес' },
+        { src: 'uploads/pages/hurtkova-robota/image-6.jpg', slug: 'hurtkova-robota', title: 'Гурткова робота' }
+      ];
       html += '<section class="home-block about-block reveal-on-scroll">' +
-        '<div class="block-header">' +
-          '<h2 class="block-title">Про ліцей</h2>' +
-          '<span class="block-gold-line"></span>' +
-        '</div>' +
+        '<aside class="about-aside">' +
+          '<div class="block-header">' +
+            '<h2 class="block-title">Про ліцей</h2>' +
+            '<span class="block-index">03</span>' +
+          '</div>' +
+          '<div class="campus-life-head"><span>Життя ліцею</span><span aria-hidden="true">↕</span></div>' +
+          '<div class="campus-life" role="region" aria-label="Фотографії з життя ліцею" aria-live="polite" tabindex="0">' +
+            lifePhotos.map(function (photo, i) {
+              return '<a class="campus-photo" href="' + esc(pageHref(photo.slug)) + '">' +
+                '<img src="' + esc(photo.src) + '" alt="' + esc(photo.title) + ' — фото ' + (i + 1) + '" loading="lazy" decoding="async">' +
+                '<span>' + esc(photo.title) + '</span>' +
+              '</a>';
+            }).join('') +
+          '</div>' +
+          calendarHtml() +
+        '</aside>' +
         '<article class="paper home-body"><div class="prose"></div></article>' +
       '</section>';
     }
@@ -484,7 +594,7 @@
       html += '<section class="home-block widgets-block reveal-on-scroll">' +
         '<div class="block-header">' +
           '<h2 class="block-title">Медіа та соціальні мережі</h2>' +
-          '<span class="block-gold-line"></span>' +
+          '<span class="block-index">04</span>' +
         '</div>' +
         '<div class="widgets">';
       html += vid ? '<div class="widget-card video-card"><h3 class="widget-title">' + esc(s.video.title || 'Відео про ліцей') + '</h3><div class="embed"><iframe src="https://www.youtube-nocookie.com/embed/' + vid + '" title="' + esc(s.video.title || 'Відео') + '" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen loading="lazy"></iframe></div></div>' : '';
@@ -499,7 +609,7 @@
       html += '<section class="home-block links-block reveal-on-scroll">' +
         '<div class="block-header">' +
           '<h2 class="block-title">' + esc(g.title) + '</h2>' +
-          '<span class="block-gold-line"></span>' +
+          '<span class="block-index">05</span>' +
         '</div>' +
         '<ul class="linkgrid">' + g.items.map(function (it) {
           return '<li><a href="' + esc(safeUrl(it.url)) + '" target="_blank" rel="noopener noreferrer" title="' + esc(it.title) + '" class="partner-card">' +
@@ -511,6 +621,7 @@
     main.innerHTML = html;
     var prose = $('.home-body .prose', main);
     if (prose) { prose.innerHTML = R.mdToHtml(md); R.enhance(prose); }
+    populateCampusLife($('.campus-life', main), token, lifePhotos || []);
   }
 
   function renderNotFound(slug) {
@@ -765,6 +876,13 @@
     }
     if (mq.addEventListener) mq.addEventListener('change', placeSearch); else mq.addListener(placeSearch);
     placeSearch();
+    var lastScroll = window.scrollY;
+    window.addEventListener('scroll', function () {
+      var y = window.scrollY;
+      document.body.classList.toggle('has-scrolled', y > 18);
+      document.body.classList.toggle('header-hidden', y > lastScroll && y > 180 && !document.body.classList.contains('drawer-open'));
+      lastScroll = y;
+    }, { passive: true });
     $('#searchForm').addEventListener('submit', function (e) {
       e.preventDefault();
       var q = $('#q').value.trim();
