@@ -49,6 +49,30 @@
 
   var FILE_EXT = /\.(pdf|docx?|xlsx?|pptx?|odt|ods|csv|zip|rar|7z|txt|rtf)(?:[?#].*)?$/i;
 
+  function fileLabel(ext) {
+    ext = String(ext || 'file').toUpperCase();
+    if (ext === 'DOC') ext = 'DOC';
+    return ext;
+  }
+
+  function makeDocumentCard(a, href, ext, google) {
+    if (a.closest('.document-card') || a.querySelector('img')) return;
+    var title = (a.textContent || '').trim() || (google ? 'Документ Google Drive' : 'Документ');
+    var card = document.createElement('div');
+    card.className = 'document-card' + (google ? ' document-card-google' : '');
+    var icon = document.createElement('span'); icon.className = 'document-card-icon'; icon.textContent = google ? 'G' : fileLabel(ext).slice(0, 4);
+    var info = document.createElement('span'); info.className = 'document-card-info';
+    var strong = document.createElement('strong'); strong.textContent = title;
+    var meta = document.createElement('small'); meta.textContent = google ? 'Документ Google' : fileLabel(ext) + ' файл';
+    info.appendChild(strong); info.appendChild(meta);
+    var actions = document.createElement('span'); actions.className = 'document-card-actions';
+    var open = document.createElement('a'); open.href = href; open.target = '_blank'; open.rel = 'noopener noreferrer'; open.textContent = google ? 'Відкрити документ ↗' : 'Переглянути';
+    actions.appendChild(open);
+    if (!google) { var download = document.createElement('a'); download.href = href; download.setAttribute('download',''); download.textContent = 'Завантажити'; actions.appendChild(download); }
+    card.appendChild(icon); card.appendChild(info); card.appendChild(actions);
+    a.parentNode.replaceChild(card, a);
+  }
+
   /* Доопрацювання вже вставленого в DOM вмісту: шляхи, зовнішні посилання, файли, таблиці, зображення. */
   function enhance(root, opts) {
     opts = opts || {};
@@ -70,6 +94,17 @@
       }
     });
 
+    root.querySelectorAll('figure.media-image').forEach(function (figure) {
+      var width = Math.max(20, Math.min(100, parseInt(figure.getAttribute('data-width'), 10) || 100));
+      var align = figure.getAttribute('data-align') || 'center';
+      var fit = figure.getAttribute('data-fit') || 'contain';
+      figure.style.width = width + '%';
+      figure.style.maxWidth = '100%';
+      figure.style.marginLeft = align === 'right' ? 'auto' : align === 'left' ? '0' : 'auto';
+      figure.style.marginRight = align === 'left' ? 'auto' : align === 'right' ? '0' : 'auto';
+      var img = figure.querySelector('img'); if (img) img.style.objectFit = fit === 'cover' ? 'cover' : 'contain';
+    });
+
     root.querySelectorAll('a[href]').forEach(function (a) {
       var href = a.getAttribute('href');
       if (isRelative(href)) { a.setAttribute('href', resolve(href)); href = a.getAttribute('href'); }
@@ -79,6 +114,19 @@
       if (/^https?:\/\//i.test(href) && href.indexOf(location.origin) !== 0) {
         a.setAttribute('target', '_blank'); a.setAttribute('rel', 'noopener noreferrer');
       }
+    });
+
+    root.querySelectorAll('a[data-ext]').forEach(function (a) {
+      var kind = a.getAttribute('data-ext');
+      makeDocumentCard(a, a.getAttribute('href'), kind, kind === 'google');
+    });
+
+    root.querySelectorAll('a[href*="youtube.com"],a[href*="youtu.be"]').forEach(function (a) {
+      if (a.closest('.document-card') || a.querySelector('img')) return;
+      var id = youtubeId(a.getAttribute('href')); if (!id) return;
+      var w = document.createElement('div'); w.className = 'embed video-embed';
+      var f = document.createElement('iframe'); f.src = 'https://www.youtube-nocookie.com/embed/' + id; f.title = (a.textContent || 'Відео YouTube').trim(); f.allow = 'accelerometer; encrypted-media; picture-in-picture'; f.setAttribute('allowfullscreen','');
+      w.appendChild(f); a.parentNode.replaceChild(w, a);
     });
 
     root.querySelectorAll('table').forEach(function (t) {

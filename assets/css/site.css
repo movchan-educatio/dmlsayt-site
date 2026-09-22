@@ -2744,6 +2744,96 @@ a:hover {
   .prose p { text-align: justify; text-wrap: pretty; }
   .prose h2 { margin-top: 2.2em; font-size: clamp(1.55rem, 2.5vw, 2.25rem); }
   .prose h3 { font-size: clamp(1.25rem, 2vw, 1.65rem); }
+
+  .media-image { max-width: 100%; }
+  .media-image img { display: block; width: 100%; max-width: 100%; height: auto; }
+  .media-image[data-fit="cover"] img { aspect-ratio: 16 / 9; object-fit: cover; }
+  .media-image figcaption { margin-top: 9px; color: var(--text-muted); font-size: .86rem; text-align: center; }
+  .document-card {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    gap: 16px;
+    align-items: center;
+    max-width: 860px;
+    margin: 18px 0;
+    padding: 18px;
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: var(--shadow-xs);
+  }
+  .document-card-icon { display: grid; place-items: center; width: 54px; height: 54px; border-radius: 12px; background: var(--gold-100); color: var(--navy-900); font-size: .72rem; font-weight: 850; }
+  .document-card-info { display: grid; min-width: 0; line-height: 1.35; }
+  .document-card-info strong { overflow: hidden; text-overflow: ellipsis; }
+  .document-card-info small { color: var(--text-muted); font-size: .78rem; }
+  .document-card-actions { display: flex; gap: 8px; }
+  .document-card-actions a,
+  .smart-link-card { display: inline-flex; align-items: center; justify-content: center; min-height: 40px; padding: 8px 12px; border: 1px solid var(--line); border-radius: 10px; text-decoration: none; font-weight: 750; }
+  .smart-link-card { justify-content: space-between; width: min(100%, 680px); margin-block: 16px; padding: 16px 18px; }
+  .video-embed { aspect-ratio: 16 / 9; max-width: 960px; }
+  .video-embed iframe { width: 100%; height: 100%; }
+
+  .page-content-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(250px, 320px);
+    gap: clamp(32px, 5vw, 72px);
+    align-items: start;
+  }
+  .page-content-grid > .prose { min-width: 0; }
+  .page-calendar {
+    position: sticky;
+    top: 112px;
+    padding: 24px 20px 22px;
+    color: #fff;
+    background: var(--navy-950);
+    border-radius: 22px;
+    box-shadow: var(--shadow-md);
+  }
+  .page-calendar-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+  .page-calendar-head span {
+    color: var(--gold-300);
+    font-size: .72rem;
+    font-weight: 800;
+    letter-spacing: .09em;
+    text-transform: uppercase;
+  }
+  .page-calendar-head strong {
+    font-family: var(--serif);
+    font-size: 1.08rem;
+    text-align: right;
+  }
+  .page-calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    gap: 6px;
+    text-align: center;
+  }
+  .page-calendar-weekdays {
+    margin-bottom: 8px;
+    color: #aab5c9;
+    font-size: .7rem;
+    font-weight: 700;
+  }
+  .page-calendar-day,
+  .page-calendar-empty {
+    display: grid;
+    place-items: center;
+    min-width: 0;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    font-size: .78rem;
+  }
+  .page-calendar-day.is-today {
+    color: var(--navy-950);
+    background: var(--gold-400);
+    font-weight: 800;
+  }
   .prose img { border-radius: 18px; box-shadow: 0 15px 38px rgba(7,18,42,.09); }
 
   .layout-editorial .prose > p:first-child:not(:has(img)):not(:empty) {
@@ -2918,7 +3008,7 @@ a:hover {
 
   .about-block { display: grid; grid-template-columns: minmax(0, 1fr) minmax(280px, .38fr); gap: clamp(24px, 5vw, 80px); }
   .about-block .block-header { align-content: start; align-items: flex-start; }
-  .about-aside { min-width: 0; order: 2; }
+  .about-aside { min-width: 0; order: 2; align-self: center; }
   .about-block .home-body { order: 1; }
   .campus-life-head {
     display: flex;
@@ -2934,13 +3024,18 @@ a:hover {
   .campus-life {
     display: grid;
     gap: 12px;
-    max-height: 550px;
+    max-height: 320px;
     padding-right: 8px;
     overflow-y: auto;
     overscroll-behavior: contain;
     scroll-snap-type: y mandatory;
     scrollbar-width: thin;
     scrollbar-color: var(--gold-500) transparent;
+  }
+  .about-aside .page-calendar {
+    position: static;
+    width: 100%;
+    margin-top: clamp(30px, 4vw, 52px);
   }
   .campus-photo {
     position: relative;
@@ -3014,6 +3109,8 @@ a:hover {
 
 @media screen and (max-width: 960px) {
   .strip { display: none; }
+  .page-content-grid { grid-template-columns: 1fr; gap: 30px; }
+  .page-calendar { position: static; width: min(100%, 430px); margin-inline: auto; }
   .head-in { min-height: 66px; }
   .menu-btn {
     display: inline-grid;
@@ -3063,6 +3160,7 @@ a:hover {
   .editorial-hero { min-height: 590px; }
   .editorial-hero::before { background: linear-gradient(0deg, rgba(4,11,27,.94) 0%, rgba(4,11,27,.58) 62%, rgba(4,11,27,.12) 100%); }
   .about-block { grid-template-columns: 1fr; gap: 22px; }
+  .about-aside { align-self: stretch; }
   .campus-life-head { margin-top: 18px; }
   .campus-life {
     display: flex;
@@ -3087,6 +3185,9 @@ a:hover {
 
 @media screen and (max-width: 680px) {
   .wrap { padding-inline: 16px; }
+  .document-card { grid-template-columns: auto minmax(0, 1fr); gap: 12px; padding: 14px; }
+  .document-card-actions { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 1fr; width: 100%; }
+  .document-card-actions a { min-width: 0; padding-inline: 8px; }
   .head-in { gap: 10px; }
   .brand { flex: 1; justify-content: center; gap: 9px; }
   .brand img { height: 40px; }
@@ -3122,6 +3223,7 @@ a:hover {
   .children-grid { grid-template-columns: 1fr; }
   .about-block .home-body { padding: 24px 20px; }
   .banner-card {
+    flex: 0 1 auto;
     width: 100%;
     min-height: 100px;
     padding: 12px 14px;

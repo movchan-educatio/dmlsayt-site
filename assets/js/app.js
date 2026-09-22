@@ -404,6 +404,30 @@
     });
   }
 
+  function calendarMarkup() {
+    var now = new Date();
+    var year = now.getFullYear();
+    var month = now.getMonth();
+    var monthNames = ['Січень', 'Лютий', 'Березень', 'Квітень', 'Травень', 'Червень', 'Липень', 'Серпень', 'Вересень', 'Жовтень', 'Листопад', 'Грудень'];
+    var weekdays = ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Нд'];
+    var firstDay = (new Date(year, month, 1).getDay() + 6) % 7;
+    var daysInMonth = new Date(year, month + 1, 0).getDate();
+    var cells = '';
+    var i;
+
+    for (i = 0; i < firstDay; i += 1) cells += '<span class="page-calendar-empty" aria-hidden="true"></span>';
+    for (i = 1; i <= daysInMonth; i += 1) {
+      cells += '<span class="page-calendar-day' + (i === now.getDate() ? ' is-today' : '') + '"' +
+        (i === now.getDate() ? ' aria-current="date"' : '') + '>' + i + '</span>';
+    }
+
+    return '<aside class="page-calendar" aria-label="Календар на ' + monthNames[month].toLowerCase() + ' ' + year + ' року">' +
+      '<div class="page-calendar-head"><span>Календар</span><strong>' + monthNames[month] + ' ' + year + '</strong></div>' +
+      '<div class="page-calendar-grid page-calendar-weekdays">' + weekdays.map(function (day) { return '<span>' + day + '</span>'; }).join('') + '</div>' +
+      '<div class="page-calendar-grid">' + cells + '</div>' +
+    '</aside>';
+  }
+
   function renderInner(node, md, token) {
     var main = $('#content');
     var hasMedia = /!\[[^\]]*\]\([^)]+\)|<(?:img|iframe)\b/i.test(md || '');
@@ -418,7 +442,8 @@
         '<h1>' + esc(node.title) + '</h1>' +
         '<div class="paper-gold-bar"></div>' +
       '</header>' +
-      (hasBody ? '<div class="prose"></div>' : '') + childrenList(node) + '</article>';
+      (hasBody ? '<div class="prose"></div>' : '') +
+      childrenList(node) + '</article>';
     if (hasBody) {
       var prose = $('.prose', main);
       prose.innerHTML = R.mdToHtml(md);
@@ -549,6 +574,7 @@
               '</a>';
             }).join('') +
           '</div>' +
+          calendarMarkup() +
         '</aside>' +
         '<article class="paper home-body"><div class="prose"></div></article>' +
       '</section>';
