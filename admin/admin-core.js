@@ -169,6 +169,29 @@
   /* ---------- відстеження змін ---------- */
   function pagePath(slug) { return 'content/pages/' + slug + '.md'; }
 
+  var SEO_BASE_URL = 'https://movchan-educatio.github.io/dmlsayt-site/';
+
+  function xmlEscape(value) {
+    return String(value).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&apos;');
+  }
+
+  function seoFiles() {
+    var home = (A.site.site && A.site.site.home) || 'golovna';
+    var slugs = Array.from(new Set(allSlugs(A.site.nav))).filter(function (slug) { return slug && slug !== home; });
+    var urls = [SEO_BASE_URL].concat(slugs.map(function (slug) {
+      return SEO_BASE_URL + '?page=' + encodeURIComponent(slug);
+    }));
+    var sitemap = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'];
+    urls.forEach(function (url) {
+      sitemap.push('  <url>', '    <loc>' + xmlEscape(url) + '</loc>', '  </url>');
+    });
+    sitemap.push('</urlset>');
+    return {
+      sitemap: sitemap.join('\n') + '\n',
+      robots: 'User-agent: *\nAllow: /dmlsayt-site/\nDisallow: /dmlsayt-site/admin/\n\nSitemap: ' + SEO_BASE_URL + 'sitemap.xml\n'
+    };
+  }
+
   function allSlugs(list, out) {
     out = out || [];
     (list || []).forEach(function (n) { if (n.slug) out.push(n.slug); allSlugs(n.children, out); });
@@ -183,6 +206,13 @@
     summary.settings = setStr !== A.origSettings;
     if (summary.menu || summary.settings) {
       writes.push({ path: 'content/site.json', text: JSON.stringify(A.site, null, 2) + '\n' });
+    }
+    // A newly added/removed public page changes the navigation tree. Publish
+    // sitemap and robots in the same atomic Git commit so SEO never lags behind.
+    if (summary.menu) {
+      var seo = seoFiles();
+      writes.push({ path: 'sitemap.xml', text: seo.sitemap });
+      writes.push({ path: 'robots.txt', text: seo.robots });
     }
     var live = new Set(allSlugs(A.site.nav));
     Object.keys(A.bodies).forEach(function (slug) {
@@ -277,6 +307,6 @@
   global.Admin = {
     h: h, $: $, toast: toast, modal: modal, askText: askText, confirmBox: confirmBox,
     A: A, GH: GH, api: api, ghError: ghError, collectChanges: collectChanges, commitAll: commitAll,
-    pagePath: pagePath, allSlugs: allSlugs, fileToBase64: fileToBase64, R: R
+    pagePath: pagePath, allSlugs: allSlugs, seoFiles: seoFiles, fileToBase64: fileToBase64, R: R
   };
 })(window);

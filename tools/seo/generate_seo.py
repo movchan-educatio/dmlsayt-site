@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-"""Generate robots.txt and sitemap.xml from the real navigation tree."""
+"""Generate robots.txt and sitemap.xml from the real public navigation tree.
+
+The site uses real query routes (``?page=slug``), not fragment/hash routes.
+The browser admin mirrors this output whenever the public tree changes.
+"""
 
 from __future__ import annotations
 
@@ -27,6 +31,10 @@ def main():
     slugs = list(dict.fromkeys(nav_slugs(data.get("nav", []))))
     urls = [BASE_URL]
     urls.extend(BASE_URL + "?page=" + quote(slug, safe="") for slug in slugs if slug != home)
+    if len(urls) != len(set(urls)):
+        raise SystemExit("Duplicate canonical URL detected while generating sitemap")
+    if any("#" in url or "/admin" in url or not url.startswith(BASE_URL) for url in urls):
+        raise SystemExit("Non-public or non-canonical URL detected while generating sitemap")
 
     sitemap = ['<?xml version="1.0" encoding="UTF-8"?>',
                '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']

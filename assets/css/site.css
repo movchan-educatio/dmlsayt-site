@@ -3662,3 +3662,306 @@ a:hover {
   .quick-card { min-height: 96px; height: 96px; }
   .banner-card { min-height: 96px; }
 }
+
+/* ==========================================================================
+   CARD SYSTEM POLISH — one restrained family for navigation and content
+   ========================================================================== */
+@media screen {
+  :root {
+    --card-radius: 22px;
+    --card-border: rgba(15, 31, 58, .09);
+    --card-shadow: 0 12px 30px rgba(15, 31, 58, .08), 0 3px 8px rgba(15, 31, 58, .04);
+    --card-shadow-hover: 0 18px 38px rgba(15, 31, 58, .12), 0 5px 12px rgba(15, 31, 58, .055);
+    --card-motion: 200ms ease;
+  }
+
+  .card-grid,
+  .feature-grid,
+  .stat-grid,
+  .linkgrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+    gap: clamp(20px, 2.2vw, 28px);
+    align-items: stretch;
+  }
+
+  :is(
+    .quick-card,
+    .banner-card,
+    .news-card,
+    .news-document-card,
+    .document-card,
+    .smart-link-card,
+    .link-card,
+    .partner-card,
+    .child-card,
+    .photo-card,
+    .feature-card,
+    .stat-card,
+    .widget-card,
+    .page-calendar
+  ) {
+    min-width: 0;
+    border: 1px solid var(--card-border);
+    border-radius: var(--card-radius);
+    box-shadow: var(--card-shadow);
+  }
+
+  :is(.quick-card, .banner-card, .partner-card, .child-card, .smart-link-card, .link-card, .campus-photo) {
+    transition: transform var(--card-motion), box-shadow var(--card-motion), border-color var(--card-motion);
+  }
+
+  /* Compact navigation cards share one horizontal composition. */
+  .quick-grid {
+    grid-auto-rows: auto;
+    gap: clamp(12px, 1.5vw, 18px);
+  }
+  .quick-card {
+    display: grid;
+    grid-template-columns: 48px minmax(0, 1fr) 34px;
+    grid-template-rows: 1fr;
+    align-items: center;
+    gap: 14px;
+    height: 112px;
+    min-height: 112px;
+    padding: 16px 18px;
+    overflow: hidden;
+    background: #fff;
+  }
+  .quick-card-top { display: contents; }
+  .quick-icon-wrap {
+    grid-column: 1;
+    grid-row: 1;
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;
+  }
+  .quick-arrow-circle {
+    grid-column: 3;
+    grid-row: 1;
+    width: 34px;
+    height: 34px;
+  }
+  .quick-card-body {
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    min-width: 0;
+    padding: 0;
+    text-align: left;
+  }
+  .quick-card-title {
+    max-width: none;
+    overflow-wrap: anywhere;
+    font-size: clamp(.94rem, 1.12vw, 1.08rem);
+    line-height: 1.28;
+    text-wrap: balance;
+  }
+  .quick-card-bar { display: none; }
+
+  .banners { gap: clamp(12px, 1.5vw, 18px); }
+  .banner-card {
+    grid-template-columns: 56px minmax(0, 1fr) 30px;
+    flex: 0 1 360px;
+    width: min(100%, 360px);
+    min-height: 112px;
+    padding: 16px 18px;
+    background: #fff;
+  }
+  .banner-card::after {
+    content: "↗";
+    display: grid;
+    place-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: var(--navy-50);
+    color: var(--navy-900);
+    font-weight: 800;
+  }
+  .banner-card img { width: 56px; height: 56px; object-fit: contain; }
+  .banner-title { overflow-wrap: anywhere; font-size: 1rem; line-height: 1.28; }
+
+  /* Content cards: clear hierarchy without turning articles into tiles. */
+  .feature-card,
+  .stat-card,
+  .link-card { padding: clamp(20px, 2.5vw, 28px); }
+  .accent-card,
+  .info-block,
+  .highlight-block,
+  .quote-highlight {
+    border: 1px solid var(--card-border);
+    border-left: 4px solid var(--gold-500);
+    border-radius: 0 var(--card-radius) var(--card-radius) 0;
+    background: linear-gradient(135deg, #fff, #fffaf0);
+    box-shadow: var(--card-shadow);
+  }
+  .photo-card { overflow: hidden; background: #fff; }
+  .photo-card img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .photo-card > :not(img) { margin-inline: clamp(18px, 2.2vw, 26px); }
+  .photo-card > :last-child { margin-bottom: clamp(18px, 2.2vw, 26px); }
+
+  /* News pages may contain full legacy articles; only compact entries share rows. */
+  .news-feed {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(20px, 2.4vw, 30px);
+    align-items: start;
+  }
+  .news-card,
+  .news-document-card {
+    height: auto;
+    padding: clamp(20px, 2.5vw, 30px);
+    overflow: hidden;
+    background: #fff;
+    border-top-width: 1px;
+  }
+  .news-article-card,
+  .news-document-card { grid-column: 1 / -1; }
+  .news-card h2 { max-width: 26ch; text-wrap: balance; }
+  .news-card img {
+    width: 100%;
+    height: auto;
+    max-height: 560px;
+    object-fit: contain;
+    border-radius: 16px;
+  }
+
+  /* Document and Google cards stay useful even when a preview is unavailable. */
+  .document-card {
+    gap: 14px;
+    min-height: 92px;
+    padding: 16px;
+    background: #fff;
+  }
+  .document-card-icon { width: 52px; height: 52px; border-radius: 14px; }
+  .document-card-info strong { overflow-wrap: anywhere; text-overflow: clip; }
+  .document-card-actions a,
+  .google-document-actions a { border-radius: 10px; }
+  .google-document-viewer .embed-doc { border-radius: var(--card-radius); }
+
+  /* Partner/logo cards use a stable white visual area. */
+  .linkgrid { grid-template-columns: repeat(auto-fit, minmax(min(100%, 190px), 1fr)); }
+  .linkgrid > li { display: flex; min-width: 0; }
+  .partner-card {
+    width: 100%;
+    height: 126px;
+    min-height: 126px;
+    padding: 18px 48px 18px 20px;
+    background: #fff;
+  }
+  .partner-card img {
+    width: 100%;
+    max-width: 170px;
+    height: 76px;
+    max-height: 76px;
+    object-fit: contain;
+  }
+  .partner-card .noimg { max-width: 18ch; text-wrap: balance; }
+
+  .child-card { height: 100%; padding: 18px; background: #fff; }
+  .widget-card { background: #fff; }
+  .widget-card.video-card { background: var(--navy-950); color: #fff; }
+  .news-digest {
+    border: 1px solid rgba(255,255,255,.1);
+    border-radius: 28px;
+    background: var(--navy-900);
+    box-shadow: var(--card-shadow-hover);
+  }
+  .page-calendar,
+  .campus-photo { border-radius: var(--card-radius); }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  :is(.quick-card, .banner-card, .partner-card, .child-card, .smart-link-card, .link-card, .campus-photo):hover {
+    transform: translateY(-3px);
+    border-color: rgba(197, 160, 89, .6);
+    box-shadow: var(--card-shadow-hover);
+  }
+  .quick-card:hover .quick-icon-wrap { transform: none; }
+  .quick-card:hover .quick-arrow-circle { transform: translateX(2px); }
+}
+
+@media screen and (min-width: 1081px) {
+  /* Two compact Quick Access rows and “Актуальне” share one baseline. */
+  .home-dashboard .quick-grid { grid-template-rows: repeat(2, 112px); }
+  .home-dashboard .news-digest {
+    box-sizing: border-box;
+    margin-top: 80px;
+    height: 242px;
+    min-height: 242px;
+    padding: 22px 28px;
+  }
+  .home-dashboard .news-digest .block-header { margin-bottom: 12px; }
+  .home-dashboard .news-digest .block-title { font-size: clamp(1.85rem, 2.4vw, 2.35rem); }
+  .home-dashboard .news-digest-item { padding: 10px 0; font-size: .88rem; }
+  .home-dashboard .news-digest .text-link { padding-top: 10px; }
+}
+
+@media screen and (min-width: 1400px) {
+  .home-dashboard .news-digest { margin-top: 99px; }
+}
+
+@media screen and (max-width: 760px) {
+  .card-grid,
+  .feature-grid,
+  .stat-grid,
+  .linkgrid,
+  .news-feed { grid-template-columns: 1fr; }
+  .news-card,
+  .news-document-card { grid-column: 1; }
+
+  .quick-grid { gap: 10px; }
+  .quick-card {
+    grid-template-columns: 40px minmax(0, 1fr) 30px;
+    gap: 12px;
+    height: auto;
+    min-height: 96px;
+    padding: 14px 16px;
+  }
+  .quick-icon-wrap { width: 40px; height: 40px; border-radius: 12px; }
+  .quick-arrow-circle { width: 30px; height: 30px; }
+  .quick-card-title { display: block; font-size: .96rem; line-height: 1.26; }
+
+  .banner-card {
+    grid-template-columns: 48px minmax(0, 1fr) 30px;
+    flex: 0 0 auto;
+    width: 100%;
+    min-height: 96px;
+    height: auto;
+    padding: 14px 16px;
+  }
+  .banner-card img { width: 48px; height: 48px; }
+  .banner-title { display: block; overflow: visible; -webkit-line-clamp: initial; }
+
+  .partner-card { height: 112px; min-height: 112px; }
+  .news-card,
+  .news-document-card { padding: 20px 18px; }
+  .document-card { height: auto; }
+}
+
+/* Long-form public copy follows the full readable column on every page. */
+@media screen {
+  .prose p:not(:has(img)):not(:has(iframe)):not(.google-viewer-note),
+  .news-card p:not(:has(img)):not(:has(iframe)) {
+    max-width: 100%;
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :is(.quick-card, .banner-card, .partner-card, .child-card, .smart-link-card, .link-card, .campus-photo) {
+    transition: none;
+  }
+}

@@ -69,8 +69,14 @@ def main():
     root = ET.parse(ROOT / "sitemap.xml").getroot()
     sitemap_urls = [el.text for el in root.findall("{http://www.sitemaps.org/schemas/sitemap/0.9}url/{http://www.sitemaps.org/schemas/sitemap/0.9}loc")]
     require(len(sitemap_urls) == len(nav), f"Sitemap має {len(sitemap_urls)} URL замість {len(nav)}")
+    require(len(sitemap_urls) == len(set(sitemap_urls)), "Sitemap містить дублікати URL")
     require(not any("#/" in url for url in sitemap_urls), "Sitemap містить hash URL")
+    require(not any("#" in url for url in sitemap_urls), "Sitemap містить fragment URL")
     require(not any("/admin" in url for url in sitemap_urls), "Sitemap містить admin URL")
+    require(all(url.startswith("https://movchan-educatio.github.io/dmlsayt-site/") for url in sitemap_urls),
+            "Sitemap містить URL поза production-сайтом")
+    require("seoFiles" in (ROOT / "admin" / "admin-core.js").read_text(encoding="utf-8"),
+            "Admin publish не оновлює sitemap автоматично")
 
     app = (ROOT / "assets" / "js" / "app.js").read_text(encoding="utf-8")
     require("?page=" in app and "function parseRoute" in app, "Не знайдено індексовану query-маршрутизацію")
