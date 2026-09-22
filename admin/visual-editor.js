@@ -140,9 +140,10 @@
   };
   Editor.prototype.bindMobileViewport = function () {
     if(this._viewportBound)return;this._viewportBound=true;var self=this;
-    this._viewportHandler=function(){if(!self.activeBody)return;self.showFormat(self.activeBody);self.keepActiveTextVisible();};
-    if(window.visualViewport){window.visualViewport.addEventListener('resize',this._viewportHandler);window.visualViewport.addEventListener('scroll',this._viewportHandler);}
-    window.addEventListener('orientationchange',this._viewportHandler);
+    this._viewportResizeHandler=function(){if(!self.activeBody)return;self.showFormat(self.activeBody);window.clearTimeout(self._viewportSettleTimer);self._viewportSettleTimer=window.setTimeout(function(){self.keepActiveTextVisible();},80);};
+    this._viewportScrollHandler=function(){if(self.activeBody)self.showFormat(self.activeBody);};
+    if(window.visualViewport){window.visualViewport.addEventListener('resize',this._viewportResizeHandler);window.visualViewport.addEventListener('scroll',this._viewportScrollHandler);}
+    window.addEventListener('orientationchange',this._viewportResizeHandler);
   };
 
   Editor.prototype.snapshot = function () { return JSON.stringify(this.blocks.map(function (b) { return { id:b.id,type:b.type,raw:b.raw }; })); };
