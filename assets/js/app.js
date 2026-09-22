@@ -366,8 +366,20 @@
         root.setAttribute('aria-label', 'Фотографії з життя ліцею: ' + seen.size);
       });
     };
-    if ('requestIdleCallback' in window) window.requestIdleCallback(work, { timeout: 1200 });
-    else setTimeout(work, 250);
+    var scheduleWork = function () {
+      if ('requestIdleCallback' in window) window.requestIdleCallback(work, { timeout: 1200 });
+      else setTimeout(work, 250);
+    };
+    if ('IntersectionObserver' in window) {
+      var observer = new IntersectionObserver(function (entries) {
+        if (!entries.some(function (entry) { return entry.isIntersecting; })) return;
+        observer.disconnect();
+        scheduleWork();
+      }, { rootMargin: '600px 0px' });
+      observer.observe(root);
+    } else {
+      scheduleWork();
+    }
   }
 
   function enhanceNews(prose) {
