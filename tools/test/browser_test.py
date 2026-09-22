@@ -17,6 +17,7 @@ import sys
 import time
 import socket
 import threading
+import json
 from http.server import HTTPServer, SimpleHTTPRequestHandler
 from playwright.sync_api import sync_playwright
 
@@ -26,6 +27,18 @@ if hasattr(sys.stderr, "reconfigure"):
     sys.stderr.reconfigure(encoding="utf-8")
 
 ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+
+def all_page_slugs():
+    with open(os.path.join(ROOT_DIR, "content", "site.json"), encoding="utf-8") as f:
+        site = json.load(f)
+    slugs = []
+    def visit(nodes):
+        for node in nodes or []:
+            if node.get("slug"):
+                slugs.append(node["slug"])
+            visit(node.get("children"))
+    visit(site.get("nav"))
+    return slugs
 
 def get_free_port():
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -96,6 +109,41 @@ def run_browser_tests():
         doc_cards = page.locator(".doc-card").count()
         assert doc_cards >= 10, f"Очікувалось щонайменше 10 карток документів, знайдено {doc_cards}"
         print(f"✓ OK ({doc_cards} карток документів)")
+
+        # Regression: a ready document card must not have its action links
+        # converted into additional Google Drive previews by render.enhance().
+        print("-> Regression: 1 документ = 1 preview на всіх сторінках ... ", end="")
+        affected_pages = []
+        duplicate_previews = 0
+        checked_cards = 0
+        for slug in all_page_slugs():
+            page.evaluate("slug => { location.hash = '#/' + slug; }", slug)
+            page.wait_for_selector(f'article[data-page="{slug}"]', timeout=6000)
+            result = page.locator("main").evaluate("""root => {
+                const logicalContainers = [...root.querySelectorAll('.doc-card, .google-document-viewer')];
+                const failures = [];
+                for (const container of logicalContainers) {
+                    if (container.closest('.doc-card') && !container.classList.contains('doc-card')) continue;
+                    const sources = [...container.querySelectorAll('iframe')].map(frame => frame.src);
+                    const duplicates = sources.filter((src, i) => sources.indexOf(src) !== i);
+                    if (duplicates.length) failures.push(duplicates);
+                }
+                for (const embed of root.querySelectorAll('.embed')) {
+                    if (embed.querySelectorAll(':scope > iframe').length !== 1) {
+                        failures.push(['invalid-embed-iframe-count']);
+                    }
+                }
+                return { cards: root.querySelectorAll('.doc-card').length, failures };
+            }""")
+            checked_cards += result["cards"]
+            if result["failures"]:
+                affected_pages.append(slug)
+                duplicate_previews += sum(len(group) for group in result["failures"])
+        assert not affected_pages, (
+            f"Дубльовані preview знайдено на {len(affected_pages)} сторінках "
+            f"({duplicate_previews} зайвих iframe): {affected_pages}"
+        )
+        print(f"✓ OK (62/62 сторінки, {checked_cards} document cards)")
 
         # 4. Сторінка архіву та внутрішній якір
         print("-> Перевірка #/arkhiv та якірної навігації ... ", end="")

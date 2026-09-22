@@ -151,7 +151,10 @@
     });
 
     root.querySelectorAll('a[href]').forEach(function (a) {
-      if (a.closest('.google-document-viewer')) return;
+      // A hand-authored document card already owns its preview and action links.
+      // Re-enhancing its Google Drive buttons would turn each button into another
+      // full viewer, producing duplicate iframes for the same document.
+      if (a.closest('.doc-card, .google-document-viewer')) return;
       var href = a.getAttribute('href');
       if (isRelative(href)) { a.setAttribute('href', resolve(href)); href = a.getAttribute('href'); }
       var ext = href.match(FILE_EXT);
