@@ -3248,3 +3248,184 @@ a:hover {
   .editorial-hero .hero-title { font-size: clamp(2rem, 10.5vw, 2.5rem); line-height: .98; }
   .editorial-hero .btn { flex-basis: auto; width: auto; }
 }
+
+/* Final interaction polish: buttons and clickable cards */
+@media screen {
+  :root {
+    --control-height: 44px;
+    --interactive-shadow: 0 12px 30px rgba(11, 27, 59, 0.10);
+    --interactive-shadow-hover: 0 16px 34px rgba(11, 27, 59, 0.16);
+    --interactive-motion: 180ms ease;
+  }
+
+  .btn {
+    min-height: var(--control-height);
+    padding: 10px 20px;
+    border-radius: 12px;
+    justify-content: center;
+    transition:
+      transform var(--interactive-motion),
+      box-shadow var(--interactive-motion),
+      background-color var(--interactive-motion),
+      border-color var(--interactive-motion),
+      color var(--interactive-motion);
+  }
+
+  .btn.secondary {
+    border: 1px solid var(--navy-900);
+    background: var(--navy-900);
+    color: #fff;
+    box-shadow: 0 8px 20px rgba(11, 27, 59, 0.16);
+  }
+
+  .btn.secondary:hover {
+    background: var(--navy-800);
+    border-color: var(--navy-800);
+    color: #fff;
+  }
+
+  .btn.danger {
+    border: 1px solid #b42318;
+    background: #b42318;
+    color: #fff;
+  }
+
+  .btn:hover { transform: translateY(-2px); }
+  .btn:active { transform: translateY(0) scale(.99); }
+
+  .quick-card,
+  .banner-card,
+  .partner-card,
+  .child-card {
+    outline: 2px solid transparent;
+    outline-offset: 3px;
+    transition:
+      transform var(--interactive-motion),
+      box-shadow var(--interactive-motion),
+      border-color var(--interactive-motion),
+      background-color var(--interactive-motion);
+  }
+
+  .quick-card {
+    box-shadow: var(--interactive-shadow);
+  }
+
+  .quick-card:hover,
+  .banner-card:hover,
+  .partner-card:hover,
+  .child-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--interactive-shadow-hover);
+  }
+
+  .quick-card:active,
+  .banner-card:active,
+  .partner-card:active,
+  .child-card:active {
+    transform: translateY(0) scale(.99);
+  }
+
+  .quick-card:focus-visible,
+  .banner-card:focus-visible,
+  .partner-card:focus-visible,
+  .child-card:focus-visible {
+    outline-color: var(--gold-500);
+  }
+
+  .quick-card:hover .quick-icon-wrap { transform: none; }
+  .quick-card:hover .quick-arrow-circle { transform: translateX(2px); }
+
+  .banner-card {
+    position: relative;
+    display: grid;
+    grid-template-columns: 64px minmax(0, 1fr);
+    align-items: center;
+    gap: 16px;
+    box-shadow: var(--interactive-shadow);
+  }
+
+  .banner-title {
+    min-width: 0;
+    line-height: 1.3;
+    text-wrap: balance;
+  }
+
+  .linkgrid { align-items: stretch; }
+
+  .partner-card {
+    position: relative;
+    height: 124px;
+    padding: 16px 46px 16px 18px;
+    border: 1px solid rgba(11, 27, 59, .08);
+    box-shadow: var(--interactive-shadow);
+    overflow: hidden;
+  }
+
+  .partner-card::after {
+    content: "↗";
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    display: grid;
+    place-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: var(--navy-50);
+    color: var(--navy-900);
+    font-size: 1rem;
+    font-weight: 800;
+    transform: translateY(-50%);
+    transition: background-color var(--interactive-motion), color var(--interactive-motion);
+  }
+
+  .partner-card:hover::after {
+    background: var(--gold-500);
+    color: var(--navy-950);
+  }
+
+  .partner-card img {
+    max-width: 100%;
+    max-height: 82px;
+    object-fit: contain;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .banner-card {
+    grid-template-columns: 56px minmax(0, 1fr);
+    min-height: 88px;
+    height: auto;
+    gap: 14px;
+    padding: 12px 14px;
+  }
+
+  .banner-card img {
+    width: 56px;
+    height: 56px;
+  }
+
+  .banner-title {
+    display: -webkit-box;
+    overflow: hidden;
+    font-size: .98rem;
+    line-height: 1.25;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+
+  .partner-card {
+    min-height: 104px;
+    height: 104px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn,
+  .quick-card,
+  .banner-card,
+  .partner-card,
+  .child-card {
+    transition: none;
+  }
+}
