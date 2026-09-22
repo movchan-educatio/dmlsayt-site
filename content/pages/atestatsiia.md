@@ -26,3 +26,5 @@
 </div>
 
 **Електронна адреса закладу для надання документів в електронній формі:** **dmitrushki@ukr.net**
+
+Атестація[https://drive.google.com/file/d/16efMqUoVr1MwWMKtJU_jrL6_-dy6L4ZA/view?usp=sharing](https://drive.google.com/file/d/16efMqUoVr1MwWMKtJU_jrL6_-dy6L4ZA/view?usp=sharing)
