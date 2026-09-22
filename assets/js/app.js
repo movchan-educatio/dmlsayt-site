@@ -562,9 +562,20 @@
       ];
       html += '<section class="home-block about-block reveal-on-scroll">' +
         '<aside class="about-aside">' +
-          '<div class="block-header">' +
-            '<h2 class="block-title">Про ліцей</h2>' +
-          '</div>' +
+          '<blockquote class="school-verse-card">' +
+            '<span class="school-verse-mark" aria-hidden="true">“</span>' +
+            '<p class="school-verse-text">' +
+              '<span>Дмитрушківський ліцей —</span>' +
+              '<span>це другий дім для дітей,</span>' +
+              '<span>майстерня розвитку й знань,</span>' +
+              '<span>де сотні здійснились бажань.</span>' +
+              '<span>Тут кожен знайде свій шлях</span>' +
+              '<span>з вогнем у серцях і в очах.</span>' +
+              '<span>Вчительське слово, мудре й добре,</span>' +
+              '<span>до нових звершень веде хоробро».</span>' +
+            '</p>' +
+            '<footer>— Сергій Мовчан</footer>' +
+          '</blockquote>' +
           '<div class="campus-life-head"><span>Життя ліцею</span><span aria-hidden="true">↕</span></div>' +
           '<div class="campus-life" role="region" aria-label="Фотографії з життя ліцею" aria-live="polite" tabindex="0">' +
             lifePhotos.map(function (photo, i) {

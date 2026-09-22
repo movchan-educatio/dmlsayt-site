@@ -3010,6 +3010,54 @@ a:hover {
   .about-block .block-header { align-content: start; align-items: flex-start; }
   .about-aside { min-width: 0; order: 2; align-self: center; }
   .about-block .home-body { order: 1; }
+  .school-verse-card {
+    position: relative;
+    width: 100%;
+    min-width: 0;
+    margin: 0;
+    padding: 18px 18px 16px 21px;
+    overflow: hidden;
+    border: 1px solid var(--card-border);
+    border-left: 3px solid var(--gold-500);
+    border-radius: var(--card-radius);
+    background: #fff;
+    color: var(--navy-900);
+    box-shadow: var(--shadow-sm);
+  }
+  .school-verse-mark {
+    position: absolute;
+    top: 8px;
+    right: 13px;
+    color: rgba(168, 126, 45, .2);
+    font-family: var(--serif);
+    font-size: 2.35rem;
+    line-height: 1;
+    pointer-events: none;
+  }
+  .school-verse-text {
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    font-family: var(--serif);
+    font-size: clamp(.94rem, 1.15vw, 1.04rem);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.43;
+  }
+  .school-verse-text span {
+    display: block;
+    max-width: 100%;
+    overflow-wrap: break-word;
+  }
+  .school-verse-card footer {
+    margin-top: 11px;
+    color: var(--text-muted);
+    font-size: .78rem;
+    font-style: normal;
+    font-weight: 700;
+    text-align: right;
+  }
+  .school-verse-card + .campus-life-head { margin-top: 20px; }
   .campus-life-head {
     display: flex;
     align-items: center;
@@ -3161,6 +3209,8 @@ a:hover {
   .editorial-hero::before { background: linear-gradient(0deg, rgba(4,11,27,.94) 0%, rgba(4,11,27,.58) 62%, rgba(4,11,27,.12) 100%); }
   .about-block { grid-template-columns: 1fr; gap: 22px; }
   .about-aside { align-self: stretch; }
+  .school-verse-card { padding: 17px 17px 15px 20px; }
+  .school-verse-text { font-size: .96rem; line-height: 1.42; }
   .campus-life-head { margin-top: 18px; }
   .campus-life {
     display: flex;
