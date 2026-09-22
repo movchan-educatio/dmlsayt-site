@@ -62,6 +62,32 @@ def main():
     for needle in ('name="description"', 'name="robots"', 'rel="canonical"',
                    'property="og:title"', 'name="twitter:card"', 'application/ld+json'):
         require(needle in html, f"index.html не містить SEO-елемент: {needle}")
+    require('<title>Дмитрушківський ліцей — офіційний сайт</title>' in html,
+            "Головна має неправильний title")
+    require('<link rel="canonical" href="https://movchan-educatio.github.io/dmlsayt-site/">' in html,
+            "Головна має неправильний canonical URL")
+    require('name="description" content="Офіційний сайт Дмитрушківського ліцею: новини, документи, освітній процес, інформація для учнів і батьків."' in html,
+            "Головна має неправильний meta description")
+    require('property="og:site_name" content="Дмитрушківський ліцей"' in html,
+            "Головна має неправильний og:site_name")
+    require('property="og:title" content="Дмитрушківський ліцей — офіційний сайт"' in html,
+            "Головна має неправильний og:title")
+    require('property="og:url" content="https://movchan-educatio.github.io/dmlsayt-site/"' in html,
+            "Головна має неправильний og:url")
+    require('"@type": "WebSite"' in html and '"name": "Дмитрушківський ліцей"' in html,
+            "Головна не містить узгоджену WebSite schema")
+    require('rel="manifest" href="site.webmanifest"' in html,
+            "Головна не підключає manifest")
+    manifest = json.loads((ROOT / "site.webmanifest").read_text(encoding="utf-8"))
+    require(manifest.get("name") == "Дмитрушківський ліцей",
+            "Manifest має неправильну назву сайта")
+    text_suffixes = {".html", ".js", ".css", ".json", ".md", ".txt", ".xml", ".py", ".webmanifest"}
+    bad_site_name = "GitHub Pages " + "documentation"
+    require(bad_site_name not in "\n".join(
+        p.read_text(encoding="utf-8", errors="ignore")
+        for p in ROOT.rglob("*")
+        if p.is_file() and p.suffix.lower() in text_suffixes and ".git" not in p.parts
+    ), "Репозиторій містить шаблонну SEO-назву GitHub Pages " + "documentation")
 
     robots = (ROOT / "robots.txt").read_text(encoding="utf-8")
     require("Sitemap: https://movchan-educatio.github.io/dmlsayt-site/sitemap.xml" in robots,

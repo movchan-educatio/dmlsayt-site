@@ -1,0 +1,18 @@
+{
+  "name": "Дмитрушківський ліцей",
+  "short_name": "Дмитрушківський ліцей",
+  "description": "Офіційний сайт Дмитрушківського ліцею",
+  "lang": "uk-UA",
+  "start_url": "/dmlsayt-site/",
+  "scope": "/dmlsayt-site/",
+  "display": "standalone",
+  "background_color": "#f3f6fa",
+  "theme_color": "#0d1730",
+  "icons": [
+    {
+      "src": "assets/img/favicon.png",
+      "sizes": "any",
+      "type": "image/png"
+    }
+  ]
+}
