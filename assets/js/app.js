@@ -144,11 +144,11 @@
 
     var primarySlugs = [
       'golovna',
+      'novyny',
       'pro-nas',
       'prozorist-ta-informatsiina-vidkrytist-zakladu',
       'osvitnii-protses',
       'uchniam-ta-batkam',
-      'novyny',
       'zvorotnii-zviazok'
     ];
 

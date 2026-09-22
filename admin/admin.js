@@ -497,15 +497,9 @@
         }),
         btn('Документ Google', 'Вставити документ, таблицю чи форму з Google Диску', function () {
           askText({ title: 'Документ із Google Диску', label: 'Посилання на файл', hint: 'Файл має бути відкритий для всіх, хто має посилання.', okLabel: 'Вставити' }).then(function (u) {
-            if (!u) return; var id = R.driveId(u);
-            var src, dl = null;
-            if (/docs\.google\.com\/forms/.test(u)) src = u.split('?')[0].replace(/\/(edit|viewform)$/, '') + '/viewform?embedded=true';
-            else if (/docs\.google\.com\/(document|spreadsheets|presentation)/.test(u) && id) {
-              var kind = u.match(/docs\.google\.com\/(document|spreadsheets|presentation)/)[1];
-              src = 'https://docs.google.com/' + kind + '/d/' + id + (kind === 'presentation' ? '/embed' : '/preview');
-            } else if (id) { src = 'https://drive.google.com/file/d/' + id + '/preview'; dl = 'https://drive.google.com/uc?export=download&id=' + id; }
-            if (!src) return toast('Не вдалося розпізнати посилання Google', true);
-            insert('<iframe src="' + src + '" title="Документ"></iframe>' + (dl ? '\n\n[Завантажити файл](' + dl + ')' : ''));
+            if (!u) return; var data = R.normalizeGoogleDriveUrl(u);
+            if (!data) return toast('Не вдалося розпізнати посилання Google Drive', true);
+            insert(R.googleViewerRaw(data, data.title));
           });
         }),
         btn('Таблиця', 'Вставити таблицю', function () { insert('| Назва | Опис |\n| --- | --- |\n| … | … |\n| … | … |'); }),

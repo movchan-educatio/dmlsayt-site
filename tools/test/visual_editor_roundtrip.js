@@ -3,13 +3,10 @@ const path = require('path');
 const vm = require('vm');
 
 const root = path.resolve(__dirname, '..', '..');
-const window = { SiteRender: {
-  esc: s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])),
-  youtubeId: s => (String(s).match(/(?:youtu\.be\/|v=|embed\/|shorts\/)([A-Za-z0-9_-]{11})/) || [])[1] || null,
-  driveId: s => (String(s).match(/\/d\/([A-Za-z0-9_-]+)/) || String(s).match(/[?&]id=([A-Za-z0-9_-]+)/) || [])[1] || null
-} };
-const context = { window, console };
+const window = {};
+const context = { window, console, URL };
 vm.createContext(context);
+vm.runInContext(fs.readFileSync(path.join(root, 'assets', 'js', 'render.js'), 'utf8'), context);
 vm.runInContext(fs.readFileSync(path.join(root, 'admin', 'visual-editor.js'), 'utf8'), context);
 const editor = window.VisualPageEditor;
 
@@ -53,6 +50,27 @@ for (const [url, type] of smartCases) {
   const data = editor.smartUrlData(url);
   if (!data || data.type !== type) { console.error(`SMART URL FAILED: ${url}`); process.exit(1); }
 }
+const googleCases = [
+  ['https://drive.google.com/file/d/testDrive123/view?usp=sharing', 'file', 'https://drive.google.com/file/d/testDrive123/preview'],
+  ['https://drive.google.com/open?id=testOpen123&usp=drive_link', 'file', 'https://drive.google.com/file/d/testOpen123/preview'],
+  ['https://drive.google.com/uc?id=testUc123&export=download', 'file', 'https://drive.google.com/file/d/testUc123/preview'],
+  ['https://docs.google.com/document/d/testDoc123/edit?usp=sharing', 'document', 'https://docs.google.com/document/d/testDoc123/preview'],
+  ['https://docs.google.com/spreadsheets/d/testSheet123/edit?usp=sharing', 'spreadsheet', 'https://docs.google.com/spreadsheets/d/testSheet123/preview'],
+  ['https://docs.google.com/presentation/d/testSlides123/edit?usp=sharing', 'presentation', 'https://docs.google.com/presentation/d/testSlides123/embed']
+];
+for (const [url, kind, preview] of googleCases) {
+  const data = window.SiteRender.normalizeGoogleDriveUrl(url);
+  if (!data || data.type !== kind || data.previewUrl !== preview || data.fileId.indexOf('test') !== 0) {
+    console.error(`GOOGLE NORMALIZATION FAILED: ${url}`); process.exit(1);
+  }
+  const raw = window.SiteRender.googleViewerRaw(data, data.title);
+  if (!raw.includes('<iframe') || !raw.includes(preview) || !raw.includes('Відкрити в Google') || !raw.includes('Завантажити')) {
+    console.error(`GOOGLE VIEWER RAW FAILED: ${url}`); process.exit(1);
+  }
+}
+if (window.SiteRender.normalizeGoogleDriveUrl('https://example.com/file/d/test') !== null || window.SiteRender.normalizeGoogleDriveUrl('javascript:alert(1)') !== null) {
+  console.error('GOOGLE URL SAFETY FAILED'); process.exit(1);
+}
 if (editor.smartUrlData('javascript:alert(1)') !== null || editor.smartUrlData('not a url') !== null) {
   console.error('UNSAFE URL REJECTION FAILED'); process.exit(1);
 }
@@ -61,7 +79,7 @@ for (const ext of ['pdf', 'docx', 'xlsx', 'pptx']) {
   if (blocks.length !== 1 || blocks[0].type !== 'document') { console.error(`DOCUMENT TYPE FAILED: ${ext}`); process.exit(1); }
 }
 const privateDrive = editor.smartUrlData('https://drive.google.com/drive/folders/privateFolder');
-if (!privateDrive || privateDrive.type !== 'google' || privateDrive.preview !== '' || !/Документ Google Drive/.test(editor.smartRaw(privateDrive))) {
-  console.error('GOOGLE FALLBACK FAILED'); process.exit(1);
+if (!privateDrive || privateDrive.type !== 'link') {
+  console.error('GOOGLE FOLDER FALLBACK FAILED'); process.exit(1);
 }
 console.log('SMART CONTENT PASSED: image settings, PDF/DOCX/XLSX/PPTX, YouTube, Google Docs/Sheets/Slides/Drive, fallback, link and invalid URL');

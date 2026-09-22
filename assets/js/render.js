@@ -73,6 +73,51 @@
     a.parentNode.replaceChild(card, a);
   }
 
+  /* Єдине місце для розпізнавання звичайних посилань «Поділитися» з Google Drive. */
+  function normalizeGoogleDriveUrl(input) {
+    var u;
+    try { u = new URL(String(input || '').trim()); } catch (e) { return null; }
+    if (u.protocol !== 'https:') return null;
+    var host = u.hostname.toLowerCase().replace(/^www\./, '');
+    if (host !== 'drive.google.com' && host !== 'docs.google.com') return null;
+    var parts = u.pathname.split('/').filter(Boolean), kind = 'file', id = '';
+    if (host === 'docs.google.com' && /^(document|spreadsheets|presentation)$/.test(parts[0] || '')) {
+      kind = parts[0] === 'document' ? 'document' : parts[0] === 'spreadsheets' ? 'spreadsheet' : 'presentation';
+      if (parts[1] === 'd') id = parts[2] || '';
+    } else {
+      var d = parts.indexOf('d');
+      if (d >= 0) id = parts[d + 1] || '';
+      if (!id) id = u.searchParams.get('id') || '';
+    }
+    if (!/^[A-Za-z0-9_-]+$/.test(id)) return null;
+    var base, preview, download = '';
+    if (kind === 'document') {
+      base = 'https://docs.google.com/document/d/' + id;
+      preview = base + '/preview'; download = base + '/export?format=docx';
+    } else if (kind === 'spreadsheet') {
+      base = 'https://docs.google.com/spreadsheets/d/' + id;
+      preview = base + '/preview'; download = base + '/export?format=xlsx';
+    } else if (kind === 'presentation') {
+      base = 'https://docs.google.com/presentation/d/' + id;
+      preview = base + '/embed'; download = base + '/export/pptx';
+    } else {
+      base = 'https://drive.google.com/file/d/' + id;
+      preview = base + '/preview'; download = 'https://drive.google.com/uc?export=download&id=' + encodeURIComponent(id);
+    }
+    var titles = { document:'Документ Google Docs', spreadsheet:'Таблиця Google Sheets', presentation:'Презентація Google Slides', file:'Документ Google Drive' };
+    return { provider:'google-drive', type:kind, fileId:id, originalUrl:u.href, openUrl:base + '/view', previewUrl:preview, downloadUrl:download, title:titles[kind] };
+  }
+
+  function googleViewerRaw(data, title) {
+    if (!data || !data.previewUrl) return '';
+    title = String(title || data.title || 'Документ Google').replace(/[\n\r]/g, ' ').trim();
+    return '<div class="google-document-viewer">' +
+      '<div class="embed embed-doc"><iframe src="' + esc(data.previewUrl) + '" title="' + esc(title) + '" loading="lazy"></iframe></div>' +
+      '<div class="google-document-actions"><a href="' + esc(data.openUrl) + '" target="_blank" rel="noopener noreferrer">Відкрити в Google ↗</a>' +
+      (data.downloadUrl ? '<a href="' + esc(data.downloadUrl) + '" target="_blank" rel="noopener noreferrer">Завантажити ↓</a>' : '') + '</div>' +
+      '<p class="google-viewer-note">Якщо вміст не відкривається, Google не дозволяє вбудований перегляд. Перевірте, чи встановлено доступ «Усі, хто має посилання».</p></div>';
+  }
+
   /* Доопрацювання вже вставленого в DOM вмісту: шляхи, зовнішні посилання, файли, таблиці, зображення. */
   function enhance(root, opts) {
     opts = opts || {};
@@ -106,6 +151,7 @@
     });
 
     root.querySelectorAll('a[href]').forEach(function (a) {
+      if (a.closest('.google-document-viewer')) return;
       var href = a.getAttribute('href');
       if (isRelative(href)) { a.setAttribute('href', resolve(href)); href = a.getAttribute('href'); }
       var ext = href.match(FILE_EXT);
@@ -118,6 +164,15 @@
 
     root.querySelectorAll('a[data-ext]').forEach(function (a) {
       var kind = a.getAttribute('data-ext');
+      if (kind === 'google') {
+        var googleData = normalizeGoogleDriveUrl(a.getAttribute('href'));
+        if (googleData) {
+          var holder = document.createElement('div');
+          holder.innerHTML = googleViewerRaw(googleData, (a.textContent || '').trim());
+          a.parentNode.replaceChild(holder.firstChild, a);
+          return;
+        }
+      }
       makeDocumentCard(a, a.getAttribute('href'), kind, kind === 'google');
     });
 
@@ -207,13 +262,14 @@
     return /^[A-Za-z0-9_-]{11}$/.test(s) ? s : null;
   }
   function driveId(input) {
-    var m = String(input || '').match(/\/d\/([A-Za-z0-9_-]+)/) || String(input || '').match(/[?&]id=([A-Za-z0-9_-]+)/);
-    return m ? m[1] : null;
+    var data = normalizeGoogleDriveUrl(input);
+    return data ? data.fileId : null;
   }
 
   global.SiteRender = {
     mdToHtml: mdToHtml, enhance: enhance, plainText: plainText, excerpt: excerpt, firstImage: firstImage,
     slugify: slugify, safeFileName: safeFileName, esc: esc, youtubeId: youtubeId, driveId: driveId,
+    normalizeGoogleDriveUrl: normalizeGoogleDriveUrl, googleViewerRaw: googleViewerRaw,
     isRelative: isRelative, IFRAME_HOSTS: IFRAME_HOSTS
   };
 })(window);

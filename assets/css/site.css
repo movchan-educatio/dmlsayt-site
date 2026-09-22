@@ -3429,3 +3429,26 @@ a:hover {
     transition: none;
   }
 }
+
+@media screen {
+  .google-document-viewer { width: 100%; margin-block: 18px 26px; }
+  .google-document-viewer .embed-doc {
+    width: 100%; min-height: 560px; max-height: 84vh; aspect-ratio: 4 / 5; margin: 0;
+    overflow: hidden; border: 1px solid var(--line); border-radius: 16px;
+    background: #eef2f7; box-shadow: var(--shadow-sm);
+  }
+  .google-document-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 12px; }
+  .google-document-actions a {
+    display: inline-flex; align-items: center; justify-content: center; min-height: 44px;
+    padding: 9px 14px; border: 1px solid var(--line); border-radius: 10px;
+    background: #fff; color: var(--navy-900); font-weight: 750; text-decoration: none;
+  }
+  .google-document-actions a:hover { border-color: var(--gold-500); background: var(--gold-50); }
+  .google-viewer-note { margin: 10px 0 0; color: var(--text-muted); font-size: .84rem; line-height: 1.5; }
+}
+
+@media screen and (max-width: 680px) {
+  .google-document-viewer .embed-doc { min-height: 480px; max-height: none; aspect-ratio: 3 / 4; }
+  .google-document-actions { display: grid; grid-template-columns: 1fr; }
+  .google-document-actions a { width: 100%; }
+}
