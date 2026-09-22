@@ -26,5 +26,3 @@
 </div>
 
 **Електронна адреса закладу для надання документів в електронній формі:** **dmitrushki@ukr.net**
-
-[Документ Google Drive](https://drive.google.com/file/d/1sph9vpJ4YhPL8pgX6TEqUkV39ywE5WZD/view?usp=sharing)
