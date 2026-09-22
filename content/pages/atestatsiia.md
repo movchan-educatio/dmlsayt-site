@@ -26,5 +26,3 @@
 </div>
 
 **Електронна адреса закладу для надання документів в електронній формі:** **dmitrushki@ukr.net**
-
-[novyi-dokument-microsoft-word.docx](uploads/2026/09/novyi-dokument-microsoft-word.docx)
