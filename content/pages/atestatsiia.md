@@ -27,4 +27,4 @@
 
 **Електронна адреса закладу для надання документів в електронній формі:** **dmitrushki@ukr.net**
 
-[dodatok-2-polozhennia-palitra-pokolin.pdf](uploads/2026/09/dodatok-2-polozhennia-palitra-pokolin.pdf)
+[Документ Google Drive](https://drive.google.com/file/d/1sph9vpJ4YhPL8pgX6TEqUkV39ywE5WZD/view?usp=sharing)
