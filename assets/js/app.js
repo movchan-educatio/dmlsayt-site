@@ -577,7 +577,7 @@
           '<blockquote class="school-verse-card">' +
             '<span class="school-verse-mark" aria-hidden="true">“</span>' +
             '<p class="school-verse-text">' +
-              '<span>Дмитрушківський ліцей —</span>' +
+              '<span>«Дмитрушківський ліцей —</span>' +
               '<span>це другий дім для дітей,</span>' +
               '<span>майстерня розвитку й знань,</span>' +
               '<span>де сотні здійснились бажань.</span>' +
