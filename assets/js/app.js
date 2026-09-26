@@ -752,7 +752,7 @@
     var title = isHome ? S.site.title + ' — офіційний сайт' : node.title + ' — ' + S.site.title;
     var description = isHome
       ? 'Офіційний сайт Дмитрушківського ліцею: новини, документи, освітній процес, інформація для учнів і батьків.'
-      : (R.excerpt(md, 158) || S.site.lead || 'Офіційний сайт Дмитрушківського ліцею.');
+      : (R.excerpt(md, 158) || node.title + ' — офіційна інформація Дмитрушківського ліцею.');
     var root = new URL('./', location.href);
     root.hash = '';
     root.search = '';
