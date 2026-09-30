@@ -4054,3 +4054,23 @@ a:hover {
     transition: none;
   }
 }
+
+/* Центрування контактів і соціальних кнопок у футері на телефонах. */
+@media screen and (max-width: 680px) {
+  .footer-contact-links {
+    justify-items: center;
+    width: 100%;
+  }
+
+  .footer-contact-links a,
+  .footer-contact-item {
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-contacts .footer-social {
+    justify-content: center;
+    padding-left: 0;
+  }
+}
