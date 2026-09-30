@@ -32,7 +32,7 @@
 
 ## <a id="h.2c51b7cu3xqx"></a>Театральне мистецтво
 
-![Фото: Гурткова робота — 2](uploads/pages/hurtkova-robota/image-2.jpg)
+<figure class="media-image" data-width="100" data-align="center" data-fit="contain"><img src="uploads/2026/09/5325595976749752225.jpg" alt="Фото: Гурткова робота — 2"></figure>
 
 керівник - Гребенник Наталія
 
