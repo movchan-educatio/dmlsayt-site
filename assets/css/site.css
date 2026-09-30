@@ -1980,10 +1980,49 @@ a:hover {
   margin-top: 2px;
 }
 
+.footer-contact-links {
+  display: grid;
+  gap: 7px;
+  margin-top: 4px;
+  font-size: 0.88rem;
+  color: #CBD5E1;
+}
+
+.footer-contact-links a,
+.footer-contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  color: inherit;
+  line-height: 1.5;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+.footer-contact-links svg {
+  flex: none;
+  margin-top: 2px;
+  color: var(--gold-400);
+}
+
+.footer-contact-links a:hover,
+.footer-contact-links a:focus-visible {
+  color: var(--gold, #c9a35d);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .footer-social {
   display: flex;
   gap: 8px;
   flex-wrap: wrap;
+}
+
+.footer-contacts .footer-social {
+  justify-content: flex-start;
+  margin-top: 20px;
+  padding-left: 38px;
+  width: 100%;
 }
 
 .footer-social-link {

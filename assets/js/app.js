@@ -112,6 +112,20 @@
               '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"/><circle cx="12" cy="10" r="3"/></svg>' +
               '<span>' + esc(s.address || '20332, Черкаська обл., Уманський р-н., с. Дмитрушки, вул. Петропавлівська, 15') + '</span>' +
             '</p>' +
+            '<div class="footer-contact-links">' +
+              '<a href="' + esc(safeUrl('tel:' + (s.phone || '+380972335998').replace(/[^+\d]/g, ''))) + '">' +
+                '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.69 2.8a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.28-1.28a2 2 0 0 1 2.11-.45c.9.33 1.84.56 2.8.69A2 2 0 0 1 22 16.92z"/></svg>' +
+                '<span>Телефон: ' + esc(s.phone || '+380 97 233 59 98') + '</span>' +
+              '</a>' +
+              '<a href="' + esc(safeUrl('mailto:' + (s.email || 'dmitrushki@ukr.net'))) + '">' +
+                '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>' +
+                '<span>Електронна пошта: ' + esc(s.email || 'dmitrushki@ukr.net') + '</span>' +
+              '</a>' +
+              '<div class="footer-contact-item">' +
+                '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 22a8 8 0 0 1 16 0"/></svg>' +
+                '<span>Директор — ' + esc(s.director || 'Мовчан Ніна Іванівна') + '</span>' +
+              '</div>' +
+            '</div>' +
             '<div class="footer-social">' + socialHtml + '</div>' +
           '</div>' +
           '<div class="footer-col footer-nav-col">' +
@@ -131,7 +145,7 @@
         '</div>' +
         '<div class="footer-bottom">' +
           '<div class="footer-bottom-in">' +
-            '<p class="copyright">© 2026 Дмитрушківський ліцей. Всі права захищені.</p>' +
+            '<p class="copyright">' + esc(s.footer || '© 2026 Дмитрушківський ліцей. Всі права захищені.') + '</p>' +
             '<p class="footer-note">Дмитрушківська сільська рада · Уманський район · Черкаська область</p>' +
           '</div>' +
         '</div>';
