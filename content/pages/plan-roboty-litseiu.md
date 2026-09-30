@@ -9,7 +9,7 @@
   </div>
 </div>
 
-Вересень
+**Вересень**
 
 <div class="google-document-viewer"><div class="embed embed-doc"><iframe src="https://docs.google.com/document/d/1HXDyR5xSsdWDd9egHg8S08NTLM4qO0M-/preview" title="Документ Google Docs" loading="lazy"></iframe></div><div class="google-document-actions"><a href="https://docs.google.com/document/d/1HXDyR5xSsdWDd9egHg8S08NTLM4qO0M-/view" target="_blank" rel="noopener noreferrer">Відкрити в Google ↗</a><a href="https://docs.google.com/document/d/1HXDyR5xSsdWDd9egHg8S08NTLM4qO0M-/export?format=docx" target="_blank" rel="noopener noreferrer">Завантажити ↓</a></div><p class="google-viewer-note">Якщо вміст не відкривається, Google не дозволяє вбудований перегляд. Перевірте, чи встановлено доступ «Усі, хто має посилання».</p></div>
 
