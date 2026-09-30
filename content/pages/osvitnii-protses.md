@@ -62,7 +62,7 @@
 
 Класний керівник - Інна Фурман
 
-![Фото: Освітній процес — 11](uploads/pages/osvitnii-protses/image-11.jpg)
+<figure class="media-image" data-width="100" data-align="center" data-fit="contain"><img src="uploads/2026/09/photo-5323395235507281575-y.jpg" alt="Фото: Освітній процес — 11"></figure>
 
 ## <a id="h.b4dbfajwowh9"></a>7-б клас
 
