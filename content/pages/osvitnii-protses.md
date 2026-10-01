@@ -36,7 +36,7 @@
 
 Класний керівник - Людмила Платонова
 
-![Фото: Освітній процес — 7](uploads/pages/osvitnii-protses/image-7.jpg)
+<figure class="media-image" data-width="100" data-align="center" data-fit="contain"><img src="uploads/2026/10/5327975839603301864-1.jpg" alt="Фото: Освітній процес — 7"></figure>
 
 ## <a id="h.rf72qoqoych3"></a>4-Б клас
 
