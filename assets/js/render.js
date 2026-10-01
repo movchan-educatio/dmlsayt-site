@@ -207,6 +207,7 @@
   /* Текст без розмітки — для пошуку та коротких описів. */
   function plainText(md) {
     return String(md || '')
+      .replace(/<div\b[^>]*class=["'][^"']*\bdoc-card\b[^"']*["'][^>]*>[\s\S]*?<\/div>\s*<\/div>/gi, ' ')
       .replace(/<iframe[\s\S]*?<\/iframe>/gi, ' ')
       .replace(/<[^>]+>/g, ' ')
       .replace(/!\[[^\]]*\]\([^)]*\)/g, ' ')

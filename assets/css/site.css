@@ -3102,7 +3102,7 @@ a:hover {
     align-items: center;
     justify-content: space-between;
     margin: 34px 0 12px;
-    color: var(--text-muted);
+    color: #f5f8f6;
     font-size: .72rem;
     font-weight: 800;
     letter-spacing: .12em;
@@ -4829,6 +4829,41 @@ a:hover {
   :root { --inner-page-gap: 22px; }
   .layout.is-inner { padding-top: 24px; }
   .layout-news .paper-header { padding-inline: 0; }
+}
+
+/* Архів містить великі масиви старих матеріалів, тому отримує окреме
+   світле полотно замість темного тексту безпосередньо на орнаменті. */
+@media screen {
+  .layout-news[data-page="arkhiv"] {
+    max-width: 1260px;
+    padding: clamp(34px, 5vw, 64px) clamp(24px, 6vw, 72px);
+    background: #ffffff;
+    border: 1px solid rgba(15, 31, 58, .06);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--card-shadow);
+  }
+
+  .layout-news[data-page="arkhiv"] .paper-header {
+    padding-inline: 0;
+  }
+
+  .layout-news[data-page="arkhiv"] .paper-header h1,
+  .layout-news[data-page="arkhiv"] .prose,
+  .layout-news[data-page="arkhiv"] .prose :where(p, li) {
+    color: var(--navy-900);
+  }
+
+  .layout-news[data-page="arkhiv"] .prose a {
+    color: #174fce;
+    text-decoration-color: rgba(23, 79, 206, .35);
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .layout-news[data-page="arkhiv"] {
+    padding: 28px 20px 38px;
+    border-radius: 22px;
+  }
 }
 
 /* Точне центрування всього футера на телефонах. */
