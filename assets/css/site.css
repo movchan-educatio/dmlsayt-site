@@ -4055,8 +4055,791 @@ a:hover {
   }
 }
 
-/* Центрування контактів і соціальних кнопок у футері на телефонах. */
+/* ==========================================================================
+   ОКРЕМА ДИЗАЙН-КОНЦЕПЦІЯ — локальний перегляд, жовтень 2026
+   Натхнення: сучасні українські освітні платформи — світла навігація,
+   насичений синій, теплий жовтий акцент, округлі картки й великі заголовки.
+   ========================================================================== */
+@media screen {
+  :root {
+    --navy-950: #0a1740;
+    --navy-900: #10245c;
+    --navy-850: #183272;
+    --navy-800: #21418c;
+    --navy-700: #2b54b7;
+    --navy-600: #3466df;
+    --navy-100: #e8eeff;
+    --navy-50: #f3f6ff;
+    --gold-700: #a66d00;
+    --gold-600: #d99a00;
+    --gold-500: #ffd526;
+    --gold-400: #ffe261;
+    --gold-300: #ffeda0;
+    --gold-200: #fff4c4;
+    --gold-100: #fff9e5;
+    --gold-50: #fffdf4;
+    --bg: #f4f7ff;
+    --paper: #ffffff;
+    --surface-alt: #edf2ff;
+    --line: #dfe7fb;
+    --line-subtle: #edf2ff;
+    --text: #17213b;
+    --text-muted: #63708c;
+    --serif: "Manrope", system-ui, sans-serif;
+    --sans: "Manrope", system-ui, sans-serif;
+    --radius-sm: 14px;
+    --radius-md: 20px;
+    --radius-lg: 28px;
+    --radius-xl: 38px;
+    --shadow-sm: 0 8px 24px rgba(27, 58, 139, .08);
+    --shadow-md: 0 18px 50px rgba(27, 58, 139, .12);
+    --shadow-lg: 0 28px 70px rgba(9, 31, 93, .18);
+    --card-radius: 24px;
+    --card-border: rgba(31, 70, 168, .10);
+    --card-shadow: 0 12px 32px rgba(24, 54, 130, .09);
+    --card-shadow-hover: 0 20px 48px rgba(24, 54, 130, .15);
+  }
+
+  body {
+    background:
+      radial-gradient(circle at 8% 16%, rgba(52, 102, 223, .08) 0 3px, transparent 4px),
+      radial-gradient(circle at 92% 34%, rgba(255, 213, 38, .16) 0 4px, transparent 5px),
+      linear-gradient(180deg, #f5f8ff 0%, #ffffff 42%, #f4f7ff 100%);
+    background-size: 78px 78px, 112px 112px, auto;
+    font-weight: 500;
+  }
+
+  .wrap { max-width: 1420px; }
+
+  .strip {
+    background: #2457e8;
+    border: 0;
+    color: #fff;
+  }
+  .strip-in { min-height: 36px; }
+  .strip-address,
+  .strip-social a { color: rgba(255,255,255,.9); }
+  .strip-social a {
+    background: rgba(255,255,255,.10);
+    border-color: rgba(255,255,255,.16);
+  }
+  .strip-social a:hover { background: var(--gold-500); border-color: var(--gold-500); color: var(--navy-950); }
+
+  .head {
+    top: 0;
+    padding: 14px 0 0;
+    background: #2457e8;
+    border: 0;
+    box-shadow: none;
+  }
+  .head-in {
+    min-height: 80px;
+    padding: 10px 22px;
+    border-radius: 24px 24px 0 0;
+    background: #fff;
+  }
+  .brand { gap: 13px; }
+  .brand img { height: 56px; filter: drop-shadow(0 4px 9px rgba(31,70,168,.13)); }
+  .head .brand-text strong { color: var(--navy-950); font-size: 1.25rem; font-weight: 800; letter-spacing: -.035em; }
+  .head .brand-text small { color: #71809d; }
+  .search input {
+    background: #f4f7ff;
+    border-color: #e2e9fb;
+    border-radius: 999px 0 0 999px;
+  }
+  .search button {
+    min-width: 50px;
+    justify-content: center;
+    border-color: #2457e8;
+    border-radius: 0 999px 999px 0;
+    background: #2457e8;
+  }
+
+  .top-nav-wrap { background: #2457e8; border: 0; box-shadow: 0 14px 32px rgba(18,54,154,.16); }
+  .top-nav-wrap > .wrap {
+    padding: 0 12px 8px;
+    border-radius: 0 0 24px 24px;
+    background: #fff;
+  }
+  .top-nav-list { justify-content: center; gap: 1px; }
+  .top-nav-link {
+    padding: 11px 12px;
+    border: 0;
+    border-radius: 999px;
+    color: #25314e;
+    font-size: .83rem;
+    font-weight: 700;
+  }
+  .top-nav-link:hover,
+  .top-nav-item:hover > .top-nav-link,
+  .top-nav-item:focus-within > .top-nav-link,
+  .top-nav-item.active > .top-nav-link,
+  .top-nav-link[aria-current="page"] {
+    background: #edf2ff;
+    color: #2457e8;
+  }
+  .drop-arrow { color: #2457e8; }
+  .dropdown-menu {
+    margin-top: 8px;
+    padding: 10px;
+    border: 1px solid #e4eafb;
+    border-top: 1px solid #e4eafb;
+    border-radius: 18px;
+  }
+  .dropdown-menu a { border: 0; border-radius: 10px; }
+  .dropdown-menu a:hover,
+  .dropdown-menu a.active { background: #edf2ff; color: #2457e8; }
+
+  .layout,
+  .layout.is-home,
+  .layout.is-inner { padding-top: 34px; }
+
+  .editorial-hero {
+    min-height: clamp(540px, 70vh, 730px);
+    margin-bottom: clamp(52px, 7vw, 92px);
+    border-radius: 38px;
+    background: #285bf3;
+    box-shadow: 0 30px 80px rgba(23, 69, 197, .28);
+  }
+  .editorial-hero::before {
+    background:
+      radial-gradient(circle at 84% 22%, rgba(255,255,255,.16) 0 52px, transparent 53px),
+      radial-gradient(circle at 72% 76%, rgba(255,213,38,.17) 0 74px, transparent 75px),
+      linear-gradient(90deg, rgba(25,72,205,.98) 0%, rgba(37,87,237,.89) 48%, rgba(37,87,237,.48) 100%);
+  }
+  .editorial-hero::after {
+    width: 112px;
+    height: 112px;
+    border: 18px solid rgba(255,213,38,.18);
+    border-radius: 50%;
+  }
+  .editorial-hero .hero-photo-frame img {
+    opacity: .42;
+    filter: saturate(.78) contrast(1.08);
+  }
+  .editorial-hero .hero-left { max-width: 900px; }
+  .hero-kicker { color: #fff0a6; font-weight: 800; }
+  .hero-kicker::before { width: 42px; height: 3px; border-radius: 99px; background: var(--gold-500); }
+  .editorial-hero .hero-title {
+    max-width: 12ch;
+    font-size: clamp(3.2rem, 7vw, 7rem);
+    line-height: .96;
+    letter-spacing: -.065em;
+  }
+  .editorial-hero .hero-lead { max-width: 48ch; color: rgba(255,255,255,.88); }
+  .editorial-hero .btn {
+    min-height: 54px;
+    padding: 14px 26px;
+    border-radius: 18px;
+    font-weight: 800;
+  }
+  .btn.primary { background: var(--gold-500); border-color: var(--gold-500); box-shadow: 0 12px 30px rgba(140,102,0,.22); }
+  .btn.primary:hover { background: #ffe05a; border-color: #ffe05a; }
+
+  .block-title,
+  .paper-header h1,
+  .paper > h1 { font-weight: 800; letter-spacing: -.045em; }
+  .block-header { align-items: flex-end; }
+  .block-header::before {
+    content: "";
+    width: 14px;
+    height: 14px;
+    flex: none;
+    margin-bottom: .5em;
+    border-radius: 50%;
+    background: var(--gold-500);
+    box-shadow: 0 0 0 7px rgba(255,213,38,.18);
+  }
+
+  .quick-card {
+    border: 1px solid rgba(36,87,232,.09);
+    background: linear-gradient(145deg, #fff, #f8faff);
+  }
+  .quick-icon-wrap { border: 0; background: #edf2ff; color: #2457e8; }
+  .quick-arrow-circle { background: #2457e8; color: #fff; }
+  .quick-card:hover { border-color: rgba(36,87,232,.28); }
+  .quick-card:hover .quick-icon-wrap { background: #2457e8; color: #fff; }
+  .quick-card:hover .quick-arrow-circle { background: var(--gold-500); color: var(--navy-950); }
+
+  .home-dashboard .news-digest,
+  .news-digest { background: linear-gradient(145deg, #2457e8, #173cae); }
+
+  .paper {
+    border: 1px solid rgba(36,87,232,.08);
+    border-radius: 30px;
+    box-shadow: 0 18px 50px rgba(30,64,151,.10);
+  }
+  .side {
+    border: 1px solid rgba(36,87,232,.10);
+    border-radius: 22px;
+    box-shadow: var(--card-shadow);
+  }
+  .side a { border-radius: 12px; }
+  .side a:hover,
+  .side a.active { background: #edf2ff; color: #2457e8; }
+  .prose h2,
+  .prose h3,
+  .prose h4 { color: #163781; }
+  .prose a { color: #2457e8; }
+  .prose blockquote,
+  .info-block,
+  .highlight-block,
+  .quote-highlight {
+    border-left-color: #2457e8;
+    background: linear-gradient(135deg, #f7f9ff, #edf2ff);
+  }
+
+  .foot {
+    margin-top: 80px;
+    background:
+      radial-gradient(circle at 12% 22%, rgba(255,255,255,.08) 0 55px, transparent 56px),
+      radial-gradient(circle at 88% 70%, rgba(255,213,38,.10) 0 82px, transparent 83px),
+      linear-gradient(145deg, #173da9, #10245c);
+  }
+  .footer-h::after { background: var(--gold-500); }
+  .footer-bottom { border-top-color: rgba(255,255,255,.13); }
+}
+
+@media screen and (max-width: 1080px) {
+  .head { padding-top: 10px; }
+  .head-in { border-radius: 20px; margin-bottom: 10px; }
+  .top-nav-wrap { display: none; }
+  .menu-btn { display: inline-flex; border: 0; border-radius: 14px; background: #edf2ff; color: #2457e8; }
+  .layout,
+  .layout.is-home,
+  .layout.is-inner { padding-top: 24px; }
+  .editorial-hero { border-radius: 30px; }
+}
+
 @media screen and (max-width: 680px) {
+  .strip { display: none; }
+  .head { padding: 8px 0; }
+  .head-in { min-height: 66px; margin-bottom: 0; padding: 8px 12px; border-radius: 18px; }
+  .head-search-wrap { display: none; }
+  .brand img { height: 44px; }
+  .brand-text strong { font-size: 1rem; }
+  .editorial-hero {
+    min-height: 570px;
+    padding: 30px 24px;
+    border-radius: 28px;
+  }
+  .editorial-hero::before {
+    background: linear-gradient(0deg, rgba(24,66,190,.98) 0%, rgba(36,87,232,.86) 62%, rgba(36,87,232,.48) 100%);
+  }
+  .editorial-hero::after { width: 70px; height: 70px; border-width: 12px; }
+  .editorial-hero .hero-photo-frame img { opacity: .38; }
+  .editorial-hero .hero-title {
+    font-size: clamp(2.2rem, 10.5vw, 3.5rem);
+    overflow-wrap: anywhere;
+  }
+  .block-header::before { width: 10px; height: 10px; box-shadow: 0 0 0 5px rgba(255,213,38,.18); }
+  .paper { border-radius: 24px; }
+  .foot { margin-top: 48px; }
+}
+
+/* ==========================================================================
+   УТОЧНЕННЯ ДИЗАЙН-КОНЦЕПЦІЇ ЗА ВІЗУАЛЬНИМ ПЕРЕГЛЯДОМ
+   ========================================================================== */
+@media screen {
+  body {
+    background:
+      radial-gradient(circle at 8% 16%, rgba(52, 102, 223, .13) 0 3px, transparent 4px),
+      radial-gradient(circle at 92% 34%, rgba(255, 202, 24, .22) 0 4px, transparent 5px),
+      linear-gradient(180deg, #edf2ff 0%, #f8faff 42%, #edf2ff 100%);
+    background-size: 78px 78px, 112px 112px, auto;
+  }
+
+  /* Компактніша плаваюча шапка без суцільної синьої підкладки. */
+  .strip { display: none; }
+  .head {
+    padding: 12px 0;
+    background: rgba(237, 242, 255, .94);
+    box-shadow: 0 12px 32px rgba(20, 48, 118, .10);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+  }
+  .head-in {
+    min-height: 72px;
+    padding: 8px 20px;
+    border: 1px solid rgba(36, 87, 232, .10);
+    border-bottom: 0;
+    border-radius: 22px 22px 0 0;
+    box-shadow: 0 10px 30px rgba(19, 48, 124, .09);
+  }
+  .top-nav-wrap {
+    background: transparent;
+    box-shadow: none;
+  }
+  .top-nav-wrap > .wrap {
+    padding: 2px 12px 9px;
+    border: 1px solid rgba(36, 87, 232, .10);
+    border-top: 1px solid #edf1fb;
+    border-radius: 0 0 22px 22px;
+    box-shadow: 0 12px 30px rgba(19, 48, 124, .09);
+  }
+  .top-nav-link {
+    position: relative;
+    transition: color .2s ease, background-color .2s ease, transform .2s ease;
+  }
+  .top-nav-link::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    bottom: 3px;
+    height: 2px;
+    border-radius: 99px;
+    background: #2457e8;
+    transition: left .22s ease, right .22s ease;
+  }
+  .top-nav-link:hover,
+  .top-nav-item:hover > .top-nav-link,
+  .top-nav-item:focus-within > .top-nav-link { transform: translateY(-2px); }
+  .top-nav-link:hover::after,
+  .top-nav-item:hover > .top-nav-link::after,
+  .top-nav-item:focus-within > .top-nav-link::after,
+  .top-nav-item.active > .top-nav-link::after,
+  .top-nav-link[aria-current="page"]::after { left: 18px; right: 18px; }
+
+  /* Без розриву між кнопкою та випадним меню — курсор більше його не губить. */
+  .dropdown-menu {
+    top: 100%;
+    margin-top: 0;
+    transform: translateY(5px);
+  }
+  .dropdown-menu::before {
+    inset: -10px 0 auto;
+    height: 10px;
+  }
+  .top-nav-item:hover > .dropdown-menu,
+  .top-nav-item:focus-within > .dropdown-menu,
+  .top-nav-item.is-open > .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+  .top-nav-item.is-open > .top-nav-link .drop-arrow { transform: rotate(180deg); }
+
+  /* Фото залишається повноколірним; затемнення працює тільки для читабельності тексту. */
+  .editorial-hero {
+    align-items: center;
+    padding-bottom: clamp(96px, 9vw, 126px);
+    background: #10245c;
+  }
+  .editorial-hero::before {
+    background:
+      linear-gradient(90deg, rgba(5, 16, 48, .78) 0%, rgba(10, 34, 96, .53) 48%, rgba(10, 34, 96, .14) 100%),
+      linear-gradient(0deg, rgba(5, 16, 48, .45), transparent 62%);
+  }
+  .editorial-hero::after { display: none; }
+  .editorial-hero .hero-photo-frame img {
+    opacity: 1;
+    filter: saturate(.95) contrast(1.04);
+  }
+  .editorial-hero .hero-left {
+    align-items: center;
+    width: 100%;
+    max-width: 1040px;
+    margin-inline: auto;
+    text-align: center;
+  }
+  .editorial-hero .hero-title {
+    max-width: 13ch;
+    margin-inline: auto;
+    font-size: clamp(3rem, 6.2vw, 6.6rem);
+    text-shadow: 0 5px 28px rgba(3, 10, 30, .36);
+  }
+  .editorial-hero .hero-lead { margin-inline: auto; text-shadow: 0 2px 12px rgba(3, 10, 30, .34); }
+  .hero-kicker { align-self: center; }
+  .hero-actions { justify-content: center; }
+
+  .hero-scroll-cue {
+    position: absolute;
+    z-index: 3;
+    left: 50%;
+    bottom: 24px;
+    display: grid;
+    justify-items: center;
+    gap: 7px;
+    color: #fff;
+    font-size: .9rem;
+    font-weight: 700;
+    text-shadow: 0 2px 10px rgba(3, 10, 30, .42);
+    transform: translateX(-50%);
+  }
+  .hero-scroll-cue:hover { color: var(--gold-400); }
+  .hero-mouse {
+    position: relative;
+    width: 24px;
+    height: 36px;
+    border: 2px solid currentColor;
+    border-radius: 14px;
+  }
+  .hero-mouse span {
+    position: absolute;
+    top: 7px;
+    left: 50%;
+    width: 4px;
+    height: 8px;
+    border-radius: 99px;
+    background: currentColor;
+    transform: translateX(-50%);
+    animation: hero-mouse-scroll 1.55s ease-in-out infinite;
+  }
+  @keyframes hero-mouse-scroll {
+    0% { opacity: 0; transform: translate(-50%, -2px); }
+    25% { opacity: 1; }
+    75% { opacity: 1; }
+    100% { opacity: 0; transform: translate(-50%, 10px); }
+  }
+
+  /* Заголовки великих домашніх розділів стоять строго по центру. */
+  .widgets-block .block-header,
+  .links-block .block-header {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .widgets-block .block-header::before,
+  .links-block .block-header::before { display: none; }
+  .widgets-block .block-title,
+  .links-block .block-title {
+    width: 100%;
+    margin-inline: auto;
+    text-align: center;
+  }
+
+  .links-block { width: 100%; overflow: hidden; }
+  .links-block .linkgrid {
+    width: min(100%, 1500px);
+    margin-inline: auto;
+    padding-inline: 4px;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr));
+  }
+  .links-block .partner-card { min-width: 0; }
+
+  /* Соціальні посилання під формою — однакові підписані кнопки в одному ряду. */
+  .feedback-social-links {
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 28px;
+  }
+  .feedback-social-links > p > a {
+    display: inline-flex;
+    justify-content: center;
+    gap: 9px;
+    width: 146px;
+    height: 52px;
+    padding: 8px 16px;
+    border-radius: 999px;
+    color: var(--navy-900);
+    font-weight: 800;
+  }
+  .feedback-social-links > p > a[href*="facebook"]::after { content: "Facebook"; }
+  .feedback-social-links > p > a[href*="t.me"]::after,
+  .feedback-social-links > p > a[href*="telegram"]::after { content: "Telegram"; }
+  .feedback-social-links > p img { width: 30px; height: 30px; }
+
+  .foot {
+    background: #071126;
+    box-shadow: 0 -18px 60px rgba(7, 17, 38, .16);
+  }
+  .foot::before,
+  .foot::after { opacity: .12; }
+}
+
+@media screen and (max-width: 1080px) {
+  .head { padding: 8px 0; }
+  .head-in { border: 1px solid rgba(36,87,232,.10); border-radius: 20px; }
+}
+
+@media screen and (max-width: 680px) {
+  .editorial-hero {
+    min-height: 620px;
+    padding: 44px 24px 112px;
+  }
+  .editorial-hero::before {
+    background:
+      linear-gradient(0deg, rgba(5,16,48,.82) 0%, rgba(7,25,72,.56) 68%, rgba(7,25,72,.24) 100%);
+  }
+  .editorial-hero .hero-title {
+    max-width: 100%;
+    font-size: clamp(2.15rem, 10.2vw, 3.45rem);
+  }
+  .hero-scroll-cue { bottom: 20px; width: 100%; }
+  .feedback-social-links > p > a { width: 138px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-mouse span { animation: none; }
+  .top-nav-link { transition: none; }
+}
+
+/* Фінальні уточнення: теплий орнамент, липка шапка та рівні ряди кнопок. */
+@media screen {
+  html { overflow-x: clip; }
+
+  body {
+    overflow-x: clip;
+    padding-top: 154px;
+    background-color: #e6dfd2;
+    background-image:
+      linear-gradient(rgba(238, 233, 224, .78), rgba(238, 233, 224, .78)),
+      url("../img/warm-ornament.svg");
+    background-repeat: repeat;
+    background-size: auto, 360px 360px;
+    background-attachment: fixed;
+  }
+
+  .head {
+    position: fixed !important;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    background: rgba(230, 223, 210, .92);
+  }
+  body.header-hidden .head { transform: none !important; }
+
+  .search button {
+    border-color: var(--gold-500);
+    background: var(--gold-500);
+    color: var(--navy-950);
+    box-shadow: 0 8px 20px rgba(166, 109, 0, .18);
+  }
+  .search button:hover,
+  .search button:focus-visible {
+    border-color: #ffe25c;
+    background: #ffe25c;
+    color: var(--navy-950);
+  }
+
+  .feedback-social-links { align-items: center; }
+  .feedback-social-links > p {
+    align-self: center;
+    margin: 0 !important;
+  }
+  .feedback-social-links > p > a { margin: 0; }
+}
+
+@media screen and (min-width: 1180px) {
+  .links-block .linkgrid:has(> li:nth-child(6)) {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 16px;
+  }
+  .links-block .linkgrid:has(> li:nth-child(2):last-child) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .links-block .partner-card {
+    height: 142px;
+    min-height: 142px;
+    padding: 16px 44px 16px 14px;
+  }
+  .links-block .partner-card img {
+    max-width: 100%;
+    height: 82px;
+  }
+}
+
+/* Виразніші основні кнопки навігації. */
+@media screen and (min-width: 1081px) {
+  .top-nav-item.active > .top-nav-link,
+  .top-nav-link[aria-current="page"] {
+    background: var(--gold-500);
+    color: var(--navy-950);
+    box-shadow: 0 7px 18px rgba(166, 109, 0, .16);
+    transform: none;
+  }
+  .top-nav-item.active > .top-nav-link::after,
+  .top-nav-link[aria-current="page"]::after { display: none; }
+}
+
+@media screen and (max-width: 1080px) {
+  .menu-btn {
+    display: inline-grid;
+    place-items: center;
+    width: 46px;
+    height: 46px;
+    min-width: 46px;
+    padding: 0;
+    border: 1px solid rgba(166, 109, 0, .20);
+    border-radius: 50%;
+    background: var(--gold-500);
+    color: var(--navy-950);
+    box-shadow: 0 8px 20px rgba(166, 109, 0, .18);
+  }
+  .menu-btn:hover,
+  .menu-btn:focus-visible {
+    border-color: #ffe66e;
+    background: #ffe66e;
+    color: var(--navy-950);
+    transform: translateY(-1px);
+  }
+  .menu-btn svg { width: 22px; height: 22px; }
+}
+
+@media screen and (max-width: 480px) {
+  .menu-btn {
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  body { padding-top: 88px; }
+}
+
+/* Спокійніший фон і стриманіша шкала заголовків. */
+@media screen {
+  body {
+    background-color: #d8dfda;
+    background-image:
+      linear-gradient(rgba(225, 231, 226, .84), rgba(225, 231, 226, .84)),
+      url("../img/warm-ornament.svg");
+  }
+
+  .head { background: rgba(216, 223, 218, .94); }
+
+  .paper-header h1,
+  .paper > h1 {
+    font-size: clamp(1.85rem, 3vw, 2.8rem);
+    line-height: 1.12;
+    letter-spacing: -.035em;
+  }
+
+  .block-title {
+    font-size: clamp(1.55rem, 2.35vw, 2.2rem);
+    line-height: 1.16;
+  }
+
+  .prose h2 { font-size: clamp(1.35rem, 2.2vw, 1.85rem); }
+  .prose h3 { font-size: clamp(1.15rem, 1.7vw, 1.45rem); }
+}
+
+@media screen and (max-width: 680px) {
+  .paper-header h1,
+  .paper > h1 { font-size: clamp(1.7rem, 7.6vw, 2.25rem); }
+  .block-title { font-size: clamp(1.45rem, 6.5vw, 1.9rem); }
+}
+
+/* Темний орнаментальний фон і чистий напис на головній фотографії. */
+@media screen {
+  body {
+    background-color: #33443f;
+    background-image:
+      linear-gradient(rgba(51, 68, 63, .72), rgba(51, 68, 63, .72)),
+      url("../img/warm-ornament.svg");
+  }
+
+  .head { background: rgba(42, 57, 52, .94); }
+  .hero-kicker::before { display: none; }
+}
+
+/* Світлий текст на темному полотні та єдиний стиль домашніх карток. */
+@media screen {
+  .layout.is-home .block-title { color: #f5f8f6; }
+
+  .crumbs,
+  .crumbs a { color: #cbd8d1; }
+  .crumbs a:hover,
+  .crumbs li[aria-current="page"] { color: #ffffff; }
+  .crumbs li + li::before { color: var(--gold-400); }
+
+  .editorial-hero {
+    border: 2px solid rgba(232, 239, 235, .72);
+    box-shadow: 0 30px 80px rgba(5, 16, 14, .34);
+  }
+  .editorial-hero::before {
+    background:
+      linear-gradient(90deg, rgba(5, 16, 48, .66) 0%, rgba(10, 34, 96, .42) 48%, rgba(10, 34, 96, .08) 100%),
+      linear-gradient(0deg, rgba(5, 16, 48, .36), transparent 62%);
+  }
+  .editorial-hero .hero-photo-frame img {
+    filter: brightness(1.07) saturate(.96) contrast(1.02);
+  }
+
+  .home-dashboard .news-digest {
+    border: 1px solid rgba(36, 87, 232, .10);
+    background: linear-gradient(145deg, #ffffff, #f7f9ff);
+    color: var(--navy-900);
+    box-shadow: var(--card-shadow);
+  }
+  .home-dashboard .news-digest .block-title { color: var(--navy-900); }
+  .home-dashboard .news-digest-list {
+    border-top-color: var(--line);
+    scrollbar-color: #2457e8 #edf2ff;
+  }
+  .home-dashboard .news-digest-list::-webkit-scrollbar-track { background: #edf2ff; }
+  .home-dashboard .news-digest-list::-webkit-scrollbar-thumb { background: #2457e8; }
+  .home-dashboard .news-digest-item {
+    color: var(--navy-900);
+    border-bottom-color: var(--line);
+  }
+  .home-dashboard .news-digest-item:hover { color: #2457e8; }
+  .home-dashboard .news-digest .text-link { color: #2457e8; }
+  .home-dashboard .news-digest .text-link:hover { color: var(--gold-700); }
+}
+
+@media screen and (min-width: 1081px) {
+  .home-dashboard .news-digest {
+    height: 242px;
+    min-height: 242px;
+    margin-top: 65px;
+  }
+}
+
+/* Єдиний вертикальний ритм внутрішніх сторінок.
+   Прозорий список новин не повинен успадковувати верхній відступ білої картки. */
+@media screen {
+  :root { --inner-page-gap: 28px; }
+
+  .layout.is-inner { padding-top: 36px; }
+
+  .layout.is-inner .crumbs {
+    margin-bottom: var(--inner-page-gap);
+  }
+
+  .layout-news {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .layout-news .paper-header {
+    margin: 0 0 var(--inner-page-gap);
+    padding-inline: clamp(0px, 4vw, 48px);
+  }
+
+  .layout-news .paper-header h1,
+  .layout-news > h1 {
+    color: #f5f8f6;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  :root { --inner-page-gap: 22px; }
+  .layout.is-inner { padding-top: 24px; }
+  .layout-news .paper-header { padding-inline: 0; }
+}
+
+/* Точне центрування всього футера на телефонах. */
+@media screen and (max-width: 680px) {
+  .footer-grid,
+  .footer-col,
+  .footer-bottom-in {
+    text-align: center;
+  }
+
+  .footer-brand-header,
+  .footer-address,
+  .footer-contact-links a,
+  .footer-contact-item,
+  .footer-nav a,
+  .footer-admin-link {
+    justify-content: center;
+  }
+
   .footer-contact-links {
     justify-items: center;
     width: 100%;
@@ -4064,13 +4847,148 @@ a:hover {
 
   .footer-contact-links a,
   .footer-contact-item {
-    justify-content: center;
     width: 100%;
     text-align: center;
   }
 
   .footer-contacts .footer-social {
     justify-content: center;
+    width: 100%;
     padding-left: 0;
+  }
+
+  .footer-desc,
+  .footer-address,
+  .copyright,
+  .footer-note {
+    margin-inline: auto;
+    text-align: center;
+  }
+}
+
+/* Повноекранна обкладинка та єдиний ритм усіх розділів. */
+@media screen {
+  body { background-attachment: scroll; }
+
+  .layout.is-home { padding-top: 0; }
+  .editorial-hero {
+    width: 100vw;
+    max-width: none;
+    min-height: 100vh;
+    margin-top: -154px;
+    margin-right: calc(50% - 50vw);
+    margin-bottom: 0;
+    margin-left: calc(50% - 50vw);
+    padding-top: calc(154px + clamp(42px, 6vw, 84px));
+    border: 0;
+    border-radius: 0;
+  }
+  .editorial-hero .hero-photo-frame,
+  .editorial-hero .hero-photo-frame img { border-radius: 0; }
+
+  .home-block { margin-top: 64px; }
+  .home-block > .block-header { margin-bottom: 64px; }
+  .home-dashboard .quick-block { margin-top: 64px; }
+
+  .widgets-block .block-title,
+  .links-block .block-title,
+  .quick-block .block-title {
+    font-size: clamp(1.45rem, 2vw, 1.85rem);
+  }
+
+  .paper-header h1,
+  .paper > h1 {
+    font-size: clamp(1.65rem, 2.45vw, 2.35rem);
+    line-height: 1.16;
+  }
+  .prose h2 { font-size: clamp(1.25rem, 1.85vw, 1.65rem); }
+  .prose h3 { font-size: clamp(1.08rem, 1.45vw, 1.32rem); }
+
+  .paper::before,
+  .paper-gold-bar,
+  .paper > h1::after,
+  .gold-line { display: none !important; }
+}
+
+@media screen and (min-width: 1081px) {
+  .home-dashboard .news-digest { margin-top: 161px; }
+}
+
+@media screen and (max-width: 1080px) {
+  .editorial-hero {
+    min-height: 100svh;
+    margin-top: -88px;
+    padding-top: calc(88px + 42px);
+  }
+  .home-block,
+  .home-dashboard .quick-block { margin-top: 44px; }
+  .home-block > .block-header { margin-bottom: 44px; }
+}
+
+@media screen and (max-width: 680px) {
+  .editorial-hero {
+    width: 100vw;
+    min-height: 100svh;
+    margin-right: calc(50% - 50vw);
+    margin-left: calc(50% - 50vw);
+    padding: 124px 22px 104px;
+  }
+  .home-block,
+  .home-dashboard .quick-block { margin-top: 34px; }
+  .home-block > .block-header { margin-bottom: 34px; }
+  .paper-header h1,
+  .paper > h1 { font-size: clamp(1.55rem, 7vw, 2rem); }
+}
+
+/* Шапка поверх фото та спільний центр секції швидкого доступу. */
+@media screen {
+  .head {
+    background: transparent;
+    box-shadow: none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+  .quick-block .block-header {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .quick-block .block-header::before { display: none; }
+  .quick-block .block-title {
+    width: 100%;
+    margin-inline: auto;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1081px) {
+  .home-dashboard {
+    grid-template-rows: auto 242px;
+    row-gap: 64px;
+  }
+  .home-dashboard .quick-block { display: contents; }
+  .home-dashboard .quick-block .block-header {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+  .home-dashboard .quick-block .block-header::before { display: none; }
+  .home-dashboard .quick-block .block-title {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+  .home-dashboard .quick-grid {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .home-dashboard .news-digest {
+    grid-column: 2;
+    grid-row: 2;
+    height: 242px;
+    min-height: 242px;
+    margin-top: 0;
   }
 }

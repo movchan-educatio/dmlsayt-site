@@ -224,6 +224,33 @@
     }
 
     topNavEl.innerHTML = '<ul class="top-nav-list">' + itemsHtml + '</ul>';
+
+    /* Надійне відкривання меню «Всі розділи» кліком і з клавіатури. */
+    topNavEl.onclick = function (event) {
+      var button = event.target.closest('.more-btn');
+      var openItems = topNavEl.querySelectorAll('.top-nav-item.is-open');
+      if (!button) {
+        Array.prototype.forEach.call(openItems, function (item) { item.classList.remove('is-open'); });
+        return;
+      }
+      event.preventDefault();
+      var item = button.closest('.top-nav-item');
+      var willOpen = !item.classList.contains('is-open');
+      Array.prototype.forEach.call(openItems, function (openItem) { openItem.classList.remove('is-open'); });
+      item.classList.toggle('is-open', willOpen);
+      button.setAttribute('aria-expanded', String(willOpen));
+    };
+    topNavEl.onkeydown = function (event) {
+      if (event.key !== 'Escape') return;
+      var item = event.target.closest('.top-nav-item.is-open');
+      if (!item) return;
+      item.classList.remove('is-open');
+      var button = item.querySelector('.more-btn');
+      if (button) {
+        button.setAttribute('aria-expanded', 'false');
+        button.focus();
+      }
+    };
   }
 
   function navItems(list, activeSet, current) {
@@ -535,11 +562,15 @@
             '</figcaption>' +
           '</div>' +
         '</figure>' : '') +
+      '<a class="hero-scroll-cue" href="#homeAfterHero" aria-label="Гортати далі до наступного розділу">' +
+        '<span class="hero-mouse" aria-hidden="true"><span></span></span>' +
+        '<span>Гортайте далі</span>' +
+      '</a>' +
     '</section>';
 
     var quick = (s.quick || []).map(function (slug) { return S.bySlug[slug]; }).filter(Boolean);
     if (quick.length) {
-      html += '<div class="home-dashboard"><section class="home-block quick-block reveal-on-scroll">' +
+      html += '<div class="home-dashboard" id="homeAfterHero"><section class="home-block quick-block reveal-on-scroll">' +
         '<div class="block-header">' +
           '<h2 class="block-title">Швидкий доступ</h2>' +
         '</div>' +
