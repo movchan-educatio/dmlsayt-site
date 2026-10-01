@@ -28,6 +28,12 @@
     var og = document.querySelector('meta[property="og:url"]');
     if (link) link.href = canonical;
     if (og) og.content = canonical;
+    var preload = document.createElement('link');
+    preload.rel = 'preload';
+    preload.as = 'fetch';
+    preload.href = 'content/pages/' + encodeURIComponent(p) + '.md';
+    preload.crossOrigin = 'anonymous';
+    document.head.appendChild(preload);
   }());
   </script>
   <link rel="icon" type="image/png" href="assets/img/favicon.png">
@@ -87,6 +93,7 @@
   <script src="assets/js/render.js?v=20261001-4"></script>
   <script src="assets/js/firebase-config.js"></script>
   <script src="assets/js/feedback.js"></script>
+  <script src="assets/js/content-fetch-resilience.js?v=20261001-1"></script>
   <script src="assets/js/app.js?v=20261001-redesign-preview"></script>
 </body>
 </html>
