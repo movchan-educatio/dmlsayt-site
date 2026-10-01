@@ -4815,6 +4815,14 @@ a:hover {
   .layout-news > h1 {
     color: #f5f8f6;
   }
+
+  .layout-news .children-title {
+    color: #f5f8f6;
+  }
+
+  .layout-news .children {
+    border-top-color: rgba(245, 248, 246, .72);
+  }
 }
 
 @media screen and (max-width: 680px) {
