@@ -1,16 +1,16 @@
 Початкова школа
 
-![Фото: Освітній процес](uploads/pages/osvitnii-protses/image-1.jpg)
+![Фото: Освітній процес — 2](uploads/pages/osvitnii-protses/image-2.jpg)
 
 ## <a id="h.7q2gtl9zri0b"></a>1-А клас
 
-Класний керівник - Наталія Рябокінь
+Класний керівник - Лідія Устенко
 
-![Фото: Освітній процес — 2](uploads/pages/osvitnii-protses/image-2.jpg)
+![Фото: Освітній процес](uploads/pages/osvitnii-protses/image-1.jpg)
 
 ## <a id="h.sgv3hzgih9qs"></a>1-б клас
 
-Класний керівник - Лідія Устенко
+Класний керівник - Наталія Рябокінь
 
 ![Фото: Освітній процес — 3](uploads/pages/osvitnii-protses/image-3.jpg)
 
