@@ -34,6 +34,8 @@
 
 **Мета гуртка** — це формування ключових компетентностей особистості, розвиток творчих здібностей, фантазії, просторового мислення та дрібної моторики засобами паперопластики, орігамі та декоративно-прикладного мистецтва
 
+<figure class="media-image" data-width="100" data-align="center" data-fit="contain"><img src="uploads/2026/10/20440c46-a9fb-4a55-908a-9e8b99fa3a0c.jpg" alt=""></figure>
+
 ## <a id="h.2c51b7cu3xqx"></a>Театральне мистецтво
 
 <figure class="media-image" data-width="100" data-align="center" data-fit="contain"><img src="uploads/2026/09/5325595976749752225.jpg" alt="Фото: Гурткова робота — 2"></figure>
