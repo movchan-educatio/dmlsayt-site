@@ -5065,3 +5065,9 @@ a:hover {
 /* Comfortable reading without stretched word spacing. */
 .prose p:not(:has(img)):not(:has(iframe)):not(.google-viewer-note), .prose li { text-align: left; hyphens: manual; }
 .prose { line-height: 1.7; }
+/* The section title remains a native link, covering the whole navigation card. */
+.child-card { position: relative; }
+.child-card a.t { position: static; }
+.child-card a.t::after { content: ""; position: absolute; inset: 0; z-index: 1; border-radius: inherit; cursor: pointer; }
+.child-card .child-page-links { position: relative; z-index: 2; }
+.child-card:focus-within { outline: 2px solid var(--gold-500); outline-offset: 3px; }
