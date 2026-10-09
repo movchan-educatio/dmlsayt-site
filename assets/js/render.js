@@ -118,6 +118,31 @@
       '<p class="google-viewer-note">Якщо вміст не відкривається, Google не дозволяє вбудований перегляд. Перевірте, чи встановлено доступ «Усі, хто має посилання».</p></div>';
   }
 
+  function addDocumentExpansion(root) {
+    root.querySelectorAll('.embed-doc').forEach(function(embed){
+      var frame=embed.querySelector('iframe');
+      if (!frame || !/https:\/\/(?:docs|drive)\.google\.com\/(?:document|spreadsheets|presentation|file)\//.test(frame.src) || embed.dataset.expandReady) return;
+      embed.dataset.expandReady='1';
+      var button=document.createElement('button');button.type='button';button.className='document-expand';button.textContent='Розгорнути документ';
+      button.addEventListener('click',function(event){
+        event.preventDefault();event.stopPropagation();
+        var placeholder=document.createComment('document location');embed.before(placeholder);
+        var dialog=document.createElement('dialog');dialog.className='document-dialog';dialog.setAttribute('aria-label',frame.title||'Документ');
+        var header=document.createElement('div');header.className='document-dialog-header';
+        var title=document.createElement('strong');title.textContent=frame.title||'Документ';header.appendChild(title);
+        var data=normalizeGoogleDriveUrl(frame.src), open=document.createElement('a');
+        if(data){open.href=data.openUrl;open.target='_blank';open.rel='noopener noreferrer';open.textContent='Відкрити оригінал ↗';header.appendChild(open);}
+        var close=document.createElement('button');close.type='button';close.textContent='✕';close.setAttribute('aria-label','Закрити документ');close.onclick=function(){dialog.close();};header.appendChild(close);
+        dialog.appendChild(header);dialog.appendChild(embed);document.body.appendChild(dialog);
+        var overflow=document.body.style.overflow;document.body.style.overflow='hidden';
+        function routeClose(){dialog.close();}
+        dialog.addEventListener('close',function(){placeholder.replaceWith(embed);dialog.remove();document.body.style.overflow=overflow;window.removeEventListener('hashchange',routeClose);if(button.isConnected)button.focus();},{once:true});
+        window.addEventListener('hashchange',routeClose);dialog.showModal();close.focus();
+      });
+      embed.before(button);
+    });
+  }
+
   /* Доопрацювання вже вставленого в DOM вмісту: шляхи, зовнішні посилання, файли, таблиці, зображення. */
   function enhance(root, opts) {
     opts = opts || {};
@@ -203,6 +228,7 @@
       f.removeAttribute('width'); f.removeAttribute('height');
       f.parentNode.insertBefore(w, f); w.appendChild(f);
     });
+    addDocumentExpansion(root);
   }
 
   /* Текст без розмітки — для пошуку та коротких описів. */

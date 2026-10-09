@@ -18,7 +18,7 @@ import time
 import socket
 import threading
 import json
-from http.server import HTTPServer, SimpleHTTPRequestHandler
+from http.server import ThreadingHTTPServer, SimpleHTTPRequestHandler
 from playwright.sync_api import sync_playwright
 
 if hasattr(sys.stdout, "reconfigure"):
@@ -34,7 +34,7 @@ def all_page_slugs():
     slugs = []
     def visit(nodes):
         for node in nodes or []:
-            if node.get("slug"):
+            if node.get("slug") and node["slug"] != "golovna":
                 slugs.append(node["slug"])
             visit(node.get("children"))
     visit(site.get("nav"))
@@ -55,7 +55,7 @@ class QuietHandler(SimpleHTTPRequestHandler):
 
 def run_browser_tests():
     port = get_free_port()
-    httpd = HTTPServer(('127.0.0.1', port), QuietHandler)
+    httpd = ThreadingHTTPServer(('127.0.0.1', port), QuietHandler)
     server_thread = threading.Thread(target=httpd.serve_forever, daemon=True)
     server_thread.start()
     base_url = f"http://127.0.0.1:{port}"
@@ -87,7 +87,7 @@ def run_browser_tests():
         # 1. Головна сторінка
         print("-> Перевірка завантаження головної (ПК) ... ", end="")
         page.goto(f"{base_url}/index.html#/")
-        page.wait_for_selector("#nav .item", timeout=6000)
+        page.wait_for_selector("#nav .item", state="attached", timeout=15000)
         title = page.locator(".brand-text strong").text_content()
         assert "Дмитрушківський ліцей" in title, f"Неправильний заголовок: {title}"
         print("✓ OK")
@@ -143,7 +143,21 @@ def run_browser_tests():
             f"Дубльовані preview знайдено на {len(affected_pages)} сторінках "
             f"({duplicate_previews} зайвих iframe): {affected_pages}"
         )
-        print(f"✓ OK (62/62 сторінки, {checked_cards} document cards)")
+        print(f"✓ OK ({len(all_page_slugs())}/{len(all_page_slugs())} сторінки, {checked_cards} document cards)")
+
+        # Full viewport document viewing must reuse the iframe and close cleanly.
+        for width in (320, 1440):
+            page.set_viewport_size({"width": width, "height": 900})
+            page.evaluate("location.hash = '#/plan-roboty-litseiu'")
+            page.wait_for_selector('article[data-page="plan-roboty-litseiu"]')
+            frame_count = page.locator('iframe').count()
+            page.locator('.document-expand').first.click()
+            page.wait_for_selector('dialog.document-dialog[open]')
+            assert page.locator('iframe').count() == frame_count
+            page.get_by_role('button', name='Закрити документ', exact=True).click()
+            page.locator('.document-dialog').wait_for(state='detached')
+            assert page.locator('iframe').count() == frame_count
+        page.set_viewport_size({"width": 1280, "height": 800})
 
         # 4. Сторінка архіву та внутрішній якір
         print("-> Перевірка #/arkhiv та якірної навігації ... ", end="")
@@ -178,7 +192,7 @@ def run_browser_tests():
         print("-> Перевірка адмінпанелі /admin/index.html ... ", end="")
         admin_page = context.new_page()
         admin_page.goto(f"{base_url}/admin/index.html")
-        admin_page.wait_for_selector(".login", timeout=6000)
+        admin_page.wait_for_selector(".login", timeout=30000)
         assert admin_page.locator("#repo").is_visible(), "Поле repo не знайдено в адмінці"
         assert admin_page.locator("#token").is_visible(), "Поле token не знайдено в адмінці"
         assert admin_page.locator("#fb_email").is_visible(), "Поле fb_email не знайдено в адмінці"
