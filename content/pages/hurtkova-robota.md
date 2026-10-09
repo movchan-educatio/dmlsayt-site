@@ -18,7 +18,7 @@
 
 **Мета гуртка**: створення умов для творчого розвитку особистості засобами образотворчого мистецтва та вдосконалення навичок роботи у різних техніках, розвиток художніх сенсорних здібностей, навчити кожного вихованця бачити красу, яка нас оточує і сприяти її збереженню; вдосконалити роботу у різних техніках малювання; сприяти формуванню ціннісних орієнтирів, потреби в творчій самореалізації та духовно-естетичному самовдосконаленні.
 
-![Фото: Гурткова робота](uploads/pages/hurtkova-robota/image-1.jpg)
+<figure class="media-image" data-width="100" data-align="center" data-fit="contain"><img src="uploads/2026/10/whatsapp-image-2026-10-09-at-23-22-38.jpeg" alt=""></figure>
 
 ## <a id="h.c97haarcfx3o"></a>Моделювання іграшок-сувенірів
 
@@ -38,13 +38,13 @@
 
 ## <a id="h.2c51b7cu3xqx"></a>Театральне мистецтво
 
-<figure class="media-image" data-width="100" data-align="center" data-fit="contain"><img src="uploads/2026/09/5325595976749752225.jpg" alt="Фото: Гурткова робота — 2"></figure>
-
-<figure class="media-image" data-width="100" data-align="center" data-fit="contain"><img src="uploads/2026/09/5325595976749752244.jpg" alt=""></figure>
-
 керівник - Гребенник Наталія
 
 **Гурток театрального мистецтва** — це творче об'єднання, де учасники занурюються у світ театру, розвиваючи акторські здібності, сценічну мову та рух через вивчення теорії та практичні заняття, включаючи роботу над ролями та участь у виставах.
+
+<figure class="media-image" data-width="100" data-align="center" data-fit="contain"><img src="uploads/2026/09/5325595976749752225.jpg" alt="Фото: Гурткова робота — 2"></figure>
+
+<figure class="media-image" data-width="100" data-align="center" data-fit="contain"><img src="uploads/2026/09/5325595976749752244.jpg" alt=""></figure>
 
 ## <a id="h.89hisnpsxgfg"></a>Підприємець
 

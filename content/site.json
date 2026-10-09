@@ -156,11 +156,13 @@
     },
     {
       "title": "План роботи ліцею",
-      "slug": "plan-roboty-litseiu"
-    },
-    {
-      "title": "Алгоритм дій під час повітряної тривоги",
-      "slug": "alhorytm-funktsionuvannia-dmytrushkivskoho-litseiu"
+      "slug": "plan-roboty-litseiu",
+      "children": [
+        {
+          "title": "Алгоритм дій під час повітряної тривоги",
+          "slug": "alhorytm-funktsionuvannia-dmytrushkivskoho-litseiu"
+        }
+      ]
     },
     {
       "title": "Про нас",
