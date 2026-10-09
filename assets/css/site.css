@@ -5035,3 +5035,33 @@ a:hover {
     margin-top: 0;
   }
 }
+
+/* Keep the fixed header clear of page content, including after font loading. */
+@media screen {
+  body { padding-top: var(--site-header-height, 154px); }
+  body.has-scrolled .head { box-shadow: none; }
+  .head-in { box-shadow: none; }
+  .layout.is-inner .paper { scroll-margin-top: calc(var(--site-header-height, 88px) + 16px); }
+}
+@media screen and (max-width: 1080px) {
+  body { --site-header-height: 88px; }
+}
+
+/* Accessible section navigation and a solid header while reading. */
+@media screen {
+  body.has-scrolled .head,
+  body:has(.layout.is-inner) .head { background: #33443f; }
+  .head-in, .top-nav-wrap > .wrap { box-shadow: none; }
+  .layout-editorial .prose > p:first-child:not(:has(img)):not(:empty) { color: #172033; font-size: inherit; }
+  .paper > .prose { color: #172033; }
+  .paper > .children { margin: 0 0 32px; padding-top: 0; border-top: 0; }
+  .child-page-links { padding: 0; margin: 12px 0 0; list-style: none; }
+  .child-page-links li { margin-top: 5px; }
+  .child-page-links a { display: block; padding: 8px 10px; border-radius: 8px; background: #f2f5fa; color: #172033; font-size: .9rem; line-height: 1.4; text-decoration: none; }
+  .child-page-links a:hover, .child-page-links a:focus-visible { background: #fff1c7; text-decoration: underline; }
+  .child-page-links .child-page-links { margin: 4px 0 0 12px; }
+}
+
+/* Comfortable reading without stretched word spacing. */
+.prose p:not(:has(img)):not(:has(iframe)):not(.google-viewer-note), .prose li { text-align: left; hyphens: manual; }
+.prose { line-height: 1.7; }

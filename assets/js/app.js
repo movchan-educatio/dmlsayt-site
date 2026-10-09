@@ -329,6 +329,17 @@
     return '<nav class="crumbs" aria-label="Ви тут"><ol>' + items.join('') + '</ol></nav>';
   }
 
+  function nestedPageLinks(nodes) {
+    var kids = visible(nodes);
+    if (!kids.length) return '';
+    return '<ul class="child-page-links">' + kids.map(function (node) {
+      var external = !!node.url;
+      return '<li><a href="' + esc(external ? safeUrl(node.url) : pageHref(node.slug)) + '"' +
+        (external ? ' target="_blank" rel="noopener noreferrer"' : '') + '>' + esc(node.title) +
+        (external ? ' ↗' : '') + '</a>' + nestedPageLinks(node.children) + '</li>';
+    }).join('') + '</ul>';
+  }
+
   function childrenList(node) {
     var kids = visible(node.children);
     if (!kids.length) return '';
@@ -340,7 +351,7 @@
       }
       var more = countPages(k);
       return '<li class="child child-card" data-slug="' + esc(k.slug) + '"><div><a class="t" href="' + esc(pageHref(k.slug)) + '">' + esc(k.title) + '</a>' +
-        '<p hidden></p>' + (more ? '<span class="sub">Підрозділів: ' + more + '</span>' : '') + '</div></li>';
+        '<p hidden></p>' + (more ? '<span class="sub">Підрозділів: ' + more + '</span>' + nestedPageLinks(k.children) : '') + '</div></li>';
     }).join('') + '</ul></section>';
   }
 
@@ -495,8 +506,8 @@
         '<h1>' + esc(node.title) + '</h1>' +
         '<div class="paper-gold-bar"></div>' +
       '</header>' +
-      (hasBody ? '<div class="prose"></div>' : '') +
-      childrenList(node) + '</article>';
+      childrenList(node) +
+      (hasBody ? '<div class="prose"></div>' : '') + '</article>';
     if (hasBody) {
       var prose = $('.prose', main);
       prose.innerHTML = R.mdToHtml(md);
@@ -946,6 +957,13 @@
     }
     if (mq.addEventListener) mq.addEventListener('change', placeSearch); else mq.addListener(placeSearch);
     placeSearch();
+    var siteHeader = $('.head');
+    function syncHeaderHeight() {
+      document.body.style.setProperty('--site-header-height', Math.ceil(siteHeader.getBoundingClientRect().height) + 'px');
+    }
+    syncHeaderHeight();
+    if (window.ResizeObserver) new ResizeObserver(syncHeaderHeight).observe(siteHeader);
+    else window.addEventListener('resize', syncHeaderHeight);
     var lastScroll = window.scrollY;
     window.addEventListener('scroll', function () {
       var y = window.scrollY;

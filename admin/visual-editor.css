@@ -62,3 +62,61 @@ html,body,.main,.editor-panel,#editor,.visual-editor,.ve-canvas,.ve-blocks,.ve-b
 .ve-block.is-editing>.ve-mobile-actions-toggle,.ve-block.is-editing>.ve-mobile-actions{display:none!important}
 .ve-format{right:auto;bottom:auto;display:flex;width:auto;min-width:0;max-width:none;box-sizing:border-box;flex-wrap:nowrap;overflow-x:auto;overflow-y:hidden;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch;scrollbar-width:thin}.ve-format button{min-width:38px;min-height:38px;flex:0 0 auto;font-size:.85rem;touch-action:manipulation}
 }
+
+/* Drag only by the visible grip; text remains selectable and editable. */
+.ve-block-tools .ve-handle { position: static; touch-action: none; min-width: 34px; }
+.ve-reordering, .ve-reordering * { cursor: grabbing !important; user-select: none !important; }
+.ve-block.drop-after::after { content: ""; position: absolute; z-index: 5; bottom: -4px; left: 0; right: 0; height: 3px; border-radius: 9px; background: var(--sun); box-shadow: 0 0 0 3px rgba(197,160,89,.16); }
+@media(max-width:760px) { .ve-block-tools .ve-handle { display: inline-block; } }
+
+.ve-format { max-width: calc(100vw - 16px); flex-wrap: wrap; gap: 5px; }
+.ve-format select { max-width: 180px; min-height: 34px; border: 1px solid #d5dce7; border-radius: 6px; padding: 4px 6px; background: white; color: #172033; }
+.ve-block-body.text-panel { margin-block: 0; }
+@media(max-width:760px) { .ve-format select { flex: 1 1 100px; min-width: 0; max-width: 100%; } }
+
+/* Square cards occupy half a row, including their selection border and tools. */
+.ve-blocks { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 12px; align-items: start; }
+.ve-blocks > * { grid-column: 1 / -1; }
+.ve-blocks > .ve-block[data-text-shape="square"] { grid-column: auto; }
+.ve-block[data-text-shape="square"] .text-panel { max-width: none; }
+@media(max-width:680px) { .ve-blocks { grid-template-columns: minmax(0,1fr); } }
+.ve-canvas[data-view="mobile"] .ve-blocks { grid-template-columns: minmax(0,1fr); }
+/* Editor header stays in document flow and cannot cover block controls. */
+.ve-topbar, body.ve-focus .ve-topbar { position: relative; top: auto; }
+@media(min-width:761px) {
+  .ve-block-tools { position: relative; top: auto; right: auto; width: fit-content; margin: 0 0 8px auto; transform: none; }
+  .ve-block:hover .ve-block-tools,
+  .ve-block:focus-within .ve-block-tools,
+  .ve-block.is-selected .ve-block-tools { transform: none; }
+}
+
+/* Formatting occupies its own row instead of covering the page header or cards. */
+.visual-editor > .ve-format {
+  position: relative; inset: auto; z-index: auto; width: 100%; max-width: 100%;
+  margin: 12px 0; box-sizing: border-box; flex-wrap: wrap;
+  overflow: visible; box-shadow: none;
+}
+.visual-editor > .ve-format[hidden] { display: none !important; }
+
+/* Photo actions remain visible above the image in every preview size. */
+.ve-image > .ve-image-overlay,
+.ve-image:hover > .ve-image-overlay,
+.ve-image.is-selected > .ve-image-overlay {
+  position: relative; inset: auto; display: flex; flex-wrap: wrap;
+  opacity: 1; visibility: visible; transform: none; margin: 0 0 12px;
+}
+.ve-block-body .document-card { grid-template-columns: auto minmax(0,1fr); }
+.ve-block-body .document-card-info strong { white-space: normal; overflow: visible; text-overflow: clip; word-break: normal; }
+.ve-block-body .document-card-actions { grid-column: 1 / -1; display: flex; flex-wrap: wrap; min-width: 0; }
+.ve-block-body .document-card-actions a { min-width: 0; white-space: nowrap; word-break: normal; hyphens: none; justify-content: center; }
+.ve-canvas[data-view="mobile"] .text-panel[data-align="justify"] :is(p,div,li),
+.ve-canvas[data-view="mobile"] .ve-block-body.prose:not(.text-panel) p { text-align: left !important; hyphens: manual; }
+
+
+.ve-blocks { grid-template-columns: repeat(12,minmax(0,1fr)); }
+.ve-blocks > .ve-block[data-text-shape="square"] { grid-column: span 6; }
+.ve-blocks > .ve-block[data-text-width="25"] { grid-column: span 3; }
+.ve-blocks > .ve-block[data-text-width="50"] { grid-column: span 6; }
+.ve-blocks > .ve-block[data-text-width="100"] { grid-column: 1 / -1; }
+@media(max-width:680px) { .ve-blocks { grid-template-columns: minmax(0,1fr); } .ve-blocks > .ve-block { grid-column: 1 / -1 !important; } }
+.ve-canvas[data-view="mobile"] .ve-blocks > .ve-block { grid-column: 1 / -1 !important; }

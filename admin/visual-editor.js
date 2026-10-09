@@ -14,6 +14,7 @@
   function classify(raw) {
     var t = raw.trim();
     if (!t) return 'text';
+    if (/^<div\b[^>]*class=["'][^"']*\btext-panel\b/i.test(t)) return 'richtext';
     if (/^#{2,6}\s/.test(t)) return 'heading';
     if (/^!\[[^\]]*\]\([^)]+\)\s*$/.test(t) || /^<img\b[\s\S]*>$/i.test(t) || /^<figure\b[^>]*class=["'][^"']*media-image/i.test(t)) return 'image';
     if (/^<div\b[^>]*class=["'][^"']*google-document-viewer/i.test(t)) return 'document';
@@ -59,7 +60,26 @@
     return inner;
   }
 
+  function textPanelData(raw) {
+    var holder = document.createElement('div'); holder.innerHTML = R.mdToHtml(raw);
+    var panel = holder.querySelector('.text-panel');
+    return { html: panel ? panel.innerHTML : holder.innerHTML,
+      align: panel ? panel.dataset.align || 'left' : 'left',
+      font: panel ? panel.dataset.font || 'sans' : 'sans',
+      shape: panel ? panel.dataset.shape || 'plain' : 'plain',
+      width: panel ? panel.dataset.width || 'auto' : 'auto',
+      height: panel ? panel.dataset.height || 'auto' : 'auto',
+      size: panel ? panel.dataset.size || 'auto' : 'auto' };
+  }
+  function textPanelRaw(html, data) {
+    function allowed(value, values, fallback) { return values.indexOf(value) >= 0 ? value : fallback; }
+    return '<div class="text-panel" data-align="' + allowed(data.align,['left','center','right','justify'],'left') +
+      '" data-font="' + allowed(data.font,['sans','serif'],'sans') + '" data-shape="' +
+      allowed(data.shape,['plain','square','rectangle'],'plain') + '" data-width="' + allowed(data.width,['auto','25','50','100'],'auto') + '" data-height="' + allowed(data.height,['auto','180','320','480'],'auto') + '" data-size="' + allowed(data.size,['auto','16','18','22','28','36'],'auto') + '">' + R.mdToHtml(html) + '</div>';
+  }
+
   function editableToMd(el, type, oldRaw) {
+    if (type === 'richtext') return textPanelRaw(el.innerHTML, el.dataset);
     if (type === 'heading') {
       var level = ((oldRaw.match(/^(#{2,6})\s/) || [,'##'])[1]).length;
       return new Array(level + 1).join('#') + ' ' + inlineMd(el).trim();
@@ -178,8 +198,18 @@
     button(bar.querySelector('.ve-actions'),'💾 Зберегти','Зберегти локальну чернетку',function(){self.saved=serialize(self.blocks);try{localStorage.setItem(self.draftKey,JSON.stringify({text:self.saved,at:Date.now()}));}catch(e){}self.setStatus('✓ Збережено');self.o.toast('Чернетку збережено в цьому браузері');},'primary');
     button(bar.querySelector('.ve-actions'),'?','Як користуватися редактором',function(){self.help();},'ghost ve-help-btn');
     this.toolbar=document.createElement('div');this.toolbar.className='ve-format';this.toolbar.hidden=true;
-    this.toolbar.addEventListener('pointerdown',function(e){e.preventDefault();self.captureRange();});
-    [['Ж','bold'],['К','italic'],['H2','formatBlock','H2'],['H3','formatBlock','H3'],['•','insertUnorderedList'],['1.','insertOrderedList']].forEach(function(x){button(self.toolbar,x[0],x[0],function(){self.formatCommand(x[1],x[2]||null);});});
+    this.toolbar.addEventListener('pointerdown',function(e){self.captureRange();if(!e.target.closest('select'))e.preventDefault();});
+    [['Жирний','bold'],['Курсив','italic'],['H2','formatBlock','H2'],['H3','formatBlock','H3'],['•','insertUnorderedList'],['1.','insertOrderedList']].forEach(function(x){button(self.toolbar,x[0],x[0],function(){self.formatCommand(x[1],x[2]||null);});});
+    [['align','Вирівнювання',[['left','Ліворуч'],['center','По центру'],['right','Праворуч'],['justify','По ширині']]],
+     ['size','Розмір тексту',[['auto','Текст: стандартний'],['16','Текст: 16 px'],['18','Текст: 18 px'],['22','Текст: 22 px'],['28','Текст: 28 px'],['36','Текст: 36 px']]],
+     ['font','Шрифт',[['sans','Без засічок'],['serif','Із засічками']]],
+     ['shape','Форма блока',[['plain','Звичайний текст'],['square','Квадратна картка'],['rectangle','Прямокутна картка']]],
+     ['width','Ширина картки',[['auto','Ширина: автоматично'],['25','Ширина: ¼ ряду'],['50','Ширина: ½ ряду'],['100','Ширина: весь ряд']]],
+     ['height','Мінімальна висота картки',[['auto','Висота: автоматично'],['180','Висота: 180 px'],['320','Висота: 320 px'],['480','Висота: 480 px']]]].forEach(function(item){
+      var select = document.createElement('select'); select.setAttribute('aria-label',item[1]); select.dataset.setting=item[0];
+      item[2].forEach(function(option){var el=document.createElement('option');el.value=option[0];el.textContent=option[1];select.appendChild(el);});
+      select.addEventListener('change',function(){self.setTextSetting(item[0],select.value);});self.toolbar.appendChild(select);
+    });
     button(this.toolbar,'Очистити','Прибрати форматування',function(){self.clearFormatting();});
     button(this.toolbar,'Посилання','Додати посилання',function(){self.captureRange();var u=prompt('Введіть безпечну адресу посилання');u=safeUrl(u);if(u)self.formatCommand('createLink',u);else self.restoreRange();});
     this.canvas=document.createElement('div');this.canvas.className='ve-canvas';this.canvas.dataset.view='desktop';
@@ -190,13 +220,18 @@
   };
 
   Editor.prototype.renderBlocks = function () {
-    var self=this;this.list.innerHTML='';
+    var self=this;this.activeBody=null;this.savedRange=null;if(this.toolbar)this.toolbar.hidden=true;this.list.innerHTML='';
     this.blocks.forEach(function(block,index){
-      var wrap=document.createElement('section');wrap.className='ve-block ve-'+block.type;wrap.dataset.id=block.id;wrap.draggable=true;wrap.tabIndex=0;
+      var wrap=document.createElement('section');wrap.className='ve-block ve-'+block.type;wrap.dataset.id=block.id;wrap.draggable=false;wrap.tabIndex=0;
       var tools=document.createElement('div');tools.className='ve-block-tools';
       function act(label,title,fn,cls){var b=document.createElement('button');b.type='button';b.textContent=label;b.title=title;b.className=cls||'';b.addEventListener('click',function(e){e.stopPropagation();fn();});tools.appendChild(b);}
       act('⋮⋮','Перетягніть, щоб змінити порядок',function(){} ,'ve-handle');
       act('↑','Перемістити вище',function(){self.move(index,-1);});act('↓','Перемістити нижче',function(){self.move(index,1);});
+      if (/^(text|heading|list|richtext)$/.test(block.type)) act('Текст','Редагувати текст',function(){
+        var editable=wrap.querySelector('.ve-block-body');editable.focus();self.activeBody=editable;
+        var range=document.createRange();range.selectNodeContents(editable);range.collapse(false);
+        var selection=window.getSelection();selection.removeAllRanges();selection.addRange(range);self.captureRange();self.showFormat(editable);
+      });
       act('✎','Налаштувати блок',function(){self.configure(index);});act('⧉','Створити копію блока',function(){self.remember();var c=clone(block);c.id=uid();self.blocks.splice(index+1,0,c);self.sync();self.renderBlocks();});
       act('🗑','Видалити блок',function(){self.remove(index);},'danger');wrap.appendChild(tools);
       var mobileToggle=document.createElement('button');mobileToggle.type='button';mobileToggle.className='ve-mobile-actions-toggle';mobileToggle.textContent='•••';mobileToggle.setAttribute('aria-label','Дії з блоком');mobileToggle.setAttribute('aria-expanded','false');
@@ -204,8 +239,8 @@
       [['Перемістити вгору',function(){self.move(index,-1);}],['Перемістити вниз',function(){self.move(index,1);}],['Налаштування',function(){self.configure(index);}],['Дублювати',function(){self.remember();var c=clone(block);c.id=uid();self.blocks.splice(index+1,0,c);self.sync();self.renderBlocks();}],['Видалити',function(){self.remove(index);},'danger']].forEach(function(item){var b=document.createElement('button');b.type='button';b.textContent=item[0];b.className=item[2]||'';b.setAttribute('role','menuitem');b.addEventListener('click',function(e){e.preventDefault();e.stopPropagation();mobileMenu.hidden=true;mobileMenu.classList.remove('is-open');mobileToggle.setAttribute('aria-expanded','false');item[1]();});mobileMenu.appendChild(b);});
       mobileToggle.addEventListener('pointerdown',function(e){e.preventDefault();e.stopPropagation();});mobileToggle.addEventListener('click',function(e){e.preventDefault();e.stopPropagation();var open=mobileMenu.hidden;self.closeMobileActions(mobileMenu);mobileMenu.hidden=!open;mobileMenu.classList.toggle('is-open',open);mobileToggle.setAttribute('aria-expanded',String(open));});wrap.appendChild(mobileToggle);wrap.appendChild(mobileMenu);
       var body=document.createElement('div');body.className='ve-block-body prose';
-      if(/^(text|heading|list)$/.test(block.type)){
-        body.contentEditable='true';body.spellcheck=true;body.innerHTML=R.mdToHtml(block.raw);body.addEventListener('focus',function(){self.activeBody=body;wrap.classList.add('is-editing');self.closeMobileActions();self.selectBlock(wrap);self.showFormat(body);setTimeout(function(){self.keepActiveTextVisible();},80);});
+      if(/^(text|heading|list|richtext)$/.test(block.type)){
+        body.contentEditable='true';body.spellcheck=true;body.innerHTML=R.mdToHtml(block.raw);if(block.type==='richtext'){var panel=textPanelData(block.raw);body.innerHTML=panel.html;body.classList.add('text-panel');body.dataset.align=panel.align;body.dataset.font=panel.font;body.dataset.shape=panel.shape;wrap.dataset.textShape=panel.shape;body.dataset.width=panel.width;body.dataset.height=panel.height;wrap.dataset.textWidth=panel.width;body.dataset.size=panel.size;}body.addEventListener('focus',function(){self.activeBody=body;wrap.classList.add('is-editing');self.closeMobileActions();self.selectBlock(wrap);self.showFormat(body);setTimeout(function(){self.keepActiveTextVisible();},80);});
         body.addEventListener('mouseup',function(){self.captureRange();self.showFormat(body);});
         body.addEventListener('keyup',function(){self.captureRange();self.showFormat(body);});
         body.addEventListener('input',function(){if(!body.dataset.started){self.remember();body.dataset.started='1';}block.raw=editableToMd(body,block.type,block.raw);self.sync();});
@@ -217,14 +252,17 @@
         if(imageInfo){var figure=body.querySelector('.media-image')||body;figure.classList.add('ve-resizable-image');figure.style.width=(imageInfo.width||100)+'%';figure.dataset.align=imageInfo.align||'center';figure.dataset.fit=imageInfo.fit||'contain';['nw','ne','sw','se'].forEach(function(pos){var handle=document.createElement('button');handle.type='button';handle.className='ve-resize-handle ve-resize-'+pos;handle.setAttribute('aria-label','Змінити розмір фотографії');handle.addEventListener('pointerdown',function(e){self.startImageResize(e,block,body,figure);});figure.appendChild(handle);});}
         var photoTools=document.createElement('div');photoTools.className='ve-image-overlay';
         var replace=document.createElement('button');replace.type='button';replace.textContent='✎ Замінити';replace.onclick=function(e){e.stopPropagation();self.o.pickMedia({mode:'image'}).then(function(x){if(!x)return;var d=imageData(block.raw)||{alt:'',caption:'',width:'100',align:'center',fit:'contain'};d.src=x.path;d.alt=x.alt||d.alt||'';self.remember();block.raw=imageRaw(d);self.sync();self.renderBlocks();});};
-        var settings=document.createElement('button');settings.type='button';settings.textContent='⚙ Налаштування';settings.onclick=function(e){e.stopPropagation();self.configure(index);};photoTools.appendChild(replace);photoTools.appendChild(settings);wrap.appendChild(photoTools);
+        var settings=document.createElement('button');settings.type='button';settings.textContent='⚙ Налаштування';settings.onclick=function(e){e.stopPropagation();self.configure(index);};photoTools.appendChild(replace);photoTools.appendChild(settings);wrap.insertBefore(photoTools,body);
       }
-      wrap.addEventListener('click',function(){self.selectBlock(wrap);});
-      wrap.addEventListener('dragstart',function(e){self.dragId=block.id;wrap.classList.add('dragging');e.dataTransfer.effectAllowed='move';});
-      wrap.addEventListener('dragend',function(){wrap.classList.remove('dragging');self.dragId=null;});
-      wrap.addEventListener('dragover',function(e){e.preventDefault();wrap.classList.add('drop-before');});
-      wrap.addEventListener('dragleave',function(){wrap.classList.remove('drop-before');});
-      wrap.addEventListener('drop',function(e){e.preventDefault();wrap.classList.remove('drop-before');var from=self.blocks.findIndex(function(b){return b.id===self.dragId;});if(from<0||from===index)return;self.remember();var moved=self.blocks.splice(from,1)[0];var to=self.blocks.findIndex(function(b){return b.id===block.id;});self.blocks.splice(to,0,moved);self.sync();self.renderBlocks();});
+      wrap.addEventListener('click',function(e){if(block.type==='image'&&e.target.closest('a.zoom'))e.preventDefault();self.selectBlock(wrap);});
+      tools.querySelector('.ve-handle').setAttribute('aria-label', 'Перетягнути блок; стрілки вгору та вниз змінюють порядок');
+      tools.querySelector('.ve-handle').addEventListener('pointerdown', function(e){ self.startBlockDrag(e, block, wrap); });
+      tools.querySelector('.ve-handle').addEventListener('keydown', function(e){
+        if (e.key !== 'ArrowUp' && e.key !== 'ArrowDown') return;
+        e.preventDefault(); self.move(index, e.key === 'ArrowUp' ? -1 : 1);
+        var moved = self.list.querySelector('[data-id="' + block.id + '"] .ve-handle');
+        if (moved) moved.focus();
+      });
       self.list.appendChild(wrap);
     });
     if(!this.blocks.length)this.list.innerHTML='<p class="ve-empty">Сторінка порожня. Натисніть «+ Додати блок».</p>';
@@ -243,24 +281,119 @@
   Editor.prototype.clearSelection=function(){Array.prototype.forEach.call(this.list.querySelectorAll('.ve-block.is-selected,.ve-block.is-editing'),function(x){x.classList.remove('is-selected','is-editing');});this.closeMobileActions();this.toolbar.hidden=true;this.activeBody=null;this.savedRange=null;};
   Editor.prototype.captureRange=function(){var s=window.getSelection&&window.getSelection();if(!s||!s.rangeCount||!this.activeBody)return;var r=s.getRangeAt(0);if(this.activeBody.contains(r.commonAncestorContainer))this.savedRange=r.cloneRange();};
   Editor.prototype.restoreRange=function(){if(!this.savedRange||!this.activeBody)return false;this.activeBody.focus();var s=window.getSelection();s.removeAllRanges();s.addRange(this.savedRange);return true;};
+  Editor.prototype.setTextSetting = function(key, value) {
+    if (!this.activeBody) return;
+    var body=this.activeBody, wrap=body.closest('.ve-block'), block=this.blocks.find(function(b){return b.id===wrap.dataset.id;});
+    if (!block || !/^(text|heading|list|richtext)$/.test(block.type)) return;
+    this.remember(); block.type='richtext'; body.classList.add('text-panel');
+    body.dataset.align=body.dataset.align||'left'; body.dataset.font=body.dataset.font||'sans'; body.dataset.shape=body.dataset.shape||'plain';
+    body.dataset[key]=value; wrap.dataset.textShape=body.dataset.shape;wrap.dataset.textWidth=body.dataset.width||'auto'; block.raw=textPanelRaw(body.innerHTML,body.dataset); this.sync();
+    this.restoreRange(); this.showFormat(body);
+  };
+
   Editor.prototype.commitActive=function(){if(!this.activeBody)return;this.activeBody.dispatchEvent(new Event('input',{bubbles:true}));this.captureRange();this.showFormat(this.activeBody);};
   Editor.prototype.formatCommand=function(cmd,value){if(!this.restoreRange())return;document.execCommand(cmd,false,value);this.commitActive();};
-  Editor.prototype.clearFormatting=function(){if(!this.restoreRange())return;var range=this.savedRange,marks=[],n=range&&range.commonAncestorContainer,el=n&&n.nodeType===1?n:n&&n.parentElement;if(el&&el.closest){var nearest=el.closest('strong,b,em,i,a,u,s,code,span');if(nearest&&this.activeBody.contains(nearest))marks.push(nearest);}if(range&&this.activeBody){Array.prototype.forEach.call(this.activeBody.querySelectorAll('strong,b,em,i,a,u,s,code,span'),function(mark){try{if(range.intersectsNode(mark)&&marks.indexOf(mark)<0)marks.push(mark);}catch(e){}});}document.execCommand('removeFormat',false,null);document.execCommand('unlink',false,null);marks.forEach(function(mark){if(!mark.parentNode)return;while(mark.firstChild)mark.parentNode.insertBefore(mark.firstChild,mark);mark.parentNode.removeChild(mark);});if(el&&el.closest&&el.closest('li')){var list=el.closest('ol,ul');document.execCommand(list&&list.tagName==='OL'?'insertOrderedList':'insertUnorderedList',false,null);}else if(el&&el.closest&&el.closest('h2,h3,h4,h5,h6'))document.execCommand('formatBlock',false,'P');this.commitActive();};
-  Editor.prototype.showFormat=function(body){var r=body.getBoundingClientRect(),gap=8,vv=window.visualViewport,vw=vv?vv.width:window.innerWidth,vh=vv?vv.height:window.innerHeight,ox=vv?vv.offsetLeft:0,oy=vv?vv.offsetTop:0;this.toolbar.hidden=false;var tw=this.toolbar.offsetWidth,th=this.toolbar.offsetHeight;if(this.isMobile()){this.toolbar.style.left=Math.round(ox+6)+'px';this.toolbar.style.width=Math.max(0,Math.round(vw-12))+'px';this.toolbar.style.top=Math.max(oy+6,Math.round(oy+vh-th-gap))+'px';return;}this.toolbar.style.width='';var top=r.top>=th+gap?Math.max(gap,r.top-th-gap):Math.min(vh-th-gap,r.bottom+gap);var left=Math.max(gap,Math.min(vw-tw-gap,r.left));this.toolbar.style.top=Math.round(top)+'px';this.toolbar.style.left=Math.round(left)+'px';};
+  Editor.prototype.clearFormatting = function() {
+    var body=this.activeBody;
+    if (!body || !body.isConnected) return;
+    var wrap=body.closest('.ve-block'), block=this.blocks.find(function(b){return b.id===wrap.dataset.id;});
+    if (!block) return;
+    this.remember();
+    var range=this.savedRange;
+    if (!range || !body.contains(range.commonAncestorContainer) || range.collapsed) {
+      range=document.createRange();range.selectNodeContents(body);
+    }
+    // Insert plain selected text outside inherited bold/italic ancestors.
+    var selection=window.getSelection();body.focus();selection.removeAllRanges();selection.addRange(range);
+    document.execCommand('removeFormat',false,null);document.execCommand('unlink',false,null);
+    // For whole-block clearing, strip any remaining semantic or inline marks.
+    var allText=range.toString().trim()===body.textContent.trim();
+    if (allText) {
+      body.querySelectorAll('strong,b,em,i,u,s,span,a,code,font').forEach(function(mark){mark.replaceWith.apply(mark,Array.prototype.slice.call(mark.childNodes));});
+      body.querySelectorAll('[style]').forEach(function(node){node.removeAttribute('style');});
+    }
+    if (block.type==='richtext') { body.dataset.font='sans';body.dataset.align='left';body.dataset.size='auto'; }
+    body.dataset.started='1';block.raw=editableToMd(body,block.type,block.raw);this.sync();this.captureRange();this.showFormat(body);
+  };
+  Editor.prototype.showFormat = function(body) {
+    this.toolbar.querySelectorAll('select[data-setting]').forEach(function(select){
+      select.value=body.dataset[select.dataset.setting]||({align:'left',font:'sans',shape:'plain',width:'auto',height:'auto',size:'auto'})[select.dataset.setting];
+    });
+    this.toolbar.hidden=false;
+    this.toolbar.style.left='';this.toolbar.style.top='';this.toolbar.style.width='';
+  };
   Editor.prototype.toggleFocus=function(){var on=document.body.classList.toggle('ve-focus');var b=this.host.querySelector('.ve-focus-btn');if(b){b.textContent=on?'×':'⛶';b.title=on?'Вийти з режиму редактора':'Режим редактора / На весь екран';}if(on){var self=this;var leave=function(e){if(e.key==='Escape'&&document.body.classList.contains('ve-focus')){self.toggleFocus();window.removeEventListener('keydown',leave);}};window.addEventListener('keydown',leave);}};
 
   Editor.prototype.move=function(i,d){var n=i+d;if(n<0||n>=this.blocks.length)return;this.remember();var b=this.blocks.splice(i,1)[0];this.blocks.splice(n,0,b);this.sync();this.renderBlocks();};
   Editor.prototype.remove=function(i){var self=this;this.o.confirmBox({title:'Видалити цей блок?',text:'Блок зникне зі сторінки. Дію можна скасувати кнопкою Undo.',okLabel:'Видалити',danger:true}).then(function(ok){if(!ok)return;self.remember();self.blocks.splice(i,1);self.sync();self.renderBlocks();});};
+  Editor.prototype.startBlockDrag = function(e, block, wrap) {
+    if (e.button !== 0 || this.blockDragCleanup) return;
+    e.preventDefault(); e.stopPropagation();
+    var self = this, handle = e.currentTarget, pointerId = e.pointerId;
+    var startY = e.clientY, y = startY, x = e.clientX, active = false, targetId = null, after = false, frame;
+    handle.setPointerCapture(pointerId);
+    function clearMarkers() {
+      self.list.querySelectorAll('.drop-before, .drop-after').forEach(function(node){ node.classList.remove('drop-before', 'drop-after'); });
+    }
+    function locate() {
+      clearMarkers(); targetId = null;
+      var candidates = Array.prototype.filter.call(self.list.querySelectorAll('.ve-block'), function(node){return node !== wrap;});
+      if (!candidates.length) return;
+      var target = candidates[candidates.length - 1]; after = true;
+      var row = candidates.filter(function(node){var r=node.getBoundingClientRect();return y>=r.top && y<=r.bottom;});
+      if (row.length) {
+        row.sort(function(a,b){function distance(node){var r=node.getBoundingClientRect();return x<r.left?r.left-x:x>r.right?x-r.right:0;}return distance(a)-distance(b);});
+        target=row[0];var rect=target.getBoundingClientRect();
+        after=target.dataset.textShape==='square' ? x>=rect.left+rect.width/2 : y>=rect.top+rect.height/2;
+      } else {
+        for (var i=0;i<candidates.length;i++) { if(y<candidates[i].getBoundingClientRect().top){target=candidates[i];after=false;break;} }
+      }
+      targetId = target.dataset.id; target.classList.add(after ? 'drop-after' : 'drop-before');
+    }
+    function move(ev) {
+      if (ev.pointerId !== pointerId) return;
+      y = ev.clientY; x = ev.clientX;
+      if (!active && Math.abs(y - startY) < 5) return;
+      active = true; wrap.classList.add('dragging'); document.body.classList.add('ve-reordering'); locate();
+    }
+    function tick() {
+      if (active) {
+        var margin = 80, speed = y < margin ? -Math.min(18, (margin-y)/3) : y > innerHeight-margin ? Math.min(18,(y-innerHeight+margin)/3) : 0;
+        if (speed) { window.scrollBy(0, speed); locate(); }
+      }
+      frame = requestAnimationFrame(tick);
+    }
+    function finish(ev) {
+      if (ev && ev.pointerId !== pointerId) return;
+      cancelAnimationFrame(frame); clearMarkers(); wrap.classList.remove('dragging'); document.body.classList.remove('ve-reordering');
+      window.removeEventListener('pointermove',move); window.removeEventListener('pointerup',finish); window.removeEventListener('pointercancel',cancel);
+      if (handle.hasPointerCapture(pointerId)) handle.releasePointerCapture(pointerId);
+      self.blockDragCleanup = null;
+      if (!active || !targetId || !ev || ev.type !== 'pointerup') return;
+      var next = self.blocks.slice(), from = next.findIndex(function(b){return b.id === block.id;});
+      var moved = next.splice(from,1)[0], to = next.findIndex(function(b){return b.id === targetId;}) + (after ? 1 : 0);
+      next.splice(to,0,moved);
+      if (next.every(function(b,i){return b === self.blocks[i];})) return;
+      self.remember(); self.blocks = next; self.sync(); self.renderBlocks();
+      var newWrap = self.list.querySelector('[data-id="'+block.id+'"]');
+      if (newWrap) { self.selectBlock(newWrap); newWrap.querySelector('.ve-handle').focus({preventScroll:true}); }
+    }
+    function cancel(ev) { finish(ev); }
+    self.blockDragCleanup = function(){finish();};
+    window.addEventListener('pointermove',move); window.addEventListener('pointerup',finish); window.addEventListener('pointercancel',cancel);
+    frame = requestAnimationFrame(tick);
+  };
+
   Editor.prototype.startImageResize=function(e,block,body,figure){if(window.matchMedia('(max-width:760px)').matches)return;e.preventDefault();e.stopPropagation();var self=this,startX=e.clientX,startWidth=figure.getBoundingClientRect().width,limit=body.getBoundingClientRect().width,d=imageData(block.raw);if(!d)return;this.remember();function move(ev){var delta=(/w$/.test(e.target.className)?startX-ev.clientX:ev.clientX-startX);var pct=Math.max(20,Math.min(100,Math.round((startWidth+delta)/limit*100)));figure.style.width=pct+'%';d.width=String(pct);}function end(){window.removeEventListener('pointermove',move);window.removeEventListener('pointerup',end);block.raw=imageRaw(d);self.sync();self.renderBlocks();}window.addEventListener('pointermove',move);window.addEventListener('pointerup',end,{once:true});};
   Editor.prototype.addSmartUrl=function(kind,modalRef){var self=this;var label=kind==='video'?'Посилання на відео':'Посилання';var u=prompt(label);var data=smartUrlData(u);if(!data)return self.o.toast('Не вдалося розпізнати безпечне посилання',true);if(kind==='video'&&data.type!=='video')data.title='Відеопосилання';self.remember();self.blocks.push({id:uid(),type:data.type==='video'?'embed':data.type==='google'?'document':'text',raw:smartRaw(data)});self.sync();self.renderBlocks();if(modalRef)modalRef.close();};
   Editor.prototype.addDocument=function(parentModal){var self=this;var box=document.createElement('div');box.className='ve-document-add';box.innerHTML='<button class="ve-document-drop" type="button"><strong>Перетягніть файл сюди</strong><span>або виберіть файл з комп’ютера</span></button><div class="ve-or"><span>або</span></div><label class="f"><span>Посилання на Google Drive</span><input id="ve-drive-url" type="url" placeholder="https://drive.google.com/..."><small>Просто вставте посилання, скопійоване з Google Drive — тип документа визначиться автоматично.</small></label>';var input=box.querySelector('#ve-drive-url');var m=this.o.modal({title:'Додати документ',build:function(m){m.body.appendChild(box);var add=document.createElement('button');add.type='button';add.className='btn primary';add.textContent='Додати документ';add.onclick=function(){var data=smartUrlData(input.value);if(!data||data.type!=='google')return self.o.toast('Вставте звичайне посилання Google Drive',true);self.remember();self.blocks.push({id:uid(),type:'document',raw:smartRaw(data)});self.sync();self.renderBlocks();m.close();if(parentModal)parentModal.close();};m.foot.appendChild(add);}});box.querySelector('.ve-document-drop').onclick=function(){self.o.pickMedia({mode:'file'}).then(function(x){if(!x)return;self.remember();self.blocks.push({id:uid(),type:'document',raw:'['+x.path.split('/').pop()+']('+x.path+')'});self.sync();self.renderBlocks();m.close();if(parentModal)parentModal.close();});};};
-  Editor.prototype.addMenu=function(){var self=this;var choices=[['text','Текст','Новий текст'],['heading','Заголовок','## Новий заголовок'],['image','Фото',''],['list','Список','- Новий пункт'],['document','Документ',''],['video','Відео',''],['link','Посилання',''],['divider','Розділювач','---']];var box=document.createElement('div');box.className='ve-add-grid';choices.forEach(function(c){var b=document.createElement('button');b.type='button';b.textContent=c[1];b.addEventListener('click',function(){if(c[0]==='image')return self.o.pickMedia({mode:'image'}).then(function(x){if(x){self.remember();self.blocks.push({id:uid(),type:'image',raw:imageRaw({src:x.path,alt:x.alt||'',caption:'',width:'100',align:'center',fit:'contain'})});self.sync();self.renderBlocks();m.close();}});if(c[0]==='document')return self.addDocument(m);if(c[0]==='video'||c[0]==='link')return self.addSmartUrl(c[0],m);self.remember();self.blocks.push({id:uid(),type:c[0],raw:c[2]});self.sync();self.renderBlocks();m.close();});box.appendChild(b);});var m=this.o.modal({title:'Додати блок',build:function(m){m.body.appendChild(box);}});};
-  Editor.prototype.configure=function(i){var self=this,b=this.blocks[i];if(b.type==='image'){var d=imageData(b.raw)||{src:'',alt:'',caption:'',width:'100',align:'center',fit:'contain'};var box=document.createElement('div');box.className='ve-image-settings';box.innerHTML='<label class="f"><span>Alt-текст</span><input id="ve-alt" type="text"></label><label class="f"><span>Підпис</span><input id="ve-cap" type="text"></label><label class="f"><span>Розмір</span><select id="ve-size"><option value="35">Маленьке</option><option value="55">Середнє</option><option value="75">Велике</option><option value="100">На всю ширину</option><option value="custom">Власний розмір</option></select></label><label class="f ve-custom-size"><span>Ширина: <b id="ve-width-out"></b></span><input id="ve-width" type="range" min="20" max="100" step="1"></label><label class="f"><span>Вирівнювання</span><select id="ve-align"><option value="left">Ліворуч</option><option value="center">По центру</option><option value="right">Праворуч</option></select></label><label class="f"><span>Відображення</span><select id="ve-fit"><option value="contain">Без кадрування</option><option value="cover">Пропорційно заповнити</option></select></label><button class="btn" type="button" id="ve-replace">Замінити фото</button>';var alt=box.querySelector('#ve-alt'),cap=box.querySelector('#ve-cap'),size=box.querySelector('#ve-size'),width=box.querySelector('#ve-width'),out=box.querySelector('#ve-width-out'),align=box.querySelector('#ve-align'),fit=box.querySelector('#ve-fit');alt.value=d.alt;cap.value=d.caption;width.value=d.width||100;out.textContent=width.value+'%';align.value=d.align||'center';fit.value=d.fit||'contain';size.value=['35','55','75','100'].indexOf(String(d.width))>=0?String(d.width):'custom';function syncSize(){if(size.value!=='custom')width.value=size.value;out.textContent=width.value+'%';box.querySelector('.ve-custom-size').hidden=size.value!=='custom';}size.onchange=syncSize;width.oninput=function(){out.textContent=width.value+'%';};syncSize();var m=this.o.modal({title:'Налаштування фотографії',build:function(m){m.body.appendChild(box);m.foot.appendChild(Object.assign(document.createElement('button'),{type:'button',className:'btn primary',textContent:'Застосувати'}));m.foot.lastChild.onclick=function(){self.remember();d.alt=alt.value;d.caption=cap.value;d.width=width.value;d.align=align.value;d.fit=fit.value;b.raw=imageRaw(d);self.sync();self.renderBlocks();m.close();};}});box.querySelector('#ve-replace').onclick=function(){self.o.pickMedia({mode:'image'}).then(function(x){if(x){d.src=x.path;if(x.alt)alt.value=x.alt;}});};return;}
+  Editor.prototype.addMenu=function(){var self=this;var choices=[['text','Текст','Новий текст'],['richtext','Квадратна текстова картка',textPanelRaw('<p>Новий текст</p>',{shape:'square'})],['richtext','Прямокутна текстова картка',textPanelRaw('<p>Новий текст</p>',{shape:'rectangle'})],['heading','Заголовок','## Новий заголовок'],['image','Фото',''],['list','Список','- Новий пункт'],['document','Документ',''],['video','Відео',''],['link','Посилання',''],['divider','Розділювач','---']];var box=document.createElement('div');box.className='ve-add-grid';choices.forEach(function(c){var b=document.createElement('button');b.type='button';b.textContent=c[1];b.addEventListener('click',function(){if(c[0]==='image')return self.o.pickMedia({mode:'image'}).then(function(x){if(x){self.remember();self.blocks.push({id:uid(),type:'image',raw:imageRaw({src:x.path,alt:x.alt||'',caption:'',width:'100',align:'center',fit:'contain'})});self.sync();self.renderBlocks();m.close();}});if(c[0]==='document')return self.addDocument(m);if(c[0]==='video'||c[0]==='link')return self.addSmartUrl(c[0],m);self.remember();self.blocks.push({id:uid(),type:c[0],raw:c[2]});self.sync();self.renderBlocks();m.close();});box.appendChild(b);});var m=this.o.modal({title:'Додати блок',build:function(m){m.body.appendChild(box);}});};
+  Editor.prototype.configure=function(i){var self=this,b=this.blocks[i];if(/^(text|heading|list|richtext)$/.test(b.type)){var body=this.list.querySelector('[data-id="'+b.id+'"] .ve-block-body');body.focus();this.activeBody=body;this.showFormat(body);return;}if(b.type==='image'){var d=imageData(b.raw)||{src:'',alt:'',caption:'',width:'100',align:'center',fit:'contain'};var box=document.createElement('div');box.className='ve-image-settings';box.innerHTML='<label class="f"><span>Alt-текст</span><input id="ve-alt" type="text"></label><label class="f"><span>Підпис</span><input id="ve-cap" type="text"></label><label class="f"><span>Розмір</span><select id="ve-size"><option value="35">Маленьке</option><option value="55">Середнє</option><option value="75">Велике</option><option value="100">На всю ширину</option><option value="custom">Власний розмір</option></select></label><label class="f ve-custom-size"><span>Ширина: <b id="ve-width-out"></b></span><input id="ve-width" type="range" min="20" max="100" step="1"></label><label class="f"><span>Вирівнювання</span><select id="ve-align"><option value="left">Ліворуч</option><option value="center">По центру</option><option value="right">Праворуч</option></select></label><label class="f"><span>Відображення</span><select id="ve-fit"><option value="contain">Без кадрування</option><option value="cover">Пропорційно заповнити</option></select></label><button class="btn" type="button" id="ve-replace">Замінити фото</button>';var alt=box.querySelector('#ve-alt'),cap=box.querySelector('#ve-cap'),size=box.querySelector('#ve-size'),width=box.querySelector('#ve-width'),out=box.querySelector('#ve-width-out'),align=box.querySelector('#ve-align'),fit=box.querySelector('#ve-fit');alt.value=d.alt;cap.value=d.caption;width.value=d.width||100;out.textContent=width.value+'%';align.value=d.align||'center';fit.value=d.fit||'contain';size.value=['35','55','75','100'].indexOf(String(d.width))>=0?String(d.width):'custom';function syncSize(){if(size.value!=='custom')width.value=size.value;out.textContent=width.value+'%';box.querySelector('.ve-custom-size').hidden=size.value!=='custom';}size.onchange=syncSize;width.oninput=function(){out.textContent=width.value+'%';};syncSize();var m=this.o.modal({title:'Налаштування фотографії',build:function(m){m.body.appendChild(box);m.foot.appendChild(Object.assign(document.createElement('button'),{type:'button',className:'btn primary',textContent:'Застосувати'}));m.foot.lastChild.onclick=function(){self.remember();d.alt=alt.value;d.caption=cap.value;d.width=width.value;d.align=align.value;d.fit=fit.value;b.raw=imageRaw(d);self.sync();self.renderBlocks();m.close();};}});box.querySelector('#ve-replace').onclick=function(){self.o.pickMedia({mode:'image'}).then(function(x){if(x){d.src=x.path;if(x.alt)alt.value=x.alt;}});};return;}
     if(b.type==='legacy'){this.o.modal({title:'Сумісний блок',build:function(m){var p=document.createElement('p');p.textContent='Цей блок створено у старій версії сайту. Він збережений без змін для сумісності. Для нового матеріалу використовуйте звичайні типи блоків.';m.body.appendChild(p);}});return;}
     if(b.type==='document'||b.type==='embed'){var match=b.raw.match(/(?:href|src)=["']([^"']+)/i)||b.raw.match(/\]\(([^)]+)\)/);var current=match?match[1]:'';var smart=document.createElement('div');smart.className='ve-smart-settings';smart.innerHTML='<label class="f"><span>'+(b.type==='embed'?'Посилання на відео':'Посилання на документ')+'</span><input id="ve-smart-url" type="url" placeholder="https://..."></label><p class="hint">Вставте звичайне посилання — редактор сам визначить безпечний формат.</p>';var input=smart.querySelector('input');input.value=current;var sm=this.o.modal({title:b.type==='embed'?'Налаштування відео':'Налаштування документа',build:function(m){m.body.appendChild(smart);if(b.type==='document'){var pick=document.createElement('button');pick.type='button';pick.className='btn';pick.textContent='Вибрати файл з комп’ютера';pick.onclick=function(){self.o.pickMedia({mode:'file'}).then(function(x){if(x)input.value=x.path;});};m.body.appendChild(pick);}var apply=document.createElement('button');apply.type='button';apply.className='btn primary';apply.textContent='Застосувати';apply.onclick=function(){var value=input.value.trim();if(!value)return self.o.toast('Вкажіть посилання або виберіть файл',true);self.remember();if(!/^https?:/i.test(value)){if(!safeUrl(value))return self.o.toast('Небезпечну адресу заблоковано',true);b.raw='['+value.split('/').pop()+']('+value+')';b.type='document';}else{var data=smartUrlData(value);if(!data)return self.o.toast('Не вдалося розпізнати безпечне посилання',true);b.raw=smartRaw(data);b.type=data.type==='video'?'embed':data.type==='google'?'document':'text';}self.sync();self.renderBlocks();m.close();};m.foot.appendChild(apply);}});return;}
     var area=document.createElement('textarea');area.rows=12;area.value=b.raw;var m2=this.o.modal({title:b.type==='legacy'?'Legacy / HTML block':'Налаштування блока',wide:true,build:function(m){m.body.appendChild(area);m.foot.appendChild(Object.assign(document.createElement('button'),{type:'button',className:'btn primary',textContent:'Застосувати'}));m.foot.lastChild.onclick=function(){var value=area.value;if(/javascript\s*:/i.test(value))return self.o.toast('Небезпечну адресу заблоковано',true);self.remember();b.raw=value;b.type=classify(value);self.sync();self.renderBlocks();m.close();};}});};
-  Editor.prototype.preview=function(){var self=this,html=R.mdToHtml(serialize(this.blocks));var frame=document.createElement('iframe');frame.className='ve-preview-frame';frame.title='Перегляд сторінки';var m=this.o.modal({title:'Перегляд сторінки',wide:true,build:function(m){m.body.appendChild(frame);}});frame.addEventListener('load',function(){var prose=frame.contentDocument&&frame.contentDocument.querySelector('.prose');if(prose)R.enhance(prose,{resolve:self.o.resolvePath});});frame.srcdoc='<!doctype html><html lang="uk"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><link rel="stylesheet" href="../assets/css/site.css?v=20260922-2"></head><body><main style="padding:24px"><article class="paper layout-editorial"><div class="prose">'+html+'</div></article></main></body></html>';};
-  Editor.prototype.help=function(){var self=this;var body=document.createElement('div');body.className='ve-help';body.innerHTML='<p>Редактор показує сторінку блоками. Усі дії виконуються без знання коду.</p><ol><li><b>Відкрити сторінку:</b> оберіть її у списку ліворуч.</li><li><b>Змінити текст:</b> натисніть абзац і друкуйте.</li><li><b>Змінити заголовок:</b> натисніть його; H2 і H3 задають рівень.</li><li><b>Жирний або курсив:</b> виділіть слова й натисніть Ж або К.</li><li><b>Додати посилання:</b> виділіть текст, натисніть «Посилання» та введіть адресу.</li><li><b>Перетягнути блок:</b> схопіть ⋮⋮ і перенесіть до потрібного місця.</li><li><b>Без миші або на телефоні:</b> використовуйте ↑ і ↓.</li><li><b>Додати блок:</b> натисніть «+ Додати блок» і виберіть тип.</li><li><b>Дублювати:</b> натисніть ⧉ — копія з’явиться під оригіналом.</li><li><b>Видалити:</b> натисніть 🗑 і підтвердьте дію.</li><li><b>Замінити фото:</b> натисніть ✎ біля фото, потім «Замінити фото».</li><li><b>Додати фото:</b> виберіть «Фото» в меню нового блока.</li><li><b>Alt і підпис:</b> відкрийте ✎ біля фото та заповніть поля.</li><li><b>Порядок фотографій:</b> перетягуйте блоки фото або використовуйте ↑/↓.</li><li><b>Картки:</b> змінюйте їхній зміст і порядок як звичайні блоки; сітку сайт побудує сам.</li><li><b>Документ:</b> додайте файл через відповідний тип блока або змініть його через ✎.</li><li><b>Змінити адресу:</b> відкрийте ✎ біля блока; небезпечні адреси блокуються.</li><li><b>Відео та вбудовані матеріали:</b> відкрийте ✎, змініть дозволену HTTPS-адресу або перемістіть блок.</li><li><b>Undo/Redo:</b> ↶ скасовує останню дію, ↷ повертає її.</li><li><b>Перевірка:</b> перемикайте Desktop, Tablet і Mobile.</li><li><b>Чистий перегляд:</b> натисніть 👁 «Перегляд».</li><li><b>Зберегти чи опублікувати:</b> «Зберегти» лишає чернетку в цьому браузері; «Опублікувати зміни» зверху відправляє її на сайт.</li><li><b>Якщо сталася помилка:</b> натисніть ↶ або не публікуйте зміни.</li><li><b>Вихід без втрат:</b> спочатку натисніть «Зберегти»; при неопублікованих змінах редактор також покаже попередження.</li></ol><button class="btn primary" type="button" id="ve-tour-again">Повторити навчання</button>';var m=this.o.modal({title:'Як користуватися редактором',wide:true,build:function(m){m.body.appendChild(body);}});body.querySelector('#ve-tour-again').onclick=function(){m.close();self.tour(0);};};
+  Editor.prototype.preview=function(){var self=this,html=R.mdToHtml(serialize(this.blocks));var frame=document.createElement('iframe');frame.className='ve-preview-frame';frame.title='Перегляд сторінки';var m=this.o.modal({title:'Перегляд сторінки',wide:true,build:function(m){m.body.appendChild(frame);}});frame.addEventListener('load',function(){var prose=frame.contentDocument&&frame.contentDocument.querySelector('.prose');if(prose)R.enhance(prose,{resolve:self.o.resolvePath});});frame.srcdoc='<!doctype html><html lang="uk"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><link rel="stylesheet" href="'+esc(self.o.resolvePath('assets/css/site.css'))+'"><link rel="stylesheet" href="'+esc(self.o.resolvePath('assets/css/text-blocks.css'))+'"><style>body{padding-top:0!important}</style></head><body><main style="padding:24px"><article class="paper layout-editorial"><div class="prose">'+html+'</div></article></main></body></html>';};
+  Editor.prototype.help=function(){var self=this;var body=document.createElement('div');body.className='ve-help';body.innerHTML='<p>Редактор показує сторінку блоками. Усі дії виконуються без знання коду.</p><ol><li><b>Відкрити сторінку:</b> оберіть її у списку ліворуч.</li><li><b>Змінити текст:</b> натисніть абзац і друкуйте.</li><li><b>Змінити заголовок:</b> натисніть його; H2 і H3 задають рівень.</li><li><b>Жирний або курсив:</b> виділіть слова й натисніть Ж або К.</li><li><b>Додати посилання:</b> виділіть текст, натисніть «Посилання» та введіть адресу.</li><li><b>Перетягнути блок:</b> схопіть ⋮⋮ і перенесіть до потрібного місця.</li><li><b>Без миші або на телефоні:</b> використовуйте ↑ і ↓.</li><li><b>Додати блок:</b> натисніть «+ Додати блок» і виберіть тип.</li><li><b>Дублювати:</b> натисніть ⧉ — копія з’явиться під оригіналом.</li><li><b>Видалити:</b> натисніть 🗑 і підтвердьте дію.</li><li><b>Замінити фото:</b> натисніть ✎ біля фото, потім «Замінити фото».</li><li><b>Додати фото:</b> виберіть «Фото» в меню нового блока.</li><li><b>Alt і підпис:</b> відкрийте ✎ біля фото та заповніть поля.</li><li><b>Порядок фотографій:</b> перетягуйте блоки фото або використовуйте ↑/↓.</li><li><b>Оформлення тексту:</b> натисніть на текст або ✎, виділіть слова для жирного чи курсиву; вирівнювання, шрифт і форма застосовуються до всього блока. Квадратна картка розширюється по висоті, якщо текст довгий.</li><li><b>Картки:</b> змінюйте їхній зміст і порядок як звичайні блоки; сітку сайт побудує сам.</li><li><b>Документ:</b> додайте файл через відповідний тип блока або змініть його через ✎.</li><li><b>Змінити адресу:</b> відкрийте ✎ біля блока; небезпечні адреси блокуються.</li><li><b>Відео та вбудовані матеріали:</b> відкрийте ✎, змініть дозволену HTTPS-адресу або перемістіть блок.</li><li><b>Undo/Redo:</b> ↶ скасовує останню дію, ↷ повертає її.</li><li><b>Перевірка:</b> перемикайте Desktop, Tablet і Mobile.</li><li><b>Чистий перегляд:</b> натисніть 👁 «Перегляд».</li><li><b>Зберегти чи опублікувати:</b> «Зберегти» лишає чернетку в цьому браузері; «Опублікувати зміни» зверху відправляє її на сайт.</li><li><b>Якщо сталася помилка:</b> натисніть ↶ або не публікуйте зміни.</li><li><b>Вихід без втрат:</b> спочатку натисніть «Зберегти»; при неопублікованих змінах редактор також покаже попередження.</li></ol><button class="btn primary" type="button" id="ve-tour-again">Повторити навчання</button>';var m=this.o.modal({title:'Як користуватися редактором',wide:true,build:function(m){m.body.appendChild(body);}});body.querySelector('#ve-tour-again').onclick=function(){m.close();self.tour(0);};};
   Editor.prototype.tour=function(step){var self=this;var tips=['Натисніть на текст, щоб його змінити.','Схопіть ⋮⋮, щоб перемістити блок. На телефоні є ↑ і ↓.','Натисніть «+ Додати блок», щоб додати матеріал.','Натисніть ✎ біля фото, щоб його замінити.','Перевірте Desktop, Tablet і Mobile перед публікацією.','Коли все готово, збережіть чернетку, а потім натисніть «Опублікувати зміни» у верхній панелі.'];var box=document.createElement('div');box.className='ve-tour';box.innerHTML='<strong>'+(step+1)+'/'+tips.length+'</strong><p>'+tips[step]+'</p>';var m=this.o.modal({title:'Швидке навчання',build:function(m){m.body.appendChild(box);if(step>0){var prev=document.createElement('button');prev.className='btn';prev.textContent='Назад';prev.onclick=function(){m.close();self.tour(step-1);};m.foot.appendChild(prev);}var skip=document.createElement('button');skip.className='btn';skip.textContent='Пропустити';skip.onclick=function(){try{localStorage.setItem('dm_visual_tour_done','1');}catch(e){}m.close();};m.foot.appendChild(skip);var next=document.createElement('button');next.className='btn primary';next.textContent=step===tips.length-1?'Готово':'Далі';next.onclick=function(){m.close();if(step<tips.length-1)self.tour(step+1);else try{localStorage.setItem('dm_visual_tour_done','1');}catch(e){}};m.foot.appendChild(next);}});};
 
   global.VisualPageEditor={parse:parse,serialize:serialize,imageData:imageData,imageRaw:imageRaw,smartUrlData:smartUrlData,smartRaw:smartRaw,mount:function(host,opts){return new Editor(host,opts);}};
