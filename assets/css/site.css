@@ -5050,7 +5050,7 @@ a:hover {
 /* Accessible section navigation and a solid header while reading. */
 @media screen {
   body.has-scrolled .head,
-  body:has(.layout.is-inner) .head { background: #33443f; }
+  body:has(.layout.is-inner) .head { background: #fff; }
   .head-in, .top-nav-wrap > .wrap { box-shadow: none; }
   .layout-editorial .prose > p:first-child:not(:has(img)):not(:empty) { color: #172033; font-size: inherit; }
   .paper > .prose { color: #172033; }
@@ -5071,3 +5071,8 @@ a:hover {
 .child-card a.t::after { content: ""; position: absolute; inset: 0; z-index: 1; border-radius: inherit; cursor: pointer; }
 .child-card .child-page-links { position: relative; z-index: 2; }
 .child-card:focus-within { outline: 2px solid var(--gold-500); outline-offset: 3px; }
+
+/* A continuous white header without a colored band below the menu. */
+@media screen {
+  .head { background: #fff; padding-bottom: 0; }
+}
