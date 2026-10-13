@@ -60,7 +60,7 @@
 
 Основною метою інженерного гуртка є поєднання теоретичних знань із практичними навичками, розвиток технічного й критичного мислення, а також підготовка молоді до самостійної творчої, наукової та проєктної діяльності.
 
-![Фото: Гурткова робота — 4](uploads/pages/hurtkova-robota/image-4.jpg)
+<figure class="media-image" data-width="100" data-align="center" data-fit="contain"><img src="uploads/2026/10/photo-2026-10-13-11-15-04.jpg" alt=""></figure>
 
 ## Керування БПЛА
 
@@ -68,7 +68,9 @@
 
 **Мета гуртка** — ознайомлення учнів з основами безпечного керування безпілотними літальними апаратами (БПЛА), розвиток технічного мислення, просторової уяви, навичок командної роботи та відповідального використання сучасних технологій.
 
-![Фото: Гурткова робота — 5](uploads/pages/hurtkova-robota/image-5.jpg)
+<figure class="media-image" data-width="30" data-align="center" data-fit="contain"><img src="uploads/2026/10/photo-2026-10-13-11-15-16.jpg" alt=""></figure>
+
+<figure class="media-image" data-width="35" data-align="center" data-fit="contain"><img src="uploads/2026/10/photo-2026-10-13-11-15-12.jpg" alt=""></figure>
 
 ## <a id="h.4pnh2zdmv4xs"></a>Футбол
 
@@ -111,3 +113,5 @@
 «Фізаліс» — це про любов до слова, творчість і людей, які вміють бачити більше між рядками.
 
 <figure class="media-image" data-width="100" data-align="center" data-fit="contain"><img src="uploads/2026/09/photo-5327847776563436672-y.jpg" alt=""></figure>
+
+<figure class="media-image" data-width="100" data-align="center" data-fit="contain"><img src="uploads/2026/09/5323395235507281578-2.jpg" alt=""></figure>
