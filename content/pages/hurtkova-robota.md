@@ -1,3 +1,7 @@
+<div class="text-panel" data-align="left" data-font="sans" data-shape="plain" data-width="auto" data-height="auto" data-size="auto"><h3>Проєкт: «П’ятничний калейдоскоп: від творчості до успіху»</h3></div>
+
+<div class="google-document-viewer"><div class="embed embed-doc"><iframe src="https://docs.google.com/document/d/1jH2EUxk_xDFGW4oF0yXUY4jw5kHDmWPX/preview" title="Документ Google Docs" loading="lazy"></iframe></div><div class="google-document-actions"><a href="https://docs.google.com/document/d/1jH2EUxk_xDFGW4oF0yXUY4jw5kHDmWPX/view" target="_blank" rel="noopener noreferrer">Відкрити в Google ↗</a><a href="https://docs.google.com/document/d/1jH2EUxk_xDFGW4oF0yXUY4jw5kHDmWPX/export?format=docx" target="_blank" rel="noopener noreferrer">Завантажити ↓</a></div><p class="google-viewer-note">Якщо вміст не відкривається, Google не дозволяє вбудований перегляд. Перевірте, чи встановлено доступ «Усі, хто має посилання».</p></div>
+
 ## Вокальний ансамбль «Радість»
 
 керівник - Юлія Мазура
