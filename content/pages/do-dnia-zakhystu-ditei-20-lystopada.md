@@ -1,6 +1,3 @@
-<div class="text-panel" data-align="justify" data-font="sans" data-shape="plain" data-width="100" data-height="auto" data-size="auto"><h2>Права дитини: як ними користуватися — новий безоплатний освітній серіал на платформі Дія.Освіта</h2>
-</div>
-
 Щороку 20 листопада в Україні
 відзначають День захисту дітей та Всесвітній день дитини — дату, приурочену до
 ухвалення Генеральною Асамблеєю ООН Конвенції про права дитини.
@@ -15,8 +12,7 @@
 прикладах реальних життєвих ситуацій підліткам, батькам і педагогам просто та
 зрозуміло пояснюють:
 
-
- які права має кожна дитина та як діяти у разі їх
+які права має кожна дитина та як діяти у разі їх
      порушення;
  як захищати особисті межі, приватність і право на
      згоду;
@@ -36,8 +32,7 @@
 🔗 **Переглянути освітній
 серіал безоплатно на Дія.Освіта:**
 
-
- Повне посилання: [https://osvita.diia.gov.ua/courses/childrens-rights-how-to-use-them](https://osvita.diia.gov.ua/courses/childrens-rights-how-to-use-them)
+Повне посилання: [https://osvita.diia.gov.ua/courses/childrens-rights-how-to-use-them](https://osvita.diia.gov.ua/courses/childrens-rights-how-to-use-them)
  Коротке посилання: [https://diia.link/r/5fd7](https://diia.link/r/5fd7)
 
 <figure class="media-image" data-width="77" data-align="center" data-fit="contain"><img src="uploads/2026/11/shsh.png" alt=""></figure>
