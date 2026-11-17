@@ -33,6 +33,5 @@
 серіал безоплатно на Дія.Освіта:**
 
 Повне посилання: [https://osvita.diia.gov.ua/courses/childrens-rights-how-to-use-them](https://osvita.diia.gov.ua/courses/childrens-rights-how-to-use-them)
- Коротке посилання: [https://diia.link/r/5fd7](https://diia.link/r/5fd7)
 
 <figure class="media-image" data-width="77" data-align="center" data-fit="contain"><img src="uploads/2026/11/shsh.png" alt=""></figure>
